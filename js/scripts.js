@@ -86,12 +86,6 @@ searchInput.addEventListener("input", (e) => {
 
 // Showing results from the search
 function showResults(results){
-    // var a = document.createElement('a');
-    // var linkText = document.createTextNode(extracurriculars.name);
-    // a.appendChild(linkText)
-    // a.title = extracurriculars.name
-    // a.href = extracurriculars.class
-    // document.body.appendChild(a)
     for (const extracurriculars of results){
         // Making each result item a list
         const resultItem = document.createElement('li')
@@ -131,4 +125,31 @@ function clearList(){
     while (list.firstChild){
         list.removeChild(list.firstChild)
     }
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
 }

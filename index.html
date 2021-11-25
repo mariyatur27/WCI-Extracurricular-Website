@@ -44,7 +44,7 @@
                 <!-- Making a Search Bar -->
                 <form class="form">
                     <input type="text" id="search_bar" class="search_bar" placeholder="Search a club or sports team...">
-                    <a class="btn btn-primary btn-xl text-uppercase">Search</a>
+                    <a class="btn btn-primary btn-xl text-uppercase" id="search">Search</a>
                 </form>
                 <div class="results_container">
                     <ul class="results_list" id="list">
@@ -58,35 +58,54 @@
         <section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Our Extracurriculars</h2>
+                    <h3 class="section-subheading text-muted">Check out some of our extracurriculars...</h3>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
+
+                <div class="slideshow-container">
+
+                <div class="mySlides fade" id="first_slide">
+                  <div class="textFormat">
+                      <h2>Website for DDCA Financial Company</h2>
+                      <h3>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ipsum ac nunc tempor consectetur. Praesent vitae nibh porta, mollis velit vel, suscipit nisl. Integer mattis mauris ut molestie tristique.</h3>
+                      <h4>Languages: <span class="answers"> HTML, CSS, JavaScript</span></h4>
+                      <h4>Link:<a href="">ddca.ca</a></h4>
+                      <h4>Date: <span class="answers"> July 2021</span></h4>
+                  </div>
                 </div>
+                <div class="mySlides fade">
+              <div class="textFormat">
+              <h2>Website for Compass.Tutoring</h2>
+              <h3>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ipsum ac nunc tempor consectetur. Praesent vitae nibh porta, mollis velit vel, suscipit nisl. Integer mattis mauris ut molestie tristique.</h3>
+              <h4>Languages:<span class="answers"> HTML, CSS, JavaScript</span></h4>
+              <h4>Link: <a href="">compasstutoring.ca</a></h4>
+              <h4>Date:<span class="answers"> June 2021</span></h4>
+            </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="textFormat">
+              <h2>Website for HomeworkHub</h2>
+              <h3>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed ipsum ac nunc tempor consectetur. Praesent vitae nibh porta, mollis velit vel, suscipit nisl. Integer mattis mauris ut molestie tristique.</h3>
+              <h4>Languages:<span class="answers"> HTML, CSS, JavaScript</span></h4>
+              <h4>Link: <a href="">homeworkhubtutoring.org</a></h4>
+              <h4>Date:<span class="answers"> November 2021</span></h4>
+            </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+            </div>
             </div>
         </section>
         <!-- Portfolio Grid-->
