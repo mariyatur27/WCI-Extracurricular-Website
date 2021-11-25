@@ -52,3 +52,83 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// Code for the search bar
+const extracurriculars = [
+    { name: "web-dev club", class: "#contact"},
+    { name: "robotics club", class: "#about"},
+    { name: "computer science club", class: "#team"},
+    { name: "math club", class: "#portfolio"},
+    { name: "debate club", class: "#team"},
+]
+
+// Establishing event-listeners for the button
+const searchInput = document.querySelector(".search_bar")
+const searchButton = document.getElementById("search")
+
+// searchButton.addEventListener("input", (e))
+
+searchInput.addEventListener("input", (e) => {
+    let value = e.target.value
+
+    // Checking if there's any input inside the search bar
+    if (value && value.trim().length > 0){
+        value = value.trim().toLowerCase()
+
+        // Only returning those results of the showResults that match the user input in the search bar
+        showResults(extracurriculars.filter(extracurriculars => {
+            return extracurriculars.name.includes(value)
+        }))
+    }else{
+        clearList()
+    }
+})
+
+// Showing results from the search
+function showResults(results){
+    // var a = document.createElement('a');
+    // var linkText = document.createTextNode(extracurriculars.name);
+    // a.appendChild(linkText)
+    // a.title = extracurriculars.name
+    // a.href = extracurriculars.class
+    // document.body.appendChild(a)
+    for (const extracurriculars of results){
+        // Making each result item a list
+        const resultItem = document.createElement('li')
+        // const link = document.createElement('a')
+
+        // Assigning a class to each result element
+        resultItem.classList.add('result-item')
+
+        // link.href = document.create(extracurriculars.class)
+
+        // Making the name of the extracurricular the list item's text
+        const text = document.createTextNode(extracurriculars.name)
+
+        resultItem.appendChild(text)
+        // list.appendChild(link)
+        list.appendChild(resultItem)
+    }
+    if (results.length === 0) {
+        noResults()
+    }
+}
+
+// Showing no results
+function noResults() {
+    const error = document.createElement('li')
+    error.classList.add('error-message')
+
+    const text = document.createTextNode('We were not able to find what you are looking for. Sorry.')
+
+    error.appendChild(text)
+
+    list.appendChild(error)
+}
+
+// Clearing results from the page 
+function clearList(){
+    while (list.firstChild){
+        list.removeChild(list.firstChild)
+    }
+}
