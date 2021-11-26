@@ -134,9 +134,7 @@ function noResults() {
 
 // Clearing results from the page 
 function clearList(){
-    while (list.firstChild){
-        list.removeChild(list.firstChild)
-    }
+    list.innerHTML = "";
 }
 
 var slideIndex = 0;
