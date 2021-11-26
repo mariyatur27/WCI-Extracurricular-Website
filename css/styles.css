@@ -543,6 +543,14 @@ progress {
   svg.svg-inline--fa.fa-arrow-left.fa-w-14 {
     margin-top: 7%;
   }
+  #clubs_title{
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 8%;
+  }
+  p.descrp {
+    text-align: left;
+  }
   a.result-item {
     text-align: center;
     list-style-type: none;
@@ -579,6 +587,46 @@ progress {
     color:  grey;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     padding: 3%;
+  }
+  .lrn {
+    margin-bottom: 43%;
+  }
+  .club_row {
+    display: flex;
+  }
+  .club_box {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 3%;
+    width: 47%;
+    margin-top: 7%;
+    display: flex;
+    margin-left: 1%;
+  }
+  .together{
+    display:  flex;
+  }
+  svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
+    margin-left: 6%;
+    margin-top: 1%;
+  }
+  .club_sec {
+    display: block;
+  }
+  .club_info {
+    margin-left: 7%;
+    text-align: left;
+  }
+  img.club_img {
+    width: 30%;
+  }
+  input#club_search {
+    padding: 1% 2%;
+    width: 50%;
+    border: none;
+    border-radius: 33px;
+    margin-top: 3%;
+    margin-left: -49%;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   }
 
   /* Fading animation */
@@ -11463,7 +11511,7 @@ p {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
-    background-color: transparent;
+    background-color: black;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
