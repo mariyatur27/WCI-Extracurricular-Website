@@ -66,7 +66,21 @@ const extracurriculars = [
 const searchInput = document.querySelector(".search_bar")
 const searchButton = document.getElementById("search")
 
-// searchButton.addEventListener("input", (e))
+searchButton.addEventListener("click", function() {
+    alert("hello world")
+    let value = e.target.value
+    clearList()
+
+    // Checking if there's any input inside the search bar
+    if (value && value.trim().length > 0){
+        value = value.trim().toLowerCase()
+
+        // Only returning those results of the showResults that match the user input in the search bar
+        showResults(extracurriculars.filter(extracurriculars => {
+            return extracurriculars.name.includes(value)
+        }))
+    }
+});
 
 searchInput.addEventListener("input", (e) => {
     let value = e.target.value
@@ -81,7 +95,8 @@ searchInput.addEventListener("input", (e) => {
             return extracurriculars.name.includes(value)
         }))
     }
-})
+});
+
 
 // Showing results from the search
 function showResults(results){
@@ -126,41 +141,41 @@ function clearList(){
     }
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+// var slideIndex = 1;
+// showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
+// function showSlides(n) {
+//   var i;
+//   var slides = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("dot");
+//   if (n > slides.length) {slideIndex = 1}    
+//   if (n < 1) {slideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//       slides[i].style.display = "none";  
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//       dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";  
+//   dots[slideIndex-1].className += " active";
+// }
 
-var iframe = top.frames[name].document;
-var css = '' +
-          '<style type="text/css">' +
-          'body{margin:0;padding:0;background:transparent}' +
-          '</style>';
-iframe.open();
-iframe.write(css);
-iframe.close();
+// var iframe = top.frames[name].document;
+// var css = '' +
+//           '<style type="text/css">' +
+//           'body{margin:0;padding:0;background:transparent}' +
+//           '</style>';
+// iframe.open();
+// iframe.write(css);
+// iframe.close();
 
 // Slide Show Code
 // var slideIndex = 0;
