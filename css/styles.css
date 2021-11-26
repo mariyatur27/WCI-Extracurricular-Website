@@ -530,9 +530,6 @@ progress {
     color:  yellow;
   }
   .carousel_item{
-    color:  grey;
-    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-    padding: 3%;
     display:  flex;
   }
   img.c_image {
@@ -557,6 +554,49 @@ progress {
     border-radius: 33px;
     margin-left: 27%;
     display: block;
+  }
+  .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  }
+  .active {
+  background-color: #717171;
+  }
+  .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  }
+  .carousel_item {
+    display: none;
+  }
+  .slide_show{
+    color:  grey;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 3%;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
   }
   
 }

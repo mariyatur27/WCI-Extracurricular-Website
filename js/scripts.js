@@ -66,8 +66,8 @@ const extracurriculars = [
 const searchInput = document.querySelector(".search_bar")
 const searchButton = document.getElementById("search")
 
-searchButton.addEventListener("click", function() {
-    alert("hello world")
+searchButton.addEventListener("click", function(e) {
+    // alert("hello world")
     let value = e.target.value
     clearList()
 
@@ -97,30 +97,6 @@ searchInput.addEventListener("input", (e) => {
     }
 });
 
-
-// // Showing results from the search
-// function showResults(results){
-//     for (const extracurriculars of results){
-//         // Making each result item a list
-//         const resultItem = document.createElement('li')
-//         // const link = document.createElement('a')
-
-//         // Assigning a class to each result element
-//         resultItem.classList.add('result-item')
-
-//         // link.href = document.create(extracurriculars.class)
-
-//         // Making the name of the extracurricular the list item's text
-//         const text = document.createTextNode(extracurriculars.name)
-
-//         resultItem.appendChild(text)
-//         // list.appendChild(link)
-//         list.appendChild(resultItem)
-//     }
-//     if (results.length === 0) {
-//         noResults()
-//     }
-// }
 
 // Showing results from the search
 function showResults(results){
@@ -163,59 +139,22 @@ function clearList(){
     }
 }
 
-// var slideIndex = 1;
-// showSlides(slideIndex);
+var slideIndex = 0;
+showSlides();
 
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {slideIndex = 1}    
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";  
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//       dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";  
-//   dots[slideIndex-1].className += " active";
-// }
-
-// var iframe = top.frames[name].document;
-// var css = '' +
-//           '<style type="text/css">' +
-//           'body{margin:0;padding:0;background:transparent}' +
-//           '</style>';
-// iframe.open();
-// iframe.write(css);
-// iframe.close();
-
-// Slide Show Code
-// var slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//   var i;
-//   var slides = document.getElementsByClassName("carousel_item");
-//   var dots = document.getElementsByClassName("dot");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";  
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}    
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";  
-//   dots[slideIndex-1].className += " active";
-//   setTimeout(showSlides, 5000); // Change image every 2 seconds
-// }
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("carousel_item");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 6 seconds
+}
