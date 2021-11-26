@@ -70,6 +70,7 @@ const searchButton = document.getElementById("search")
 
 searchInput.addEventListener("input", (e) => {
     let value = e.target.value
+    clearList()
 
     // Checking if there's any input inside the search bar
     if (value && value.trim().length > 0){
@@ -79,8 +80,6 @@ searchInput.addEventListener("input", (e) => {
         showResults(extracurriculars.filter(extracurriculars => {
             return extracurriculars.name.includes(value)
         }))
-    }else{
-        clearList()
     }
 })
 
