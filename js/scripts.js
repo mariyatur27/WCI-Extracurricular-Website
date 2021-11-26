@@ -98,24 +98,46 @@ searchInput.addEventListener("input", (e) => {
 });
 
 
+// // Showing results from the search
+// function showResults(results){
+//     for (const extracurriculars of results){
+//         // Making each result item a list
+//         const resultItem = document.createElement('li')
+//         // const link = document.createElement('a')
+
+//         // Assigning a class to each result element
+//         resultItem.classList.add('result-item')
+
+//         // link.href = document.create(extracurriculars.class)
+
+//         // Making the name of the extracurricular the list item's text
+//         const text = document.createTextNode(extracurriculars.name)
+
+//         resultItem.appendChild(text)
+//         // list.appendChild(link)
+//         list.appendChild(resultItem)
+//     }
+//     if (results.length === 0) {
+//         noResults()
+//     }
+// }
+
 // Showing results from the search
 function showResults(results){
     for (const extracurriculars of results){
-        // Making each result item a list
-        const resultItem = document.createElement('li')
-        // const link = document.createElement('a')
+        const resultItem = document.createElement('a')
+        var link = document.createTextNode(extracurriculars.name)
+        var results = document.getElementById("list")
 
-        // Assigning a class to each result element
+        resultItem.appendChild(link)
+        // resultItem.appendChild(source)
+
         resultItem.classList.add('result-item')
 
-        // link.href = document.create(extracurriculars.class)
+        resultItem.href = extracurriculars.class
 
-        // Making the name of the extracurricular the list item's text
-        const text = document.createTextNode(extracurriculars.name)
-
-        resultItem.appendChild(text)
-        // list.appendChild(link)
-        list.appendChild(resultItem)
+        resultItem.title = document.createTextNode(extracurriculars.name)
+        results.appendChild(resultItem)
     }
     if (results.length === 0) {
         noResults()

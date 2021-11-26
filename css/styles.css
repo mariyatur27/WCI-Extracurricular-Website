@@ -546,7 +546,7 @@ progress {
   svg.svg-inline--fa.fa-arrow-left.fa-w-14 {
     margin-top: 7%;
   }
-  li.result-item {
+  a.result-item {
     text-align: center;
     list-style-type: none;
     background-color: #f2f2f2;
@@ -556,6 +556,7 @@ progress {
     margin-top: 1%;
     border-radius: 33px;
     margin-left: 27%;
+    display: block;
   }
   
 }
