@@ -529,7 +529,26 @@ progress {
   #search_button{
     color:  yellow;
   }
+  .carousel_item{
+    color:  grey;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 3%;
+    display:  flex;
+  }
+  img.c_image {
+    width: 74%;
+    border-radius: 50%;
+    margin-bottom: 7%;
+  }
+  svg.svg-inline--fa.fa-arrow-right.fa-w-14 {
+    margin-top: 7%;
+  }
+  svg.svg-inline--fa.fa-arrow-left.fa-w-14 {
+    margin-top: 7%;
+  }
+  
 }
+
 
 .display-3 {
   font-size: calc(1.525rem + 3.3vw);
