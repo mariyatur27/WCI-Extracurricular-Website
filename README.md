@@ -7,5 +7,5 @@
 </p>
 
 <p align="center">
-   Explore the endless options available at <a href="https://mariyatur27.github.io/WCI-Extracurricular-Website/">WCI Extracurriculars</a>.
+   Explore the endless options available at <a href="https://mariyatur27.github.io/WCI-Extracurricular-Website/" target="_blank">WCI Extracurriculars</a>.
 </p>
