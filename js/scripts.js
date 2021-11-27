@@ -66,37 +66,20 @@ const extracurriculars = [
 const searchInput = document.querySelector(".search_bar")
 const searchButton = document.getElementById("search")
 
-searchButton.addEventListener("click", function(e) {
-    // alert("hello world")
-    let value = e.target.value
-    clearList()
+function searchMainPage(value) {
+    clearList();
+    console.log(value);
 
     // Checking if there's any input inside the search bar
     if (value && value.trim().length > 0){
-        value = value.trim().toLowerCase()
+        value = value.trim().toLowerCase();
 
         // Only returning those results of the showResults that match the user input in the search bar
         showResults(extracurriculars.filter(extracurriculars => {
-            return extracurriculars.name.includes(value)
+            return extracurriculars.name.toLowerCase().includes(value);
         }))
     }
-});
-
-searchInput.addEventListener("input", (e) => {
-    let value = e.target.value
-    clearList()
-
-    // Checking if there's any input inside the search bar
-    if (value && value.trim().length > 0){
-        value = value.trim().toLowerCase()
-
-        // Only returning those results of the showResults that match the user input in the search bar
-        showResults(extracurriculars.filter(extracurriculars => {
-            return extracurriculars.name.includes(value)
-        }))
-    }
-});
-
+}
 
 // Showing results from the search
 function showResults(results){

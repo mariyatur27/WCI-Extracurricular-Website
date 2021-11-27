@@ -45,8 +45,8 @@
                 <div class="masthead-heading text-uppercase">Explore Your Options</div>
                 <!-- Making a Search Bar -->
                 <form class="form">
-                    <input type="text" id="search_bar" class="search_bar" placeholder="Search a club or sports team...">
-                    <a class="btn btn-primary btn-xl text-uppercase" id="search">Search</a>
+                    <input type="text" id="search_bar" class="search_bar" placeholder="Search a club or sports team..." oninput="searchMainPage(this.value);">
+                    <a class="btn btn-primary btn-xl text-uppercase" id="search_button" href="#" onclick="searchMainPage(document.getElementById('search_bar').value);">Search</a>
                 </form>
                 <div class="results_container">
                     <ul class="results_list" id="list">
