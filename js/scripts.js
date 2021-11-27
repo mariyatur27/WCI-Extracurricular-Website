@@ -155,4 +155,19 @@ function showSlides() {
   slides[slideIndex-1].style.display = "flex";  
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 6 seconds
+};
+
+function expand() {
+    var content = document.getElementById("test");
+    var arrow_up = document.getElementById("up")
+    var arrow_down = document.getElementById("down")
+    if (content.style.display === "block") {
+      content.style.display = "none";
+      arrow_up.style.display = "none";
+      arrow_down.style.display = "block";
+    } else {
+      content.style.display = "block";
+      arrow_down.style.display = "none";
+      arrow_up.style.display = "block";
+    }
 }

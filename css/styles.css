@@ -595,12 +595,39 @@ progress {
     display: flex;
   }
   .club_box {
-    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
     padding: 3%;
-    width: 47%;
+    /*width: 47%;*/
     margin-top: 7%;
     display: flex;
     margin-left: 1%;
+    width: 96%;
+  }
+  .expand_box{
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 3%;
+    /*width: 47%;*/
+    text-align: left;
+    margin-top: 0%;
+    display: flex;
+    margin-left: 1%;
+    width: 96%;
+    display:  none;
+  }
+  button#drop {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+  }
+  #up {
+    display: none;
+    margin-left: 6%;
+    margin-top: 1%;
+  }
+  svg.svg-inline--fa.fa-search.fa-w-16 {
+    position: absolute;
+    margin-top: 3.7%;
+    margin-left: -3%;
   }
   .together{
     display:  flex;
@@ -609,7 +636,13 @@ progress {
     margin-left: 6%;
     margin-top: 1%;
   }
+  #down {
+    display:  block;
+  }
   .club_sec {
+    display: block;
+  }
+  .seperate{
     display: block;
   }
   .club_info {
