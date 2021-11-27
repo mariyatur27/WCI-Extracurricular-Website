@@ -144,22 +144,25 @@ showSlides(5, 0);
 function showSlides(amount, offset) {
     var slideShowCards = document.getElementById("slide_show_cards");
     slideShowCards.innerHTML = "";
+    while (offset >= extracurriculars.length) {offset -= extracurriculars.length}
     for (var i = 0; i < amount; i++) {
         var club_index = offset + i;
-        while (club_index >= extracurriculars.length) {club_index = club_index-extracurriculars.length}
+        while (club_index >= extracurriculars.length) {club_index -= extracurriculars.length}
         var carousel_item = document.createElement("div");
         carousel_item.classList.add("c_item");
         var link = document.createElement("a");
         var image = document.createElement("img");
+        image.classList.add("c_image");
         var club_name_header = document.createElement("h5");
+
         link.href = "index.html";
         image.src = extracurriculars[club_index]["image"];
         club_name_header.innerText = extracurriculars[club_index]["name"];
-        image.classList.add("c_image");
+
         link.appendChild(image);
         carousel_item.appendChild(link);
         carousel_item.appendChild(club_name_header)
         slideShowCards.appendChild(carousel_item);
     }
-    setTimeout(() => {showSlides(amount, offset+1);}, 5000);
+    setTimeout(() => {showSlides(amount, offset+1);}, 2000);
 }
