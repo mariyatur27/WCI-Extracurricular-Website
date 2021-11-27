@@ -137,25 +137,71 @@ function clearList(){
     list.innerHTML = "";
 }
 
-var slideIndex = 0;
-showSlides();
+// var slideIndex = 0;
+// showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("carousel_item");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "flex";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 6 seconds
-};
+// function showSlides() {
+//   var i;
+//   var slides = document.getElementsByClassName("carousel_item");
+//   var dots = document.getElementsByClassName("dot");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";  
+//   }
+//   slideIndex++;
+//   if (slideIndex > slides.length) {slideIndex = 1}    
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   slides[slideIndex-1].style.display = "flex";  
+//   dots[slideIndex-1].className += " active";
+//   setTimeout(showSlides, 2000); // Change image every 6 seconds
+// };
+
+showSlides(5, 0);
+function showSlides(amount, offset) {
+    // Get the div we're using
+    var slideShowCards = document.getElementById("slide_show_cards");
+
+    // Clear it
+    slideShowCards.innerHTML = "";
+
+    // Ensure that offset isn't overly large
+    while (offset >= extracurriculars.length) {offset -= extracurriculars.length}
+    for (var i = 0; i < amount; i++) {
+        // Calculate which extracurricular we'll be using
+        var club_index = offset + i;
+
+        // Loop over to the start again if needed 
+        while (club_index >= extracurriculars.length) {club_index -= extracurriculars.length}
+
+        // Create a div for our item
+        var carousel_item = document.createElement("div");
+        carousel_item.classList.add("c_item");
+
+        // Link, image and name for our item
+        var link = document.createElement("a");
+        var image = document.createElement("img");
+        image.classList.add("c_image");
+        var club_name_header = document.createElement("h5");
+
+        // Set the link, image and name
+        link.href = "index.html";
+        image.src = extracurriculars[club_index]["image"];
+        club_name_header.innerText = extracurriculars[club_index]["name"];
+        
+        // Add the image to the link
+        link.appendChild(image);
+
+        // Add the link & name header to the slide
+        carousel_item.appendChild(link);
+        carousel_item.appendChild(club_name_header);
+
+        // Add the slide
+        slideShowCards.appendChild(carousel_item);
+    }
+    // Schedule us to run again in 2 seconds, with the offset increased by 1
+    setTimeout(() => {showSlides(amount, offset+1);}, 2000);
+}
 
 // Id Function
 function createId() {
