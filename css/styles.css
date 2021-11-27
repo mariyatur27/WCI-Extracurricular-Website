@@ -568,9 +568,9 @@ a.result-item {
   p.descrp {
     text-align: left;
   }
-  .active {
+  /* .active {
   background-color: #717171;
-  }
+  } */
   .slideshow-container {
   max-width: 1000px;
   position: relative;
