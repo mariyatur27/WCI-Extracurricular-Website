@@ -529,6 +529,21 @@ img.c_image {
   border-radius: 50%;
   margin-bottom: 7%;
 }
+#search_button{
+  color:  yellow;
+}
+a.result-item {
+  text-align: center;
+  list-style-type: none;
+  background-color: #f2f2f2;
+  color: black;
+  width: 35%;
+  padding: 1% 1%;
+  margin-top: 1%;
+  border-radius: 33px;
+  margin-left: 27%;
+  display: block;
+}
 @media (min-width: 1200px) {
   .display-2 {
     font-size: 4.5rem;
@@ -538,9 +553,6 @@ img.c_image {
   }
   .together{
     display: flex;
-  }
-  #search_button{
-    color:  yellow;
   }
   svg.svg-inline--fa.fa-arrow-right.fa-w-14 {
     margin-top: 7%;
@@ -556,27 +568,6 @@ img.c_image {
   p.descrp {
     text-align: left;
   }
-  a.result-item {
-    text-align: center;
-    list-style-type: none;
-    background-color: #f2f2f2;
-    color: black;
-    width: 35%;
-    padding: 1% 1%;
-    margin-top: 1%;
-    border-radius: 33px;
-    margin-left: 27%;
-    display: block;
-  }
-  .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  }
   .active {
   background-color: #717171;
   }
@@ -584,9 +575,6 @@ img.c_image {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  }
-  .carousel_item {
-    display: none;
   }
   .slide_show{
     color:  grey;

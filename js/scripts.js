@@ -55,11 +55,13 @@ window.addEventListener('DOMContentLoaded', event => {
 
 // Code for the search bar
 const extracurriculars = [
-    { name: "web-dev club", class: "#contact"},
-    { name: "robotics club", class: "#about"},
-    { name: "computer science club", class: "#team"},
-    { name: "math club", class: "#portfolio"},
-    { name: "debate club", class: "#team"},
+    { name: "Web-dev club", class: "#contact", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+    { name: "Robotics club", class: "#about", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+    { name: "Computer science club", class: "#team", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+    { name: "Math club", class: "#portfolio", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+    { name: "Debate club", class: "#team", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+    { name: "Science club", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+    { name: "Art club", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
 ]
 
 // Establishing event-listeners for the button
@@ -137,26 +139,6 @@ function clearList(){
     list.innerHTML = "";
 }
 
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("carousel_item");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "flex";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 6 seconds
-};
-
 // Expand function
 function expand() {
     var content = document.getElementById("test");
@@ -171,4 +153,50 @@ function expand() {
       arrow_down.style.display = "none";
       arrow_up.style.display = "block";
     }
+}
+
+showSlides(5, 0);
+function showSlides(amount, offset) {
+    // Get the div we're using
+    var slideShowCards = document.getElementById("slide_show_cards");
+
+    // Clear it
+    slideShowCards.innerHTML = "";
+
+    // Ensure that offset isn't overly large
+    while (offset >= extracurriculars.length) {offset -= extracurriculars.length}
+    for (var i = 0; i < amount; i++) {
+        // Calculate which extracurricular we'll be using
+        var club_index = offset + i;
+
+        // Loop over to the start again if needed 
+        while (club_index >= extracurriculars.length) {club_index -= extracurriculars.length}
+
+        // Create a div for our item
+        var carousel_item = document.createElement("div");
+        carousel_item.classList.add("c_item");
+
+        // Link, image and name for our item
+        var link = document.createElement("a");
+        var image = document.createElement("img");
+        image.classList.add("c_image");
+        var club_name_header = document.createElement("h5");
+
+        // Set the link, image and name
+        link.href = "index.html";
+        image.src = extracurriculars[club_index]["image"];
+        club_name_header.innerText = extracurriculars[club_index]["name"];
+        
+        // Add the image to the link
+        link.appendChild(image);
+
+        // Add the link & name header to the slide
+        carousel_item.appendChild(link);
+        carousel_item.appendChild(club_name_header);
+
+        // Add the slide
+        slideShowCards.appendChild(carousel_item);
+    }
+    // Schedule us to run again in 2 seconds, with the offset increased by 1
+    setTimeout(() => {showSlides(amount, offset+1);}, 2000);
 }
