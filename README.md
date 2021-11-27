@@ -1,5 +1,5 @@
 <h1 align="center">
-    WCI-Extracurricular-Website
+    WCI Extracurricular Website
 </h1>
 
 <p align="center">
