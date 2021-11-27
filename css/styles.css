@@ -516,6 +516,19 @@ progress {
   border-radius: 27px;
   border: none;
 }
+.carousel_item{
+  display:  flex;
+}
+.slide_show{
+  color:  grey;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  padding: 3%;
+}
+img.c_image {
+  width: 74%;
+  border-radius: 50%;
+  margin-bottom: 7%;
+}
 @media (min-width: 1200px) {
   .display-2 {
     font-size: 4.5rem;
@@ -528,14 +541,6 @@ progress {
   }
   #search_button{
     color:  yellow;
-  }
-  .carousel_item{
-    display:  flex;
-  }
-  img.c_image {
-    width: 74%;
-    border-radius: 50%;
-    margin-bottom: 7%;
   }
   svg.svg-inline--fa.fa-arrow-right.fa-w-14 {
     margin-top: 7%;
