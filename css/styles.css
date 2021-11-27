@@ -600,6 +600,9 @@ a.result-item {
     display: flex;
     margin-left: 1%;
     width: 96%;
+/*    display:  none;
+*/  }
+  #e1 , #e2 , #e3 , #e4 {
     display:  none;
   }
   button#drop {
@@ -607,7 +610,7 @@ a.result-item {
     border: none;
     width: 100%;
   }
-  #up {
+  #u1 , #u2 , #u3 , #u4 {
     display: none;
     margin-left: 6%;
     margin-top: 1%;
@@ -624,7 +627,7 @@ a.result-item {
     margin-left: 6%;
     margin-top: 1%;
   }
-  #down {
+  #d1 , #d2 , #d3 , #d4 {
     display:  block;
   }
   .club_sec {
