@@ -62,7 +62,18 @@ const extracurriculars = [
     { name: "Debate club", class: "#team", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
     { name: "Science club", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
     { name: "Art club", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
-]
+];
+
+// Code for the athletics in the second carousel
+const athletics = [
+    { name: "Basketball", class: "#about", image:"https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+    { name: "Volleball", class: "#about", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+    { name: "Soccer", class: "#team", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+    { name: "Football", class: "#portfolio", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+    { name: "Hockey", class: "#team", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+    { name: "Skiing", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+    { name: "Cross Country", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+];
 
 // Establishing event-listeners for the button
 const searchInput = document.querySelector(".search_bar")
@@ -133,8 +144,18 @@ function showSlides(amount) {
     for (var club_index = 0; club_index < amount; club_index++) {
         generateSlide(club_index, slideShowCards);
     }
-    // Schedule slides to move in 2 seconds
+    // // Schedule slides to move in 2 seconds
     setTimeout(() => {moveSlides(amount+1, 1);}, 2000);
+}
+showSlides2(5);
+function showSlides2 (amount) {
+    var slideShowCards2 = document.getElementById("slide_show_cards_2");
+    slideShowCards2.innerHTML = "";
+    for (var club_index = 0; club_index < amount; club_index++) {
+        generateSlide2(club_index, slideShowCards2);
+    }
+    // Schedule slides to move in 2 seconds
+    setTimeout(() => {moveSlides2(amount+1, 1);}, 2000);
 }
 
 function moveSlides(startIndex, offset) {
@@ -155,8 +176,26 @@ function moveSlides(startIndex, offset) {
         // Add a new item
         generateSlide(club_index, slideShowCards);
     }
-    // Schedule slides to move again in 2 seconds
     setTimeout(() => {moveSlides(startIndex+offset, offset)}, 2000)
+}
+function moveSlides2(startIndex, offset) {
+    var slideShowCards2 = document.getElementById("slide_show_cards_2");
+    // // Ensure that offset isn't overly large
+    while (offset >= athletics.length) {offset -= athletics.length}
+
+    for (var club_offset = 0; club_offset < offset; club_offset++) {
+        var club_index = startIndex + club_offset;
+        // Get all c_item elements
+        var c_items = document.getElementsByClassName("c_item");
+
+        // Remove the first c_item from the carousel
+        slideShowCards2.removeChild(c_items[0]);
+
+        // Add a new item
+        generateSlide2(club_index, slideShowCards2);
+    }
+    // Schedule slides to move again in 2 seconds
+    setTimeout(() => {moveSlides2(startIndex+offset, offset)}, 2000)
 }
 
 function generateSlide(club_index, slideShowCards) {
@@ -187,6 +226,36 @@ function generateSlide(club_index, slideShowCards) {
 
     // Add the slide
     slideShowCards.appendChild(carousel_item);
+}
+
+function generateSlide2(club_index, slideShowCards2) {
+    // Generating the slides for the athletics
+    while (club_index >= athletics.length) {club_index -= athletics.length}
+
+    // Create a div for our item
+    var carousel_item = document.createElement("div");
+    carousel_item.classList.add("c_item");
+
+    // Link, image and name for our item
+    var link = document.createElement("a");
+    var image = document.createElement("img");
+    image.classList.add("c_image");
+    var club_name_header = document.createElement("h5");
+
+    // Set the link, image and name
+    link.href = "index.html";
+    image.src = athletics[club_index]["image"];
+    club_name_header.innerText = athletics[club_index]["name"];
+
+    // Add the image to the link
+    link.appendChild(image);
+
+    // Add the link & name header to the slide
+    carousel_item.appendChild(link);
+    carousel_item.appendChild(club_name_header);
+
+    // Add the slide
+    slideShowCards2.appendChild(carousel_item);
 }
 
 // Id Function
