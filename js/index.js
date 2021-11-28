@@ -74,46 +74,56 @@ function clearList(){
     list.innerHTML = "";
 }
 
-showSlides(5);
-function showSlides(amount) {
-    // Get the div we're using
-    var slideShowCards = document.getElementById("slide_show_cards");
+// Slide shows
+showSlides(5, [clubs, athletics], ["club_slide_show_cards", "athletics_slide_show_cards"]);
 
-    // Clear it
-    slideShowCards.innerHTML = "";
-
-    for (var club_index = 0; club_index < amount; club_index++) {
-        generateSlide(club_index, slideShowCards);
+function showSlides(amount, slideShowSources, slideShowIds) {
+    if (slideShowSources.length != slideShowIds.length) {
+        throw "Slide show contents and ids are not the same length!"
     }
-    // Schedule slides to move in 2 seconds
-    setTimeout(() => {moveSlides(amount+1, 1);}, 2000);
+    for (var slideShowIndex = 0; slideShowIndex < slideShowSources.length; slideShowIndex++) {
+        // Get the div for this slideshow
+        var slideShowDiv = document.getElementById(slideShowIds[slideShowIndex]);
+
+        // Clear the div
+        slideShowDiv.innerHTML = "";
+
+        // Generate slides for the div
+        for (var cardIndex = 0; cardIndex < amount; cardIndex++) {
+            generateSlide(cardIndex, slideShowSources[slideShowIndex], slideShowDiv);
+        }
+    }
+    // Schedule the slides to move in 2 seconds
+    setTimeout(moveSlides, 2000, amount+1, 1, slideShowSources, slideShowIds);
 }
 
-function moveSlides(startIndex, offset) {
-    // Get the div we're using
-    var slideShowCards = document.getElementById("slide_show_cards");
+function moveSlides(startIndex, offset, slideShowSources, slideShowDivIds) {
+    for (var slideShowIndex = 0; slideShowIndex < slideShowSources.length; slideShowIndex++) {
+        // Get the div we're using
+        var slideShowDiv = document.getElementById(slideShowDivIds[slideShowIndex]);
+        var slideShowSource = slideShowSources[slideShowIndex];
+        // Ensure that offset isn't overly large
+        while (offset >= slideShowSource.length) {offset -= slideShowSource.length}
 
-    // Ensure that offset isn't overly large
-    while (offset >= extracurriculars.length) {offset -= extracurriculars.length}
+        for (var new_offset = 0; new_offset < offset; new_offset++) {
+            var index = startIndex + new_offset;
+            // Get all c_item elements in our div
+            var c_items = slideShowDiv.getElementsByClassName("c_item");
 
-    for (var club_offset = 0; club_offset < offset; club_offset++) {
-        var club_index = startIndex + club_offset;
-        // Get all c_item elements
-        var c_items = document.getElementsByClassName("c_item");
+            // Remove the first c_item from the carousel
+            slideShowDiv.removeChild(c_items[0]);
 
-        // Remove the first c_item from the carousel
-        slideShowCards.removeChild(c_items[0]);
-
-        // Add a new item
-        generateSlide(club_index, slideShowCards);
+            // Add a new item
+            generateSlide(index, slideShowSource, slideShowDiv);
+        }
     }
     // Schedule slides to move again in 2 seconds
-    setTimeout(() => {moveSlides(startIndex+offset, offset)}, 2000)
+    setTimeout(moveSlides, 2000, startIndex+offset, offset, slideShowSources, slideShowDivIds);
 }
 
-function generateSlide(club_index, slideShowCards) {
-    // Loop over to the start again if needed 
-    while (club_index >= extracurriculars.length) {club_index -= extracurriculars.length}
+function generateSlide(index, slideShowCards, slideShowDiv) {
+    // Ensure that index is not larger than necessary
+    while (index >= slideShowCards.length) {index -= slideShowCards.length}
 
     // Create a div for our item
     var carousel_item = document.createElement("div");
@@ -127,8 +137,8 @@ function generateSlide(club_index, slideShowCards) {
 
     // Set the link, image and name
     link.href = "index.html";
-    image.src = extracurriculars[club_index]["image"];
-    club_name_header.innerText = extracurriculars[club_index]["name"];
+    image.src = slideShowCards[index]["image"];
+    club_name_header.innerText = slideShowCards[index]["name"];
 
     // Add the image to the link
     link.appendChild(image);
@@ -138,6 +148,6 @@ function generateSlide(club_index, slideShowCards) {
     carousel_item.appendChild(club_name_header);
 
     // Add the slide
-    slideShowCards.appendChild(carousel_item);
+    slideShowDiv.appendChild(carousel_item);
 }
 
