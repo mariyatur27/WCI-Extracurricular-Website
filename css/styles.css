@@ -600,10 +600,9 @@ a.result-item {
   .club_row {
     display: flex;
   }
-  .club_box {
+  .club_header {
     box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
     padding: 3%;
-    /*width: 47%;*/
     margin-top: 7%;
     display: flex;
     margin-left: 1%;
@@ -612,26 +611,28 @@ a.result-item {
   .expand_box{
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     padding: 3%;
-    /*width: 47%;*/
     text-align: left;
     margin-top: 0%;
-    display: flex;
+    display: block;
     margin-left: 1%;
     width: 96%;
-/*    display:  none;
-*/  }
-  #e1 , #e2 , #e3 , #e4 {
-    display:  none;
+    display: none;
   }
-  button#drop {
+  .active .expand_box {
+    display: block;
+  }
+  .drop {
     background-color: transparent;
     border: none;
     width: 100%;
   }
-  #u1 , #u2 , #u3 , #u4 {
+  .club_box .up {
     display: none;
     margin-left: 6%;
     margin-top: 1%;
+  }
+  .active .up {
+    display: block;
   }
   svg.svg-inline--fa.fa-search.fa-w-16 {
     position: absolute;
@@ -645,8 +646,11 @@ a.result-item {
     margin-left: 6%;
     margin-top: 1%;
   }
-  #d1 , #d2 , #d3 , #d4 {
-    display:  block;
+  .club_box .down {
+    display: block;
+  }
+  .active .down {
+    display: none;
   }
   .club_sec {
     display: block;
