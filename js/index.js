@@ -75,9 +75,11 @@ function clearList(){
 }
 
 // Slide shows
-showSlides(5, [clubs, athletics], ["club_slide_show_cards", "athletics_slide_show_cards"]);
+showSlides(Math.floor(window.innerWidth/260), [clubs, athletics], ["club_slide_show_cards", "athletics_slide_show_cards"], true);
 
-function showSlides(amount, slideShowSources, slideShowIds) {
+window.onresize = () => {showSlides(Math.floor(window.innerWidth/260), [clubs, athletics], ["club_slide_show_cards", "athletics_slide_show_cards"], false)}
+
+function showSlides(amount, slideShowSources, slideShowIds, scheduleMoves) {
     if (slideShowSources.length != slideShowIds.length) {
         throw "Slide show contents and ids are not the same length!"
     }
@@ -93,8 +95,10 @@ function showSlides(amount, slideShowSources, slideShowIds) {
             generateSlide(cardIndex, slideShowSources[slideShowIndex], slideShowDiv);
         }
     }
-    // Schedule the slides to move in 2 seconds
-    setTimeout(moveSlides, 2000, amount+1, 1, slideShowSources, slideShowIds);
+    // Schedule the slides to move in 2 seconds, if we need to
+    if (scheduleMoves) {
+        setTimeout(moveSlides, 2000, amount+1, 1, slideShowSources, slideShowIds);
+    }
 }
 
 function moveSlides(startIndex, offset, slideShowSources, slideShowDivIds) {
