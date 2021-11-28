@@ -521,6 +521,11 @@ li.error-message {
     margin-left: -23%;
     margin-top: 1%;
 }
+img.icons {
+    width: 5%;
+    margin-right: 2%;
+    margin-top: 3%;
+  }
 .lrn{
    display: list-item;    
   } 
