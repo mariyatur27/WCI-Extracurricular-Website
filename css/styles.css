@@ -565,6 +565,16 @@ a.result-item {
   margin-left: 27%;
   display: block;
 }
+button.web_button {
+  background-color: #3c7fcf;
+  border: none;
+  font-size: 100%;
+  color: white;
+  transition: background-color 1s ease-out 100ms
+}
+button.web_button:hover{
+  background-color: #ffc800;
+}
 @media (min-width: 1200px) {
   .display-2 {
     font-size: 4.5rem;
@@ -581,16 +591,6 @@ a.result-item {
   }
   .text_p{
     width:  70%;
-  }
-  button.web_button {
-    background-color: #3c7fcf;
-    border: none;
-    font-size: 100%;
-    color: white;
-    transition: background-color 1s ease-out 100ms
-  }
-  button.web_button:hover{
-    background-color: #ffc800;
   }
   svg.svg-inline--fa.fa-arrow-right.fa-w-14 {
     margin-top: 7%;
