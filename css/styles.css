@@ -516,6 +516,21 @@ progress {
   border-radius: 27px;
   border: none;
 }
+li.error-message {
+    list-style-type: none;
+    margin-left: -23%;
+    margin-top: 1%;
+}
+.lrn{
+   display: list-item;    
+  } 
+.club_box {
+    list-style-type: none;
+}
+.together2{
+  width: 104%;
+  display:  flex;
+}
 .carousel_item{
   display:  flex;
 }

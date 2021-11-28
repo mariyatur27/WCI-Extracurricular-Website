@@ -321,3 +321,19 @@ function expand() {
       arrow_up.style.display = "block";
     }
 };
+// Function for the club search bar
+function search_club() {
+    var input = document.getElementById('club_search').value
+    input=input.toLowerCase();
+    var club_name = document.getElementsByClassName('lrn');
+    var box = document.getElementsByClassName('club_box');
+      
+    for (i = 0; i < club_name.length; i++) { 
+        if (!club_name[i].innerHTML.toLowerCase().includes(input)) {
+            box[i].style.display="none";
+        }
+        else {
+            box[i].style.display="list-item";                 
+        }
+    }
+}
