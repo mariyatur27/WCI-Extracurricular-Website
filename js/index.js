@@ -73,13 +73,13 @@ function noResults() {
 function clearList(){
     list.innerHTML = "";
 }
-
+var slideIndexes = [];
 // Slide shows
 showSlides(Math.floor(window.innerWidth/260), [clubs, athletics], ["club_slide_show_cards", "athletics_slide_show_cards"], true);
 
 window.onresize = () => {showSlides(Math.floor(window.innerWidth/260), [clubs, athletics], ["club_slide_show_cards", "athletics_slide_show_cards"], false)}
 
-function showSlides(amount, slideShowSources, slideShowIds, scheduleMoves) {
+function showSlides(amount, slideShowSources, slideShowIds, reset) {
     if (slideShowSources.length != slideShowIds.length) {
         throw "Slide show contents and ids are not the same length!"
     }
@@ -92,21 +92,31 @@ function showSlides(amount, slideShowSources, slideShowIds, scheduleMoves) {
 
         // Generate slides for the div
         for (var cardIndex = 0; cardIndex < amount; cardIndex++) {
-            generateSlide(cardIndex, slideShowSources[slideShowIndex], slideShowDiv);
+            if (!reset) {
+                var slideIndex = cardIndex + slideIndexes[slideShowIndex]
+            } else {
+                var slideIndex = cardIndex
+            }
+            generateSlide(slideIndex, slideShowSources[slideShowIndex], slideShowDiv);
+        }
+        if (reset) {
+            slideIndexes.push(0);
         }
     }
     // Schedule the slides to move in 2 seconds, if we need to
-    if (scheduleMoves) {
+    if (reset) {
         setTimeout(moveSlides, 2000, amount+1, 1, slideShowSources, slideShowIds);
     }
 }
 
 function moveSlides(startIndex, offset, slideShowSources, slideShowDivIds) {
     for (var slideShowIndex = 0; slideShowIndex < slideShowSources.length; slideShowIndex++) {
+        slideIndexes[slideShowIndex] += offset;
         // Get the div we're using
         var slideShowDiv = document.getElementById(slideShowDivIds[slideShowIndex]);
         var slideShowSource = slideShowSources[slideShowIndex];
-        // Ensure that offset isn't overly large
+        // Ensure that offset and index aren't overly large
+        while (slideIndexes[slideShowIndex] >= slideShowSource.length) {slideIndexes[slideShowIndex] -= slideShowSource.length} 
         while (offset >= slideShowSource.length) {offset -= slideShowSource.length}
 
         for (var new_offset = 0; new_offset < offset; new_offset++) {
@@ -121,6 +131,7 @@ function moveSlides(startIndex, offset, slideShowSources, slideShowDivIds) {
             generateSlide(index, slideShowSource, slideShowDiv);
         }
     }
+    console.log(slideIndexes)
     // Schedule slides to move again in 2 seconds
     setTimeout(moveSlides, 2000, startIndex+offset, offset, slideShowSources, slideShowDivIds);
 }
