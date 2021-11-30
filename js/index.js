@@ -9,13 +9,9 @@ async function searchMainPage(value) {
         value = value.trim().toLowerCase();
 
         // Only returning those results of the showResults that match the user input in the search bar
-        showResults(clubs.filter(club => {
-            return club.name.toLowerCase().includes(value);
-        }).concat(athletics.filter(sport => {
-            return sport.name.toLowerCase().includes(value);
-        }).concat(music.filter(music => {
-            return music.name.toLowerCase().includes(value); 
-        }))))
+        showResults(clubs.concat(athletics).concat(music).filter(activity => {
+            return activity.name.toLowerCase().includes(value);
+        }));
     }
 }
 
