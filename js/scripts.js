@@ -53,33 +53,23 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+// Filter button function
+function dropdown() {
+  document.getElementById("dropdown_content").classList.toggle("show");
+};
+
 // Id Function
-function createId() {
-        var c_box = document.getElementsByClassName("club_box");
-        var e_box = document.getElementsByClassName("expand_box");
-        for (n=0, length = e_box.length; n < length; n++){
-            e_box[n].id = "e" + (n + 1);
-            console.log(e_box.id);
-        }
-    }; 
+// function createId() {
+//         var c_box = document.getElementsByClassName("club_box");
+//         var e_box = document.getElementsByClassName("expand_box");
+//         for (n=0, length = e_box.length; n < length; n++){
+//             e_box[n].id = "e" + (n + 1);
+//             console.log(e_box.id);
+//         }
+//     }; 
 
-createId();
+// createId();
 
-// Expand function
-// function expand() {
-//     var content = document.getElementById("test");
-//     var arrow_up = document.getElementById("up")
-//     var arrow_down = document.getElementById("down")
-//     if (content.style.display === "block") {
-//       content.style.display = "none";
-//       arrow_up.style.display = "none";
-//       arrow_down.style.display = "block";
-//     } else {
-//       content.style.display = "block";
-//       arrow_down.style.display = "none";
-//       arrow_up.style.display = "block";
-//     }
-// }
 
 function expand() {
     var idList = ["e1", "e2"];
@@ -132,3 +122,4 @@ function search_club() {
         }
     }
 }
+

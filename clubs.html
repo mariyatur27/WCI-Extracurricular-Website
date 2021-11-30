@@ -49,9 +49,30 @@
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase" id="clubs_title">Clubs</h2>
                     <p class="descrp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.</p>
-                    <!-- Search Bar -->
-                    <input type="text" id="club_search" class="club_search" onkeyup="search_club()" placeholder="Search for a club...">
-                    <i class="fas fa-search"></i>
+                    <!-- Search Bar & Filter Button -->
+<!--                     <div class="together">
+ -->                        <input type="text" id="club_search" class="club_search" onkeyup="search_club()" placeholder="Search for a club...">
+                        <i class="fas fa-search"></i>
+                        <div class="dropdown">
+                            <button onclick="dropdown()" class="dropbt">Filter</button>
+                            <div id="dropdown_content" class="dropdown_content">
+                                <input type="radio" value="art" namr="art" id="art" class="filterbt">
+                                <label for="art">Art</label><br>
+
+                                <input type="radio" value="stem" namr="stem" id="stem" class="filterbt">
+                                <label for="stem">STEM</label><br>
+
+                                <input type="radio" value="academics" namr="academics" id="academics" class="filterbt">
+                                <label for="academics">Academics</label><br>
+
+                                <input type="radio" value="hobby" namr="hobby" id="hobby" class="filterbt">
+                                <label for="hobby">Hobby</label><br>
+
+                                <input type="radio" value="business" namr="business" id="business" class="filterbt">
+                                <label for="business">Business</label><br>
+                            </div>
+<!--                         </div> -->
+                    </div>
 
                     <div class="clubs">
                     <div class="club_row">
