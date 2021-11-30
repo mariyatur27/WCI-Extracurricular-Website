@@ -620,6 +620,9 @@ button.web_button:hover{
   .club_row {
     display: flex;
   }
+  .seperate {
+    width: 57%;
+  }
   .club_header {
     box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
     padding: 3%;
@@ -635,7 +638,7 @@ button.web_button:hover{
     margin-top: 0%;
     display: block;
     margin-left: 1%;
-    width: 57%;
+    width: 96%;
     display: none;
   }
   .active .expand_box {
