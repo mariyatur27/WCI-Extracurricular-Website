@@ -626,7 +626,7 @@ button.web_button:hover{
     margin-top: 7%;
     display: flex;
     margin-left: 1%;
-    width: 57%;
+    width: 96%;
   }
   .expand_box{
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
@@ -645,6 +645,9 @@ button.web_button:hover{
     background-color: transparent;
     border: none;
     width: 100%;
+  }
+  img.sm_links {
+    width: 4%;
   }
   .club_box .up {
     display: none;
