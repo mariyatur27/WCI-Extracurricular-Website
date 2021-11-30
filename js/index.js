@@ -3,7 +3,6 @@ async function searchMainPage(value) {
         await fetchData();
     }
     clearList();
-    console.log(value);
 
     // Checking if there's any input inside the search bar
     if (value && value.trim().length > 0){
