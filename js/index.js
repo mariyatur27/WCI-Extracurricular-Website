@@ -5,13 +5,21 @@ async function searchMainPage(value) {
     clearList();
 
     // Checking if there's any input inside the search bar
+    var smLinks = document.getElementsByClassName("main_sm_links");
     if (value && value.trim().length > 0){
+        smLinks.forEach((link) => {
+            link.style.display = "none"
+        });
         value = value.trim().toLowerCase();
 
         // Only returning those results of the showResults that match the user input in the search bar
         showResults(clubs.concat(athletics).concat(music).filter(activity => {
             return activity.name.toLowerCase().includes(value);
         }));
+    } else {
+        smLinks.forEach((link) => {
+            link.style.display = "inline"
+        });
     }
 }
 
