@@ -731,6 +731,35 @@ button.web_button:hover{
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   }
 
+  .orchestra {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #CCCCCC;
+    margin: 0;
+    border-radius: 1em;
+    padding: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .orch-head {
+    font-size: 2rem;
+    color: #000000;
+    line-height: 1.2;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: #A7501F;
+  }
+  .orch-p {
+    font-size: 0.875rem;
+    color: #000000;
+    line-height: 1.2;
+  }
+  .link-register {
+    color: #A7501F;
+  }
+
+
   /* Fading animation */
   .fade {
     -webkit-animation-name: fade;
