@@ -682,6 +682,9 @@ button.web_button:hover{
   img.sm_links {
     width: 4%;
   }
+  img.footer_sm_links {
+    width: 7%;
+  }
   .club_box .up {
     display: none;
     margin-left: 6%;
