@@ -1,4 +1,7 @@
-function searchMainPage(value) {
+async function searchMainPage(value) {
+    if (!dataFetched) {
+        await fetchData();
+    }
     clearList();
     console.log(value);
 
