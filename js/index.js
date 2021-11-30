@@ -18,6 +18,12 @@ const athletics = [
     { name: "Cross Country", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
 ];
 
+const music = [
+    { name: "Junior Orchestra", class: "#about", image:"https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+    { name: "Intermediate Orchestra", class: "#about", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+    { name: "Senior Orchestra", class: "#team", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
+]
+
 function searchMainPage(value) {
     clearList();
     console.log(value);
@@ -31,7 +37,9 @@ function searchMainPage(value) {
             return club.name.toLowerCase().includes(value);
         }).concat(athletics.filter(sport => {
             return sport.name.toLowerCase().includes(value);
-        })))
+        }).concat(music.filter(music => {
+            return music.name.toLowerCase().includes(value); 
+        }))))
     }
 }
 
@@ -75,9 +83,9 @@ function clearList(){
 }
 var slideIndexes = [];
 // Slide shows
-showSlides(Math.floor(window.innerWidth/260), [clubs, athletics], ["club_slide_show_cards", "athletics_slide_show_cards"], true);
+showSlides(Math.floor(window.innerWidth/260), [clubs, athletics, music], ["club_slide_show_cards", "athletics_slide_show_cards", "music_slide_show_cards"], true);
 
-window.onresize = () => {showSlides(Math.floor(window.innerWidth/260), [clubs, athletics], ["club_slide_show_cards", "athletics_slide_show_cards"], false)}
+window.onresize = () => {showSlides(Math.floor(window.innerWidth/260), [clubs, athletics, music], ["club_slide_show_cards", "athletics_slide_show_cards", "music_slide_show_cards"], false)}
 
 function showSlides(amount, slideShowSources, slideShowIds, reset) {
     if (slideShowSources.length != slideShowIds.length) {

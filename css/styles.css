@@ -626,7 +626,7 @@ button.web_button:hover{
     margin-top: 7%;
     display: flex;
     margin-left: 1%;
-    width: 96%;
+    width: 57%;
   }
   .expand_box{
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
@@ -635,7 +635,7 @@ button.web_button:hover{
     margin-top: 0%;
     display: block;
     margin-left: 1%;
-    width: 96%;
+    width: 57%;
     display: none;
   }
   .active .expand_box {
