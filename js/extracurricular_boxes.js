@@ -4,6 +4,7 @@ async function setupBoxes(boxesSource, divID) {
     }
 
     let boxes = document.getElementById(divID);
+    boxes.innnerHTML = "";
 
     let boxCount = 0;
 
