@@ -734,6 +734,7 @@ button.web_button:hover{
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   }
 
+
   .orchestra {
     margin: 0;
     padding: 0;
@@ -783,6 +784,16 @@ button.web_button:hover{
   
 }
 
+.nav_season {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav_season a {
+  height: 38px;
+  width: 132px;
+}
 
 .display-3 {
   font-size: calc(1.525rem + 3.3vw);
