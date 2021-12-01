@@ -644,14 +644,14 @@ button.web_button:hover{
   position: relative;
   margin: auto;
   }
-  .lrn {
+  /*.lrn {
     margin-bottom: 43%;
-  }
+  }*/
   .club_row {
     display: flex;
   }
   .seperate {
-    width: 57%;
+    width: 50%;
   }
   .club_header {
     box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
