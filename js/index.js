@@ -35,8 +35,8 @@ function showResults(results){
 
         resultItem.classList.add('result-item')
 
-        resultItem.href = extracurriculars.class
-
+        resultItem.href = extracurriculars.link
+        results.appendChild(resultItem)
         resultItem.title = document.createTextNode(extracurriculars.name)
         results.appendChild(resultItem)
     }
