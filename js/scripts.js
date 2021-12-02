@@ -80,8 +80,9 @@ filter_bt.onclick = function() {
                 document.getElementsByClassName("business_category").style.display = "block";
                 document.getElementsByClassName("stem_category academics_category hobby_category art_category").style.display = "none";
             }
-            else:
+            else{
                 alert("Something went wrong. Please try again.");
+            }
         }
     }
 };

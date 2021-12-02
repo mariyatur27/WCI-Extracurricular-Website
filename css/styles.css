@@ -599,6 +599,11 @@ button.web_button:hover{
     margin-left: 2%;
     margin-top: 1%;
   }
+  .ques_txt {
+    font-weight: 100;
+    font-size: 24px;
+    text-align: left;
+  }
   button.filterbt {
     border: none;
     background: transparent;
@@ -652,6 +657,18 @@ button.web_button:hover{
     margin-left: 1%;
     width: 96%;
   }
+  .question {
+    box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
+    padding: 3% 4%;
+    margin-top: 4%;
+    border-radius: 21px;
+  }
+  .answer {
+    box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
+    padding: 3% 4%;
+    border-radius: 21px;
+    display:  none;
+  }
   .expand_box{
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     padding: 3%;
@@ -695,6 +712,10 @@ button.web_button:hover{
   svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
     margin-left: 6%;
     margin-top: 1%;
+  }
+  #down2 , #up2{
+    margin-left: 99%;
+    margin-top: 0%;
   }
   .club_box .down {
     display: block;
