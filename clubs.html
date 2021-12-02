@@ -52,25 +52,24 @@
                     <p class="descrp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.</p>
                     <!-- Search Bar & Filter Button -->
                     <!--<div class="together">-->
-                        <input type="text" id="club_search" class="club_search" onkeyup="search_club()" placeholder="Search for a club...">
+                        <input type="text" id="club_search" class="club_search" oninput="setupBoxes(clubs, 'club_boxes', null, this.value.toLowerCase());" placeholder="Search for a club...">
                         <i class="fas fa-search"></i>
                         <div class="dropdown">
                             <div id="dropdown_content" class="dropdown_content">
-                                <input type="radio" value="art_category" name="choice" id="art" class="filterbt">
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', filter='art_category');" name="choice" id="art" class="filterbt">
                                 <label for="art">Art</label>
 
-                                <input type="radio" value="stem_category" name="choice" id="stem" class="filterbt">
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', filter='stem_category');" name="choice" id="stem" class="filterbt">
                                 <label for="stem">STEM</label>
 
-                                <input type="radio" value="academics_category" name="choice" id="academics" class="filterbt">
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', filter='academics_category');" name="choice" id="academics" class="filterbt">
                                 <label for="academics">Academics</label>
 
-                                <input type="radio" value="hobby_category" name="choice" id="hobby" class="filterbt">
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', filter='hobby_category');" name="choice" id="hobby" class="filterbt">
                                 <label for="hobby">Hobby</label>
 
-                                <input type="radio" value="business_category" name="choice" id="business" class="filterbt">
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', filter='business_category');" name="choice" id="business" class="filterbt">
                                 <label for="business">Business</label>
-                                <button id="filter_bt" class="dropbt">Filter</button>
                             </div>
                         </div>
                     <!--</div>-->

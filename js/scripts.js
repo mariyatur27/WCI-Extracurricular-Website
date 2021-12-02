@@ -52,21 +52,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
-
-// Filter button function
-let filter_bt = document.querySelector('#filter_bt');
-filter_bt.onclick = function() {
-    const options = document.querySelectorAll('input[name="choice"]');
-    let selection;
-    for (const option of options) {
-        if (option.checked){
-            for (const element of document.getElementsByClassName("club_box")) {element.style.display = "none";};
-            for (const element of document.getElementsByClassName(option.value)) {element.style.display = "block";};
-        }
-    }
-};
-
-
+/* Commented out, as I don't think this section is used any more.
 function expand() {
     var idList = ["e1", "e2"];
     var listLen = idList.length;
@@ -102,20 +88,5 @@ function expand() {
       arrow_up.style.display = "block";
     }
 };
-// Function for the club search bar
-function search_club() {
-    var input = document.getElementById('club_search').value
-    input=input.toLowerCase();
-    var club_name = document.getElementsByClassName('lrn');
-    var box = document.getElementsByClassName('club_box');
-      
-    for (i = 0; i < club_name.length; i++) { 
-        if (!club_name[i].innerHTML.toLowerCase().includes(input)) {
-            box[i].style.display="none";
-        }
-        else {
-            box[i].style.display="list-item";                 
-        }
-    }
-}
 
+*/
