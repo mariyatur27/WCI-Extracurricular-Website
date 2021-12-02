@@ -60,6 +60,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
         }
     });
     if (!(boxCount % countPerRow == 0)) {
+        row = document.createElement("div"); row.classList.add("club_row");
         boxes.appendChild(row);
     }
 }

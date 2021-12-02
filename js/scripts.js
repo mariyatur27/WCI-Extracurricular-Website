@@ -52,6 +52,24 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// Function for the club search bar
+function search_club() {
+    var input = document.getElementById('club_search').value
+    input=input.toLowerCase();
+    var club_name = document.getElementsByClassName('lrn');
+    var box = document.getElementsByClassName('club_box');
+      
+    for (i = 0; i < club_name.length; i++) { 
+        if (!club_name[i].innerHTML.toLowerCase().includes(input)) {
+            box[i].style.display="none";
+        }
+        else {
+            box[i].style.display="list-item";                 
+        }
+    }
+};
+
 /* Commented out, as I don't think this section is used any more.
 function expand() {
     var idList = ["e1", "e2"];
