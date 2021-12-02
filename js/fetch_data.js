@@ -2,9 +2,10 @@ var clubs = [
     {
         "name": "Web-Dev Club",
         "meeting_time": "2:00 PM - 3:00 PM",
+        "connection_links": ["classroom", "instagram", "email"],
         "instagram" : "https://www.instagram.com/wci_web_dev",
-        "google_classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=k2uhtee",
-        "gmail": "turem4748@wrdsb.ca",
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=k2uhtee",
+        "email": "mailto:turem4748@wrdsb.ca",
         "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
@@ -14,9 +15,9 @@ var clubs = [
     {
         "name": "HOSA",
         "meeting_time": "3:00 PM - 4:00 PM",
+        "connection_links": ["instagram", "email"],
         "instagram" : "https://www.instagram.com/wcihosa",
-        "google_classroom": "",
-        "gmail": " wci.hosa@gmail.com ",
+        "email": "mailto:wci.hosa@gmail.com ",
         "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
@@ -26,9 +27,7 @@ var clubs = [
     {
         "name": "Computer Science Club",
         "meeting_time": "2:45 PM - 3:45 PM",
-        "instagram" : "",
-        "google_classroom": "",
-        "gmail": "",
+        "connection_links":[],
         "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
@@ -38,9 +37,7 @@ var clubs = [
     {
         "name": "Math Club",
         "meeting_time": "2:00 PM - 3:00 PM",
-        "instagram" : "",
-        "google_classroom": "",
-        "gmail": "",
+        "connection_links":[],
         "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
@@ -51,9 +48,9 @@ var clubs = [
     {
         "name": "Debate Club",
         "meeting_time": "2:45 PM - 3:45 PM",
+        "connection_links":["instagram", "email"],
         "instagram" : "https://www.instagram.com/wci_debate",
-        "google_classroom": "",
-        "gmail": "wci.viking.debate@gmail.com",
+        "email": "mailto:wci.viking.debate@gmail.com",
         "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
@@ -63,9 +60,9 @@ var clubs = [
     {
         "name": "Science Club",
         "meeting_time": "3:15 PM - 4:15 PM",
+        "connection_links":["instagram", "email"],
         "instagram" : "https://www.instagram.com/wci_science",
-        "google_classroom": "",
-        "gmail": "jocelyn_ridgway@wrdsb.ca",
+        "email": "mailto:jocelyn_ridgway@wrdsb.ca",
         "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
@@ -76,9 +73,9 @@ var clubs = [
     {
         "name": "Viking Venture",
         "meeting_time": "3:30 PM - 4:30 PM",
+        "connection_links":["instagram", "email"],
         "instagram" : "https://www.instagram.com/vikingventure",
-        "google_classroom": "",
-        "gmail": "decavikings@gmail.com",
+        "email": "decavikings@gmail.com",
         "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
@@ -87,15 +84,17 @@ var clubs = [
     }
 ];
 
-// var athletics = [
-//     { name: "Basketball", image:"https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
-//     { name: "Volleyball", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
-//     { name: "Soccer", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
-//     { name: "Football", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
-//     { name: "Hockey", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
-//     { name: "Skiing", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
-//     { name: "Cross Country", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
-// ];
+var connection_links = {
+    "classroom": {
+        "icon": "assets/img/logos/classroom.png"
+    },
+    "instagram": {
+        "icon": "assets/img/logos/instagram.png"
+    },
+    "email": {
+        "icon": "assets/img/logos/email.png"
+    }
+}
 var athletics = [
     {
         "name": "Basketball",
@@ -173,6 +172,7 @@ async function fetchData() {
     clubs = await (await fetch("data/clubs.json")).json();
     athletics = await (await fetch("data/athletics.json")).json();
     music = await (await fetch("data/music.json")).json();
+    connection_links = await (await fetch("data/connection_links.json")).json();
     console.log("fetchData: Done loading data.");
     dataFetched = true;
 }

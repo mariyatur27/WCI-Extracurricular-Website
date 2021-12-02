@@ -522,10 +522,13 @@ li.error-message {
     margin-top: 1%;
 }
 img.icons {
-    width: 5%;
-    margin-right: 2%;
-    margin-top: 3%;
+    width: 100%;
   }
+a.icons {
+  width: 5%;
+  margin-right: 2%;
+  margin-top: 3%;
+}
 .lrn{
    display: list-item;    
   } 

@@ -15,7 +15,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
             if (boxCount % countPerRow == 0) {
                 row = document.createElement("div"); row.classList.add("club_row");
             }
-            let box = document.createElement("div"); box.classList.add("club_box", "seperate"); box.classList.add(...boxData.categories);
+            let box = document.createElement("div"); box.classList.add("club_box", "seperate");
                 let header = document.createElement("div"); header.classList.add("club_header");
                     let main_image = document.createElement("img"); main_image.classList.add("club_img"); main_image.src = boxData.image;
                     header.appendChild(main_image);
@@ -43,25 +43,17 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
                     expand_box.appendChild(summary);
                     let meeting_time_text = document.createElement("h5"); meeting_time_text.innerText = boxData.meeting_time;
                     expand_box.appendChild(meeting_time_text);
-                    let connection_links = document.createElement("div"); connection_links.classList.add("together");
-
-                        let classroom_link_image = document.createElement("img"); classroom_link_image.classList.add("icons"); classroom_link_image.src = "assets/img/logos/classroom.png"
-                        // connection_links.appendChild(classroom_link_image);
-                            // Tristan can you please make this a link? 
-                            let classroom_code = document.createElement("a");
-                            let code_text = document.createTextNode("Google Classroom"); 
-                            classroom_code.appendChild(code_text);
-                            classroom_code.title = "Google Classroom";
-                            classroom_code.href = boxData.google_classroom;
-                            classroom_link_image.appendChild(classroom_code);
-                            connection_links.appendChild(classroom_link_image);
-
-                        let mail_link_image = document.createElement("img"); mail_link_image.classList.add("icons"); mail_link_image.src = "assets/img/logos/email.png";
-                        connection_links.appendChild(mail_link_image);
-
-                        let instagram_link_image = document.createElement("img"); instagram_link_image.classList.add("icons"); instagram_link_image.src = "assets/img/logos/instagram.png"
-                        connection_links.appendChild(instagram_link_image);
-                    expand_box.appendChild(connection_links);
+                    let box_links = document.createElement("div"); box_links.classList.add("together");
+                        for (link of boxData.connection_links) {
+                            if (link in connection_links) {
+                                console.log(boxData)
+                                let link_a = document.createElement("a"); link_a.classList.add("icons"); link_a.href = boxData[link];
+                                let link_image = document.createElement("img"); link_image.classList.add("icons"); link_image.src = connection_links[link].icon;
+                                link_a.appendChild(link_image);
+                                box_links.appendChild(link_a);
+                            }
+                        }
+                    expand_box.appendChild(box_links);
                 box.appendChild(expand_box);
             row.appendChild(box);
             if (boxCount % countPerRow == countPerRow-1) {
