@@ -17,6 +17,10 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- Icons -->
         <script src="https://kit.fontawesome.com/1d181eea71.js" crossorigin="anonymous"></script>
+        <!--filter css -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="quiz/style.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -45,9 +49,40 @@
                 <div class="masthead-heading text-uppercase">Explore Your Options</div>
                 <!-- Making a Search Bar -->
                 <form class="form">
+                    <div class="col-md-10 col-lg-10">
+                    <div class="filter_border">
                     <input type="text" id="search_bar" class="search_bar" placeholder="Search a club or sports team..." oninput="searchMainPage(this.value);">
-                    <a class="btn btn-primary btn-xl text-uppercase" id="search_button" href="#" onclick="searchMainPage(document.getElementById('search_bar').value);">Search</a>
+                    <b class="btn btn-primary btn-xl text-uppercase" id="filter_button">Search</b>
+                    <a class="btn btn-primary btn-xl text-uppercase" id="search_button" href="#" onclick="searchMainPage(document.getElementById('search_bar').value);">Filter</a>
+
+                      <div class="content" style="">
+                          <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                          <div class="ans ml-2">
+                            <label class="radio"> <input type="radio" name="choices" value="Indonesia"> <span>Science</span>
+                            </label>
+                          </div><div class="ans ml-2">
+                            <label class="radio"> <input type="radio" name="choices" value="Russia"> <span>History</span>
+                            </label>
+                          </div><div class="ans ml-2">
+                            <label class="radio"> <input type="radio" name="choices" value="Germany"> <span>Entertainment</span>
+                            </label>
+                          </div><div class="ans ml-2">
+                            <label class="radio"> <input type="radio" name="choices" value="brazil"> <span>Culture</span>
+                            </label>
+                          </div>
+
+                        </div><div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                          <button class="btn btn-primary d-flex align-items-center btn-danger" type="button">
+                            Cancel filter</button>
+
+                      <button class="btn btn-primary border-success align-items-center btn-success" type="button">apply filters</button></div>
+                      </div>
+                      </div>
+
+                    </div>
                 </form>
+                <!-- Making a fillter section -->
+
                 <div class="results_container">
                     <ul class="results_list" id="list">
                         
@@ -604,6 +639,10 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!--filter code JS-->
+        <script src="quiz/scripts.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

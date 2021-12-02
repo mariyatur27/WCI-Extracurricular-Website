@@ -530,12 +530,29 @@ img.c_image {
   margin-bottom: 7%;
 }
 #search_button{
-  color:  yellow;
+  color:  green;
 }
 a.result-item {
   text-align: center;
   list-style-type: none;
   background-color: #f2f2f2;
+  color: black;
+  width: 35%;
+  padding: 1% 1%;
+  margin-top: 1%;
+  border-radius: 33px;
+  margin-left: 27%;
+  display: block;
+}
+
+#filter_button {
+    color: green
+}
+
+b.result-item {
+  text-align: center;
+  list-style-type: none;
+  background-color: yellow;
   color: black;
   width: 35%;
   padding: 1% 1%;
@@ -7101,6 +7118,10 @@ textarea.form-control-lg {
   border-width: 5px !important;
 }
 
+.filter_border {
+    border-width: 0px !important;
+}
+
 .w-25 {
   width: 25% !important;
 }
@@ -11724,7 +11745,7 @@ header.masthead .masthead-heading {
 .timeline > li .timeline-panel {
   position: relative;
   float: right;
-  width: 100%;
+  width: 110%;
   padding: 0 20px 0 100px;
   text-align: left;
 }
@@ -11937,4 +11958,76 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+label.radio {
+  cursor: pointer
+}
+
+label.radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none
+}
+
+label.radio span {
+  padding: 4px 0px;
+  border: 1px solid darkorange;
+  display: inline-block;
+  color: darkorange;
+  width: 100px;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 7px;
+  text-transform: uppercase
+}
+
+label.radio input:checked+span {
+  border-color: darkorange;
+  background-color: orange;
+  color: #fff;
+}
+
+.ans {
+  margin-left: 36px !important
+}
+
+.btn:focus {
+  outline: 0 !important;
+  box-shadow: none !important
+}
+
+.btn:active {
+  outline: 0 !important;
+  box-shadow: none !important
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
