@@ -86,13 +86,13 @@ var clubs = [
 
 var connection_links = {
     "classroom": {
-        "icon": "assets/img/logos/classroom.png"
+        "icon": "assets/logos/classroom.png"
     },
     "instagram": {
-        "icon": "assets/img/logos/instagram.png"
+        "icon": "assets/logos/instagram.png"
     },
     "email": {
-        "icon": "assets/img/logos/email.png"
+        "icon": "assets/logos/email.png"
     }
 }
 var athletics = [
