@@ -4,7 +4,7 @@ async function setupBoxes(boxesSource, divID) {
     }
 
     let boxes = document.getElementById(divID);
-    boxes.innnerHTML = "";
+    document.getElementById(divID).innerHTML = "";
 
     let boxCount = 0;
 
@@ -14,7 +14,7 @@ async function setupBoxes(boxesSource, divID) {
         if (boxCount % 2 == 0) {
             row = document.createElement("div"); row.classList.add("club_row");
         }
-        let box = document.createElement("div"); box.classList.add("club_box", "seperate");
+        let box = document.createElement("div"); box.classList.add("club_box", "seperate"); box.classList.add(...boxData.categories);
             let header = document.createElement("div"); header.classList.add("club_header");
                 let main_image = document.createElement("img"); main_image.classList.add("club_img"); main_image.src = boxData.image;
                 header.appendChild(main_image);

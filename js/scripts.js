@@ -60,29 +60,8 @@ filter_bt.onclick = function() {
     let selection;
     for (const option of options) {
         if (option.checked){
-            if (option.value == "art") {
-                document.getElementsByClassName("art_category").style.display = "block";
-                document.getElementsByClassName("stem_category academics_category hobby_category business_category").style.display = "none";
-            }
-            else if (option.value == "stem") {
-                document.getElementsByClassName("stem_category").style.display = "block";
-                document.getElementsByClassName("art_category academics_category hobby_category business_category").style.display = "none";
-            }
-            else if (option.value == "academics") {
-                document.getElementsByClassName("academics_category").style.display = "block";
-                document.getElementsByClassName("stem_category art_category hobby_category business_category").style.display = "none";
-            }
-            else if (option.value == "hobby") {
-                document.getElementsByClassName("hobby_category").style.display = "block";
-                document.getElementsByClassName("stem_category academics_category art_category business_category").style.display = "none";
-            }
-            else if (option.value == "business") {
-                document.getElementsByClassName("business_category").style.display = "block";
-                document.getElementsByClassName("stem_category academics_category hobby_category art_category").style.display = "none";
-            }
-            else{
-                alert("Something went wrong. Please try again.");
-            }
+            for (const element of document.getElementsByClassName("club_box")) {element.style.display = "none";};
+            for (const element of document.getElementsByClassName(option.value)) {element.style.display = "block";};
         }
     }
 };
