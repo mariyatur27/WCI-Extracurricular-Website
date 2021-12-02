@@ -50,7 +50,7 @@
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase" id="clubs_title">Clubs</h2>
                     <p class="descrp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.</p>
-                        <input type="text" id="club_search" class="club_search" onkeyup="search_club()" placeholder="Search for a club...">
+                    <input type="text" id="club_search" class="club_search" oninput="setupBoxes(clubs, 'club_boxes', 2, null, this.value.toLowerCase());" placeholder="Search for a club...">
                         <!-- oninput="setupBoxes(clubs, 'club_boxes', null, this.value.toLowerCase());" -->
                         <i class="fas fa-search"></i>
                         <div class="dropdown">
