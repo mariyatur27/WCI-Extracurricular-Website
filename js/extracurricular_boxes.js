@@ -1,4 +1,4 @@
-async function setupBoxes(boxesSource, divID, filter=null, search=null) {
+async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=null) {
     if (!dataFetched) {
         await fetchData();
     }
@@ -12,7 +12,7 @@ async function setupBoxes(boxesSource, divID, filter=null, search=null) {
     
     boxesSource.forEach((boxData) => {
         if ((filter == null || boxData.categories.includes(filter)) && (search == null || boxData.name.toLowerCase().includes(search))) {
-            if (boxCount % 2 == 0) {
+            if (boxCount % countPerRow == 0) {
                 row = document.createElement("div"); row.classList.add("club_row");
             }
             let box = document.createElement("div"); box.classList.add("club_box", "seperate"); box.classList.add(...boxData.categories);
@@ -53,13 +53,13 @@ async function setupBoxes(boxesSource, divID, filter=null, search=null) {
                     expand_box.appendChild(connection_links);
                 box.appendChild(expand_box);
             row.appendChild(box);
-            if (boxCount % 2 == 1) {
+            if (boxCount % countPerRow == countPerRow-1) {
                 boxes.appendChild(row);
             }
             boxCount += 1;
         }
     });
-    if (boxCount % 2 == 1) {
+    if (!(boxCount % countPerRow == 0)) {
         boxes.appendChild(row);
     }
 }
