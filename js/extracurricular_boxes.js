@@ -41,7 +41,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
                     expand_box.appendChild(summary_title);
                     let summary = document.createElement("p"); summary.innerHTML = boxData.description;
                     expand_box.appendChild(summary);
-                    let meeting_time_text = document.createElement("h5"); meeting_time_text.innerText = boxData.meeting_time;
+                    let meeting_time_text = document.createElement("h5"); meeting_time_text.innerText = "Meeting time: ".concat(boxData.meeting_time);
                     expand_box.appendChild(meeting_time_text);
                     let box_links = document.createElement("div"); box_links.classList.add("together");
                         for (link of boxData.connection_links) {
