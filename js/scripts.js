@@ -54,21 +54,37 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 // Filter button function
-function dropdown() {
-  document.getElementById("dropdown_content").classList.toggle("show");
+let filter_bt = document.querySelector('#filter_bt');
+filter_bt.onclick = function() {
+    const options = document.querySelectorAll('input[name="choice"]');
+    let selection;
+    for (const option of options) {
+        if (option.checked){
+            if (option.value == "art") {
+                document.getElementsByClassName("art_category").style.display = "block";
+                document.getElementsByClassName("stem_category academics_category hobby_category business_category").style.display = "none";
+            }
+            else if (option.value == "stem") {
+                document.getElementsByClassName("stem_category").style.display = "block";
+                document.getElementsByClassName("art_category academics_category hobby_category business_category").style.display = "none";
+            }
+            else if (option.value == "academics") {
+                document.getElementsByClassName("academics_category").style.display = "block";
+                document.getElementsByClassName("stem_category art_category hobby_category business_category").style.display = "none";
+            }
+            else if (option.value == "hobby") {
+                document.getElementsByClassName("hobby_category").style.display = "block";
+                document.getElementsByClassName("stem_category academics_category art_category business_category").style.display = "none";
+            }
+            else if (option.value == "business") {
+                document.getElementsByClassName("business_category").style.display = "block";
+                document.getElementsByClassName("stem_category academics_category hobby_category art_category").style.display = "none";
+            }
+            else:
+                alert("Something went wrong. Please try again.");
+        }
+    }
 };
-
-// Id Function
-// function createId() {
-//         var c_box = document.getElementsByClassName("club_box");
-//         var e_box = document.getElementsByClassName("expand_box");
-//         for (n=0, length = e_box.length; n < length; n++){
-//             e_box[n].id = "e" + (n + 1);
-//             console.log(e_box.id);
-//         }
-//     }; 
-
-// createId();
 
 
 function expand() {

@@ -587,31 +587,22 @@ button.web_button:hover{
   }
   button.dropbt {
     border: none;
-    padding: 1% 3%;
+    padding: 0.6% 3%;
+    margin-left: 2%;
     border-radius: 33px;
     background-color: #ffc800;
     color: white;
-    position: absolute;
-    top: -51px;
-    left: 678px;
   }
   div#dropdown_content {
     list-style-type: none;
     text-align: left;
-    margin-left: 54%;
-    display:  none;
+    margin-left: 2%;
+    margin-top: 1%;
   }
   button.filterbt {
     border: none;
     background: transparent;
   }
-  button.dropbt {
-    border: none;
-    padding: 1% 3%;
-    border-radius: 33px;
-    background-color: #ffc800;
-    color: white;
- }
   img.slides_show_img {
     width: 200%;
     margin-left: -95%;
