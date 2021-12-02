@@ -21,7 +21,8 @@
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-
+        <script src="js/fetch_data.js"></script>
+        <script src="js/athletics_boxes.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -38,7 +39,7 @@
                         <li class="nav-item"><a class="nav-link" href="clubs.html">Clubs</a></li>
                         <li class="nav-item"><a class="nav-link" href="athletics.html">Athletics</a></li>
                         <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
-                        <li class="nav-item"><a class="nav-link" href="competitions.html">Competitions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="competitions.html">Music</a></li>
                     </ul>
                 </div>
             </div>
@@ -55,8 +56,21 @@
                     </div>
 
                     <!-- Search Bar -->
-                    <input type="text" id="club_search" class="club_search" onkeyup="search_club()" placeholder="Search for a sport...">
+                    <input type="text" id="club_search" class="club_search" onkeyup="search_athletics()" placeholder="Search for a sport...">
                     <i class="fas fa-search"></i>
+                    <div class="dropdown">
+                            <div id="dropdown_content" class="dropdown_content">
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='winter_sports');" name="choice" id="winter_sports" class="filterbt">
+                                <label for="art">Winter Sports</label>
+
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='fall_sports');" name="choice" id="fall_sports" class="filterbt">
+                                <label for="stem">Fall Sports</label>
+
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='spring_sports');" name="choice" id="spring_sports" class="filterbt">
+                                <label for="academics">Spring Sports</label>
+                            </div>
+                        </div>
+                        <div class="clubs" id="club_boxes"></div>
                     <div class="clubs">
                         <div id="fall_sports">
                             <br>
