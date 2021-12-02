@@ -46,7 +46,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
                     let box_links = document.createElement("div"); box_links.classList.add("together");
                         for (link of boxData.connection_links) {
                             if (link in connection_links) {
-                                console.log(boxData)
                                 let link_a = document.createElement("a"); link_a.classList.add("icons"); link_a.href = boxData[link];
                                 let link_image = document.createElement("img"); link_image.classList.add("icons"); link_image.src = connection_links[link].icon;
                                 link_a.appendChild(link_image);
