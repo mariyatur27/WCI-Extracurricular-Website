@@ -46,11 +46,15 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
                     let connection_links = document.createElement("div"); connection_links.classList.add("together");
 
                         let classroom_link_image = document.createElement("img"); classroom_link_image.classList.add("icons"); classroom_link_image.src = "assets/img/logos/classroom.png"
-                        connection_links.appendChild(classroom_link_image);
+                        // connection_links.appendChild(classroom_link_image);
                             // Tristan can you please make this a link? 
-                            let classroom_code = document.createElement("a"); classroom_code.href = boxData.google_classroom;
-                            classroom_code.classList.add('classroom_code');
+                            let classroom_code = document.createElement("a");
+                            let code_text = document.createTextNode("Google Classroom"); 
+                            classroom_code.appendChild(code_text);
+                            classroom_code.title = "Google Classroom";
+                            classroom_code.href = boxData.google_classroom;
                             classroom_link_image.appendChild(classroom_code);
+                            connection_links.appendChild(classroom_link_image);
 
                         let mail_link_image = document.createElement("img"); mail_link_image.classList.add("icons"); mail_link_image.src = "assets/img/logos/email.png";
                         connection_links.appendChild(mail_link_image);
@@ -66,7 +70,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
             boxCount += 1;
         }
     });
-    // if (!(boxCount % countPerRow == 0)) {
+    // if (!(boxCount % countPerRow == 0 {
     //     // row = document.createElement("div"); row.classList.add("club_row");
     // console.log(boxCount);
     if (boxCount % countPerRow > 0) {
