@@ -66,8 +66,10 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
             boxCount += 1;
         }
     });
-    if (!(boxCount % countPerRow == 0)) {
-        // row = document.createElement("div"); row.classList.add("club_row");
+    // if (!(boxCount % countPerRow == 0)) {
+    //     // row = document.createElement("div"); row.classList.add("club_row");
+    // console.log(boxCount);
+    if (boxCount % countPerRow > 0) {
         boxes.appendChild(row);
     }
 }
