@@ -553,6 +553,9 @@ img.c_image {
   border-radius: 50%;
   margin-bottom: 7%;
 }
+.c_item {
+  width: 100%
+}
 #search_button{
   color:  lightblue;
 }
