@@ -50,19 +50,15 @@
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase" id="clubs_title">Athletics</h2>
                     <p class="descrp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.</p>
-                    <div class="nav_season">
-                        <a href="#fall_sports" class="btn btn-info" role="button">Fall Sports</a>
-                        <a href="#winter_sports" class="btn btn-info" role="button">Winter Sports</a>
-                        <a href="#spring_sports" class="btn btn-info" role="button">Spring Sports</a>    
-                    </div>
-
                     <!-- Search Bar -->
                     <input type="text" id="club_search" class="club_search" onkeyup="search_club()" placeholder="Search for a sport...">
                     <i class="fas fa-search"></i>
                     <div class="dropdown">
                             <div id="dropdown_content" class="dropdown_content">
+
                                 <input type="radio" onclick="setupBoxes(athletics, 'club_boxes', 2, filter='winter_sports');" name="choice" id="winter_sports" class="filterbt">
                                 <label for="art">Winter Sports</label>
+                                <span class="checkmark"></span>
 
                                 <input type="radio" onclick="setupBoxes(athletics, 'club_boxes', 2, filter='fall_sports');" name="choice" id="fall_sports" class="filterbt">
                                 <label for="stem">Fall Sports</label>

@@ -729,6 +729,12 @@ button.web_button:hover{
   .active .down {
     display: none;
   }
+  label {
+    margin-right: 2%;
+  }
+  .container input:checked ~ .checkmark {
+    background-color:  red;
+  }
   .club_sec {
     display: block;
   }
