@@ -86,6 +86,7 @@ function search_music() {
     }
 };
 
+
 /* Commented out, as I don't think this section is used any more.
 function expand() {
     var idList = ["e1", "e2"];
