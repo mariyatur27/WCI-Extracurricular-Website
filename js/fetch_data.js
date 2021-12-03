@@ -157,25 +157,6 @@ var athletics = [
     }
 ];
 
-var faq = [
-    {
-        "question" : "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-        "answer" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque quo obcaecati odio vitae, aut cupiditate voluptates voluptatem provident ut aperiam ab numquam doloremque fugiat possimus nam maiores ullam, omnis.",
-    },
-    {
-        "question" : "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-        "answer" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque quo obcaecati odio vitae, aut cupiditate voluptates voluptatem provident ut aperiam ab numquam doloremque fugiat possimus nam maiores ullam, omnis.",
-    },
-    {
-        "question" : "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-        "answer" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque quo obcaecati odio vitae, aut cupiditate voluptates voluptatem provident ut aperiam ab numquam doloremque fugiat possimus nam maiores ullam, omnis.",
-    },
-    {
-        "question" : "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-        "answer" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque quo obcaecati odio vitae, aut cupiditate voluptates voluptatem provident ut aperiam ab numquam doloremque fugiat possimus nam maiores ullam, omnis.",
-    }
-];
-
 var music = [
     { name: "Junior Orchestra", image:"https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
     { name: "Intermediate Orchestra", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
@@ -195,7 +176,6 @@ async function fetchData() {
     athletics = await (await fetch("data/athletics.json")).json();
     music = await (await fetch("data/music.json")).json();
     connection_links = await (await fetch("data/connection_links.json")).json();
-    faq = await (await fetch("data/faq.json")).json();
     console.log("fetchData: Done loading data.");
     dataFetched = true;
 }
