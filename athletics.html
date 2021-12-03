@@ -22,8 +22,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
         <script src="js/fetch_data.js"></script>
-        <script src="js/athletics_boxes.js"></script>
-    </head>
+<!--         <script src="js/athletics_boxes.js"></script>
+ -->    </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -56,7 +56,7 @@
                     </div>
 
                     <!-- Search Bar -->
-                    <input type="text" id="club_search" class="club_search" onkeyup="search_athletics()" placeholder="Search for a sport...">
+                    <input type="text" id="club_search" class="club_search" onkeyup="search_club()" placeholder="Search for a sport...">
                     <i class="fas fa-search"></i>
                     <div class="dropdown">
                             <div id="dropdown_content" class="dropdown_content">
@@ -71,7 +71,7 @@
                             </div>
                         </div>
                         <div class="clubs" id="club_boxes"></div>
-                    <div class="clubs">
+                    <!-- <div class="clubs">
                         <div id="fall_sports">
                             <br>
                             <h1>Fall Sports</h1>
@@ -82,7 +82,7 @@
                                         <div class="club_header">
                                             <img src="https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0" class="club_img">
                                             <div class="club_info">
-                                                <h2 class="lrn">Sports</h2>
+                                                <h2 class="lrn">Hockey</h2>
                                                 <div class="together2">
                                                     <button class="drop">
                                                         <div class="together2">
@@ -455,7 +455,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -464,5 +464,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script src="js/expand_boxes.js"></script>
+        <script src="js/athletics_boxes.js"></script>
+         <script>
+            setupBoxes(athletics, "club_boxes", 2);
+        </script>
     </body>

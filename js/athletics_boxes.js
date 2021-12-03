@@ -43,14 +43,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
                     expand_box.appendChild(summary);
                     let meeting_time_text = document.createElement("h5"); meeting_time_text.innerText = "Meeting Time: 2:00 PM - 3:00 PM";
                     expand_box.appendChild(meeting_time_text);
-                    let connection_links = document.createElement("div"); connection_links.classList.add("together");
-                        let classroom_link_image = document.createElement("img"); classroom_link_image.classList.add("icons"); classroom_link_image.src = "assets/logos/classroom.png"
-                        connection_links.appendChild(classroom_link_image);
-                        let mail_link_image = document.createElement("img"); mail_link_image.classList.add("icons"); mail_link_image.src = "assets/logos/email.png"
-                        connection_links.appendChild(mail_link_image);
-                        let instagram_link_image = document.createElement("img"); instagram_link_image.classList.add("icons"); instagram_link_image.src = "assets/logos/instagram.png"
-                        connection_links.appendChild(instagram_link_image);
-                    expand_box.appendChild(connection_links);
                 box.appendChild(expand_box);
             row.appendChild(box);
             if (boxCount % countPerRow == countPerRow-1) {
@@ -60,7 +52,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
         }
     });
     if (!(boxCount % countPerRow == 0)) {
-        row = document.createElement("div"); row.classList.add("club_row");
         boxes.appendChild(row);
     }
 }
