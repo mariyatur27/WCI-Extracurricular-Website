@@ -86,7 +86,6 @@ var clubs = [
         ]
     }
 ];
-
 var connection_links = {
     "classroom": {
         "icon": "assets/logos/classroom.png"
@@ -97,7 +96,7 @@ var connection_links = {
     "email": {
         "icon": "assets/logos/email.png"
     }
-}
+};
 var athletics = [
     {
         "name": "Basketball",
@@ -156,7 +155,7 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "categories": [
-            "winter_sports",
+            "winter_sports"
         ]
     },
     {
@@ -170,7 +169,6 @@ var athletics = [
         ]
     }
 ];
-
 var music = [
     { name: "Junior Orchestra", image:"https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
     { name: "Intermediate Orchestra", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
