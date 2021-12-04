@@ -86,7 +86,6 @@ var clubs = [
         ]
     }
 ];
-
 var connection_links = {
     "classroom": {
         "icon": "assets/logos/classroom.png"
@@ -97,85 +96,79 @@ var connection_links = {
     "email": {
         "icon": "assets/logos/email.png"
     }
-}
+};
 var athletics = [
     {
         "name": "Basketball",
-        "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
+        "connection_links": [],
+        "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
         "categories": [
             "fall_sports"
         ]
     },
     {
         "name": "Volleyball",
-        "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
+        "connection_links": [],
+        "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
         "categories": [
             "winter_sports"
         ]
     },
     {
         "name": "Soccer",
-        "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
+        "connection_links": [],
+        "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
         "categories": [
             "spring_sports"
         ]
     },
     {
         "name": "Football",
-        "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
+        "connection_links": [],
+        "image": "assets/sport_images/football.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
         "categories": [
             "fall_sports"
         ]
     },
     {
         "name": "Hockey",
-        "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
+        "connection_links": [],
+        "image": "assets/sport_images/hockey.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
         "categories": [
             "winter_sports"
         ]
     },
     {
         "name": "Skiing",
-        "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
+        "connection_links": [],
+        "image": "assets/sport_images/skiing.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
         "categories": [
-            "winter_sports",
+            "winter_sports"
         ]
     },
     {
         "name": "Cross Country",
-        "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
+        "connection_links": [],
+        "image": "assets/sport_images/running.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
         "categories": [
             "fall_sports"
         ]
     }
 ];
-
-var faq = [
-    {
-        "question" : "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-        "answer" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque quo obcaecati odio vitae, aut cupiditate voluptates voluptatem provident ut aperiam ab numquam doloremque fugiat possimus nam maiores ullam, omnis.",
-    },
-    {
-        "question" : "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-        "answer" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque quo obcaecati odio vitae, aut cupiditate voluptates voluptatem provident ut aperiam ab numquam doloremque fugiat possimus nam maiores ullam, omnis.",
-    },
-    {
-        "question" : "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-        "answer" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque quo obcaecati odio vitae, aut cupiditate voluptates voluptatem provident ut aperiam ab numquam doloremque fugiat possimus nam maiores ullam, omnis.",
-    },
-    {
-        "question" : "Lorem ipsum dolor sit amet consectetur adipisicing elit?",
-        "answer" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque quo obcaecati odio vitae, aut cupiditate voluptates voluptatem provident ut aperiam ab numquam doloremque fugiat possimus nam maiores ullam, omnis.",
-    }
-];
-
 var music = [
     { name: "Junior Orchestra", image:"https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
     { name: "Intermediate Orchestra", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
@@ -195,7 +188,6 @@ async function fetchData() {
     athletics = await (await fetch("data/athletics.json")).json();
     music = await (await fetch("data/music.json")).json();
     connection_links = await (await fetch("data/connection_links.json")).json();
-    faq = await (await fetch("data/faq.json")).json();
     console.log("fetchData: Done loading data.");
     dataFetched = true;
 }

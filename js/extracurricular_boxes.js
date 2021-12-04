@@ -21,6 +21,9 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
                     header.appendChild(main_image);
                     let info_div = document.createElement("div"); info_div.classList.add("club_info");
                         let name_header = document.createElement("h2"); name_header.classList.add("lrn"); name_header.innerText = boxData.name;
+                        if (boxData.name.length > 15) {
+                            name_header.classList.add("lrn_small");
+                        }
                         info_div.appendChild(name_header);
                         let drop_div = document.createElement("div"); drop_div.classList.add("together2");
                             let drop_button = document.createElement("button"); drop_button.classList.add("drop"); drop_button.addEventListener("click", () => {box.classList.toggle("active");});
