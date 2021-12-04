@@ -153,33 +153,6 @@ function generateSlide(index, slideShowCards, slideShowDiv) {
 };
 
 // Function for expanding and collpasing questions in the FAQ section
-let up_bt = document.getElementById("up2");
-let down_bt = document.getElementById("down2");
-var i;
-var content = document.getElementsByClassName("answer");
 
-$(down_bt).click(function(){
-    $(this).find(content).toggle();
-});
-
-// down_bt.addEventListener("click", function() {
-//     content.style.display = "block";
-//     console.log("yes");
-// });
-// up_bt.addEventListener("click", function () {
-//     content.style.display = "none";
-// });
-
-// for (i = 0; i < down_bt.length; i++) {
-//     down_bt[i].addEventListener("click", function() {
-//         this.classList.toggle("active");
-//         var content = document.getElementsByClassName("answer");
-//         if (content.style.display === "block") {
-//             content.style.display = "none";
-//         } else {
-//             content.style.display = "block";
-//         }
-//     });
-// }
 
 
