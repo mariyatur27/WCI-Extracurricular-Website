@@ -2549,6 +2549,10 @@ button.web_button:hover{
     margin-bottom: 2em;
     text-align: center;
   }
+  button.faq-btn {
+    border: none;
+    background: transparent;
+  }
   .orch-head {
     font-size: 2rem;
     color: #000000;
@@ -3726,6 +3730,10 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #212529;
   border-color: #212529;
+}
+button.faq-btn {
+    border: none;
+    background: transparent;
 }
 .btn-dark:hover {
   color: #fff;
