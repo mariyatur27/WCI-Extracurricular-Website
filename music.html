@@ -54,47 +54,91 @@
  -->                        <input type="text" id="club_search" class="club_search" onkeyup="search_music()" placeholder="Search for a competition...">
                         <i class="fas fa-search"></i>
 
-                    <ul>
-                        <li class="orchestra">
-                            <p class="orch-head">Senior Orchestra</p>
-                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. <br><br> Want to sign up? <a href="#" class="link-register">Register now!</a> (or) <a href="#" class="link-register">Find out when to register!</a></p>
-                        </li>
-                        <li class="orchestra">
-                            <p class="orch-head">Intermediate Orchestra</p>
-                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.<br><br> Want to sign up? <a href="#" class="link-register">Register now!</a> (or) <a href="#" class="link-register">Find out when to register!</a></p></p>
-                        </li>
-                        <li class="orchestra">
-                            <p class="orch-head">Junior Orchestra</p>
-                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. <br><br> Want to sign up? <a href="#" class="link-register">Register now!</a> (or) <a href="#" class="link-register">Find out when to register!</a></p>
-                        </li>
-                        <li class="orchestra">
-                            <p class="orch-head">Senior Guitar Ensemble</p>
-                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.<br><br> Want to sign up? <a href="#" class="link-register">Register now!</a> (or) <a href="#" class="link-register">Find out when to register!</a></p></p>
-                        </li>
-                        <li class="orchestra">
-                            <p class="orch-head">Junior Guitar Ensemble</p>
-                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. <br><br> Want to sign up? <a href="#" class="link-register">Register now!</a> (or) <a href="#" class="link-register">Find out when to register!</a></p>
-                        </li>
-                        <li class="orchestra">
-                            <p class="orch-head">Choir</p>
-                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.<br><br> Want to sign up? <a href="#" class="link-register">Register now!</a> (or) <a href="#" class="link-register">Find out when to register!</a></p></p>
-                        </li>
-                        <li class="orchestra">
-                            <p class="orch-head">Band</p>
-                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. <br><br> Want to sign up? <a href="#" class="link-register">Register now!</a> (or) <a href="#" class="link-register">Find out when to register!</a></p>
-                        </li>
-                        <li class="orchestra">
-                            <p class="orch-head">Senior Chamber Orchestra</p>
-                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.<br><br> Want to sign up? <a href="#" class="link-register">Register now!</a> (or) <a href="#" class="link-register">Find out when to register!</a></p></p>
-                        </li>
+<!-- Music filter-->
+                    <div class="filterbox">
+                        <a href="#" class="orchbtn btn active" data-filter="all">All</a>
+                        <a href="#" class="orchbtn btn" data-filter="orch">Orchestra</a>
+                        <a href="#" class="orchbtn btn" data-filter="guitar">Guitar</a>
+                        <a href="#" class="orchbtn btn" data-filter="choir">Choir</a>
+                        <a href="#" class="orchbtn btn" data-filter="band">Band</a>
+                    </div>
 
-                </ul>
+                    <main>
+                        <div class="slide-container">
+                            <section class="container" id="music-groups">
+                                <ul>
+                                    <!-- CHANGED ALL "orchestra" to "orch" in html and css -->
+                                    <div class="music-groups orch">
+                                        <li class="orchestra">
+                                            <p class="orch-head">Senior Orchestra</p>
+                                            <p class="orch-grade">Grades 11-12</p>
+                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. <br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
+                                        </li>
+                                    </div>
+                                    <div class="music-groups orch">
+                                        <li class="orchestra">
+                                            <p class="orch-head">Intermediate Orchestra</p>
+                                            <p class="orch-grade">Grades 11-12</p>
+                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.<br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
+                                        </li>
+                                    </div>
+                                    <div class="music-groups orch">
+                                        <li class="orchestra">
+                                            <p class="orch-head">Junior Orchestra</p>
+                                            <p class="orch-grade">Grades 11-12</p>
+                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. <br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
+                                        </li>
+                                    </div>
+                                    <div class="music-groups guitar">
+                                        <li class="orchestra">
+                                            <p class="orch-head">Senior Guitar Ensemble</p>
+                                            <p class="orch-grade">Grades 11-12</p>
+                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.<br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
+                                        </li>
+                                    </div>
+                                    <div class="music-groups guitar">
+                                        <li class="orchestra">
+                                            <p class="orch-head">Junior Guitar Ensemble</p>
+                                            <p class="orch-grade">Grades 11-12</p>
+                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. <br><br> Want to sign up? <a href="#" class="link-register">Register now!</a> </p>
+                                        </li>
+                                    </div>
+                                    <div class="music-groups choir">
+                                        <!-- <li class="orchestra">
+                                            <p class="orch-head">Choir</p>
+                                            <p class="orch-grade">Grades 11-12</p>
+                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.<br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
+                                        </li> -->
+                                        <li class="orchestra">
+                                            <p class="orch-head" id="choir">Choir</p>
+                                            <p class="orch-grade">Grades 11-12</p>
+                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.<br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
+                                        </li>
+                                    </div>
+                                    <div class="music-groups band">
+                                        <li class="orchestra">
+                                            <p class="orch-head">Band</p>
+                                            <p class="orch-grade">Grades 11-12</p>
+                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. <br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
+                                        </li>
+                                    </div>
+                                    <div class="music-groups orch">
+                                        <li class="orchestra">
+                                            <p class="orch-head">Senior Chamber Orchestra</p>
+                                            <p class="orch-grade">Grades 11-12</p>
+                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.<br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
+                                        </li>
+                                    </div>
 
-        </section>
+
+                            </section>
+                        </div>
+                    </main>
 
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/music.js"></script>
     </body>

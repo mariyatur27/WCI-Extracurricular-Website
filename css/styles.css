@@ -797,15 +797,21 @@ button.web_button:hover{
     text-decoration: underline;
     text-decoration-color: #A7501F;
   }
+  .orch-grade {
+    font-size: 1.3rem;
+    color: #A7501F;
+    line-height: 1.2;
+    text-align: left;
+  }
   .orch-p {
     font-size: 0.875rem;
     color: #000000;
     line-height: 1.2;
+    text-align: left;
   }
   .link-register {
     color: #A7501F;
   }
-
 
   /* Fading animation */
   .fade {
@@ -968,6 +974,42 @@ button.web_button:hover{
   .container-sm, .container {
     max-width: 540px;
   }
+
+  .orchestra {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #CCCCCC;
+    margin: 0;
+    border-radius: 1em;
+    padding: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .orch-head {
+    font-size: 2rem;
+    color: #000000;
+    line-height: 1.2;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: #A7501F;
+  }
+  .orch-grade {
+    font-size: 1.3rem;
+    color: #A7501F;
+    line-height: 1.2;
+    text-align: left;
+  }
+  .orch-p {
+    font-size: 0.875rem;
+    color: #000000;
+    line-height: 1.2;
+    text-align: left;
+  }
+  .link-register {
+    color: #A7501F;
+  }
+
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
@@ -2454,17 +2496,122 @@ button.web_button:hover{
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+  .orchestra {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #CCCCCC;
+    margin: 0;
+    border-radius: 1em;
+    padding: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  .orch-head {
+    font-size: 2rem;
+    color: #000000;
+    line-height: 1.2;
+    text-decoration: underline;
+    text-decoration-color: #A7501F;
+    text-align: center;
+  }
+  .orch-grade {
+    font-size: 1.3rem;
+    color: #A7501F;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .orch-p {
+    font-size: 0.875rem;
+    color: #000000;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .link-register {
+    color: #A7501F;
+  }
 }
 @media (max-width: 767.98px) {
   .table-responsive-md {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
+  .orchestra {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #CCCCCC;
+    margin: 0;
+    border-radius: 1em;
+    padding: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  .orch-head {
+    font-size: 2rem;
+    color: #000000;
+    line-height: 1.2;
+    text-decoration: underline;
+    text-decoration-color: #A7501F;
+    text-align: center;
+  }
+  .orch-grade {
+    font-size: 1.3rem;
+    color: #A7501F;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .orch-p {
+    font-size: 0.875rem;
+    color: #000000;
+    line-height: 1.2;
+  }
+  .link-register {
+    color: #A7501F;
+    text-align: center;
+  }
 }
 @media (max-width: 991.98px) {
   .table-responsive-lg {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+  }
+  .orchestra {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #CCCCCC;
+    margin: 0;
+    border-radius: 1em;
+    padding: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  .orch-head {
+    font-size: 2rem;
+    color: #000000;
+    line-height: 1.2;
+    text-decoration: underline;
+    text-decoration-color: #A7501F;
+    text-align: center;
+  }
+  .orch-grade {
+    font-size: 1.3rem;
+    color: #A7501F;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .orch-p {
+    font-size: 0.875rem;
+    color: #000000;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .link-register {
+    color: #A7501F;
   }
 }
 @media (max-width: 1199.98px) {
@@ -3335,6 +3482,19 @@ textarea.form-control-lg {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+
+/* orchestra filter*/
+.orchbtn {
+  border-color: #A7501F;
+  margin-top: 1rem;
+  margin-right: .5rem;
+
+}
+
+
+
+
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
