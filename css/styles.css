@@ -530,14 +530,19 @@ a.icons {
   margin-top: 3%;
 }
 .lrn{
-   display: list-item;    
-  } 
+  margin-top: 20px;
+  font-size: 1.8em;  
+}
+.lrn_small {
+  font-size: 1.5em;
+} 
 .club_box {
     list-style-type: none;
 }
 .together2{
   width: 104%;
-  display:  flex;
+  margin-top: 22px;
+  display: flex;
 }
 .carousel_item{
   display: flex;
@@ -662,9 +667,8 @@ button.web_button:hover{
     width: 50%;
   }
   .club_header {
-/*    height: 80%;
-*/    box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
-    padding: 3%;
+    box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
+    padding: 3.5%;
     margin-top: 7%;
     display: flex;
     margin-left: 1%;
@@ -690,7 +694,7 @@ button.web_button:hover{
   }
   .expand_box{
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-    padding: 3%;
+    padding: 5%;
     text-align: left;
     margin-top: 0%;
     display: block;
@@ -759,7 +763,8 @@ button.web_button:hover{
     text-align: left;
   }
   img.club_img {
-    width: 30%;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
   }
   input#club_search {
