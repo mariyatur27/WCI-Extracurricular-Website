@@ -672,11 +672,17 @@ button.web_button:hover{
     margin-top: 4%;
     border-radius: 21px;
   }
+  .question_block .up {
+    display: none;
+  }
   .answer {
     box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
     padding: 3% 4%;
     border-radius: 21px;
-    display:  none;
+    display: none;
+  }
+  .active .answer {
+    display: block;
   }
   .expand_box{
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
@@ -722,7 +728,7 @@ button.web_button:hover{
     margin-left: 6%;
     margin-top: 1%;
   }
-  #down2 , #up2{
+  .faq-btn {
     margin-left: 99%;
     margin-top: 0%;
   }
