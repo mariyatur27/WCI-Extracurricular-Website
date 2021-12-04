@@ -104,6 +104,8 @@ var athletics = [
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Friday",
+        "prerequisites": "No prerequisites",
         "categories": [
             "fall_sports"
         ]
@@ -114,6 +116,8 @@ var athletics = [
         "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Tuesday, Wednesday, Friday",
+        "prerequisites": "No prerequisites",
         "categories": [
             "winter_sports"
         ]
@@ -124,6 +128,8 @@ var athletics = [
         "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Thursday, Friday",
+        "prerequisites": "Past experience is required",
         "categories": [
             "spring_sports"
         ]
@@ -134,6 +140,8 @@ var athletics = [
         "image": "assets/sport_images/football.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Thursday, Friday",
+        "prerequisites": "No prerequisites",
         "categories": [
             "fall_sports"
         ]
@@ -144,6 +152,8 @@ var athletics = [
         "image": "assets/sport_images/hockey.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Friday",
+        "prerequisites": "No prerequisites",
         "categories": [
             "winter_sports"
         ]
@@ -154,6 +164,8 @@ var athletics = [
         "image": "assets/sport_images/skiing.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Tuesday, Thursday, Friday",
+        "prerequisites": "Previous experience is required",
         "categories": [
             "winter_sports"
         ]
@@ -164,6 +176,8 @@ var athletics = [
         "image": "assets/sport_images/running.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Tuesday, Wednesday, Thursday, Friday",
+        "prerequisites": "No prerequisites",
         "categories": [
             "fall_sports"
         ]
