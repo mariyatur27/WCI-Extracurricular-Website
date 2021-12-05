@@ -3735,6 +3735,9 @@ button.faq-btn {
     border: none;
     background: transparent;
 }
+.contents{
+  font-weight: 500;
+}
 .btn-dark:hover {
   color: #fff;
   background-color: #1c1f23;
