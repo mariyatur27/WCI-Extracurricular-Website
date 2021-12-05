@@ -53,6 +53,19 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+// Uncheck the radio button
+// function check() {
+//     var radio = document.getElementsByName("choice").checked;
+//     if (radio = true){
+//         radio = false;
+//     }else if (radio = false){
+//         radio = true;
+//     }
+// };
+
+var radio = document.getElementsByName("choice");
+radio.onmouseup = deselectable;
+
 // Function for the club search bar
 function search_club() {
     var input = document.getElementById('club_search').value
@@ -125,6 +138,6 @@ function expand() {
 };
 
 */
-* 
+
 
 
