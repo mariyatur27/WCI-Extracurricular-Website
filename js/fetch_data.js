@@ -316,6 +316,18 @@ var athletics = [
         ]
     },
     {
+        "name": "Curling",
+        "connection_links": [],
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Friday",
+        "prerequisites": "No prerequisites",
+        "categories": [
+            "winter_sports"
+        ]
+    },
+    {
         "name": "Swimming",
         "connection_links": [],
         "image": "assets/sport_images/soccer.png",
@@ -400,63 +412,123 @@ var athletics = [
         ]
     },
     {
-        "name": "Soccer",
+        "name": "Badminton",
         "connection_links": [],
-        "image": "assets/sport_images/soccer.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "2:00 PM - 3:00 PM",
-        "practices": "Monday, Wednesday, Thursday, Friday",
-        "prerequisites": "Past experience is required",
-        "categories": [
-            "winter_sports"
-        ]
-    },
-    {
-        "name": "Football",
-        "connection_links": [],
-        "image": "assets/sport_images/football.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "2:00 PM - 3:00 PM",
-        "practices": "Monday, Thursday, Friday",
-        "prerequisites": "No prerequisites",
-        "categories": [
-            "fall_sports"
-        ]
-    },
-    {
-        "name": "Hockey",
-        "connection_links": [],
-        "image": "assets/sport_images/hockey.png",
+        "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Wednesday, Friday",
         "prerequisites": "No prerequisites",
         "categories": [
-            "winter_sports"
+            "spring_sports"
         ]
     },
     {
-        "name": "Skiing",
+        "name": "Track and Field",
         "connection_links": [],
-        "image": "assets/sport_images/skiing.png",
+        "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
-        "practices": "Monday, Tuesday, Thursday, Friday",
-        "prerequisites": "Previous experience is required",
-        "categories": [
-            "winter_sports"
-        ]
-    },
-    {
-        "name": "Cross Country",
-        "connection_links": [],
-        "image": "assets/sport_images/running.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "2:00 PM - 3:00 PM",
-        "practices": "Monday, Tuesday, Wednesday, Thursday, Friday",
+        "practices": "Monday, Wednesday, Friday",
         "prerequisites": "No prerequisites",
         "categories": [
-            "fall_sports"
+            "spring_sports"
+        ]
+    },
+    {
+        "name": "Boys Rugby",
+        "connection_links": [],
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Friday",
+        "prerequisites": "No prerequisites",
+        "categories": [
+            "spring_sports"
+        ]
+    },
+    {
+        "name": "Boys Slo-Pitch",
+        "connection_links": [],
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Friday",
+        "prerequisites": "No prerequisites",
+        "categories": [
+            "spring_sports"
+        ]
+    },
+    {
+        "name": "Jr. Boys Tennis",
+        "connection_links": [],
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Friday",
+        "prerequisites": "No prerequisites",
+        "categories": [
+            "spring_sports"
+        ]
+    },
+    {
+        "name": "Sr. Boys Soccer",
+        "connection_links": [],
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Friday",
+        "prerequisites": "No prerequisites",
+        "categories": [
+            "spring_sports"
+        ]
+    },
+    {
+        "name": "Girls Rugby",
+        "connection_links": [],
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Friday",
+        "prerequisites": "No prerequisites",
+        "categories": [
+            "spring_sports"
+        ]
+    },
+    {
+        "name": "Girls Soccer",
+        "connection_links": [],
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Friday",
+        "prerequisites": "No prerequisites",
+        "categories": [
+            "spring_sports"
+        ]
+    },
+    {
+        "name": "Girls Slo-Pitch",
+        "connection_links": [],
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Friday",
+        "prerequisites": "No prerequisites",
+        "categories": [
+            "spring_sports"
+        ]
+    },
+    {
+        "name": "Jr. Girls Tennis",
+        "connection_links": [],
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Friday",
+        "prerequisites": "No prerequisites",
+        "categories": [
+            "spring_sports"
         ]
     }
 ];
