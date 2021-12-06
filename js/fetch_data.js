@@ -133,6 +133,30 @@ var clubs = [
         "categories": [
             "hobby_category",
         ]
+    },
+    {
+        "name": "Black Student Association",
+        "meeting_time": "Mondays, 3:15 PM - 4:15 PM",
+        "connection_links":["classroom", "email"],
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=sak6zmd",
+        "email": "decavikings@gmail.com",
+        "image": "assets/club_images/vikingventure.png",
+        "description": "This club is a space for students to get together, unwind, connect, and discuss important issues, topics and more!",
+        "categories": [
+            "hobby_category",
+        ]
+    },
+    {
+        "name": "Book Club",
+        "meeting_time": "Tuesdays,  at lunch",
+        "connection_links":["classroom", "email"],
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=kjm7ivl",
+        "email": "decavikings@gmail.com",
+        "image": "assets/club_images/vikingventure.png",
+        "description": "This club is available for students to meet and read books and share what they think as the group works through books together. Books chosen will be easily available for free on the web or from the library. ",
+        "categories": [
+            "hobby_category",
+        ]
     }
 ];
 var connection_links = {
