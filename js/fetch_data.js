@@ -304,15 +304,99 @@ var athletics = [
         ]
     },
     {
-        "name": "Jr. Boys Basketball",
+        "name": "Alpine Skiing",
         "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
+        "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
-        "practices": "Monday, Wednesday, Friday",
-        "prerequisites": "No prerequisites",
+        "practices": "Monday, Wednesday, Thursday, Friday",
+        "prerequisites": "Past experience is required",
         "categories": [
-            "fall_sports"
+            "winter_sports"
+        ]
+    },
+    {
+        "name": "Swimming",
+        "connection_links": [],
+        "image": "assets/sport_images/soccer.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Thursday, Friday",
+        "prerequisites": "Past experience is required",
+        "categories": [
+            "winter_sports"
+        ]
+    },
+    {
+        "name": "Boys Hockey",
+        "connection_links": [],
+        "image": "assets/sport_images/soccer.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Thursday, Friday",
+        "prerequisites": "Past experience is required",
+        "categories": [
+            "winter_sports"
+        ]
+    },
+    {
+        "name": "Jr. Boys Basketball",
+        "connection_links": [],
+        "image": "assets/sport_images/soccer.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Thursday, Friday",
+        "prerequisites": "Past experience is required",
+        "categories": [
+            "winter_sports"
+        ]
+    },
+    {
+        "name": "Sr. Boys Basketball",
+        "connection_links": [],
+        "image": "assets/sport_images/soccer.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Thursday, Friday",
+        "prerequisites": "Past experience is required",
+        "categories": [
+            "winter_sports"
+        ]
+    },
+    {
+        "name": "Girls Hockey",
+        "connection_links": [],
+        "image": "assets/sport_images/soccer.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Thursday, Friday",
+        "prerequisites": "Past experience is required",
+        "categories": [
+            "winter_sports"
+        ]
+    },
+    {
+        "name": "Jr. Girls Volleyball",
+        "connection_links": [],
+        "image": "assets/sport_images/soccer.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Thursday, Friday",
+        "prerequisites": "Past experience is required",
+        "categories": [
+            "winter_sports"
+        ]
+    },
+    {
+        "name": "Sr. Girls Volleyball",
+        "connection_links": [],
+        "image": "assets/sport_images/soccer.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Wednesday, Thursday, Friday",
+        "prerequisites": "Past experience is required",
+        "categories": [
+            "winter_sports"
         ]
     },
     {
@@ -324,7 +408,7 @@ var athletics = [
         "practices": "Monday, Wednesday, Thursday, Friday",
         "prerequisites": "Past experience is required",
         "categories": [
-            "spring_sports"
+            "winter_sports"
         ]
     },
     {
