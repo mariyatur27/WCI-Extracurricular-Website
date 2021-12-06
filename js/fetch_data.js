@@ -184,7 +184,7 @@ var athletics = [
     }
 ];
 var music = [
-    { name: "Junior Orchestra", image:"https://images2.minutemediacdn.com/image/upload/c_crop,h_1190,w_2120,x_0,y_0/f_auto,q_auto,w_1100/v1554933625/shape/mentalfloss/52912-istock-523871055.jpg"},
+    { name: "Junior Orchestra", image:"https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
     { name: "Intermediate Orchestra", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
     { name: "Senior Orchestra", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
 ];
