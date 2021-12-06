@@ -174,7 +174,7 @@ var athletics = [
     {
         "name": "Cross Country",
         "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
+        "image": "assets/sport_images/running.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Wednesday, Friday",
@@ -210,7 +210,7 @@ var athletics = [
     {
         "name": "Jr. Boys Soccer",
         "connection_links": [],
-        "image": "assets/sport_images/volleyball.png",
+        "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Tuesday, Wednesday, Friday",
@@ -270,7 +270,7 @@ var athletics = [
     {
         "name": "Jr. Girls Basketball",
         "connection_links": [],
-        "image": "assets/sport_images/volleyball.png",
+        "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Tuesday, Wednesday, Friday",
@@ -282,7 +282,7 @@ var athletics = [
     {
         "name": "Sr. Girls Basketball",
         "connection_links": [],
-        "image": "assets/sport_images/volleyball.png",
+        "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Tuesday, Wednesday, Friday",
@@ -306,7 +306,7 @@ var athletics = [
     {
         "name": "Alpine Skiing",
         "connection_links": [],
-        "image": "assets/sport_images/soccer.png",
+        "image": "assets/sport_images/skiing.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Wednesday, Thursday, Friday",
@@ -342,7 +342,7 @@ var athletics = [
     {
         "name": "Boys Hockey",
         "connection_links": [],
-        "image": "assets/sport_images/soccer.png",
+        "image": "assets/sport_images/hockey.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Wednesday, Thursday, Friday",
@@ -354,7 +354,7 @@ var athletics = [
     {
         "name": "Jr. Boys Basketball",
         "connection_links": [],
-        "image": "assets/sport_images/soccer.png",
+        "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Wednesday, Thursday, Friday",
@@ -366,7 +366,7 @@ var athletics = [
     {
         "name": "Sr. Boys Basketball",
         "connection_links": [],
-        "image": "assets/sport_images/soccer.png",
+        "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Wednesday, Thursday, Friday",
@@ -378,7 +378,7 @@ var athletics = [
     {
         "name": "Girls Hockey",
         "connection_links": [],
-        "image": "assets/sport_images/soccer.png",
+        "image": "assets/sport_images/hockey.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Wednesday, Thursday, Friday",
@@ -390,7 +390,7 @@ var athletics = [
     {
         "name": "Jr. Girls Volleyball",
         "connection_links": [],
-        "image": "assets/sport_images/soccer.png",
+        "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Wednesday, Thursday, Friday",
@@ -402,7 +402,7 @@ var athletics = [
     {
         "name": "Sr. Girls Volleyball",
         "connection_links": [],
-        "image": "assets/sport_images/soccer.png",
+        "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Wednesday, Thursday, Friday",
@@ -426,7 +426,7 @@ var athletics = [
     {
         "name": "Track and Field",
         "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
+        "image": "assets/sport_images/running.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Wednesday, Friday",
@@ -498,7 +498,7 @@ var athletics = [
     {
         "name": "Girls Soccer",
         "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
+        "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Wednesday, Friday",
