@@ -186,7 +186,7 @@ var athletics = [
     {
         "name": "Boys Golf",
         "connection_links": [],
-        "image": "assets/sport_images/volleyball.png",
+        "image": "assets/sport_images/football.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Tuesday, Wednesday, Friday",
@@ -198,7 +198,19 @@ var athletics = [
     {
         "name": "Jr. Boys Football",
         "connection_links": [],
-        "image": "assets/sport_images/volleyball.png",
+        "image": "assets/sport_images/football.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "2:00 PM - 3:00 PM",
+        "practices": "Monday, Tuesday, Wednesday, Friday",
+        "prerequisites": "No prerequisites",
+        "categories": [
+            "fall_sports"
+        ]
+    },
+    {
+        "name": "Sr. Boys Football",
+        "connection_links": [],
+        "image": "assets/sport_images/foortball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "2:00 PM - 3:00 PM",
         "practices": "Monday, Tuesday, Wednesday, Friday",
