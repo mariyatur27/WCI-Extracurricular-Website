@@ -77,7 +77,7 @@
         "connection_links":["instagram", "email"],
         "instagram" : "https://www.instagram.com/wci_science",
         "email": "mailto:jocelyn_ridgway@wrdsb.ca",
-        "image": "assets/club_images/scienceclub.png",
+        "image": "assets/club_images/wciscienceclub.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
             "stem_category",
