@@ -524,6 +524,18 @@ li.error-message {
 img.icons {
     width: 100%;
   }
+button.web_link {
+    border: none;
+    background-color: #ac191a;
+    color: white;
+    padding: 1% 2%;
+    margin-top: 2%;
+    margin-right:  1%;
+}
+button.web_link:hover {
+  background-color: #0A1241;
+  animation-duration: 2s;
+}
 a.icons {
   width: 5%;
   margin-right: 2%;

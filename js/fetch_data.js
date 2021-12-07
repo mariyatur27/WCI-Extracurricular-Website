@@ -8,6 +8,8 @@ var clubs = [
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=k2uhtee",
         "email": "mailto:turem4748@wrdsb.ca",
         "image": "assets/club_images/webdev.png",
+        "website": "https://www.wciweb-dev.ca/",
+        "join_form": "https://forms.gle/3jH5k2CqeyjtEYwf8",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
             "stem_category",
