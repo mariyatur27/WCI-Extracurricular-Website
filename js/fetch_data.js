@@ -7,7 +7,7 @@ var clubs = [
         "instagram" : "https://www.instagram.com/wci_web_dev",
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=k2uhtee",
         "email": "mailto:turem4748@wrdsb.ca",
-        "image": "assets/club_images/webdev.png",
+        "image": "assets/club_images/wciwebdev.png",
         "website": "https://www.wciweb-dev.ca/",
         "join_form": "https://forms.gle/3jH5k2CqeyjtEYwf8",
         "description": "WCI Web-Dev is a web-development club where you will get to develop real projects for real people. This club welcomes students from all grades, backgrounds and interests. Everybody is encouraged to join the club and no coding experience is required. You will be taught everything about the design and programming of web platforms and websites. This club will be a mini stimulation of the web development and programming industry. We will all collaborate and work together on creating and developing cool web products.",
@@ -24,7 +24,7 @@ var clubs = [
         "instagram" : "https://www.instagram.com/wcihosa",
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=j3ztdep",
         "email": "mailto:wci.hosa@gmail.com ",
-        "image": "assets/club_images/hosa.png",
+        "image": "assets/club_images/healthoccupationsstudentsofamericahosa.png",
         "description": "The mission of HOSA Canada is to enable secondary and post secondary students to become leaders in the healthcare industry by providing future health professionals with knowledge, technical training and leadership development.",
         "categories": [
             "stem_category",
@@ -36,7 +36,7 @@ var clubs = [
         "link": "clubs.html",
         "meeting_time": "Wednesdays, 3:00 PM - 4:30 PM",
         "connection_links":["email", "instagram", "classroom"],
-        "image": "assets/club_images/csclub.png",
+        "image": "assets/club_images/comuterscienceclub.png",
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=c2prjk3 ",
         "description": "This club is for everyone interested in CS. Beginner to advanced, contest groups and a group that likes to develop games, internet and database usually at the end of the year after the contests are over.",
         "categories": [
@@ -48,7 +48,7 @@ var clubs = [
         "name": "Math Club",
         "meeting_time": "Tuesdays, 2:00 PM - 3:00 PM",
         "connection_links":[],
-        "image": "assets/club_images/math.jpg",
+        "image": "assets/club_images/mathclub.jpg",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
             "stem_category",
@@ -234,7 +234,7 @@ var clubs = [
             "academics_category",
             "all"
         ]
-    },
+    }
 ];
 var connection_links = {
     "classroom": {
