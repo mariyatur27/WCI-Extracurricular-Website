@@ -238,13 +238,13 @@ var clubs = [
 ];
 var connection_links = {
     "classroom": {
-        "icon": "assets/logos/classroom.png"
+        "icon": "assets/icons/classroom.png"
     },
     "instagram": {
-        "icon": "assets/logos/instagram.png"
+        "icon": "assets/icons/instagram.png"
     },
     "email": {
-        "icon": "assets/logos/email.png"
+        "icon": "assets/icons/email.png"
     }
 };
 var athletics = [
