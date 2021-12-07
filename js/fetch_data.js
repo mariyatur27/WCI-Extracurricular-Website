@@ -1,7 +1,7 @@
 var clubs = [
     {
         "name": "Web-Dev Club",
-        "link": "clubs.html",
+        "id": "wciwebdev",
         "meeting_time": "Tuesdays, 3:00 PM - 4:00 PM",
         "connection_links": ["classroom", "instagram", "email", "website"],
         "instagram" : "https://www.instagram.com/wci_web_dev",
@@ -16,7 +16,7 @@ var clubs = [
     },
     {
         "name": "HOSA",
-        "link": "clubs.html",
+        "id": "healthoccupationsstudentsofamericahosa",
         "meeting_time": "Mondays, 3:00 PM - 4:00 PM",
         "connection_links": ["instagram", "email", "classroom"],
         "instagram" : "https://www.instagram.com/wcihosa",
@@ -30,7 +30,7 @@ var clubs = [
     },
     {
         "name": "Computer Science Club",
-        "link": "clubs.html",
+        "id": "computerscienceclub",
         "meeting_time": "Wednesdays, 3:00 PM - 4:30 PM",
         "connection_links":["email", "instagram", "classroom"],
         "image": "assets/club_images/computerscienceclub.png",
@@ -42,6 +42,7 @@ var clubs = [
     },
     {
         "name": "Math Club",
+        "id": "mathclub",
         "meeting_time": "Tuesdays, 2:00 PM - 3:00 PM",
         "connection_links":[],
         "image": "assets/club_images/mathclub.png",
@@ -53,6 +54,7 @@ var clubs = [
     },
     {
         "name": "Debate Club",
+        "id": "debateclub",
         "meeting_time": "Thursdays, 2:45 PM - 3:45 PM",
         "connection_links":["instagram", "email", "classroom"],
         "instagram" : "https://www.instagram.com/wci_debate",
@@ -67,6 +69,7 @@ var clubs = [
     },
     {
         "name": "Science Club",
+        "id": "wciscienceclub",
         "meeting_time": "Thursdays, 3:15 PM - 4:15 PM",
         "connection_links":["instagram", "email"],
         "instagram" : "https://www.instagram.com/wci_science",
@@ -80,6 +83,7 @@ var clubs = [
     },
     {
         "name": "Viking Venture",
+        "id": "vikingventure",
         "meeting_time": "3:30 PM - 4:30 PM",
         "connection_links":["instagram", "email"],
         "instagram" : "https://www.instagram.com/vikingventure",
@@ -92,6 +96,7 @@ var clubs = [
     },
     {
         "name": "Ambassadors Christian Fellowship",
+        "id": "ambassadorschristianfellowship",
         "meeting_time": "Wednesdays, 2:45 PM - 3:45 PM",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=tegmr4n",
@@ -104,6 +109,7 @@ var clubs = [
     },
     {
         "name": "Anime Club",
+        "id": "animeclub",
         "meeting_time": "Tuesdays and Fridays, at lunch",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=jcdkgfs",
@@ -115,7 +121,8 @@ var clubs = [
         ]
     },
     {
-        "name": "Astronomy ",
+        "name": "Astronomy Club",
+        "id": "astronomy",
         "meeting_time": "Wednesdays, 2:30 PM - 3:30 PM",
         "connection_links":["classroom", "email", "instagram"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=pmcg2fk",
@@ -129,6 +136,7 @@ var clubs = [
     },
     {
         "name": "Baking Club",
+        "id": "bakingclub",
         "meeting_time": "Mondays, 3:15 PM - 4:15 PM",
         "connection_links":["classroom", "email", "instagram"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=vcoiex4",
@@ -141,6 +149,7 @@ var clubs = [
     },
     {
         "name": "Black Student Association",
+        "id": "blackstudentassociation",
         "meeting_time": "Mondays, 3:15 PM - 4:15 PM",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=sak6zmd",
@@ -154,6 +163,7 @@ var clubs = [
     },
     {
         "name": "Book Club",
+        "id": "bookclub",
         "meeting_time": "Tuesdays,  at lunch",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=kjm7ivl",
@@ -166,6 +176,7 @@ var clubs = [
     },
     {
         "name": "Chess Club",
+        "id": "chessclub",
         "meeting_time": "Tuesdays,  from 2:45 PM - 3:45 PM",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=v5etuaw",
@@ -179,6 +190,7 @@ var clubs = [
     },
     {
         "name": "Chinese Student Association",
+        "id": "chinesestudentassociation",
         "meeting_time": "Unknown",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=bx5qpfp",
@@ -192,6 +204,7 @@ var clubs = [
     },
     {
         "name": "Classics Club",
+        "id": "classicsclub",
         "meeting_time": "Unknown",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=qc6lrdn",
@@ -205,6 +218,7 @@ var clubs = [
     },
     {
         "name": "Club Latinx",
+        "id": "clublatinx",
         "meeting_time": "Wednesdays, 2:15 PM - 3:15 PM (week of courses C/D)",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=bmljchb",
@@ -235,6 +249,7 @@ var connection_links = {
 var athletics = [
     {
         "name": "Cross Country",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/running.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -246,6 +261,7 @@ var athletics = [
     },
     {
         "name": "Boys Golf",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/football.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -257,6 +273,7 @@ var athletics = [
     },
     {
         "name": "Jr. Boys Football",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/football.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -268,6 +285,7 @@ var athletics = [
     },
     {
         "name": "Sr. Boys Football",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/football.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -279,6 +297,7 @@ var athletics = [
     },
     {
         "name": "Jr. Boys Soccer",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -290,6 +309,7 @@ var athletics = [
     },
     {
         "name": "Sr. Boys Tennis",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -301,6 +321,7 @@ var athletics = [
     },
     {
         "name": "Jr. Boys Volleyball",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -312,6 +333,7 @@ var athletics = [
     },
     {
         "name": "Sr. Boys Volleyball",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -323,6 +345,7 @@ var athletics = [
     },
     {
         "name": "Girls Field Hockey",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -334,6 +357,7 @@ var athletics = [
     },
     {
         "name": "Jr. Girls Basketball",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -345,6 +369,7 @@ var athletics = [
     },
     {
         "name": "Sr. Girls Basketball",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -356,6 +381,7 @@ var athletics = [
     },
     {
         "name": "Sr. Girls Tennis",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -367,6 +393,7 @@ var athletics = [
     },
     {
         "name": "Alpine Skiing",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/skiing.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -379,6 +406,7 @@ var athletics = [
     },
     {
         "name": "Curling",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -390,6 +418,7 @@ var athletics = [
     },
     {
         "name": "Swimming",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -402,6 +431,7 @@ var athletics = [
     },
     {
         "name": "Boys Hockey",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/hockey.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -414,6 +444,7 @@ var athletics = [
     },
     {
         "name": "Jr. Boys Basketball",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -426,6 +457,7 @@ var athletics = [
     },
     {
         "name": "Sr. Boys Basketball",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -438,6 +470,7 @@ var athletics = [
     },
     {
         "name": "Girls Hockey",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/hockey.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -450,6 +483,7 @@ var athletics = [
     },
     {
         "name": "Jr. Girls Volleyball",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -462,6 +496,7 @@ var athletics = [
     },
     {
         "name": "Sr. Girls Volleyball",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -474,6 +509,7 @@ var athletics = [
     },
     {
         "name": "Badminton",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -485,6 +521,7 @@ var athletics = [
     },
     {
         "name": "Track and Field",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/running.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -496,6 +533,7 @@ var athletics = [
     },
     {
         "name": "Boys Rugby",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -507,6 +545,7 @@ var athletics = [
     },
     {
         "name": "Boys Slo-Pitch",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -518,6 +557,7 @@ var athletics = [
     },
     {
         "name": "Jr. Boys Tennis",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -529,6 +569,7 @@ var athletics = [
     },
     {
         "name": "Sr. Boys Soccer",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -540,6 +581,7 @@ var athletics = [
     },
     {
         "name": "Girls Rugby",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -551,6 +593,7 @@ var athletics = [
     },
     {
         "name": "Girls Soccer",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -562,6 +605,7 @@ var athletics = [
     },
     {
         "name": "Girls Slo-Pitch",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -573,6 +617,7 @@ var athletics = [
     },
     {
         "name": "Jr. Girls Tennis",
+        "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",

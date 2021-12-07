@@ -1,7 +1,7 @@
 [
     {
         "name": "Web-Dev Club",
-        "link": "clubs.html",
+        "id": "wciwebdev",
         "meeting_time": "Tuesdays, 3:00 PM - 4:00 PM",
         "connection_links": ["classroom", "instagram", "email", "website"],
         "instagram" : "https://www.instagram.com/wci_web_dev",
@@ -16,7 +16,7 @@
     },
     {
         "name": "HOSA",
-        "link": "clubs.html",
+        "id": "healthoccupationsstudentsofamericahosa",
         "meeting_time": "Mondays, 3:00 PM - 4:00 PM",
         "connection_links": ["instagram", "email", "classroom"],
         "instagram" : "https://www.instagram.com/wcihosa",
@@ -30,7 +30,7 @@
     },
     {
         "name": "Computer Science Club",
-        "link": "clubs.html",
+        "id": "computerscienceclub",
         "meeting_time": "Wednesdays, 3:00 PM - 4:30 PM",
         "connection_links":["email", "instagram", "classroom"],
         "image": "assets/club_images/computerscienceclub.png",
@@ -42,6 +42,7 @@
     },
     {
         "name": "Math Club",
+        "id": "mathclub",
         "meeting_time": "Tuesdays, 2:00 PM - 3:00 PM",
         "connection_links":[],
         "image": "assets/club_images/mathclub.png",
@@ -53,6 +54,7 @@
     },
     {
         "name": "Debate Club",
+        "id": "debateclub",
         "meeting_time": "Thursdays, 2:45 PM - 3:45 PM",
         "connection_links":["instagram", "email", "classroom"],
         "instagram" : "https://www.instagram.com/wci_debate",
@@ -67,6 +69,7 @@
     },
     {
         "name": "Science Club",
+        "id": "wciscienceclub",
         "meeting_time": "Thursdays, 3:15 PM - 4:15 PM",
         "connection_links":["instagram", "email"],
         "instagram" : "https://www.instagram.com/wci_science",
@@ -80,6 +83,7 @@
     },
     {
         "name": "Viking Venture",
+        "id": "vikingventure",
         "meeting_time": "3:30 PM - 4:30 PM",
         "connection_links":["instagram", "email"],
         "instagram" : "https://www.instagram.com/vikingventure",
@@ -92,6 +96,7 @@
     },
     {
         "name": "Ambassadors Christian Fellowship",
+        "id": "ambassadorschristianfellowship",
         "meeting_time": "Wednesdays, 2:45 PM - 3:45 PM",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=tegmr4n",
@@ -104,6 +109,7 @@
     },
     {
         "name": "Anime Club",
+        "id": "animeclub",
         "meeting_time": "Tuesdays and Fridays, at lunch",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=jcdkgfs",
@@ -115,7 +121,8 @@
         ]
     },
     {
-        "name": "Astronomy ",
+        "name": "Astronomy Club",
+        "id": "astronomy",
         "meeting_time": "Wednesdays, 2:30 PM - 3:30 PM",
         "connection_links":["classroom", "email", "instagram"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=pmcg2fk",
@@ -129,6 +136,7 @@
     },
     {
         "name": "Baking Club",
+        "id": "bakingclub",
         "meeting_time": "Mondays, 3:15 PM - 4:15 PM",
         "connection_links":["classroom", "email", "instagram"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=vcoiex4",
@@ -141,6 +149,7 @@
     },
     {
         "name": "Black Student Association",
+        "id": "blackstudentassociation",
         "meeting_time": "Mondays, 3:15 PM - 4:15 PM",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=sak6zmd",
@@ -154,6 +163,7 @@
     },
     {
         "name": "Book Club",
+        "id": "bookclub",
         "meeting_time": "Tuesdays,  at lunch",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=kjm7ivl",
@@ -166,6 +176,7 @@
     },
     {
         "name": "Chess Club",
+        "id": "chessclub",
         "meeting_time": "Tuesdays,  from 2:45 PM - 3:45 PM",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=v5etuaw",
@@ -179,6 +190,7 @@
     },
     {
         "name": "Chinese Student Association",
+        "id": "chinesestudentassociation",
         "meeting_time": "Unknown",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=bx5qpfp",
@@ -192,6 +204,7 @@
     },
     {
         "name": "Classics Club",
+        "id": "classicsclub",
         "meeting_time": "Unknown",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=qc6lrdn",
@@ -205,6 +218,7 @@
     },
     {
         "name": "Club Latinx",
+        "id": "clublatinx",
         "meeting_time": "Wednesdays, 2:15 PM - 3:15 PM (week of courses C/D)",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=bmljchb",

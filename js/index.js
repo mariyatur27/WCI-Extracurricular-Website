@@ -59,11 +59,11 @@ function clearList(){
 }
 var slideIndexes = [];
 // Slide shows
-showSlides(Math.floor(window.innerWidth/260), [clubs, athletics, music], ["club_slide_show_cards", "athletics_slide_show_cards", "music_slide_show_cards"], true);
+showSlides(Math.floor(window.innerWidth/260), [clubs, athletics, music], ["club_slide_show_cards", "athletics_slide_show_cards", "music_slide_show_cards"], true, ["clubs.html", "athletics.html", "index.html"]);
 
-window.onresize = () => {showSlides(Math.floor(window.innerWidth/260), [clubs, athletics, music], ["club_slide_show_cards", "athletics_slide_show_cards", "music_slide_show_cards"], false)}
+window.onresize = () => {showSlides(Math.floor(window.innerWidth/260), [clubs, athletics, music], ["club_slide_show_cards", "athletics_slide_show_cards", "music_slide_show_cards"], false, ["clubs.html", "athletics.html", "index.html"])}
 
-async function showSlides(amount, slideShowSources, slideShowIds, reset) {
+async function showSlides(amount, slideShowSources, slideShowIds, reset, pageLocations) {
     if (!dataFetched) {
         await fetchData();
     }
@@ -84,7 +84,7 @@ async function showSlides(amount, slideShowSources, slideShowIds, reset) {
             } else {
                 var slideIndex = cardIndex
             }
-            generateSlide(slideIndex, slideShowSources[slideShowIndex], slideShowDiv);
+            generateSlide(slideIndex, slideShowSources[slideShowIndex], slideShowDiv, pageLocations[slideShowIndex]);
         }
         if (reset) {
             slideIndexes.push(0);
@@ -92,11 +92,11 @@ async function showSlides(amount, slideShowSources, slideShowIds, reset) {
     }
     // Schedule the slides to move in 2 seconds, if we need to
     if (reset) {
-        setTimeout(moveSlides, 2000, amount+1, 1, slideShowSources, slideShowIds);
+        setTimeout(moveSlides, 2000, amount+1, 1, slideShowSources, slideShowIds, pageLocations);
     }
 }
 
-function moveSlides(startIndex, offset, slideShowSources, slideShowDivIds) {
+function moveSlides(startIndex, offset, slideShowSources, slideShowDivIds, pageLocations) {
     for (var slideShowIndex = 0; slideShowIndex < slideShowSources.length; slideShowIndex++) {
         slideIndexes[slideShowIndex] += offset;
         // Get the div we're using
@@ -115,14 +115,14 @@ function moveSlides(startIndex, offset, slideShowSources, slideShowDivIds) {
             slideShowDiv.removeChild(c_items[0]);
 
             // Add a new item
-            generateSlide(index, slideShowSource, slideShowDiv);
+            generateSlide(index, slideShowSource, slideShowDiv, pageLocations[slideShowIndex]);
         }
     }
     // Schedule slides to move again in 2 seconds
     setTimeout(moveSlides, 2000, startIndex+offset, offset, slideShowSources, slideShowDivIds);
 }
 
-function generateSlide(index, slideShowCards, slideShowDiv) {
+function generateSlide(index, slideShowCards, slideShowDiv, pageLocation) {
     // Ensure that index is not larger than necessary
     while (index >= slideShowCards.length) {index -= slideShowCards.length}
 
@@ -132,21 +132,19 @@ function generateSlide(index, slideShowCards, slideShowDiv) {
 
     // Link, image and name for our item
     var link = document.createElement("a");
+    link.classList.add("hidden_link")
     var image = document.createElement("img");
     image.classList.add("c_image");
     var club_name_header = document.createElement("h5");
 
     // Set the link, image and name
-    link.href = "index.html";
-    image.src = slideShowCards[index]["image"];
-    club_name_header.innerText = slideShowCards[index]["name"];
+    link.href = pageLocation.concat("?box=".concat(slideShowCards[index].id));
+    image.src = slideShowCards[index].image;
+    club_name_header.innerText = slideShowCards[index].name;
 
-    // Add the image to the link
     link.appendChild(image);
-
-    // Add the link & name header to the slide
+    link.appendChild(club_name_header);
     carousel_item.appendChild(link);
-    carousel_item.appendChild(club_name_header);
 
     // Add the slide
     slideShowDiv.appendChild(carousel_item);
