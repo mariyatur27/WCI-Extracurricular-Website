@@ -21,6 +21,9 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
                     header.appendChild(main_image);
                     let info_div = document.createElement("div"); info_div.classList.add("club_info");
                         let name_header = document.createElement("h2"); name_header.classList.add("lrn"); name_header.innerText = boxData.name;
+                        if (boxData.name.length > 15) {
+                            name_header.classList.add("lrn_small");
+                        }
                         info_div.appendChild(name_header);
                         let drop_div = document.createElement("div"); drop_div.classList.add("together2");
                             let drop_button = document.createElement("button"); drop_button.classList.add("drop"); drop_button.addEventListener("click", () => {box.classList.toggle("active");});
@@ -41,18 +44,46 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
                     expand_box.appendChild(summary_title);
                     let summary = document.createElement("p"); summary.innerHTML = boxData.description;
                     expand_box.appendChild(summary);
-                    let meeting_time_text = document.createElement("h5"); meeting_time_text.innerText = "Meeting time: ".concat(boxData.meeting_time);
+                    let meeting_time_text = document.createElement("h6"); meeting_time_text.innerText = "Meeting time: ".concat(boxData.meeting_time);
+                    meeting_time_text.classList.add("contents");
                     expand_box.appendChild(meeting_time_text);
                     let box_links = document.createElement("div"); box_links.classList.add("together");
-                        for (link of boxData.connection_links) {
-                            if (link in connection_links) {
-                                let link_a = document.createElement("a"); link_a.classList.add("icons"); link_a.href = boxData[link];
-                                let link_image = document.createElement("img"); link_image.classList.add("icons"); link_image.src = connection_links[link].icon;
-                                link_a.appendChild(link_image);
-                                box_links.appendChild(link_a);
-                            }
+                    for (link of boxData.connection_links) {
+                        if (link in connection_links) {
+                            let link_a = document.createElement("a"); link_a.classList.add("icons"); link_a.href = boxData[link];
+                            let link_image = document.createElement("img"); link_image.classList.add("icons"); link_image.src = connection_links[link].icon;
+                            link_a.appendChild(link_image);
+                            box_links.appendChild(link_a);
                         }
+                    }
                     expand_box.appendChild(box_links);
+                    if (boxData.prerequisites != undefined) {
+                        let prerequisites = document.createElement("h6"); prerequisites.innerHTML = "Prerequisits: ".concat(boxData.prerequisites);
+                        prerequisites.classList.add("contents");
+                        expand_box.appendChild(prerequisites);
+                    };
+                    if (boxData.practices != undefined){
+                        let practices = document.createElement("h6"); practices.innerHTML = "Practices: ".concat(boxData.practices);
+                        practices.classList.add("contents");
+                        expand_box.appendChild(practices);
+                    };
+                    let box_buttons = document.createElement("div"); box_links.classList.add("together");
+                    if (boxData.website != undefined){
+                        let web_link = document.createElement("a"); web_link.classList.add("web_link"); web_link.href = boxData.website;
+                        let web_button = document.createElement("button"); web_button.classList.add("web_link"); web_button.innerHTML = "Club Website"; web_button.type="button", web_button.name="club_btn";
+                        web_link.appendChild(web_button);
+                        box_buttons.appendChild(web_link);
+                        // expand_box.appendChild(web_link);
+                    };
+                    if (boxData.website != undefined){
+                        let join_link = document.createElement("a"); join_link.classList.add("web_link"); join_link.href = boxData.join_form;
+                        let join_button = document.createElement("button"); join_button.classList.add("web_link"); join_button.innerHTML = "Join The Club"; join_button.type="button", join_button.name="join_btn";
+                        join_link.appendChild(join_button);
+                        box_buttons.appendChild(join_link);
+                        // expand_box.appendChild(web_link);
+                    };
+                    expand_box.appendChild(box_buttons);   
+
                 box.appendChild(expand_box);
             row.appendChild(box);
             if (boxCount % countPerRow == countPerRow-1) {

@@ -53,6 +53,19 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+// Uncheck the radio button
+// function check() {
+//     var radio = document.getElementsByName("choice").checked;
+//     if (radio = true){
+//         radio = false;
+//     }else if (radio = false){
+//         radio = true;
+//     }
+// };
+
+var radio = document.getElementsByName("choice");
+radio.onmouseup = deselectable;
+
 // Function for the club search bar
 function search_club() {
     var input = document.getElementById('club_search').value
@@ -70,21 +83,21 @@ function search_club() {
     }
 };
 
-// Music search bar
-function search_music() {
-    var input = document.getElementById('club_search').value;
-    input = input.toLowerCase();
-    var music = document.getElementsByClassName('orch-head');
-    var music_box = document.getElementsByClassName('orchestra');
+// // Music search bar
+// function search_music() {
+//     var input = document.getElementById('club_search').value;
+//     input = input.toLowerCase();
+//     var music = document.getElementsByClassName('orch-head');
+//     var music_box = document.getElementsByClassName('orchestra');
 
-    for (i = 0; i < music.length; i++) {
-        if(!music[i].innerHTML.toLowerCase().includes(input)) {
-            music_box[i].style.display = "none";
-        } else {
-            music_box[i].style.display = "list-item";
-        }
-    }
-};
+//     for (i = 0; i < music.length; i++) {
+//         if(!music[i].innerHTML.toLowerCase().includes(input)) {
+//             music_box[i].style.display = "none";
+//         } else {
+//             music_box[i].style.display = "list-item";
+//         }
+//     }
+// };
 
 
 /* Commented out, as I don't think this section is used any more.
@@ -125,3 +138,6 @@ function expand() {
 };
 
 */
+
+
+
