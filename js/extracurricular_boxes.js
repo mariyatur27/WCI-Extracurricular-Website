@@ -44,8 +44,12 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
                     expand_box.appendChild(summary_title);
                     let summary = document.createElement("p"); summary.innerHTML = boxData.description;
                     expand_box.appendChild(summary);
-                    let meeting_time_text = document.createElement("h6"); meeting_time_text.innerText = "Meeting time: ".concat(boxData.meeting_time);
-                    meeting_time_text.classList.add("contents");
+                    let meeting_time_text = document.createElement("h6"); 
+                    if ("meeting_time_title" in boxData) {
+                        meeting_time_text.innerText = boxData.meeting_time_title.concat(" ").concat(boxData.meeting_time);
+                    } else {
+                        meeting_time_text.innerText = "Meeting time: ".concat(boxData.meeting_time);
+                    } meeting_time_text.classList.add("contents");
                     expand_box.appendChild(meeting_time_text);
                     let box_links = document.createElement("div"); box_links.classList.add("together");
                     for (link of boxData.connection_links) {
@@ -57,15 +61,9 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
                         }
                     }
                     expand_box.appendChild(box_links);
-                    if (boxData.prerequisites != undefined) {
-                        let prerequisites = document.createElement("h6"); prerequisites.innerHTML = "Prerequisits: ".concat(boxData.prerequisites);
-                        prerequisites.classList.add("contents");
+                    if ("prerequisites" in boxData) {
+                        let prerequisites = document.createElement("h6"); prerequisites.innerHTML = "Prerequisites: ".concat(boxData.prerequisites); prerequisites.classList.add("contents");
                         expand_box.appendChild(prerequisites);
-                    };
-                    if (boxData.practices != undefined){
-                        let practices = document.createElement("h6"); practices.innerHTML = "Practices: ".concat(boxData.practices);
-                        practices.classList.add("contents");
-                        expand_box.appendChild(practices);
                     };
                     let box_buttons = document.createElement("div"); box_links.classList.add("together");
                     if (boxData.website != undefined){
