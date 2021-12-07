@@ -11,8 +11,13 @@ async function setupBoxes(boxesSource, divID, countPerRow) {
 
     let boxCount = 0;
 
+    let totalBoxes = 0;
+
     let row;
     
+    boxesSource.forEach((boxData) => {
+        if ((activeFilters.size == 0 || boxData.categories.some(category => {return activeFilters.has(category)})) && (boxData.name.toLowerCase().includes(searchWord))) {totalBoxes+=1;}});
+
     boxesSource.forEach((boxData) => {
         if ((activeFilters.size == 0 || boxData.categories.some(category => {return activeFilters.has(category)})) && (boxData.name.toLowerCase().includes(searchWord))) {
             if (boxCount % countPerRow == 0) {
@@ -30,6 +35,7 @@ async function setupBoxes(boxesSource, divID, countPerRow) {
                         info_div.appendChild(name_header);
                         let drop_div = document.createElement("div"); drop_div.classList.add("together2");
                             let drop_button = document.createElement("button"); drop_button.classList.add("drop"); drop_button.addEventListener("click", () => {box.classList.toggle("active");});
+                            if (totalBoxes <= 2) {box.classList.add("active")}
                                 let drop_inner_div = document.createElement("div"); drop_inner_div.classList.add("together2");
                                     let learn_more_header = document.createElement("h6"); learn_more_header.innerText = "Learn More";
                                     drop_inner_div.appendChild(learn_more_header);
