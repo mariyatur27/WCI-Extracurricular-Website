@@ -65,15 +65,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
                         let prerequisites = document.createElement("h6"); prerequisites.innerHTML = "Prerequisites: ".concat(boxData.prerequisites); prerequisites.classList.add("contents");
                         expand_box.appendChild(prerequisites);
                     };
-                    let box_buttons = document.createElement("div"); box_links.classList.add("together");
-                    if (boxData.join_form != undefined){
-                        let join_link = document.createElement("a"); join_link.classList.add("web_link"); join_link.href = boxData.join_form;
-                        let join_button = document.createElement("button"); join_button.classList.add("web_link"); join_button.innerHTML = "Join The Club"; join_button.type="button", join_button.name="join_btn";
-                        join_link.appendChild(join_button);
-                        box_buttons.appendChild(join_link);
-                        // expand_box.appendChild(web_link);
-                    };
-                    expand_box.appendChild(box_buttons);   
 
                 box.appendChild(expand_box);
             row.appendChild(box);
