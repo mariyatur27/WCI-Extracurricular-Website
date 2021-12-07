@@ -234,7 +234,7 @@ var clubs = [
             "academics_category",
             "all"
         ]
-    },
+    }
 ];
 var connection_links = {
     "classroom": {
