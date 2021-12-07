@@ -10,7 +10,8 @@
         "image": "assets/club_images/webdev.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
-            "stem_category"
+            "stem_category",
+            "all"
         ]
     },
     {
@@ -23,7 +24,8 @@
         "image": "assets/club_images/hosa.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
-            "stem_category"
+            "stem_category",
+            "all"
         ]
     },
     {
@@ -34,7 +36,8 @@
         "image": "assets/club_images/csclub.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
-            "stem_category"
+            "stem_category",
+            "all"
         ]
     },
     {
@@ -45,7 +48,8 @@
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
             "stem_category",
-            "academics_category"
+            "academics_category",
+            "all"
         ]
     },
     {
@@ -57,7 +61,8 @@
         "image": "assets/club_images/debateclub.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
-            "business_category"
+            "business_category",
+            "all"
         ]
     },
     {
@@ -70,7 +75,8 @@
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
             "stem_category",
-            "academics_category"
+            "academics_category",
+            "all"
         ]
     },
     {
@@ -82,7 +88,8 @@
         "image": "assets/club_images/vikingventure.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
-            "business_category"
+            "business_category",
+            "all"
         ]
     },
     {
@@ -94,7 +101,8 @@
         "image": "assets/club_images/vikingventure.png",
         "description": "A place for anyone to ask questions about and explore a life with Jesus. The goal is to serve the WCI community while providing a safe place for fellowship.",
         "categories": [
-            "hobby_category"
+            "recreational_category",
+            "all"
         ]
     },
     {
@@ -106,7 +114,8 @@
         "image": "assets/club_images/vikingventure.png",
         "description": "A place for anyone to ask questions about and explore a life with Jesus. The goal is to serve the WCI community while providing a safe place for fellowship.",
         "categories": [
-            "hobby_category"
+            "recreational_category",
+            "all"
         ]
     },
     {
@@ -118,8 +127,9 @@
         "image": "assets/club_images/vikingventure.png",
         "description": "A club for anyone interested in learning more about astronomy with like-minded students. We will explore the science of astronomy, in weekly club meetings. We also organize amature astronomy events, citizen science projects, and telescope build projects. Come and explore the sky with us! For more info follow: wci.astro.club on Instagram. ",
         "categories": [
-            "hobby_category",
-            "stem_category"
+            "recreational_category",
+            "stem_category",
+            "all"
         ]
     },
     {
@@ -131,7 +141,8 @@
         "image": "assets/club_images/vikingventure.png",
         "description": "Come bake with us.  We meet online every Monday at 3:15 for 1 hour. All baking is completed at home and no experience is needed",
         "categories": [
-            "hobby_category"
+            "recreational_category",
+            "all"
         ]
     },
     {
@@ -143,7 +154,9 @@
         "image": "assets/club_images/vikingventure.png",
         "description": "This club is a space for students to get together, unwind, connect, and discuss important issues, topics and more!",
         "categories": [
-            "hobby_category"
+            "recreational_category",
+            "social_justice_category",
+            "all"
         ]
     },
     {
@@ -155,7 +168,8 @@
         "image": "assets/club_images/vikingventure.png",
         "description": "This club is available for students to meet and read books and share what they think as the group works through books together. Books chosen will be easily available for free on the web or from the library. ", 
         "categories": [
-            "hobby_category"
+            "recreational_category",
+            "all"
         ]
     }
 ]

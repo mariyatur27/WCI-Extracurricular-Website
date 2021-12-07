@@ -56,20 +56,26 @@
                         <i class="fas fa-search"></i>
                         <div class="dropdown">
                             <div id="dropdown_content" class="dropdown_content">
-                                <input type="checkbox" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='art_category');" ondblclick="check()" name="choice" id="art" class="filterbt">
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='all');" name="choice" id="all" class="filterbt">
+                                <label for="all">All</label>
+
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='art_category');" ondblclick="check()" name="choice" id="art" class="filterbt">
                                 <label for="art">Art</label>
 
-                                <input type="checkbox" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='stem_category');" name="choice" id="stem" class="filterbt">
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='stem_category');" name="choice" id="stem" class="filterbt">
                                 <label for="stem">STEM</label>
 
-                                <input type="checkbox" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='academics_category');" name="choice" id="academics" class="filterbt">
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='academics_category');" name="choice" id="academics" class="filterbt">
                                 <label for="academics">Academics</label>
 
-                                <input type="checkbox" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='hobby_category');" name="choice" id="hobby" class="filterbt">
-                                <label for="hobby">Hobby</label>
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='recreational_category');" name="choice" id="recreational" class="filterbt">
+                                <label for="recreational">Recreational</label>
 
-                                <input type="checkbox" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='business_category');" name="choice" id="business" class="filterbt">
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='business_category');" name="choice" id="business" class="filterbt">
                                 <label for="business">Business</label>
+
+                                <input type="radio" onclick="setupBoxes(clubs, 'club_boxes', 2, filter='social_justice_category');" name="choice" id="social_justice" class="filterbt">
+                                <label for="social_justice">Social Justice</label>
                             </div>
                         </div>
                     <div class="clubs" id="club_boxes"></div>
