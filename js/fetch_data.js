@@ -3,7 +3,7 @@ var clubs = [
         "name": "Web-Dev Club",
         "link": "clubs.html",
         "meeting_time": "Tuesdays, 3:00 PM - 4:00 PM",
-        "connection_links": ["classroom", "instagram", "email"],
+        "connection_links": ["classroom", "instagram", "email", "website"],
         "instagram" : "https://www.instagram.com/wci_web_dev",
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=k2uhtee",
         "email": "mailto:turem4748@wrdsb.ca",
@@ -245,6 +245,9 @@ var connection_links = {
     },
     "email": {
         "icon": "assets/icons/email.png"
+    },
+    "website": {
+        "icon": "assets/icons/website.png"
     }
 };
 var athletics = [

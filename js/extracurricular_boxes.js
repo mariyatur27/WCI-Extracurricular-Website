@@ -66,14 +66,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
                         expand_box.appendChild(prerequisites);
                     };
                     let box_buttons = document.createElement("div"); box_links.classList.add("together");
-                    if (boxData.website != undefined){
-                        let web_link = document.createElement("a"); web_link.classList.add("web_link"); web_link.href = boxData.website;
-                        let web_button = document.createElement("button"); web_button.classList.add("web_link"); web_button.innerHTML = "Club Website"; web_button.type="button", web_button.name="club_btn";
-                        web_link.appendChild(web_button);
-                        box_buttons.appendChild(web_link);
-                        // expand_box.appendChild(web_link);
-                    };
-                    if (boxData.website != undefined){
+                    if (boxData.join_form != undefined){
                         let join_link = document.createElement("a"); join_link.classList.add("web_link"); join_link.href = boxData.join_form;
                         let join_button = document.createElement("button"); join_button.classList.add("web_link"); join_button.innerHTML = "Join The Club"; join_button.type="button", join_button.name="join_btn";
                         join_link.appendChild(join_button);
