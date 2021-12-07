@@ -51,20 +51,19 @@
                     <h2 class="section-heading text-uppercase" id="clubs_title">Athletics</h2>
                     <p class="descrp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.</p>
                     <!-- Search Bar -->
-                    <input type="text" id="club_search" class="club_search" onkeyup="setupBoxes(athletics, 'athletics_boxes', 2, null, this.value.toLowerCase());" placeholder="Search for a sport...">
+                    <input type="text" id="club_search" class="club_search" onkeyup="searchWord = this.value.toLowerCase(); setupBoxes(athletics, 'athletics_boxes', 2);" placeholder="Search for a sport...">
                     <i class="fas fa-search"></i>
                     <div class="dropdown">
                             <div id="dropdown_content" class="dropdown_content">
 
-                                <input type="radio" onclick="setupBoxes(athletics, 'athletics_boxes', 2, 'winter_sports');" name="choice" id="winter_sports" class="filterbt">
-                                <label for="art">Winter Sports</label>
-                                <span class="checkmark"></span>
+                                <input type="checkbox" onclick="if (activeFilters.has('winter_sports')) {activeFilters.delete('winter_sports');} else {activeFilters.add('winter_sports');} setupBoxes(athletics, 'athletics_boxes', 2);" name="choice" id="winter_sports" class="filterbt">
+                                <label for="winter_sports">Winter Sports</label>
 
-                                <input type="radio" onclick="setupBoxes(athletics, 'athletics_boxes', 2, 'fall_sports');" name="choice" id="fall_sports" class="filterbt">
-                                <label for="stem">Fall Sports</label>
+                                <input type="checkbox" onclick="if (activeFilters.has('fall_sports')) {activeFilters.delete('fall_sports');} else {activeFilters.add('fall_sports');} setupBoxes(athletics, 'athletics_boxes', 2);" name="choice" id="fall_sports" class="filterbt">
+                                <label for="fall_sports">Fall Sports</label>
 
-                                <input type="radio" onclick="setupBoxes(athletics, 'athletics_boxes', 2, 'spring_sports');" name="choice" id="spring_sports" class="filterbt">
-                                <label for="academics">Spring Sports</label>
+                                <input type="checkbox" onclick="if (activeFilters.has('spring_sports')) {activeFilters.delete('spring_sports');} else {activeFilters.add('spring_sports');} setupBoxes(athletics, 'athletics_boxes', 2);" name="choice" id="spring_sports" class="filterbt">
+                                <label for="spring_sports">Spring Sports</label>
                             </div>
                         </div>
                         <div class="clubs" id="athletics_boxes"></div>

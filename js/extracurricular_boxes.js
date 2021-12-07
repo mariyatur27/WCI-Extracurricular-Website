@@ -1,4 +1,7 @@
-async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=null) {
+var activeFilters = new Set();
+var searchWord = "";
+
+async function setupBoxes(boxesSource, divID, countPerRow) {
     if (!dataFetched) {
         await fetchData();
     }
@@ -11,7 +14,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
     let row;
     
     boxesSource.forEach((boxData) => {
-        if ((filter == null || boxData.categories.includes(filter)) && (search == null || boxData.name.toLowerCase().includes(search))) {
+        if ((activeFilters.size == 0 || boxData.categories.some(category => {return activeFilters.has(category)})) && (boxData.name.toLowerCase().includes(searchWord))) {
             if (boxCount % countPerRow == 0) {
                 row = document.createElement("div"); row.classList.add("club_row");
             }
