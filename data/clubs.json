@@ -36,7 +36,7 @@
         "link": "clubs.html",
         "meeting_time": "Wednesdays, 3:00 PM - 4:30 PM",
         "connection_links":["email", "instagram", "classroom"],
-        "image": "assets/club_images/comuterscienceclub.png",
+        "image": "assets/club_images/computerscienceclub.png",
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=c2prjk3 ",
         "description": "This club is for everyone interested in CS. Beginner to advanced, contest groups and a group that likes to develop games, internet and database usually at the end of the year after the contests are over.",
         "categories": [
@@ -48,7 +48,7 @@
         "name": "Math Club",
         "meeting_time": "Tuesdays, 2:00 PM - 3:00 PM",
         "connection_links":[],
-        "image": "assets/club_images/mathclub.jpg",
+        "image": "assets/club_images/mathclub.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
             "stem_category",
