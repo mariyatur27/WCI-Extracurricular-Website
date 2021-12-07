@@ -61,9 +61,11 @@ async function setupBoxes(boxesSource, divID, countPerRow, filter=null, search=n
                         }
                     }
                     expand_box.appendChild(box_links);
-                    if ("prerequisites" in boxData) {
-                        let prerequisites = document.createElement("h6"); prerequisites.innerHTML = "Prerequisites: ".concat(boxData.prerequisites); prerequisites.classList.add("contents");
-                        expand_box.appendChild(prerequisites);
+                    if ("extra_info" in boxData) {
+                        for (info of boxData.extra_info) {
+                            let infotext = document.createElement("h6"); infotext.innerText = info; infotext.classList.add("contents");
+                            expand_box.appendChild(infotext);
+                        }
                     };
 
                 box.appendChild(expand_box);
