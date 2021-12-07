@@ -66,7 +66,15 @@ async function setupBoxes(boxesSource, divID, countPerRow) {
                     expand_box.appendChild(box_links);
                     if ("extra_info" in boxData) {
                         for (info of boxData.extra_info) {
-                            let infotext = document.createElement("h6"); infotext.innerText = info; infotext.classList.add("contents");
+                            if (info.type == "important_text") {
+                                var infotext = document.createElement("h6");
+                            } else if (info.type == "normal_text") {
+                                var infotext = document.createElement("p");
+                            } else {
+                                throw "Unrecognized extra info text type: ".concat(info.type);
+                            }
+                            infotext.innerText = info.text;
+                            infotext.classList.add("contents");
                             expand_box.appendChild(infotext);
                         }
                     };
