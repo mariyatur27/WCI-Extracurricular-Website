@@ -12284,6 +12284,45 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #ced4da;
 }
 
+.event-popup {
+  position: fixed;
+  bottom: 40px;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  height: 56px;
+  padding: 5px 14px;
+  display: none;
+  align-items: center;
+  /*justify-content: space-around;*/
+  background-color: #a30001;
+  /*display: flex;
+  border-radius: 5px;
+  border-color: #ff00ff;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);*/
+}
+
+.event-popup-icon {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 8px;
+}
+
+.event-popup-text {
+  position: absolute;
+  left: 56px;
+  top: 0px;
+}
+
+.event-popup-close {
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .footer {
   text-align: center;
   font-size: 0.9rem;
