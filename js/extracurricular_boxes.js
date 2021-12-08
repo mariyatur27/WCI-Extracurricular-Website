@@ -49,31 +49,33 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                     header.appendChild(info_div);
                 box.appendChild(header);
                 let expand_box = document.createElement("div"); expand_box.classList.add("expand_box");
-                    let summary_title = document.createElement("h4"); summary_title.innerText = "Summary: ";
-                    expand_box.appendChild(summary_title);
-                    let summary = document.createElement("p"); summary.innerHTML = boxData.description;
-                    expand_box.appendChild(summary);
-                    let meeting_time_text = document.createElement("h6"); 
-                    if ("meeting_time_title" in boxData) {
-                        meeting_time_text.innerText = boxData.meeting_time_title.concat(" ").concat(boxData.meeting_time);
-                    } else {
-                        meeting_time_text.innerText = "Meeting time: ".concat(boxData.meeting_time);
-                    } meeting_time_text.classList.add("contents");
-                    expand_box.appendChild(meeting_time_text);
-                    if ("extra_info" in boxData) {
-                        for (info of boxData.extra_info) {
-                            if (info.type == "important_text") {
-                                var infotext = document.createElement("h6");
-                            } else if (info.type == "normal_text") {
-                                var infotext = document.createElement("p");
-                            } else {
-                                throw "Unrecognized extra info text type: ".concat(info.type);
+                    let expand_box_core_content = document.createElement("div"); expand_box_core_content.classList.add("expand_box_core_content");
+                        let summary_title = document.createElement("h4"); summary_title.innerText = "Summary: ";
+                        expand_box_core_content.appendChild(summary_title);
+                        let summary = document.createElement("p"); summary.innerHTML = boxData.description;
+                        expand_box_core_content.appendChild(summary);
+                        let meeting_time_text = document.createElement("h6"); 
+                        if ("meeting_time_title" in boxData) {
+                            meeting_time_text.innerText = boxData.meeting_time_title.concat(" ").concat(boxData.meeting_time);
+                        } else {
+                            meeting_time_text.innerText = "Meeting time: ".concat(boxData.meeting_time);
+                        } meeting_time_text.classList.add("contents");
+                        expand_box_core_content.appendChild(meeting_time_text);
+                        if ("extra_info" in boxData) {
+                            for (info of boxData.extra_info) {
+                                if (info.type == "important_text") {
+                                    var infotext = document.createElement("h6");
+                                } else if (info.type == "normal_text") {
+                                    var infotext = document.createElement("p");
+                                } else {
+                                    throw "Unrecognized extra info text type: ".concat(info.type);
+                                }
+                                infotext.innerText = info.text;
+                                infotext.classList.add("contents");
+                                expand_box_core_content.appendChild(infotext);
                             }
-                            infotext.innerText = info.text;
-                            infotext.classList.add("contents");
-                            expand_box.appendChild(infotext);
                         }
-                    }
+                    expand_box.appendChild(expand_box_core_content);
                     let box_links = document.createElement("div"); box_links.classList.add("together");
                     for (link of boxData.connection_links) {
                         if (link in connection_links) {

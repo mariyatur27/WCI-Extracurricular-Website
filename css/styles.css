@@ -716,12 +716,15 @@ button.web_button:hover{
     display: block;
     margin-left: 1%;
     width: 96%;
-    max-height: 250px;
-    overflow-y: scroll;
+    max-height: 400px;
     display: none;
   }
   .active .expand_box {
     display: block;
+  }
+  .expand_box_core_content {
+    overflow-y: scroll;
+    max-height: calc(400px - 21vh);
   }
   .drop {
     background-color: transparent;
