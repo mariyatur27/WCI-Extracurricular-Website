@@ -28,7 +28,9 @@ li.error-message {
 }
 
 img.icons {
-	width: 100%;
+	width: 30px;
+	margin-right: 5px;
+	/* width: 100%; */
 }
 
 img.club_img {
@@ -214,6 +216,11 @@ button.web_button {
 
 button.web_button:hover {
 	background-color: #3c7fcf;
+}
+
+img.footer_sm_links {
+	width: 6%;
+	margin-right: 10px;
 }
 
 @media (min-width: 1200px) {
@@ -491,9 +498,7 @@ button.web_button:hover {
       height: 255px;
       width: 311px;
    }
-    img.footer_sm_links {
-      width: 6%;
-    }
+
 }
 
 
