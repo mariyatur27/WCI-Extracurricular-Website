@@ -716,6 +716,8 @@ button.web_button:hover{
     display: block;
     margin-left: 1%;
     width: 96%;
+    max-height: 250px;
+    overflow-y: scroll;
     display: none;
   }
   .active .expand_box {
