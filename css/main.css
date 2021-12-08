@@ -5,6 +5,22 @@
 	border: none;
 }
 
+input#club_search {
+	padding: 1% 2%;
+	width: 50%;
+	border: none;
+	border-radius: 33px;
+	margin-top: 3%;
+	margin-left: -49%;
+	box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+svg.svg-inline--fa.fa-search.fa-w-16 {
+	position: absolute;
+	margin-top: 3%;
+	margin-left: -16%;
+}
+
 li.error-message {
 	list-style-type: none;
 	margin-left: -23%;
@@ -13,6 +29,91 @@ li.error-message {
 
 img.icons {
 	width: 100%;
+}
+
+img.club_img {
+	width: 80vw;
+}
+
+.question {
+	box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
+	padding: 3% 4%;
+	margin-top: 4%;
+	border-radius: 21px;
+}
+
+.question_block .up {
+	display: none;
+}
+
+.answer {
+	box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
+	padding: 3% 4%;
+	border-radius: 21px;
+	display: none;
+}
+
+.active .answer {
+	display: block;
+}
+
+.expand_box {
+	box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+	padding: 5% 5% 2.5%;
+	text-align: left;
+	margin-top: 0%;
+	display: block;
+	margin-left: 1%;
+	width: 96%;
+	display: none;
+}
+
+.active .expand_box {
+	display: block;
+}
+
+.drop {
+	background-color: transparent;
+	border: none;
+	width: 100%;
+}
+
+.club_info {
+	margin-left: 7%;
+	text-align: left;
+}
+
+.club_header {
+	box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
+	padding: 3.5%;
+	margin-top: 7%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 1%;
+	width: 96%;
+}
+
+.club_box .up {
+	display: none;
+	margin-left: 6%;
+	margin-top: 1%;
+}
+
+.active .up {
+	display: block;
+}
+
+.club_box .down {
+	display: block;
+}
+
+.active .down {
+	display: none;
+}
+
+svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
+	margin-left: 6%;
+	margin-top: 1%;
 }
 
 button.web_link {
@@ -182,43 +283,7 @@ button.web_button:hover {
 		width: 50%;
 	}
 	.club_header {
-		box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
-		padding: 3.5%;
-		margin-top: 7%;
-		display: flex;
-		margin-left: 1%;
-		width: 96%;
-	}
-	.question {
-		box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
-		padding: 3% 4%;
-		margin-top: 4%;
-		border-radius: 21px;
-	}
-	.question_block .up {
-		display: none;
-	}
-	.answer {
-		box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
-		padding: 3% 4%;
-		border-radius: 21px;
-		display: none;
-	}
-	.active .answer {
-		display: block;
-	}
-	.expand_box {
-		box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-		padding: 5% 5% 2.5%;
-		text-align: left;
-		margin-top: 0%;
-		display: block;
-		margin-left: 1%;
-		width: 96%;
-		display: none;
-	}
-	.active .expand_box {
-		display: block;
+		flex-direction: row;
 	}
 	.expand_box_core_content {
 		overflow-y: scroll;
@@ -228,47 +293,22 @@ button.web_button:hover {
 		margin-left: auto;
 		margin-top: 3%;
 	}
-	.drop {
-		background-color: transparent;
-		border: none;
-		width: 100%;
-	}
 	img.main_sm_links {
 		width: 4%;
 	}
 	img.footer_sm_links {
 		width: 7%;
 	}
-	.club_box .up {
-		display: none;
-		margin-left: 6%;
-		margin-top: 1%;
-	}
-	.active .up {
-		display: block;
-	}
-	svg.svg-inline--fa.fa-search.fa-w-16 {
-		position: absolute;
-		margin-top: 3%;
-		margin-left: -3%;
-	}
+	
 	.together {
 		display: flex;
 	}
-	svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
-		margin-left: 6%;
-		margin-top: 1%;
-	}
+	
 	/*.faq-btn {
       margin-left: 99%;
       margin-top: 0%;
     }*/
-	.club_box .down {
-		display: block;
-	}
-	.active .down {
-		display: none;
-	}
+	
 	label {
 		margin-right: 2%;
 	}
@@ -281,24 +321,13 @@ button.web_button:hover {
 	.seperate {
 		display: block;
 	}
-	.club_info {
-		margin-left: 7%;
-		text-align: left;
-	}
+	
 	img.club_img {
 		width: 150px;
 		height: 150px;
 		object-fit: contain;
 	}
-	input#club_search {
-		padding: 1% 2%;
-		width: 50%;
-		border: none;
-		border-radius: 33px;
-		margin-top: 3%;
-		margin-left: -49%;
-		box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-	}
+	
 	.orchestra {
 		margin: 0;
 		padding: 0;
@@ -418,12 +447,12 @@ button.web_button:hover {
       font-size: 5.25rem;
     }
     .search_bar {
-      padding: 2% 3%;
-      width: 100%;
-      margin-top: 5%;
-      border-radius: 56px;
-      border: none;
-    }
+		padding: 2% 3%;
+		width: 100%;
+		margin-top: 5%;
+		border-radius: 56px;
+		border: none;
+	}
     #mainNav .navbar-toggler {
       font-size: 2.75rem;
     }
