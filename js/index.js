@@ -119,7 +119,7 @@ function moveSlides(startIndex, offset, slideShowSources, slideShowDivIds, pageL
         }
     }
     // Schedule slides to move again in 2 seconds
-    setTimeout(moveSlides, 2000, startIndex+offset, offset, slideShowSources, slideShowDivIds);
+    setTimeout(moveSlides, 2000, startIndex+offset, offset, slideShowSources, slideShowDivIds, pageLocations);
 }
 
 function generateSlide(index, slideShowCards, slideShowDiv, pageLocation) {
