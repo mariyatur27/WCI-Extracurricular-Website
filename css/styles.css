@@ -1052,6 +1052,17 @@ button.web_button:hover{
     max-width: 1320px;
   }
 }
+/* For devices 1200px and lower */
+@media (max-width: 1200px) {
+  img.main_sm_links {
+    width: 4%;
+  }
+  img.footer_sm_links {
+    width: 7%;
+  }
+
+}
+
 /*Responsive Design*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
