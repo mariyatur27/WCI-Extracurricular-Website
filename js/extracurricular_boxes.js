@@ -79,32 +79,39 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                     let box_links = document.createElement("div"); box_links.classList.add("together");
                     for (link of boxData.connection_links) {
                         if (link in connection_links) {
-                            let link_a = document.createElement("a"); link_a.classList.add("icons");
+                            let link_a = document.createElement("a");
                             if ("link_prefix" in connection_links[link]) {
                                 link_a.href = connection_links[link].link_prefix.concat(boxData[link]);
                             } else {
                                 link_a.href = boxData[link];
                             }
-                            let link_image = document.createElement("img"); link_image.classList.add("icons"); link_image.src = connection_links[link].icon;
+
+                            if (connection_links[link].type == "button") {
+                                link_a.classList.add("web_link");
+                                var link_image = document.createElement("button"); link_image.classList.add("web_link"); link_image.type="button"; link_image.name="club_btn";
+                                link_image.innerText = connection_links[link].label;
+                            } else if (connection_links[link].type == "icon") {
+                                link_a.classList.add("icons");
+                                var link_image = document.createElement("img"); link_image.classList.add("icons");
+                                link_image.src = connection_links[link].icon;
+                                console.log(link_image);
+                            } else {
+                                throw "Unrecognized connection link type: ".concat(connection_links[link].type)
+                            }
+
                             link_a.appendChild(link_image);
                             box_links.appendChild(link_a);
                         }
                     }
                     expand_box.appendChild(box_links);
-                    let box_buttons = document.createElement("div"); box_links.classList.add("together");
+                    /*let box_buttons = document.createElement("div"); box_links.classList.add("together");
                     if (boxData.website != undefined){
                         let web_link = document.createElement("a"); web_link.classList.add("web_link"); web_link.href = boxData.website;
-                        let web_button = document.createElement("button"); web_button.classList.add("web_link"); web_button.innerHTML = "Club Website"; web_button.type="button", web_button.name="club_btn";
+                        let web_button = document.createElement("button"); web_button.classList.add("web_link"); web_button.innerHTML = "Club Website"; web_button.type="button"; web_button.name="club_btn";
                         web_link.appendChild(web_button);
                         box_buttons.appendChild(web_link);
                     };
-                    if (boxData.join_form != undefined){
-                        let join_link = document.createElement("a"); join_link.classList.add("web_link"); join_link.href = boxData.join_form;
-                        let join_button = document.createElement("button"); join_button.classList.add("web_link"); join_button.innerHTML = "Join The Club"; join_button.type="button", join_button.name="join_btn";
-                        join_link.appendChild(join_button);
-                        box_buttons.appendChild(join_link);
-                    };
-                    expand_box.appendChild(box_buttons); 
+                    expand_box.appendChild(box_buttons); */
 
                 box.appendChild(expand_box);
             row.appendChild(box);

@@ -235,17 +235,21 @@ var clubs = [
 ];
 var connection_links = {
     "classroom": {
+        "type": "icon",
         "icon": "assets/icons/classroom.png"
     },
     "instagram": {
+        "type": "icon",
         "icon": "assets/icons/instagram.png"
     },
     "email": {
+        "type": "icon",
         "icon": "assets/icons/email.png",
         "link_prefix": "mailto:"
     },
     "website": {
-        "icon": "assets/icons/website.png"
+        "type": "button",
+        "label": "Club website"
     }
 };
 var athletics = [

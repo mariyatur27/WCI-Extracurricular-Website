@@ -530,10 +530,11 @@ img.icons {
     width: 100%;
   }
 button.web_link {
+    white-space: nowrap;
     border: none;
     background-color: #ac191a;
     color: white;
-    padding: 1% 2%;
+    padding: 6% 10%;
     margin-top: 2%;
     margin-right:  1%;
 }
@@ -725,6 +726,10 @@ button.web_button:hover{
   .expand_box_core_content {
     overflow-y: scroll;
     max-height: calc(400px - 21vh);
+  }
+  a.web_link {
+    margin-left: auto;
+    margin-top: 3%;
   }
   .drop {
     background-color: transparent;

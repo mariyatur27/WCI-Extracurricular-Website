@@ -1,15 +1,20 @@
 {
     "classroom": {
+        "type": "icon",
         "icon": "assets/icons/classroom.png"
     },
     "instagram": {
+        "type": "icon",
         "icon": "assets/icons/instagram.png"
     },
     "email": {
+        "type": "icon",
         "icon": "assets/icons/email.png",
         "link_prefix": "mailto:"
     },
     "website": {
+        "type": "button",
+        "label": "Club website",
         "icon": "assets/icons/website.png"
     }
 }
