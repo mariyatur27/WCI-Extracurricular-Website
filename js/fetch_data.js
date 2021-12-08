@@ -262,7 +262,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Boys Golf",
+        "name": "Boys' Golf",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/football.png",
@@ -274,7 +274,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Jr. Boys Football",
+        "name": "Jr. Boys' Football",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/football.png",
@@ -286,7 +286,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Sr. Boys Football",
+        "name": "Sr. Boys' Football",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/football.png",
@@ -298,7 +298,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Jr. Boys Soccer",
+        "name": "Jr. Boys' Soccer",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/soccer.png",
@@ -310,7 +310,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Sr. Boys Tennis",
+        "name": "Sr. Boys' Tennis",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
@@ -322,7 +322,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Jr. Boys Volleyball",
+        "name": "Jr. Boys' Volleyball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
@@ -334,7 +334,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Sr. Boys Volleyball",
+        "name": "Sr. Boys' Volleyball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
@@ -346,7 +346,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Girls Field Hockey",
+        "name": "Girls' Field Hockey",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
@@ -358,7 +358,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Jr. Girls Basketball",
+        "name": "Jr. Girls' Basketball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -370,7 +370,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Sr. Girls Basketball",
+        "name": "Sr. Girls' Basketball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -382,7 +382,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Sr. Girls Tennis",
+        "name": "Sr. Girls' Tennis",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
@@ -432,7 +432,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Boys Hockey",
+        "name": "Boys' Hockey",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/hockey.png",
@@ -445,7 +445,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Jr. Boys Basketball",
+        "name": "Jr. Boys' Basketball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -458,7 +458,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Sr. Boys Basketball",
+        "name": "Sr. Boys' Basketball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -471,7 +471,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Girls Hockey",
+        "name": "Girls' Hockey",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/hockey.png",
@@ -484,7 +484,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Jr. Girls Volleyball",
+        "name": "Jr. Girls' Volleyball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
@@ -497,7 +497,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Sr. Girls Volleyball",
+        "name": "Sr. Girls' Volleyball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
@@ -534,7 +534,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Boys Rugby",
+        "name": "Boys' Rugby",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -546,7 +546,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Boys Slo-Pitch",
+        "name": "Boys' Slo-Pitch",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -558,7 +558,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Jr. Boys Tennis",
+        "name": "Jr. Boys' Tennis",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -570,7 +570,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Sr. Boys Soccer",
+        "name": "Sr. Boys' Soccer",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -582,7 +582,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Girls Rugby",
+        "name": "Girls' Rugby",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -594,7 +594,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Girls Soccer",
+        "name": "Girls' Soccer",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/soccer.png",
@@ -606,7 +606,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Girls Slo-Pitch",
+        "name": "Girls' Slo-Pitch",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -618,7 +618,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Jr. Girls Tennis",
+        "name": "Jr. Girls' Tennis",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
