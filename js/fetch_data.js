@@ -1,101 +1,5 @@
 var clubs = [
     {
-        "name": "Web-Dev Club",
-        "id": "wciwebdev",
-        "meeting_time": "Tuesdays, 3:00 PM - 4:00 PM",
-        "connection_links": ["classroom", "instagram", "email", "website"],
-        "instagram" : "https://www.instagram.com/wci_web_dev",
-        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=k2uhtee",
-        "email": "turem4748@wrdsb.ca",
-        "join_form": "https://forms.gle/3jH5k2CqeyjtEYwf8",
-        "image": "assets/club_images/wciwebdev.png",
-        "website": "https://www.wciweb-dev.ca/",
-        "description": "WCI Web-Dev is a web-development club where you will get to develop real projects for real people. This club welcomes students from all grades, backgrounds and interests. Everybody is encouraged to join the club and no coding experience is required. You will be taught everything about the design and programming of web platforms and websites. This club will be a mini stimulation of the web development and programming industry. We will all collaborate and work together on creating and developing cool web products.",
-        "categories": [
-            "stem_category"
-        ]
-    },
-    {
-        "name": "HOSA",
-        "id": "healthoccupationsstudentsofamericahosa",
-        "meeting_time": "Mondays, 3:00 PM - 4:00 PM",
-        "connection_links": ["instagram", "email", "classroom"],
-        "instagram" : "https://www.instagram.com/wcihosa",
-        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=j3ztdep",
-        "email": "wci.hosa@gmail.com ",
-        "image": "assets/club_images/healthoccupationsstudentsofamericahosa.png",
-        "description": "The mission of HOSA Canada is to enable secondary and post secondary students to become leaders in the healthcare industry by providing future health professionals with knowledge, technical training and leadership development.",
-        "categories": [
-            "stem_category"
-        ]
-    },
-    {
-        "name": "Computer Science Club",
-        "id": "computerscienceclub",
-        "meeting_time": "Wednesdays, 3:00 PM - 4:30 PM",
-        "connection_links":["email", "instagram", "classroom"],
-        "image": "assets/club_images/computerscienceclub.png",
-        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=c2prjk3 ",
-        "description": "This club is for everyone interested in CS. Beginner to advanced, contest groups and a group that likes to develop games, internet and database usually at the end of the year after the contests are over.",
-        "categories": [
-            "stem_category"
-        ]
-    },
-    {
-        "name": "Math Club",
-        "id": "mathclub",
-        "meeting_time": "Tuesdays, 2:00 PM - 3:00 PM",
-        "connection_links":[],
-        "image": "assets/club_images/mathclub.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "categories": [
-            "stem_category",
-            "academics_category"
-        ]
-    },
-    {
-        "name": "Debate Club",
-        "id": "debateclub",
-        "meeting_time": "Thursdays, 2:45 PM - 3:45 PM",
-        "connection_links":["instagram", "email", "classroom"],
-        "instagram" : "https://www.instagram.com/wci_debate",
-        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=kdtnrnu ",
-        "email": "wci.viking.debate@gmail.com",
-        "website": "https://sites.google.com/wrdsb.ca/wci-debate-club/home",
-        "image": "assets/club_images/debateclub.png",
-        "description": "The Debate Club provides students with a fun way to further develop their speaking and presentation skills. In addition, the debate club provides an opportunity for the students to become more informed about political and global affairs. Through a virtual platform, students will train for debate competitions with local schools.",
-        "categories": [
-            "business_category"
-        ]
-    },
-    {
-        "name": "Science Club",
-        "id": "wciscienceclub",
-        "meeting_time": "Thursdays, 3:15 PM - 4:15 PM",
-        "connection_links":["instagram", "email"],
-        "instagram" : "https://www.instagram.com/wci_science",
-        "email": "jocelyn_ridgway@wrdsb.ca",
-        "image": "assets/club_images/wciscienceclub.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "categories": [
-            "stem_category",
-            "academics_category"
-        ]
-    },
-    {
-        "name": "Viking Venture",
-        "id": "vikingventure",
-        "meeting_time": "3:30 PM - 4:30 PM",
-        "connection_links":["instagram", "email"],
-        "instagram" : "https://www.instagram.com/vikingventure",
-        "email": "decavikings@gmail.com",
-        "image": "assets/club_images/vikingventure.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "categories": [
-            "business_category"
-        ]
-    },
-    {
         "name": "Ambassadors Christian Fellowship",
         "id": "ambassadorschristianfellowship",
         "meeting_time": "Wednesdays, 2:45 PM - 3:45 PM",
@@ -230,6 +134,102 @@ var clubs = [
             "recreational_category",
             "social_justice_category",
             "academics_category"
+        ]
+    },
+    {
+        "name": "Computer Science Club",
+        "id": "computerscienceclub",
+        "meeting_time": "Wednesdays, 3:00 PM - 4:30 PM",
+        "connection_links":["email", "instagram", "classroom"],
+        "image": "assets/club_images/computerscienceclub.png",
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=c2prjk3 ",
+        "description": "This club is for everyone interested in CS. Beginner to advanced, contest groups and a group that likes to develop games, internet and database usually at the end of the year after the contests are over.",
+        "categories": [
+            "stem_category"
+        ]
+    },
+    {
+        "name": "Debate Club",
+        "id": "debateclub",
+        "meeting_time": "Thursdays, 2:45 PM - 3:45 PM",
+        "connection_links":["instagram", "email", "classroom"],
+        "instagram" : "https://www.instagram.com/wci_debate",
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=kdtnrnu ",
+        "email": "wci.viking.debate@gmail.com",
+        "website": "https://sites.google.com/wrdsb.ca/wci-debate-club/home",
+        "image": "assets/club_images/debateclub.png",
+        "description": "The Debate Club provides students with a fun way to further develop their speaking and presentation skills. In addition, the debate club provides an opportunity for the students to become more informed about political and global affairs. Through a virtual platform, students will train for debate competitions with local schools.",
+        "categories": [
+            "business_category"
+        ]
+    },
+    {
+        "name": "HOSA",
+        "id": "healthoccupationsstudentsofamericahosa",
+        "meeting_time": "Mondays, 3:00 PM - 4:00 PM",
+        "connection_links": ["instagram", "email", "classroom"],
+        "instagram" : "https://www.instagram.com/wcihosa",
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=j3ztdep",
+        "email": "wci.hosa@gmail.com ",
+        "image": "assets/club_images/healthoccupationsstudentsofamericahosa.png",
+        "description": "The mission of HOSA Canada is to enable secondary and post secondary students to become leaders in the healthcare industry by providing future health professionals with knowledge, technical training and leadership development.",
+        "categories": [
+            "stem_category"
+        ]
+    },
+    {
+        "name": "Math Club",
+        "id": "mathclub",
+        "meeting_time": "Tuesdays, 2:00 PM - 3:00 PM",
+        "connection_links":[],
+        "image": "assets/club_images/mathclub.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "categories": [
+            "stem_category",
+            "academics_category"
+        ]
+    },
+    {
+        "name": "Science Club",
+        "id": "wciscienceclub",
+        "meeting_time": "Thursdays, 3:15 PM - 4:15 PM",
+        "connection_links":["instagram", "email"],
+        "instagram" : "https://www.instagram.com/wci_science",
+        "email": "jocelyn_ridgway@wrdsb.ca",
+        "image": "assets/club_images/wciscienceclub.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "categories": [
+            "stem_category",
+            "academics_category"
+        ]
+    },
+    {
+        "name": "Viking Venture",
+        "id": "vikingventure",
+        "meeting_time": "3:30 PM - 4:30 PM",
+        "connection_links":["instagram", "email"],
+        "instagram" : "https://www.instagram.com/vikingventure",
+        "email": "decavikings@gmail.com",
+        "image": "assets/club_images/vikingventure.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "categories": [
+            "business_category"
+        ]
+    },
+    {
+        "name": "Web-Dev Club",
+        "id": "wciwebdev",
+        "meeting_time": "Tuesdays, 3:00 PM - 4:00 PM",
+        "connection_links": ["classroom", "instagram", "email", "website"],
+        "instagram" : "https://www.instagram.com/wci_web_dev",
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=k2uhtee",
+        "email": "turem4748@wrdsb.ca",
+        "join_form": "https://forms.gle/3jH5k2CqeyjtEYwf8",
+        "image": "assets/club_images/wciwebdev.png",
+        "website": "https://www.wciweb-dev.ca/",
+        "description": "WCI Web-Dev is a web-development club where you will get to develop real projects for real people. This club welcomes students from all grades, backgrounds and interests. Everybody is encouraged to join the club and no coding experience is required. You will be taught everything about the design and programming of web platforms and websites. This club will be a mini stimulation of the web development and programming industry. We will all collaborate and work together on creating and developing cool web products.",
+        "categories": [
+            "stem_category"
         ]
     }
 ];
