@@ -1052,6 +1052,93 @@ button.web_button:hover{
     max-width: 1320px;
   }
 }
+/*Responsive Design*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  img.main_sm_links {
+      width: 6%;
+      margin-top: 2%;
+  }
+  .page-section h2.section-heading, .page-section .section-heading.h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .btn-xl {
+    font-size: 2.125rem;
+  }
+  img.slides_show_img {
+    width: 100%;
+  }
+  .iframe{
+    width: 350px;
+  }
+  p {
+    line-height: 1.75;
+    text-align: center;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 3.25rem;
+  }
+  header.masthead .masthead-heading {
+    font-size: 5.25rem;
+  }
+  .search_bar {
+    padding: 2% 3%;
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 56px;
+    border: none;
+  }
+  #mainNav .navbar-toggler {
+    font-size: 2.75rem;
+  }
+  #title{
+    font-size: 1.2rem;
+  }
+  #search_button {
+    display:  none;
+  }
+  .page-section h2.section-heading, .page-section .section-heading.h2 {
+    font-size: 1.7rem;
+    margin-top: 2%;
+    margin-bottom: 1rem;
+  }
+  .page-section h3.section-subheading, .page-section .section-subheading.h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin-bottom: 2rem;
+  }
+  .slide_show {
+    color: grey;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 3%;
+    margin-bottom: 2%;
+    width: 334%;
+    margin-left: 2%;
+  }
+  .c_item {
+    height: 255px;
+    width: 311px;
+ }
+  img.footer_sm_links {
+    width: 6%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -11818,11 +11905,11 @@ p {
 .page-section {
   padding: 6rem 0;
 }
-.page-section h2.section-heading, .page-section .section-heading.h2 {
+/*.page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
-}
+}*/
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 1rem;
   font-weight: 400;
