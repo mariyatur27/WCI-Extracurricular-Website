@@ -60,16 +60,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                         meeting_time_text.innerText = "Meeting time: ".concat(boxData.meeting_time);
                     } meeting_time_text.classList.add("contents");
                     expand_box.appendChild(meeting_time_text);
-                    let box_links = document.createElement("div"); box_links.classList.add("together");
-                    for (link of boxData.connection_links) {
-                        if (link in connection_links) {
-                            let link_a = document.createElement("a"); link_a.classList.add("icons"); link_a.href = boxData[link];
-                            let link_image = document.createElement("img"); link_image.classList.add("icons"); link_image.src = connection_links[link].icon;
-                            link_a.appendChild(link_image);
-                            box_links.appendChild(link_a);
-                        }
-                    }
-                    expand_box.appendChild(box_links);
                     if ("extra_info" in boxData) {
                         for (info of boxData.extra_info) {
                             if (info.type == "important_text") {
@@ -83,7 +73,22 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                             infotext.classList.add("contents");
                             expand_box.appendChild(infotext);
                         }
-                    };
+                    }
+                    let box_links = document.createElement("div"); box_links.classList.add("together");
+                    for (link of boxData.connection_links) {
+                        if (link in connection_links) {
+                            let link_a = document.createElement("a"); link_a.classList.add("icons");
+                            if ("link_prefix" in connection_links[link]) {
+                                link_a.href = connection_links[link].link_prefix.concat(boxData[link]);
+                            } else {
+                                link_a.href = boxData[link];
+                            }
+                            let link_image = document.createElement("img"); link_image.classList.add("icons"); link_image.src = connection_links[link].icon;
+                            link_a.appendChild(link_image);
+                            box_links.appendChild(link_a);
+                        }
+                    }
+                    expand_box.appendChild(box_links);
 
                 box.appendChild(expand_box);
             row.appendChild(box);

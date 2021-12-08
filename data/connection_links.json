@@ -6,7 +6,8 @@
         "icon": "assets/icons/instagram.png"
     },
     "email": {
-        "icon": "assets/icons/email.png"
+        "icon": "assets/icons/email.png",
+        "link_prefix": "mailto:"
     },
     "website": {
         "icon": "assets/icons/website.png"
