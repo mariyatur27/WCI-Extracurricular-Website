@@ -17,6 +17,15 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
     
     boxesSource.forEach((boxData) => {
         if ((urlBox == null || ("id" in boxData && boxData.id.includes(urlBox))) && (activeFilters.size == 0 || boxData.categories.some(category => {return activeFilters.has(category)})) && (boxData.name.toLowerCase().includes(searchWord))) {totalBoxes+=1;}});
+    boxesSource.sort((boxData1, boxData2) => {
+        if (boxData1.name > boxData2.name) {
+            return 1
+        } else if (boxData1.name < boxData2.name) {
+            return -1
+        } else {
+            return 0
+        }
+    })
 
     boxesSource.forEach((boxData) => {
         if ((urlBox == null || ("id" in boxData && boxData.id.includes(urlBox))) && (activeFilters.size == 0 || boxData.categories.some(category => {return activeFilters.has(category)})) && (boxData.name.toLowerCase().includes(searchWord))) {
