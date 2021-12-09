@@ -220,8 +220,13 @@ button.web_button:hover {
 }
 
 img.footer_sm_links {
-	width: 6%;
+	width: 7%;
 	margin-right: 10px;
+}
+
+img.main_sm_links {
+	width: 6%;
+	margin-top: 2%;
 }
 
 @media (min-width: 1200px) {
@@ -310,9 +315,6 @@ img.footer_sm_links {
 	img.main_sm_links {
 		width: 4%;
 	}
-	img.footer_sm_links {
-		width: 7%;
-	}
 	
 	.together {
 		display: flex;
@@ -376,16 +378,6 @@ img.footer_sm_links {
 	.link-register {
 		color: #A7501F;
 	}
-}
-
-/* For devices 1200px and lower */
-@media (max-width: 1200px) {
-	img.main_sm_links {
-	  width: 4%;
-	}
-	img.footer_sm_links {
-	  width: 7%;
-	}  
 }
 
 @media (min-width: 576px) {
