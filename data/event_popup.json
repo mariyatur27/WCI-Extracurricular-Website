@@ -1,0 +1,5 @@
+{
+	"text":"This is some placeholder event text.<br>You can change it by modifying data/event_popup.json.",
+	"color":"#ff00ff",
+	"icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Infobox_info_icon.svg/1200px-Infobox_info_icon.svg.png"
+}

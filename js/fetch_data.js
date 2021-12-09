@@ -639,11 +639,12 @@ var music = [
     { name: "Intermediate Orchestra", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
     { name: "Senior Orchestra", image: "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"},
 ];
+var event_popup = {};
 
 var dataFetched = false;
 
 async function fetchData() {
-    if (window.location.protocol == "file:") {
+    if (window.location.protocol == "file:"){
         console.log("fetchData: Running from a file, won't attempt to load data.");
         dataFetched = true;
         return;
@@ -653,6 +654,7 @@ async function fetchData() {
     athletics = await (await fetch("data/athletics.json")).json();
     music = await (await fetch("data/music.json")).json();
     connection_links = await (await fetch("data/connection_links.json")).json();
+	event_popup = await (await fetch("data/event_popup.json")).json();
     console.log("fetchData: Done loading data.");
     dataFetched = true;
 }
