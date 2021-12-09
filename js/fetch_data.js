@@ -3,9 +3,8 @@ var clubs = [
         "name": "Ambassadors Christian Fellowship",
         "id": "ambassadorschristianfellowship",
         "meeting_time": "Wednesdays, 2:45 PM - 3:45 PM",
-        "connection_links":["classroom", "email"],
+        "connection_links":["classroom"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=tegmr4n",
-        "email": "decavikings@gmail.com",
         "image": "assets/club_images/ambassadorschristianfellowship.png",
         "description": "A place for anyone to ask questions about and explore a life with Jesus. The goal is to serve the WCI community while providing a safe place for fellowship.",
         "categories": [
@@ -16,9 +15,8 @@ var clubs = [
         "name": "Anime Club",
         "id": "animeclub",
         "meeting_time": "Tuesdays and Fridays, at lunch",
-        "connection_links":["classroom", "email"],
+        "connection_links":["classroom"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=jcdkgfs",
-        "email": "decavikings@gmail.com",
         "image": "assets/club_images/animeclub.png",
         "description": "A place for anyone to ask questions about and explore a life with Jesus. The goal is to serve the WCI community while providing a safe place for fellowship.",
         "categories": [
@@ -29,9 +27,9 @@ var clubs = [
         "name": "Astronomy Club",
         "id": "astronomy",
         "meeting_time": "Wednesdays, 2:30 PM - 3:30 PM",
-        "connection_links":["classroom", "email", "instagram"],
+        "connection_links":["classroom", "instagram"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=pmcg2fk",
-        "email": "decavikings@gmail.com",
+        "instagram" : "https://www.instagram.com/wci.astro.club/",
         "image": "assets/club_images/astronomy.png",
         "description": "A club for anyone interested in learning more about astronomy with like-minded students. We will explore the science of astronomy, in weekly club meetings. We also organize amature astronomy events, citizen science projects, and telescope build projects. Come and explore the sky with us! For more info follow: wci.astro.club on Instagram. ",
         "categories": [
@@ -163,7 +161,7 @@ var clubs = [
             "business_category"
         ]
     },
-/*
+    /*
     {
         "name": "Eco Club",
         "id": "ecoclub",
@@ -220,7 +218,19 @@ var clubs = [
             "social_justice_category"
         ]
     },
-  */
+    {
+        "name": "Grad Club",
+        "id": "gradclub",
+        "meeting_time": "NEED TO FIND OUT",
+        "connection_links":["instagram", "email", "classroom"],
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=kdtnrnu ",
+        "image": "assets/club_images/genderandsexualityawarenessclubgsa.png",
+        "description": "To promote acceptance and inclusion throughout the school community and to provide a safe, non-judgmental space as a support network for Gay, Lesbian, Bisexual, Transgender, Questioning, and Straight youth who share a common vision of social equality": [
+            "social_justice_category"
+        ]
+    },
+    
+    */
     {
         "name": "HOSA",
         "id": "healthoccupationsstudentsofamericahosa",
