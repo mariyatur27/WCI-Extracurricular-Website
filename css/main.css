@@ -301,6 +301,7 @@ img.footer_sm_links {
 	}
 	.expand_box_core_content {
 		max-height: 250px;
+		overflow-y: scroll;
 	}
 	a.web_link {
 		margin-left: auto;
