@@ -15,8 +15,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
 
     let row;
     
-    boxesSource.forEach((boxData) => {
-        if ((urlBox == null || ("id" in boxData && boxData.id.includes(urlBox))) && (activeFilters.size == 0 || boxData.categories.some(category => {return activeFilters.has(category)})) && (boxData.name.toLowerCase().includes(searchWord))) {totalBoxes+=1;}});
     boxesSource.sort((boxData1, boxData2) => {
         if (boxData1.name > boxData2.name) {
             return 1
@@ -29,6 +27,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
 
     boxesSource.forEach((boxData) => {
         if ((urlBox == null || ("id" in boxData && boxData.id.includes(urlBox))) && (activeFilters.size == 0 || boxData.categories.some(category => {return activeFilters.has(category)})) && (boxData.name.toLowerCase().includes(searchWord))) {
+            totalBoxes++;
             if (boxCount % countPerRow == 0) {
                 row = document.createElement("div"); row.classList.add("club_row");
             }
@@ -44,7 +43,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                         info_div.appendChild(name_header);
                         let drop_div = document.createElement("div"); drop_div.classList.add("together2");
                             let drop_button = document.createElement("button"); drop_button.classList.add("drop"); drop_button.addEventListener("click", () => {box.classList.toggle("active");});
-                            if (totalBoxes <= 2) {box.classList.add("active")}
                                 let drop_inner_div = document.createElement("div"); drop_inner_div.classList.add("together2");
                                     let learn_more_header = document.createElement("h6"); learn_more_header.innerText = "Learn More";
                                     drop_inner_div.appendChild(learn_more_header);
@@ -103,7 +101,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                                 link_a.classList.add("icons");
                                 var link_image = document.createElement("img"); link_image.classList.add("icons");
                                 link_image.src = connection_links[link].icon;
-                                console.log(link_image);
                             } else {
                                 throw "Unrecognized connection link type: ".concat(connection_links[link].type)
                             }
@@ -113,14 +110,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                         }
                     }
                     expand_box.appendChild(box_links);
-                    /*let box_buttons = document.createElement("div"); box_links.classList.add("together");
-                    if (boxData.website != undefined){
-                        let web_link = document.createElement("a"); web_link.classList.add("web_link"); web_link.href = boxData.website;
-                        let web_button = document.createElement("button"); web_button.classList.add("web_link"); web_button.innerHTML = "Club Website"; web_button.type="button"; web_button.name="club_btn";
-                        web_link.appendChild(web_button);
-                        box_buttons.appendChild(web_link);
-                    };
-                    expand_box.appendChild(box_buttons); */
 
                 box.appendChild(expand_box);
             row.appendChild(box);
@@ -132,5 +121,10 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
     });
     if (boxCount % countPerRow > 0) {
         boxes.appendChild(row);
+    }
+    if (totalBoxes <= 2) {
+        for (var box of boxes.getElementsByClassName("club_box")) {
+            box.classList.add("active")
+        }
     }
 }
