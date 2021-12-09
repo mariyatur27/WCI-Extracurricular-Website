@@ -163,7 +163,8 @@ var clubs = [
             "business_category"
         ]
     },
-	{
+/*
+    {
         "name": "Eco Club",
         "id": "ecoclub",
         "meeting_time": "Tuesday at 3:30",
@@ -219,6 +220,7 @@ var clubs = [
             "social_justice_category"
         ]
     },
+  */
     {
         "name": "HOSA",
         "id": "healthoccupationsstudentsofamericahosa",
