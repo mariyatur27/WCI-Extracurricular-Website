@@ -11347,11 +11347,10 @@ p {
   margin-bottom: 4rem;
 }
 
-@media (min-width: 768px) {
-  section {
-    padding: 9rem 0;
-  }
+section {
+  padding: 9rem 0;
 }
+
 .btn-xl {
   padding: 0.5rem 0.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
