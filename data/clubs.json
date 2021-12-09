@@ -161,7 +161,6 @@
             "business_category"
         ]
     },
-    /*
     {
         "name": "Eco Club",
         "id": "ecoclub",
@@ -229,8 +228,6 @@
             "social_justice_category"
         ]
     },
-    
-    */
     {
         "name": "HOSA",
         "id": "healthoccupationsstudentsofamericahosa",
