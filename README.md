@@ -9,3 +9,9 @@
 <p align="center">
    Explore the endless options available at <a href="https://mariyatur27.github.io/WCI-Extracurricular-Website/" target="_blank">WCI Extracurriculars</a>.
 </p>
+
+## Contributors
+Many thanks to all of our contributors! Website made possible by the collaboration of the WCI Web-Dev Club, Leadership, and others.
+
+## Copyright
+Code and documentation copyright 2021 Waterloo Collegiate Institute.
