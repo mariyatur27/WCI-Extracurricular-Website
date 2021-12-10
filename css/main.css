@@ -11,13 +11,14 @@
 
 #mainNav ul ul{
 	position: absolute;
-	padding: 0;
+	padding: 5%;
 	display: none;
 	top: 100%;
 }
 
 #mainNav ul li:hover ul{
 	display: block;
+
 	background-color: #a30001;
 }
 
@@ -625,6 +626,13 @@ img.main_sm_links {
     }
   }
   @media (max-width: 991.98px) {
+	#mainNav ul ul{
+		padding: 1% 2%;
+	}
+	button.web_button{
+		float: right;
+	}
+	
     .table-responsive-lg {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
