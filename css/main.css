@@ -257,6 +257,12 @@ img.c_image {
 
 #search_button {
 	color: lightblue;
+	background-color: #0A1241;
+}
+
+#search_button:hover {
+	color: #0A1241;
+	background-color: lightblue;
 }
 
 a.result-item {
