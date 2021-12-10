@@ -489,7 +489,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Boys' Golf",
+        "name": "Boys Golf",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/football.png",
@@ -497,11 +497,12 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "fall_sports"
+            "fall_sports",
+            "boys_sports"
         ]
     },
     {
-        "name": "Jr. Boys' Football",
+        "name": "Jr. Boys Football",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/football.png",
@@ -509,11 +510,12 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "fall_sports"
+            "fall_sports",
+            "boys_sports"
         ]
     },
     {
-        "name": "Sr. Boys' Football",
+        "name": "Sr. Boys Football",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/football.png",
@@ -521,11 +523,12 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "fall_sports"
+            "fall_sports",
+            "boys_sports"
         ]
     },
     {
-        "name": "Jr. Boys' Soccer",
+        "name": "Jr. Boys Soccer",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/soccer.png",
@@ -533,11 +536,12 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "fall_sports"
+            "fall_sports",
+            "boys_sports"
         ]
     },
     {
-        "name": "Sr. Boys' Tennis",
+        "name": "Jr. Boys Volleyball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
@@ -545,11 +549,12 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "fall_sports"
+            "fall_sports",
+            "boys_sports"
         ]
     },
     {
-        "name": "Jr. Boys' Volleyball",
+        "name": "Sr. Boys Volleyball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
@@ -557,11 +562,12 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "fall_sports"
+            "fall_sports",
+            "boys_sports"
         ]
     },
     {
-        "name": "Sr. Boys' Volleyball",
+        "name": "Girls Field Hockey",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
@@ -569,23 +575,12 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "fall_sports"
+            "fall_sports",
+            "girls_sports"
         ]
     },
     {
-        "name": "Girls' Field Hockey",
-        "id": "crosscountry",
-        "connection_links": [],
-        "image": "assets/sport_images/volleyball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "categories": [
-            "fall_sports"
-        ]
-    },
-    {
-        "name": "Jr. Girls' Basketball",
+        "name": "Jr. Girls Basketball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -593,11 +588,12 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "fall_sports"
+            "fall_sports",
+            "girls_sports"
         ]
     },
     {
-        "name": "Sr. Girls' Basketball",
+        "name": "Sr. Girls Basketball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -605,19 +601,8 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "fall_sports"
-        ]
-    },
-    {
-        "name": "Sr. Girls' Tennis",
-        "id": "crosscountry",
-        "connection_links": [],
-        "image": "assets/sport_images/volleyball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "categories": [
-            "fall_sports"
+            "fall_sports",
+            "girls_sports"
         ]
     },
     {
@@ -659,7 +644,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Boys' Hockey",
+        "name": "Boys Hockey",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/hockey.png",
@@ -668,11 +653,12 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
-            "winter_sports"
+            "winter_sports",
+            "boys_sports"
         ]
     },
     {
-        "name": "Jr. Boys' Basketball",
+        "name": "Jr. Boys Basketball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -681,11 +667,12 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
-            "winter_sports"
+            "winter_sports",
+            "boys_sports"
         ]
     },
     {
-        "name": "Sr. Boys' Basketball",
+        "name": "Sr. Boys Basketball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -694,11 +681,12 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
-            "winter_sports"
+            "winter_sports",
+            "boys_sports"
         ]
     },
     {
-        "name": "Girls' Hockey",
+        "name": "Girls Hockey",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/hockey.png",
@@ -707,11 +695,12 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
-            "winter_sports"
+            "winter_sports",
+            "girls_sports"
         ]
     },
     {
-        "name": "Jr. Girls' Volleyball",
+        "name": "Jr. Girls Volleyball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
@@ -720,11 +709,12 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
-            "winter_sports"
+            "winter_sports",
+            "girls_sports"
         ]
     },
     {
-        "name": "Sr. Girls' Volleyball",
+        "name": "Sr. Girls Volleyball",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
@@ -733,7 +723,8 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
-            "winter_sports"
+            "winter_sports",
+            "girls_sports"
         ]
     },
     {
@@ -761,7 +752,7 @@ var athletics = [
         ]
     },
     {
-        "name": "Boys' Rugby",
+        "name": "Boys Rugby",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -769,11 +760,12 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "spring_sports"
+            "spring_sports",
+            "boys_sports"
         ]
     },
     {
-        "name": "Boys' Slo-Pitch",
+        "name": "Boys Slo-Pitch",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -781,11 +773,12 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "spring_sports"
+            "spring_sports",
+            "boys_sports"
         ]
     },
     {
-        "name": "Jr. Boys' Tennis",
+        "name": "Sr. Boys Soccer",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -793,11 +786,12 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "spring_sports"
+            "spring_sports",
+            "boys_sports"
         ]
     },
     {
-        "name": "Sr. Boys' Soccer",
+        "name": "Girls Rugby",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -805,23 +799,12 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "spring_sports"
+            "spring_sports",
+            "girls_sports"
         ]
     },
     {
-        "name": "Girls' Rugby",
-        "id": "crosscountry",
-        "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "categories": [
-            "spring_sports"
-        ]
-    },
-    {
-        "name": "Girls' Soccer",
+        "name": "Girls Soccer",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/soccer.png",
@@ -829,11 +812,12 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "spring_sports"
+            "spring_sports",
+            "girls_sports"
         ]
     },
     {
-        "name": "Girls' Slo-Pitch",
+        "name": "Girls Slo-Pitch",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -841,11 +825,12 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "spring_sports"
+            "spring_sports",
+            "girls_sports"
         ]
     },
     {
-        "name": "Jr. Girls' Tennis",
+        "name": "Tennis",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
