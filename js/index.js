@@ -11,36 +11,32 @@ async function searchMainPage(value) {
         value = value.trim().toLowerCase();
 
         // Only returning those results of the showResults that match the user input in the search bar
-        showResults(clubs.concat(athletics).concat(music).filter(activity => {
+        showResults([clubs.filter(activity => {
             return activity.name.toLowerCase().includes(value);
-        }));
+        }), athletics.filter(activity => {
+            return activity.name.toLowerCase().includes(value);
+        }), music.filter(activity => {
+            return activity.name.toLowerCase().includes(value);
+        })],
+        ["clubs.html", "athletics.html", "music.html"]);
     } else {
         for (const link of smLinks ) {link.style.display = "inline";};
     }
 }
 
 // Showing results from the search
-function showResults(results){
-    for (const extracurriculars of results){
-        const resultItem = document.createElement('a')
-        var link = document.createTextNode(extracurriculars.name)
-        var results = document.getElementById("list")
-
-        resultItem.appendChild(link)
-        // resultItem.appendChild(source)
-
-        resultItem.classList.add('result-item')
-        
-          let result = clubs.includes(resultItem);
-          if (result == true) {
-              resultItem.href = "clubs.html";
-          }
-        
+function showResults(resultsList, pageUrls){
+    for (var resultIndex = 0; resultIndex<resultsList.length; resultIndex++) {
+        for (const result of resultsList[resultIndex]) {
+            const resultItem = document.createElement('a');
+            resultItem.innerText = result.name;
             
-        // resultItem.href = "clubs.html";
-        results.appendChild(resultItem)
-        resultItem.title = document.createTextNode(extracurriculars.name)
-        results.appendChild(resultItem)
+            resultItem.classList.add('result-item');
+            resultItem.href = pageUrls[resultIndex].concat("?box=").concat(result.id);
+
+            var results = document.getElementById("list");
+            results.appendChild(resultItem);
+        }
     }
     if (results.length === 0) {
         noResults()
