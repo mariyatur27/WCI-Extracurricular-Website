@@ -64,19 +64,6 @@
         ]
     },
     {
-        "name": "Sr. Boys Tennis",
-        "id": "crosscountry",
-        "connection_links": [],
-        "image": "assets/sport_images/volleyball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "categories": [
-            "fall_sports",
-            "boys_sports"
-        ]
-    },
-    {
         "name": "Jr. Boys Volleyball",
         "id": "crosscountry",
         "connection_links": [],
@@ -133,19 +120,6 @@
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "categories": [
-            "fall_sports",
-            "girls_sports"
-        ]
-    },
-    {
-        "name": "Sr. Girls Tennis",
-        "id": "crosscountry",
-        "connection_links": [],
-        "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
@@ -327,19 +301,6 @@
         ]
     },
     {
-        "name": "Jr. Boys Tennis",
-        "id": "crosscountry",
-        "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "categories": [
-            "spring_sports",
-            "boys_sports"
-        ]
-    },
-    {
         "name": "Sr. Boys Soccer",
         "id": "crosscountry",
         "connection_links": [],
@@ -392,7 +353,7 @@
         ]
     },
     {
-        "name": "Jr. Girls Tennis",
+        "name": "Tennis",
         "id": "crosscountry",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
@@ -400,8 +361,7 @@
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "spring_sports",
-            "girls_sports"
+            "spring_sports"
         ]
     }
 ]
