@@ -332,6 +332,7 @@
         "id": "roboticsclub",
         "meeting_time": "Restarting Semester 2!",
         "connection_links":[],
+        "classroom": "https://classroom.google.com/c/MTY1OTk0MDcyNzNa?cjc=icus6dl",
         "image": "assets/club_images/roboticsclub.png",
         "description": "We at the Viking robotics club are a bunch of students who have one common interest: robotics! Here at the club, we cover everything from working with hardware and software, programming electronics and even computer work. As we do so, we are more people involved in STEM, exercising their problem solving skills and make new friends!",
         "categories": [
@@ -343,6 +344,7 @@
         "id": "wciscienceclub",
         "meeting_time": "Thursdays, 3:15 PM - 4:15 PM",
         "connection_links":["instagram", "email"],
+        "classroom": "https://classroom.google.com/c/Nzc0NTg1MTAwNlpa?cjc=f4z7dvy",
         "instagram" : "https://www.instagram.com/wci_science",
         "email": "jocelyn_ridgway@wrdsb.ca",
         "image": "assets/club_images/wciscienceclub.png",
