@@ -20,8 +20,3 @@ function loadPopupData(){
 		// If there is no image to show, move the text over to the left to avoid an awkward gap
 	}
 };
-
-function closePopup(){
-	var div = document.getElementById("event-popup");
-	div.style.display = "none";
-}
