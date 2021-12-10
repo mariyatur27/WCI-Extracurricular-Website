@@ -8,7 +8,7 @@
         "image": "assets/club_images/ambassadorschristianfellowship.png",
         "description": "A place for anyone to ask questions about and explore a life with Jesus. The goal is to serve the WCI community while providing a safe place for fellowship.",
         "categories": [
-            "recreational_category"
+            "social_justice_category"
         ]
     },
     {
@@ -60,7 +60,6 @@
         "image": "assets/club_images/blackstudentassociation.png",
         "description": "This club is a space for students to get together, unwind, connect, and discuss important issues, topics and more!",
         "categories": [
-            "recreational_category",
             "social_justice_category"
         ]
     },
@@ -101,7 +100,6 @@
         "image": "assets/club_images/chinesestudentassociation.png",
         "description": "This club creates a relaxing and safe space for Chinese descendants and newcomers to post/comment (in Chinese and English), and share the language, food images, Chinese arts and crafts, festivals, and more, related to the Chinese culture and student life experiences in Canada.", 
         "categories": [
-            "recreational_category",
             "social_justice_category"
         ]
     },
@@ -129,7 +127,6 @@
         "image": "assets/club_images/clublatinx.png",
         "description": "We want student who want to help the Spanish speaking community, who have just arrived into KW, as they adapt to this new culture. Also, supporting each other in our WCI community... sharing and teaching our culture- music, dance, food, ...", 
         "categories": [
-            "recreational_category",
             "social_justice_category",
             "academics_category"
         ]
@@ -231,6 +228,7 @@
         "image": "assets/club_images/gradclub.png",
         "description": "To promote acceptance and inclusion throughout the school community and to provide a safe, non-judgmental space as a support network for Gay, Lesbian, Bisexual, Transgender, Questioning, and Straight youth who share a common vision of social equality",
         "categories": [
+            "leadership_category",
             "recreational_category"
         ]
     },
@@ -281,7 +279,7 @@
         "image": "assets/club_images/jrleadership.png",
         "description": "Junior Leadership is a  Club for Gr 9s who want to lead and play a key role inside the school. This club helps prepare students who are interested in joining the Student Council, want to meet other grade 9s, have fun and learn about leadership opportunities at WCI.",
         "categories": [
-            "recreational_category"
+            "leadership_category"
         ]
     },
     {
@@ -364,7 +362,8 @@
         "image": "assets/club_images/spiritclub.png",
         "description": "This club is for vikings looking to be loud and outgoing. As a Spirit Director your job is to make the school as spirited as possible by hyping up groups of people and encouraging others to get involved. You may have to get up in front of the school and do the school cheers or send a video of you doing a dance but no matter the task you need to be able to do it with as much spirit as possible. This club requires auditions.",
         "categories": [
-            "recreational_category"
+            "recreational_category",
+            "leadership_category"
         ]
     },
     {
