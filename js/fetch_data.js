@@ -3,9 +3,8 @@ var clubs = [
         "name": "Ambassadors Christian Fellowship",
         "id": "ambassadorschristianfellowship",
         "meeting_time": "Wednesdays, 2:45 PM - 3:45 PM",
-        "connection_links":["classroom", "email"],
+        "connection_links":["classroom"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=tegmr4n",
-        "email": "decavikings@gmail.com",
         "image": "assets/club_images/ambassadorschristianfellowship.png",
         "description": "A place for anyone to ask questions about and explore a life with Jesus. The goal is to serve the WCI community while providing a safe place for fellowship.",
         "categories": [
@@ -16,9 +15,8 @@ var clubs = [
         "name": "Anime Club",
         "id": "animeclub",
         "meeting_time": "Tuesdays and Fridays, at lunch",
-        "connection_links":["classroom", "email"],
+        "connection_links":["classroom"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=jcdkgfs",
-        "email": "decavikings@gmail.com",
         "image": "assets/club_images/animeclub.png",
         "description": "A place for anyone to ask questions about and explore a life with Jesus. The goal is to serve the WCI community while providing a safe place for fellowship.",
         "categories": [
@@ -29,9 +27,9 @@ var clubs = [
         "name": "Astronomy Club",
         "id": "astronomy",
         "meeting_time": "Wednesdays, 2:30 PM - 3:30 PM",
-        "connection_links":["classroom", "email", "instagram"],
+        "connection_links":["classroom", "instagram"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=pmcg2fk",
-        "email": "decavikings@gmail.com",
+        "instagram" : "https://www.instagram.com/wci.astro.club/",
         "image": "assets/club_images/astronomy.png",
         "description": "A club for anyone interested in learning more about astronomy with like-minded students. We will explore the science of astronomy, in weekly club meetings. We also organize amature astronomy events, citizen science projects, and telescope build projects. Come and explore the sky with us! For more info follow: wci.astro.club on Instagram. ",
         "categories": [
@@ -161,6 +159,73 @@ var clubs = [
         "description": "The Debate Club provides students with a fun way to further develop their speaking and presentation skills. In addition, the debate club provides an opportunity for the students to become more informed about political and global affairs. Through a virtual platform, students will train for debate competitions with local schools.",
         "categories": [
             "business_category"
+        ]
+    },
+    {
+        "name": "Eco Club",
+        "id": "ecoclub",
+        "meeting_time": "Tuesday at 3:30",
+        "connection_links":["instagram", "email", "classroom"],
+        "instagram" : "https://www.instagram.com/wci_ecoclub/",
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=kdtnrnu ",
+        "image": "assets/club_images/ecoclub.png",
+        "description": "This club helps join like-minded peers to discuss ways to care for our environment,  foster sustainability and fight climate change in our school community and beyond in order to build a better future for all.": [
+            "recreational_category"
+        ]
+    },
+    {
+        "name": "Female Empowerment Movement",
+        "id": "femaleempowermentmovement",
+        "meeting_time": "Biweekly Meetings",
+        "connection_links":["instagram", "email", "classroom"],
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=kdtnrnu ",
+        "image": "assets/club_images/femaleempowermentmovement.png",
+        "description": "Empowering students to spark change in and out of the school community and foster a supportive, educational environment on gender equality issues. We spread awareness and educate our peers, host guest speaker panels, interactive discussions, student empowerment activities, and fundraisers. All are welcome!": [
+            "social_justice_category"
+        ]
+    },
+    {
+        "name": "Fit @ Home Club",
+        "id": "fithomeclub",
+        "meeting_time": "NEED TO FIND OUT",
+        "connection_links":["instagram", "email", "classroom"],
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=kdtnrnu ",
+        "image": "assets/club_images/fithome.png",
+        "description": "The fitness from home club provides ALL students the opportunity to stay fit and have fun with weekly workout challenges that they can complete all at home and without any equipment. Through a virtual platform, students complete friendly fitness challenges against other students in their grade with  the option to post and challenge their peers. We will work on both strength and endurance movements to help strengthen our bodies and sharpen our minds. Grab your running shoes, a water bottle and let’s get fit together!": [
+            "recreational_category"
+        ]
+    },
+    {
+        "name": "French Club",
+        "id": "frenchclub",
+        "meeting_time": "Every other Friday, 2:45 PM - 3:30 PM",
+        "connection_links":["instagram", "email", "classroom"],
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=kdtnrnu ",
+        "image": "assets/club_images/frenchclub.png",
+        "description": "If you are interested in French culture, music, art, language, history, and talking about food, join our French Club!  This is a great way to meet new people and learn about all the places in the world where they speak French!": [
+            "academics_category"
+        ]
+    },
+    {
+        "name": "Gender and Sexuality Awareness Club (GSA)",
+        "id": "GSAclub",
+        "meeting_time": "Every Wednesday, 2:30 PM - 3:30 PM",
+        "connection_links":["instagram", "email", "classroom"],
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=kdtnrnu ",
+        "image": "assets/club_images/genderandsexualityawarenessclubgsa.png",
+        "description": "To promote acceptance and inclusion throughout the school community and to provide a safe, non-judgmental space as a support network for Gay, Lesbian, Bisexual, Transgender, Questioning, and Straight youth who share a common vision of social equality": [
+            "social_justice_category"
+        ]
+    },
+    {
+        "name": "Grad Club",
+        "id": "gradclub",
+        "meeting_time": "NEED TO FIND OUT",
+        "connection_links":["instagram", "email", "classroom"],
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=kdtnrnu ",
+        "image": "assets/club_images/genderandsexualityawarenessclubgsa.png",
+        "description": "To promote acceptance and inclusion throughout the school community and to provide a safe, non-judgmental space as a support network for Gay, Lesbian, Bisexual, Transgender, Questioning, and Straight youth who share a common vision of social equality": [
+            "social_justice_category"
         ]
     },
     {
