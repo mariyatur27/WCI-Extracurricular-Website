@@ -80,6 +80,9 @@
 
                                 <input type="checkbox" onclick="if (activeFilters.has('social_justice_category')) {activeFilters.delete('social_justice_category');} else {activeFilters.add('social_justice_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="social_justice" class="filterbt">
                                 <label for="social_justice">Social Justice</label>
+                                
+                                <input type="checkbox" onclick="if (activeFilters.has('leadership_category')) {activeFilters.delete('leadership_category');} else {activeFilters.add('leadership_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="leadership" class="filterbt">
+                                <label for="leadership">Leadership</label>
                             </div>
                         </div>
                     <div class="clubs" id="club_boxes"></div>
