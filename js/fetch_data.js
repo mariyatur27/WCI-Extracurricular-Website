@@ -228,10 +228,10 @@ var clubs = [
         "meeting_time": "NEED TO FIND OUT",
         "connection_links":["instagram", "email", "classroom"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=kdtnrnu ",
-        "image": "assets/club_images/genderandsexualityawarenessclubgsa.png",
+        "image": "assets/club_images/gradclub.png",
         "description": "To promote acceptance and inclusion throughout the school community and to provide a safe, non-judgmental space as a support network for Gay, Lesbian, Bisexual, Transgender, Questioning, and Straight youth who share a common vision of social equality",
         "categories": [
-            "social_justice_category"
+            "recreational_category"
         ]
     },
     {
@@ -249,12 +249,82 @@ var clubs = [
         ]
     },
     {
+        "name": "Indigenous Student Association",
+        "id": "indigenousstudentassociation",
+        "meeting_time": "NEED TO FIND OUT",
+        "connection_links": ["classroom"],
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=j3ztdep",
+        "image": "assets/club_images/indigenousstudentassociation.png",
+        "description": "The Indigenous students club is a safe and inclusive space in which students of Indigenous heritage can form new friendships and celebrate the important contributions of First Nations, Métis, and Inuit people . Together, we will discuss approaches to contemporary Canadian Indigenous issues and challenges.",
+        "categories": [
+            "social_justice_category"
+        ]
+    },
+    {
+        "name": "Key Club",
+        "id": "keyclub",
+        "meeting_time": "Thursday, 3:00 PM - 4:00 PM",
+        "connection_links": ["classroom"],
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=j3ztdep",
+        "image": "assets/club_images/keyclub.png",
+        "description": "Key Club International is an international branch of Kiwanis that is run by students for students, enabling them to engage, contribute and help out in the community through volunteering. Students can gain volunteer hours through involvement of service projects, community work, as well as newly curated virtual volunteer opportunities.",
+        "categories": [
+            "recreational_category"
+        ]
+    },
+    {
+        "name": "Jr. Leadership",
+        "id": "jrleadership",
+        "meeting_time": "Mondays at Lunch",
+        "connection_links": ["classroom"],
+        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=j3ztdep",
+        "image": "assets/club_images/jrleadership.png",
+        "description": "Junior Leadership is a  Club for Gr 9s who want to lead and play a key role inside the school. This club helps prepare students who are interested in joining the Student Council, want to meet other grade 9s, have fun and learn about leadership opportunities at WCI.",
+        "categories": [
+            "recreational_category"
+        ]
+    },
+    {
         "name": "Math Club",
         "id": "mathclub",
         "meeting_time": "Tuesdays, 2:00 PM - 3:00 PM",
         "connection_links":[],
         "image": "assets/club_images/mathclub.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "description": "For everyone who enjoys math, at whatever level, and wants to learn more. We cover topics in geometry, number theory, logic, analysis, etc. outside of regular high school math. We also do contest preparation, for those interested.",
+        "categories": [
+            "stem_category",
+            "academics_category"
+        ]
+    },
+    {
+        "name": "Muslim Student Association",
+        "id": "muslimstudentassociation",
+        "meeting_time": "Tuesdays, 2:00 PM - 3:00 PM",
+        "connection_links":[],
+        "image": "assets/club_images/mathclub.png",
+        "description": "The Muslim Student Association (MSA) is a safe space for Muslim Students to get together, learn and appreciate their identity, create a welcoming community, and of course, have fun!",
+        "categories": [
+            "social_justice_category"
+        ]
+    },
+    {
+        "name": "Origami Club",
+        "id": "origamiclub",
+        "meeting_time": "Mondays at 2:45 PM",
+        "connection_links":[],
+        "image": "assets/club_images/origamiclub.png",
+        "description": "A relaxing environment to learn more about the different concepts of origami and a place for origami enthusiasts to share ideas, work on projects, and socialize with each other. Meetings will vary from week to week, with lessons, group projects, and new models to fold being provided regularly. Any experience level is welcome!",
+        "categories": [
+            "recreational_category"
+        ]
+    },
+    {
+        "name": "Robotics Club",
+        "id": "roboticsclub",
+        "meeting_time": "Mondays at 2:45 PM",
+        "connection_links":[],
+        "image": "assets/club_images/origamiclub.png",
+        "description": "A relaxing environment to learn more about the different concepts of origami and a place for origami enthusiasts to share ideas, work on projects, and socialize with each other. Meetings will vary from week to week, with lessons, group projects, and new models to fold being provided regularly. Any experience level is welcome!",
         "categories": [
             "stem_category",
             "academics_category"
@@ -268,7 +338,66 @@ var clubs = [
         "instagram" : "https://www.instagram.com/wci_science",
         "email": "jocelyn_ridgway@wrdsb.ca",
         "image": "assets/club_images/wciscienceclub.png",
+        "description": "Science club is a space for students of all grades to meet and discuss concepts and discoveries not covered in school science classes. The club also provides information for any students looking to participate in enrichment science activities, such as competitions and events at local universities and in the community.",
+        "categories": [
+            "stem_category",
+            "academics_category"
+        ]
+    },
+    {
+        "name": "Social Justice Club",
+        "id": "socialjusticeclub",
+        "meeting_time": "Thursdays, 3:15 PM - 4:15 PM",
+        "connection_links":["instagram"],
+        "instagram" : "https://www.instagram.com/wcisocialjustice/",
+        "image": "assets/club_images/socialjusticeclubwci.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "categories": [
+            "social_justice_category"
+        ]
+    },
+    {
+        "name": "Spirit Club",
+        "id": "spiritclub",
+        "meeting_time": "NEED TO FIND OUT",
+        "connection_links":[],
+        "image": "assets/club_images/spiritclub.png",
+        "description": "This club is for vikings looking to be loud and outgoing. As a Spirit Director your job is to make the school as spirited as possible by hyping up groups of people and encouraging others to get involved. You may have to get up in front of the school and do the school cheers or send a video of you doing a dance but no matter the task you need to be able to do it with as much spirit as possible. This club requires auditions.",
+        "categories": [
+            "recreational_category"
+        ]
+    },
+    {
+        "name": "Sticker Club",
+        "id": "stickerclub",
+        "meeting_time": "NEED TO FIND OUT",
+        "connection_links":[],
+        "image": "assets/club_images/stickerclub.png",
+        "description": "Calling all sticker lovers! Members of the sticker club will be coming together to design and craft our very own personalized stickers with WCI's brand new sticker machine. We'll also be making customized clothing and spirit wear. You won't want to miss out on this creative club!",
+        "categories": [
+            "recreational_category"
+        ]
+    },
+    {
+        "name": "Technovation(WiSTEM)",
+        "id": "technovation",
+        "meeting_time": "Wednesday, 10:50 AM - 11:20 AM",
+        "connection_links":[],
+        "image": "assets/club_images/technovationwistem.png",
+        "description": "Technovation is an international girls coding competition that aims to get girls into tech. In the competition, teams build mobile apps that help solve a problem in society and pitch it to judges. We will also be running other research projects should female identifying students wish to persue or have support in diving into their ideas with science!",
+        "categories": [
+            "stem_category",
+            "academics_category"
+        ]
+    },
+    {
+        "name": "Tutoring Club",
+        "id": "tutoringclub",
+        "meeting_time": "Tuesday, Thursday, & Friday, 3:00 PM - 4:00 PM",
+        "connection_links":["instagram"],
+        "instagram" : "https://www.instagram.com/wci_tutoring/",
+        "image": "assets/club_images/wcitutors.png",
+        "description": "WCI Tutors offers students the opportunity to both tutor students and/or get some extra help in their courses. Right now it is all online but, when in-person activities return, we will meet in the cafeteria after school as well. Both in-person and online.",
         "categories": [
             "stem_category",
             "academics_category"
@@ -277,14 +406,28 @@ var clubs = [
     {
         "name": "Viking Venture",
         "id": "vikingventure",
-        "meeting_time": "3:30 PM - 4:30 PM",
+        "meeting_time": "Wednesday, 3:30 PM - 4:30 PM",
         "connection_links":["instagram", "email"],
         "instagram" : "https://www.instagram.com/vikingventure",
         "email": "decavikings@gmail.com",
         "image": "assets/club_images/vikingventure.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "description": "Viking Venture is a WCI business competition offering students a chance to strengthen their interpersonal and professional skills. Students will delve into real-life business environments, hone their leadership skills, and develop problem-solving skills through case studies and presentations.",
         "categories": [
             "business_category"
+        ]
+    },
+    {
+        "name": "WCI TEDEd Club",
+        "id": "tededclub",
+        "meeting_time": "Friday, 2:45 PM - 3:45 PM",
+        "connection_links":["instagram", "email"],
+        "instagram" : "https://www.instagram.com/wciteded/",
+        "email": "decavikings@gmail.com",
+        "image": "assets/club_images/wcitededclub.png",
+        "description": "WCI TEDEd Club is a space for all students to consider a myriad of topics and deep dive into something they are interested in. Our club will support you as you discover, explore and present your big ideas in the form of short, TED talks. We strive to empower and celebrate student voices, as part of the global TED community!",
+        "categories": [
+            "academics_category",
+            "recreational_category"
         ]
     },
     {
