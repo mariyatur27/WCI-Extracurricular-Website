@@ -28,7 +28,7 @@ var clubs = [
         "id": "astronomy",
         "meeting_time": "Wednesdays, 2:30 PM - 3:30 PM",
         "connection_links":["classroom", "instagram"],
-        "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=pmcg2fk",
+        "classroom": "https://classroom.google.com/u/0/c/MzI1MzU1NjcxMjU4?cjc=pmcg2fk",
         "instagram" : "https://www.instagram.com/wci.astro.club/",
         "image": "assets/club_images/astronomy.png",
         "description": "A club for anyone interested in learning more about astronomy with like-minded students. We will explore the science of astronomy, in weekly club meetings. We also organize amature astronomy events, citizen science projects, and telescope build projects. Come and explore the sky with us! For more info follow: wci.astro.club on Instagram. ",
