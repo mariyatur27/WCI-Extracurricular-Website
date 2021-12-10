@@ -302,6 +302,7 @@ var clubs = [
         "connection_links":[],
         "classroom": "https://classroom.google.com/c/",
         "image": "assets/club_images/wcimodeulunitednationsclub.png",
+        "image": "assets/club_images/wcimodelunitednationsclub.png",
         "description": "Model United Nations is an academic simulation of the United Nations where students represent different countries and discuss solutions to real world issues. In this club, students will not only improve crucial competencies such as leadership and communication, but also develop comprehensive international perspectives.",
         "categories": [
             "academics_category"

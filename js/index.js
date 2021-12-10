@@ -30,8 +30,14 @@ function showResults(results){
         // resultItem.appendChild(source)
 
         resultItem.classList.add('result-item')
-
-        resultItem.href = "clubs.html";
+        
+          let result = clubs.includes(resultItem);
+          if (result == true) {
+              resultItem.href = "clubs.html";
+          }
+        
+            
+        // resultItem.href = "clubs.html";
         results.appendChild(resultItem)
         resultItem.title = document.createTextNode(extracurriculars.name)
         results.appendChild(resultItem)
