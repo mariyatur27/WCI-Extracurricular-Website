@@ -13,12 +13,10 @@
 	position: absolute;
 	padding: 5%;
 	display: none;
-	top: 100%;
 }
 
 #mainNav ul li:hover ul{
 	display: block;
-
 	background-color: #a30001;
 }
 
