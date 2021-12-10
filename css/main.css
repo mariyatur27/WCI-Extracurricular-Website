@@ -1,3 +1,35 @@
+/* Nav bar dropdown */
+#mainNav ul{
+	list-style: none;
+	margin: 0;
+}
+
+#mainNav ul li{
+	float: left;
+	position: relative;
+}
+
+#mainNav ul ul{
+	position: absolute;
+	padding: 0;
+	display: none;
+	top: 100%;
+}
+
+#mainNav ul li:hover ul{
+	display: block;
+	background-color: #a30001;
+}
+
+#mainNav ul ul li{
+	position: relative;
+	float: left;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+/* nav bar done */
+
 .search_bar {
 	padding: 1% 3%;
 	width: 50%;

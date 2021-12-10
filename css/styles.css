@@ -11399,6 +11399,7 @@ section {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #0A1241;
+  background-color: #b02a37;
 }
 
 @media (min-width: 992px) {
@@ -11429,8 +11430,12 @@ section {
 #mainNav.navbar-shrink .navbar-brand img {
     height: 1.5rem;
   }
+  #mainNav.navbar-shrink ul li:hover ul{
+    background-color: #ac191a;
+  }  
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
+    height: 100%;
   }
   #mainNav .navbar-nav .nav-item:last-child {
     margin-right: 0;
