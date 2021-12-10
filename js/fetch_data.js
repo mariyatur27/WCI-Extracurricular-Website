@@ -299,7 +299,7 @@ var clubs = [
         "id": "muslimstudentassociation",
         "meeting_time": "Tuesdays, 2:00 PM - 3:00 PM",
         "connection_links":[],
-        "image": "assets/club_images/mathclub.png",
+        "image": "assets/club_images/muslimstudentassociation.png",
         "description": "The Muslim Student Association (MSA) is a safe space for Muslim Students to get together, learn and appreciate their identity, create a welcoming community, and of course, have fun!",
         "categories": [
             "social_justice_category"
@@ -321,8 +321,8 @@ var clubs = [
         "id": "roboticsclub",
         "meeting_time": "Mondays at 2:45 PM",
         "connection_links":[],
-        "image": "assets/club_images/origamiclub.png",
-        "description": "A relaxing environment to learn more about the different concepts of origami and a place for origami enthusiasts to share ideas, work on projects, and socialize with each other. Meetings will vary from week to week, with lessons, group projects, and new models to fold being provided regularly. Any experience level is welcome!",
+        "image": "assets/club_images/roboticsclub.png",
+        "description": "We at the Viking robotics club are a bunch of students who have one common interest: robotics! Here at the club, we cover everything from working with hardware and software, programming electronics and even computer work. As we do so, we are more people involved in STEM, exercising their problem solving skills and make new friends!",
         "categories": [
             "stem_category",
             "academics_category"
