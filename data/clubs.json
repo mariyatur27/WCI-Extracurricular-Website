@@ -94,7 +94,7 @@
     {
         "name": "Chinese Student Association",
         "id": "chinesestudentassociation",
-        "meeting_time": "Unknown",
+        "meeting_time": "Thursday, 3:30 PM - 4:30 PM",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=bx5qpfp",
         "email": "decavikings@gmail.com",
@@ -108,7 +108,7 @@
     {
         "name": "Classics Club",
         "id": "classicsclub",
-        "meeting_time": "Unknown",
+        "meeting_time": "Tuesday, 3:15 PM - 4:15 PM",
         "connection_links":["classroom", "email"],
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=qc6lrdn",
         "email": "decavikings@gmail.com",
