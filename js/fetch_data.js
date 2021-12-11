@@ -16,7 +16,7 @@ var clubs = [
         "meeting_time": "Tuesdays and Fridays, at lunch",
         "connection_links":[],
         "image": "assets/club_images/animeclub.png",
-        "description": "A place for anyone to ask questions about and explore a life with Jesus. The goal is to serve the WCI community while providing a safe place for fellowship.",
+        "description": "TBD",
         "categories": [
             "recreational_category"
         ]
@@ -196,7 +196,7 @@ var clubs = [
         "meeting_time": "Every Wednesday, 2:30 PM - 3:30 PM",
         "connection_links":[],
         "image": "assets/club_images/genderandsexualityawarenessclubgsa.png",
-        "description": "To promote acceptance and inclusion throughout the school community and to provide a safe, non-judgmental space as a support network for Gay, Lesbian, Bisexual, Transgender, Questioning, and Straight youth who share a common vision of social equality",
+        "description": "To promote acceptance and inclusion throughout the school community and to provide a safe, non-judgmental space as a support network for Gay, Lesbian, Bisexual, Transgender, Questioning, and Straight youth who share a common vision of social equality.",
         "categories": [
             "social_justice_category"
         ]
@@ -207,7 +207,7 @@ var clubs = [
         "meeting_time": "NEED TO FIND OUT",
         "connection_links":[],
         "image": "assets/club_images/gradclub.png",
-        "description": "To promote acceptance and inclusion throughout the school community and to provide a safe, non-judgmental space as a support network for Gay, Lesbian, Bisexual, Transgender, Questioning, and Straight youth who share a common vision of social equality",
+        "description": "Help us plan out your final year with some exciting Grad Events, design grad wear, plan candy grams and so much more.",
         "categories": [
             "leadership_category",
             "recreational_category"
