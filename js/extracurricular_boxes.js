@@ -126,3 +126,21 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
         }
     }
 }
+
+function toggleFilter(filter, box_name) {
+    if (activeFilters.has(filter)) {
+        activeFilters.delete(filter);
+    } else {
+        activeFilters.add(filter);
+    }
+}
+
+function toggleClubFilter(filter) {
+    toggleFilter(filter);
+    setupBoxes(clubs, 'club_boxes', 2);
+}
+
+function toggleAthleticsFilter(filter) {
+    toggleFilter(filter);
+    setupBoxes(athletics, 'athletics_boxes', 2);
+}

@@ -66,25 +66,25 @@
                     </div>
                     <div class="dropdown">
                         <div id="dropdown_content" class="dropdown_content">
-                            <input type="checkbox" onclick="if (activeFilters.has('art_category')) {activeFilters.delete('art_category');} else {activeFilters.add('art_category');} setupBoxes(clubs, 'club_boxes', 2);" ondblclick="check()" name="choice" id="art" class="filterbt">
+                            <input type="checkbox" onclick="toggleClubFilter('art_category')" ondblclick="check()" name="choice" id="art" class="filterbt">
                             <label for="art">Art</label>
 
-                            <input type="checkbox" onclick="if (activeFilters.has('stem_category')) {activeFilters.delete('stem_category');} else {activeFilters.add('stem_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="stem" class="filterbt">
+                            <input type="checkbox" onclick="toggleClubFilter('stem_category')" name="choice" id="stem" class="filterbt">
                             <label for="stem">STEM</label>
 
-                            <input type="checkbox" onclick="if (activeFilters.has('academics_category')) {activeFilters.delete('academics_category');} else {activeFilters.add('academics_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="academics" class="filterbt">
+                            <input type="checkbox" onclick="toggleClubFilter('academics_category')" name="choice" id="academics" class="filterbt">
                             <label for="academics">Academics</label>
 
-                            <input type="checkbox" onclick="if (activeFilters.has('recreational_category')) {activeFilters.delete('hobby_category');} else {activeFilters.add('recreational_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="recreational" class="filterbt">
+                            <input type="checkbox" onclick="toggleClubFilter('recreational_category')" name="choice" id="recreational" class="filterbt">
                             <label for="recreational">Recreational</label>
 
-                            <input type="checkbox" onclick="if (activeFilters.has('business_category')) {activeFilters.delete('business_category');} else {activeFilters.add('business_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="business" class="filterbt">
+                            <input type="checkbox" onclick="toggleClubFilter('business_category')" name="choice" id="business" class="filterbt">
                             <label for="business">Business</label>
 
-                            <input type="checkbox" onclick="if (activeFilters.has('social_justice_category')) {activeFilters.delete('social_justice_category');} else {activeFilters.add('social_justice_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="social_justice" class="filterbt">
+                            <input type="checkbox" onclick="toggleClubFilter('social_justice_category')" name="choice" id="social_justice" class="filterbt">
                             <label for="social_justice">Social Justice</label>
                             
-                            <input type="checkbox" onclick="if (activeFilters.has('leadership_category')) {activeFilters.delete('leadership_category');} else {activeFilters.add('leadership_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="leadership" class="filterbt">
+                            <input type="checkbox" onclick="toggleClubFilter('leadership_category')" name="choice" id="leadership" class="filterbt">
                             <label for="leadership">Leadership</label>
                         </div>
                     </div>

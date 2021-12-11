@@ -72,19 +72,19 @@
                     <div class="dropdown">
                             <div id="dropdown_content" class="dropdown_content">
 
-                                <input type="checkbox" onclick="if (activeFilters.has('fall_sports')) {activeFilters.delete('fall_sports');} else {activeFilters.add('fall_sports');} setupBoxes(athletics, 'athletics_boxes', 2);" name="choice" id="fall_sports" class="filterbt">
+                                <input type="checkbox" onclick="toggleAthleticsFilter('fall_sports')" name="choice" id="fall_sports" class="filterbt">
                                 <label for="fall_sports">Fall Sports</label>
                                 
-                                <input type="checkbox" onclick="if (activeFilters.has('winter_sports')) {activeFilters.delete('winter_sports');} else {activeFilters.add('winter_sports');} setupBoxes(athletics, 'athletics_boxes', 2);" name="choice" id="winter_sports" class="filterbt">
+                                <input type="checkbox" onclick="toggleAthleticsFilter('winter_sports')" name="choice" id="winter_sports" class="filterbt">
                                 <label for="winter_sports">Winter Sports</label>
 
-                                <input type="checkbox" onclick="if (activeFilters.has('spring_sports')) {activeFilters.delete('spring_sports');} else {activeFilters.add('spring_sports');} setupBoxes(athletics, 'athletics_boxes', 2);" name="choice" id="spring_sports" class="filterbt">
+                                <input type="checkbox" onclick="toggleAthleticsFilter('spring_sports')" name="choice" id="spring_sports" class="filterbt">
                                 <label for="spring_sports">Spring Sports</label>
                                 
-                                <input type="checkbox" onclick="if (activeFilters.has('boys_sports')) {activeFilters.delete('boys_sports');} else {activeFilters.add('boys_sports');} setupBoxes(athletics, 'athletics_boxes', 2);" name="choice" id="boys_sports" class="filterbt">
+                                <input type="checkbox" onclick="toggleAthleticsFilter('boys_sports')" name="choice" id="boys_sports" class="filterbt">
                                 <label for="boys_sports">Boys Sports</label>
                                 
-                                <input type="checkbox" onclick="if (activeFilters.has('girls_sports')) {activeFilters.delete('girls_sports');} else {activeFilters.add('girls_sports');} setupBoxes(athletics, 'athletics_boxes', 2);" name="choice" id="girls_sports" class="filterbt">
+                                <input type="checkbox" onclick="toggleAthleticsFilter('girls_sports')" name="choice" id="girls_sports" class="filterbt">
                                 <label for="girls_sports">Girls Sports</label>
 
                                 <!-- <input type="checkbox" onclick="if (activeFilters.has('junior_sports')) {activeFilters.delete('junior_sports');} else {activeFilters.add('junior_sports');} setupBoxes(athletics, 'athletics_boxes', 2);" name="choice" id="junior_sports" class="filterbt">
