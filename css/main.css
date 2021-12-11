@@ -29,6 +29,18 @@
 }
 /* nav bar done */
 
+#main {
+	display: flex;
+	justify-content: center;
+	padding-left: 2%;
+}
+
+p.descrp {
+	text-align: left;
+	margin-right: 2%;
+	margin-bottom: 50px;
+}
+
 .search_bar {
 	padding: 1% 3%;
 	width: 50%;
@@ -44,7 +56,7 @@
 .search-bar-wrapper {
 	position: relative;
 	display: flex;
-	width: 95%;
+	width: 97%;
 	margin-bottom: 5px;
 }
 
@@ -70,7 +82,7 @@ input#club_search:focus {
 
 .dropdown-btn {
 	height: 40px;
-	width: 95%;
+	width: 97%;
 	border-radius: 33px;
 	margin-bottom: 10px;
 	padding: 0 20px;
@@ -151,11 +163,13 @@ img.icons {
 }
 
 img.club_img {
-	width: 80vw;
+	width: 90%;
+	margin: 0 5%;
 }
 
 h2.section-heading {
-	margin-bottom: 60px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 }
 
 .question_block {
@@ -197,10 +211,14 @@ h2.section-heading {
 .expand_box {
 	text-align: left;
 	margin-top: 10%;
+	margin-left: 6%;
 	display: block;
-	margin-left: 1%;
-	width: 96%;
+	width: 88%;
 	display: none;
+}
+
+.expand_box_core_content p {
+	text-align: left;
 }
 
 .active .expand_box {
@@ -213,8 +231,16 @@ h2.section-heading {
 	width: 100%;
 }
 
+.club_row {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .club_info {
-	margin-left: 7%;
+	width: 100%;
+	margin-top: 30px;
+	margin-left: 6%;
 	text-align: left;
 }
 
@@ -225,14 +251,12 @@ h2.section-heading {
 }
 
 .club_box {
-	box-shadow: 5px 5px 16px 5px rgba(221, 221, 221,0.8);
-	padding: 2.5%;
+	padding: 2.5% 1%;
 	margin-top: 25px;
-	margin-left: 1%;
-	margin-right: 1%;
+	margin-right: 2%;
 	width: 96%;
 	height: 100%;
-	border: 2px solid rgb(223, 223, 223);
+	border: 1px solid rgb(182, 182, 182);
 	border-radius: 5px;
 }
 
@@ -256,7 +280,6 @@ h2.section-heading {
 
 svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
 	margin-left: 6%;
-	margin-top: 1%;
 }
 
 .club-links {
@@ -335,9 +358,13 @@ a.icons {
 }
 
 .together2 {
-	width: 104%;
-	margin-top: 22px;
+	margin-top: 12px;
 	display: flex;
+	align-items: center;
+}
+
+.together2 h6 {
+	margin-bottom: 0;
 }
 
 .carousel_item {
@@ -412,23 +439,31 @@ img.main_sm_links {
 }
 
 @media (min-width: 1200px) {
+	#main {
+		display: block;
+		padding-left: 0;
+	}
 	.seperate {
 		display: block;
 	}
 	.together {
 		display: flex;
 	}
+	.together2 {
+		margin-top: 22px;
+	}
 	.search-wrapper {
 		flex-direction: row;
 	}
 	.search-bar-wrapper {
-		width: 50%;
+		width: 45%;
 		margin-right: 15px;
 	}
 	.dropdown_content {
+		box-shadow: 5px 5px 15px 7px #E7E7E7;
 		margin-left: 2%;
 		width: 20%;
-		right: 29%;
+		right: 34%;
 	}
 	.dropdown-btn {
 		width: 20%;
@@ -472,22 +507,14 @@ img.main_sm_links {
 		text-align: left;
 		margin-top: 8%;
 	}
-	p.descrp {
-		text-align: left;
-	}
-	/* .active {
-    background-color: #717171;
-    } */
 	.slideshow-container {
 		max-width: 1000px;
 		position: relative;
 		margin: auto;
 	}
-	/*.lrn {
-      margin-bottom: 43%;
-    }*/
 	.club_row {
-		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
 	}
 	.seperate {
 		width: 48%;
@@ -495,6 +522,9 @@ img.main_sm_links {
 	.club_header {
 		flex-direction: row;
 		margin: 0;
+	}
+	.club_info {
+		margin-top: 0;
 	}
 	a.web_link {
 		margin-left: auto;
@@ -507,12 +537,6 @@ img.main_sm_links {
 	.together {
 		display: flex;
 	}
-	
-	/*.faq-btn {
-      margin-left: 99%;
-      margin-top: 0%;
-    }*/
-	
 	label {
 		margin-right: 2%;
 	}
