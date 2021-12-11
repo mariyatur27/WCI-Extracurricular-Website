@@ -36,20 +36,30 @@
 	border: none;
 }
 
-input#club_search {
-	padding: 1% 2%;
+.search-bar-wrapper {
+	position: relative;
+	display: flex;
 	width: 50%;
-	border: none;
-	border-radius: 33px;
-	margin-top: 3%;
-	margin-left: -49%;
-	box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 
-svg.svg-inline--fa.fa-search.fa-w-16 {
+input#club_search {
+	padding: 0 20px;
+	height: 40px;
+	width: 100%;
+	border: 1px solid rgb(177, 177, 177);
+	border-radius: 33px;
+	background-color: #F8F8F8;
+}
+
+input#club_search:focus {
+	outline: rgb(95, 95, 95) solid 1px;
+	background-color: #FFF;
+}
+
+.search-icon {
 	position: absolute;
-	margin-top: 3%;
-	margin-left: -16%;
+	top: 11px;
+	right: 16px;
 }
 
 li.error-message {
@@ -128,7 +138,7 @@ img.club_img {
 	margin-right: 1%;
 	width: 96%;
 	height: 100%;
-	border: 1px solid rgb(216, 216, 216);
+	border: 2px solid rgb(223, 223, 223);
 	border-radius: 5px;
 }
 

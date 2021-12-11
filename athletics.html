@@ -65,8 +65,10 @@
                     </div>     -->
 
                     <!-- Search Bar -->
-                    <input type="text" id="club_search" class="club_search" onkeyup="searchWord = this.value.toLowerCase(); setupBoxes(athletics, 'athletics_boxes', 2);" placeholder="Search for a sport...">
-                    <i class="fas fa-search"></i>
+                    <div class="search-bar-wrapper">
+                        <input type="text" id="club_search" class="club_search" onkeyup="searchWord = this.value.toLowerCase(); setupBoxes(athletics, 'athletics_boxes', 2);" placeholder="Search for a sport...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
                     <div class="dropdown">
                             <div id="dropdown_content" class="dropdown_content">
 

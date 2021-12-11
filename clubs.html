@@ -57,34 +57,37 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase" id="clubs_title">Clubs</h2>
-                    <p class="descrp">WCI offers a variety of clubs throughout the year. If you do not see a club that interests you please fill in this <a href="https://forms.gle/d14CGxkLf18BPg5AA" target="_blank">Google Form</a>. If you have any questions please feel free to email <a href = "mailto: kerri_jilesen@wrdsb.ca" target="_blank">kerri_jilesen@wrdsb.ca</a></p>
-                    <input type="text" id="club_search" class="club_search" oninput="searchWord = this.value.toLowerCase(); setupBoxes(clubs, 'club_boxes', 2);" placeholder="Search for a club...">
-                        <!-- oninput="setupBoxes(clubs, 'club_boxes', null, this.value.toLowerCase());" -->
-                        <i class="fas fa-search"></i>
-                        <div class="dropdown">
-                            <div id="dropdown_content" class="dropdown_content">
-                                <input type="checkbox" onclick="if (activeFilters.has('art_category')) {activeFilters.delete('art_category');} else {activeFilters.add('art_category');} setupBoxes(clubs, 'club_boxes', 2);" ondblclick="check()" name="choice" id="art" class="filterbt">
-                                <label for="art">Art</label>
+                    <p class="descrp">
+                        WCI offers a variety of clubs throughout the year. If you do not see a club that interests you please fill in this <a href="https://forms.gle/d14CGxkLf18BPg5AA" target="_blank">Google Form</a>. If you have any questions please feel free to email <a href = "mailto: kerri_jilesen@wrdsb.ca" target="_blank">kerri_jilesen@wrdsb.ca</a>
+                    </p>
+                    <div class="search-bar-wrapper">
+                        <input type="text" id="club_search" class="club_search" oninput="searchWord = this.value.toLowerCase(); setupBoxes(clubs, 'club_boxes', 2);" placeholder="Search for a club...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                    <div class="dropdown">
+                        <div id="dropdown_content" class="dropdown_content">
+                            <input type="checkbox" onclick="if (activeFilters.has('art_category')) {activeFilters.delete('art_category');} else {activeFilters.add('art_category');} setupBoxes(clubs, 'club_boxes', 2);" ondblclick="check()" name="choice" id="art" class="filterbt">
+                            <label for="art">Art</label>
 
-                                <input type="checkbox" onclick="if (activeFilters.has('stem_category')) {activeFilters.delete('stem_category');} else {activeFilters.add('stem_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="stem" class="filterbt">
-                                <label for="stem">STEM</label>
+                            <input type="checkbox" onclick="if (activeFilters.has('stem_category')) {activeFilters.delete('stem_category');} else {activeFilters.add('stem_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="stem" class="filterbt">
+                            <label for="stem">STEM</label>
 
-                                <input type="checkbox" onclick="if (activeFilters.has('academics_category')) {activeFilters.delete('academics_category');} else {activeFilters.add('academics_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="academics" class="filterbt">
-                                <label for="academics">Academics</label>
+                            <input type="checkbox" onclick="if (activeFilters.has('academics_category')) {activeFilters.delete('academics_category');} else {activeFilters.add('academics_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="academics" class="filterbt">
+                            <label for="academics">Academics</label>
 
-                                <input type="checkbox" onclick="if (activeFilters.has('recreational_category')) {activeFilters.delete('hobby_category');} else {activeFilters.add('recreational_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="recreational" class="filterbt">
-                                <label for="recreational">Recreational</label>
+                            <input type="checkbox" onclick="if (activeFilters.has('recreational_category')) {activeFilters.delete('hobby_category');} else {activeFilters.add('recreational_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="recreational" class="filterbt">
+                            <label for="recreational">Recreational</label>
 
-                                <input type="checkbox" onclick="if (activeFilters.has('business_category')) {activeFilters.delete('business_category');} else {activeFilters.add('business_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="business" class="filterbt">
-                                <label for="business">Business</label>
+                            <input type="checkbox" onclick="if (activeFilters.has('business_category')) {activeFilters.delete('business_category');} else {activeFilters.add('business_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="business" class="filterbt">
+                            <label for="business">Business</label>
 
-                                <input type="checkbox" onclick="if (activeFilters.has('social_justice_category')) {activeFilters.delete('social_justice_category');} else {activeFilters.add('social_justice_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="social_justice" class="filterbt">
-                                <label for="social_justice">Social Justice</label>
-                                
-                                <input type="checkbox" onclick="if (activeFilters.has('leadership_category')) {activeFilters.delete('leadership_category');} else {activeFilters.add('leadership_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="leadership" class="filterbt">
-                                <label for="leadership">Leadership</label>
-                            </div>
+                            <input type="checkbox" onclick="if (activeFilters.has('social_justice_category')) {activeFilters.delete('social_justice_category');} else {activeFilters.add('social_justice_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="social_justice" class="filterbt">
+                            <label for="social_justice">Social Justice</label>
+                            
+                            <input type="checkbox" onclick="if (activeFilters.has('leadership_category')) {activeFilters.delete('leadership_category');} else {activeFilters.add('leadership_category');} setupBoxes(clubs, 'club_boxes', 2);" name="choice" id="leadership" class="filterbt">
+                            <label for="leadership">Leadership</label>
                         </div>
+                    </div>
                     <div class="clubs" id="club_boxes"></div>
                 </div>
             </div>
