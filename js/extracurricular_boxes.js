@@ -57,8 +57,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                 box.appendChild(header);
                 let expand_box = document.createElement("div"); expand_box.classList.add("expand_box");
                     let expand_box_core_content = document.createElement("div"); expand_box_core_content.classList.add("expand_box_core_content");
-                        let summary_title = document.createElement("h4"); summary_title.innerText = "Summary: ";
-                        expand_box_core_content.appendChild(summary_title);
                         let summary = document.createElement("p"); summary.innerHTML = boxData.description;
                         expand_box_core_content.appendChild(summary);
                         let meeting_time_text = document.createElement("h6"); 
@@ -83,7 +81,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                             }
                         }
                     expand_box.appendChild(expand_box_core_content);
-                    let box_links = document.createElement("div"); box_links.classList.add("together");
+                    let box_links = document.createElement("div"); box_links.classList.add("together", "club-links");
                     for (link of boxData.connection_links) {
                         if (link in connection_links) {
                             let link_a = document.createElement("a");
