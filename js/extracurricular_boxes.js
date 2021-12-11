@@ -127,7 +127,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
     }
 }
 
-function toggleFilter(filter, box_name) {
+function toggleFilter(filter) {
     if (activeFilters.has(filter)) {
         activeFilters.delete(filter);
     } else {
@@ -135,12 +135,29 @@ function toggleFilter(filter, box_name) {
     }
 }
 
+function toggleFilterActive(filter) {
+    var filterWrapper = document.getElementById(filter).parentElement;
+    filterWrapper.classList.toggle("filter-active");
+}
+
 function toggleClubFilter(filter) {
-    toggleFilter(filter);
+    toggleFilter(filter + "_category");
+    toggleFilterActive(filter);
     setupBoxes(clubs, 'club_boxes', 2);
 }
 
 function toggleAthleticsFilter(filter) {
     toggleFilter(filter);
+    toggleFilterActive(filter);
     setupBoxes(athletics, 'athletics_boxes', 2);
+}
+
+function toggleDropdown() {
+    var dropdown_content = document.getElementById('dropdown_content');
+    dropdown_content.classList.toggle('dropdown-active');
+}
+
+function hideDropdown() {
+    var dropdown_content = document.getElementById('dropdown_content');
+    dropdown_content.classList.remove('dropdown-active');
 }

@@ -60,32 +60,57 @@
                     <p class="descrp">
                         WCI offers a variety of clubs throughout the year. If you do not see a club that interests you please fill in this <a href="https://forms.gle/d14CGxkLf18BPg5AA" target="_blank">Google Form</a>. If you have any questions please feel free to email <a href = "mailto: kerri_jilesen@wrdsb.ca" target="_blank">kerri_jilesen@wrdsb.ca</a>
                     </p>
-                    <div class="search-bar-wrapper">
-                        <input type="text" id="club_search" class="club_search" oninput="searchWord = this.value.toLowerCase(); setupBoxes(clubs, 'club_boxes', 2);" placeholder="Search for a club...">
-                        <i class="fas fa-search search-icon"></i>
+                    <div class="search-wrapper">
+                        <div class="search-bar-wrapper">
+                            <input type="text" id="club_search" class="club_search" oninput="searchWord = this.value.toLowerCase(); setupBoxes(clubs, 'club_boxes', 2);" placeholder="Search for a club...">
+                            <i class="fas fa-search search-icon"></i>
+                        </div>
+                        <button class="dropdown-btn" onclick="toggleDropdown()">Filter</button>
                     </div>
                     <div class="dropdown">
+                        
                         <div id="dropdown_content" class="dropdown_content">
-                            <input type="checkbox" onclick="toggleClubFilter('art_category')" ondblclick="check()" name="choice" id="art" class="filterbt">
-                            <label for="art">Art</label>
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleClubFilter('art')" ondblclick="check()" name="choice" id="art" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="art">Art</label>
+                            </div>
 
-                            <input type="checkbox" onclick="toggleClubFilter('stem_category')" name="choice" id="stem" class="filterbt">
-                            <label for="stem">STEM</label>
-
-                            <input type="checkbox" onclick="toggleClubFilter('academics_category')" name="choice" id="academics" class="filterbt">
-                            <label for="academics">Academics</label>
-
-                            <input type="checkbox" onclick="toggleClubFilter('recreational_category')" name="choice" id="recreational" class="filterbt">
-                            <label for="recreational">Recreational</label>
-
-                            <input type="checkbox" onclick="toggleClubFilter('business_category')" name="choice" id="business" class="filterbt">
-                            <label for="business">Business</label>
-
-                            <input type="checkbox" onclick="toggleClubFilter('social_justice_category')" name="choice" id="social_justice" class="filterbt">
-                            <label for="social_justice">Social Justice</label>
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleClubFilter('stem')" name="choice" id="stem" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="stem">STEM</label>
+                            </div>
                             
-                            <input type="checkbox" onclick="toggleClubFilter('leadership_category')" name="choice" id="leadership" class="filterbt">
-                            <label for="leadership">Leadership</label>
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleClubFilter('academics')" name="choice" id="academics" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="academics">Academics</label>
+                            </div>
+                            
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleClubFilter('recreational')" name="choice" id="recreational" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="recreational">Recreational</label>
+                            </div>
+                            
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleClubFilter('business')" name="choice" id="business" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="business">Business</label>
+                            </div>
+                            
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleClubFilter('social_justice')" name="choice" id="social_justice" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="social_justice">Social Justice</label>
+                            </div>
+                            
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleClubFilter('leadership')" name="choice" id="leadership" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="leadership">Leadership</label>
+                            </div>
                         </div>
                     </div>
                     <div class="clubs" id="club_boxes"></div>

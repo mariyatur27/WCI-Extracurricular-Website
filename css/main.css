@@ -36,10 +36,16 @@
 	border: none;
 }
 
+.search-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
 .search-bar-wrapper {
 	position: relative;
 	display: flex;
 	width: 95%;
+	margin-bottom: 5px;
 }
 
 input#club_search {
@@ -60,6 +66,76 @@ input#club_search:focus {
 	position: absolute;
 	top: 11px;
 	right: 16px;
+}
+
+.dropdown-btn {
+	height: 40px;
+	width: 95%;
+	border-radius: 33px;
+	margin-bottom: 10px;
+	padding: 0 20px;
+	text-align: left;
+	border: 1px solid rgb(177, 177, 177);
+	background-color: #F8F8F8;
+}
+
+.dropdown-btn:focus {
+	outline: rgb(95, 95, 95) solid 1px;
+}
+
+.dropdown_content {
+	position: absolute;
+	display: none;
+	padding: 10px 0;
+	width: 95%;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid rgb(184, 184, 184);
+	box-shadow: 5px 5px 14px 8px rgba(221, 221, 221, 0.2);
+	text-align: left;
+}
+
+.dropdown-active{
+	display: flex;
+	flex-direction: column;
+}
+
+.filter-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.filter-wrapper input {
+	position: absolute;
+	opacity: 0;
+	height: 0;
+	width: 0;
+	cursor: pointer;
+}
+
+.filter-wrapper .checkmark {
+	display: none;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	width: 15px;
+	height: 15px;
+	margin-right: 10px;
+}
+
+.filter-active .checkmark {
+	display: block;
+}
+
+.filter-wrapper label {
+	user-select: none;
+	width: 100%;
+	padding: 10px 50px;
+}
+
+.filter-wrapper label:hover {
+	background-color: rgb(233, 233, 233);
+	transition: background-color 0.2s ease-in-out;
 }
 
 li.error-message {
@@ -342,8 +418,20 @@ img.main_sm_links {
 	.together {
 		display: flex;
 	}
+	.search-wrapper {
+		flex-direction: row;
+	}
 	.search-bar-wrapper {
 		width: 50%;
+		margin-right: 15px;
+	}
+	.dropdown_content {
+		margin-left: 2%;
+		width: 20%;
+		right: 29%;
+	}
+	.dropdown-btn {
+		width: 20%;
 	}
 	button.dropbt {
 		border: none;
@@ -352,12 +440,6 @@ img.main_sm_links {
 		border-radius: 33px;
 		background-color: #0A1241;
 		color: white;
-	}
-	div#dropdown_content {
-		list-style-type: none;
-		text-align: left;
-		margin-left: 2%;
-		margin-top: 1%;
 	}
 	.ques_txt {
 		margin: 0;
@@ -433,9 +515,6 @@ img.main_sm_links {
 	
 	label {
 		margin-right: 2%;
-	}
-	.container input:checked~.checkmark {
-		background-color: red;
 	}
 	.club_sec {
 		display: block;

@@ -65,36 +65,50 @@
                     </div>     -->
 
                     <!-- Search Bar -->
-                    <div class="search-bar-wrapper">
-                        <input type="text" id="club_search" class="club_search" onkeyup="searchWord = this.value.toLowerCase(); setupBoxes(athletics, 'athletics_boxes', 2);" placeholder="Search for a sport...">
-                        <i class="fas fa-search search-icon"></i>
+                    <div class="search-wrapper">
+                        <div class="search-bar-wrapper">
+                            <input type="text" id="club_search" class="club_search" onkeyup="searchWord = this.value.toLowerCase(); setupBoxes(athletics, 'athletics_boxes', 2);" placeholder="Search for a sport...">
+                            <i class="fas fa-search search-icon"></i>
+                        </div>
+                        <button class="dropdown-btn" onclick="toggleDropdown()">Filter</button>
                     </div>
                     <div class="dropdown">
-                            <div id="dropdown_content" class="dropdown_content">
-
+                        <div id="dropdown_content" class="dropdown_content">
+                            <div class="filter-wrapper">
                                 <input type="checkbox" onclick="toggleAthleticsFilter('fall_sports')" name="choice" id="fall_sports" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
                                 <label for="fall_sports">Fall Sports</label>
-                                
-                                <input type="checkbox" onclick="toggleAthleticsFilter('winter_sports')" name="choice" id="winter_sports" class="filterbt">
-                                <label for="winter_sports">Winter Sports</label>
-
-                                <input type="checkbox" onclick="toggleAthleticsFilter('spring_sports')" name="choice" id="spring_sports" class="filterbt">
-                                <label for="spring_sports">Spring Sports</label>
-                                
-                                <input type="checkbox" onclick="toggleAthleticsFilter('boys_sports')" name="choice" id="boys_sports" class="filterbt">
-                                <label for="boys_sports">Boys Sports</label>
-                                
-                                <input type="checkbox" onclick="toggleAthleticsFilter('girls_sports')" name="choice" id="girls_sports" class="filterbt">
-                                <label for="girls_sports">Girls Sports</label>
-
-                                <!-- <input type="checkbox" onclick="if (activeFilters.has('junior_sports')) {activeFilters.delete('junior_sports');} else {activeFilters.add('junior_sports');} setupBoxes(athletics, 'athletics_boxes', 2);" name="choice" id="junior_sports" class="filterbt">
-                                <label for="junior_sports">Junior Sports</label>
-
-                                <input type="checkbox" onclick="if (activeFilters.has('senior_sports')) {activeFilters.delete('senior_sports');} else {activeFilters.add('senior_sports');} setupBoxes(athletics, 'athletics_boxes', 2);" name="choice" id="senior_sports" class="filterbt">
-                                <label for="senior_sports">Senior Sports</label> -->
-
-                                
                             </div>
+                            
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleAthleticsFilter('winter_sports')" name="choice" id="winter_sports" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="winter_sports">Winter Sports</label>
+                            </div>
+                            
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleAthleticsFilter('spring_sports')" name="choice" id="spring_sports" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="spring_sports">Spring Sports</label>
+                            </div>
+                            
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleAthleticsFilter('boys_sports')" name="choice" id="boys_sports" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="boys_sports">Boys Sports</label>
+                            </div>
+                            
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleAthleticsFilter('girls_sports')" name="choice" id="girls_sports" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="girls_sports">Girls Sports</label>
+                            </div>
+
+                            <!-- <input type="checkbox" onclick="if (activeFilters.has('junior_sports')) {activeFilters.delete('junior_sports');} else {activeFilters.add('junior_sports');} setupBoxes(athletics, 'athletics_boxes', 2);" name="choice" id="junior_sports" class="filterbt">
+                            <label for="junior_sports">Junior Sports</label>
+
+                            <input type="checkbox" onclick="if (activeFilters.has('senior_sports')) {activeFilters.delete('senior_sports');} else {activeFilters.add('senior_sports');} setupBoxes(athletics, 'athletics_boxes', 2);" name="choice" id="senior_sports" class="filterbt">
+                            <label for="senior_sports">Senior Sports</label> -->  
                         </div>
                         <div class="clubs" id="athletics_boxes"></div>
                     </div>
