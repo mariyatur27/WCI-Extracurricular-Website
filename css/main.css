@@ -78,10 +78,27 @@ img.club_img {
 	width: 80vw;
 }
 
+h2.section-heading {
+	margin-bottom: 60px;
+}
+
+.question_block {
+	margin: 0 10vw;
+	border-top: 1px solid rgb(202, 202, 202);
+}
+
+.faq-btn {
+	padding: 0;
+	width: 100%;
+}
+
+.question_block:hover {
+	background-color: rgb(245, 245, 245);
+	transition: background-color 0.2s ease-in-out;
+}
+
 .question {
-	box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
 	padding: 3% 4%;
-	margin-top: 4%;
 	border-radius: 21px;
 }
 
@@ -90,10 +107,11 @@ img.club_img {
 }
 
 .answer {
-	box-shadow: rgb(0 0 0 / 24%) 0px 0px 8px;
+	width: 100%;
 	padding: 3% 4%;
 	border-radius: 21px;
 	display: none;
+	text-align: left;
 }
 
 .active .answer {
@@ -342,6 +360,7 @@ img.main_sm_links {
 		margin-top: 1%;
 	}
 	.ques_txt {
+		margin: 0;
 		font-weight: 100;
 		font-size: 24px;
 		text-align: left;
