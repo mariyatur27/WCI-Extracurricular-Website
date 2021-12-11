@@ -541,7 +541,7 @@ img.main_sm_links {
     }
     .search_bar {
 		padding: 2% 3%;
-		width: 100%;
+		width: 90%;
 		margin-top: 5%;
 		border-radius: 56px;
 		border: none;
@@ -686,7 +686,13 @@ img.main_sm_links {
 	button.web_button{
 		float: right;
 	}
-	
+	.search_bar {
+		padding: 2% 3%;
+		width: 75%;
+		margin-top: 5%;
+		border-radius: 56px;
+		border: none;
+	}
     .table-responsive-lg {
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
