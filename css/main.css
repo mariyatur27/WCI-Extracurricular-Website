@@ -225,6 +225,10 @@ h2.section-heading {
 	display: block;
 }
 
+button.drop {
+	padding-left: 0;
+}
+
 .drop {
 	background-color: transparent;
 	border: none;
