@@ -161,3 +161,21 @@ function hideDropdown() {
     var dropdown_content = document.getElementById('dropdown_content');
     dropdown_content.classList.remove('dropdown-active');
 }
+
+window.onclick = function(event) {
+    // if the user clicks anywhere outside of the filters dropdown menu, hide menu
+    // check if the id, className, or tagName of event.target matches any of the elements of the dropdown menu
+    var exceptions = ["filterbt", "dropdown-btn", "LABEL", "dropdown_content"];
+    var hide = true;
+    for (exception of exceptions) {
+        var className = event.target.classList.value;
+        var id = event.target.id;
+        var tagName = event.target.tagName;
+        if (className == exception || id == exception || tagName == exception) {
+            hide = false;
+        }
+    }
+    if (hide) {
+        hideDropdown();
+    }
+}
