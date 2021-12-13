@@ -80,7 +80,26 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                                 expand_box_core_content.appendChild(infotext);
                             }
                         }
+                        // if ("team_history" in boxData) {
+                        //     let team_history = document.createElement("button"); team_history.classList.add("web_link"); team_history.type="button"; team_history.name = "team_history";
+                        //     team_history.innerText = boxData.team_history;
+                        // }
                     expand_box.appendChild(expand_box_core_content);
+
+                    let center = document.createElement("div"); center.classList.add("center_elements");
+                    if ("team_history" in boxData) {
+                        let team_history = document.createElement("button"); team_history.classList.add("web_link_2"); team_history.type="button"; team_history.name = "team_history";
+                        team_history.innerText = boxData.team_history;
+                        center.appendChild(team_history);
+                        expand_box.appendChild(team_history);
+                    }
+                    if ("team_m_b" in boxData) {
+                        let team_m_b = document.createElement("button"); team_m_b.classList.add("web_link_2"); team_m_b.type="button"; team_m_b.name = "team_members";
+                        team_m_b.innerText = boxData.team_m_b;
+                        center.appendChild(team_m_b);
+                        expand_box.appendChild(team_m_b);
+                    }
+
                     let box_links = document.createElement("div"); box_links.classList.add("together", "club-links");
                     for (link of boxData.connection_links) {
                         if (link in connection_links) {
@@ -95,6 +114,11 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                                 link_a.classList.add("web_link");
                                 var link_image = document.createElement("button"); link_image.classList.add("web_link"); link_image.type="button"; link_image.name="club_btn";
                                 link_image.innerText = connection_links[link].label;
+
+                                // link_a.classList.add("web_link");
+                                // var team_m_b = document.createElement("button"); team_m_b.classList.add("web_link"); team_m_b.type="button"; team_m_b.name = "team_members";
+                                // team_m_b.innerText = connection_links[links].label;
+
                             } else if (connection_links[link].type == "icon") {
                                 link_a.classList.add("icons");
                                 var link_image = document.createElement("img"); link_image.classList.add("icons");
@@ -104,11 +128,12 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                             }
 
                             link_a.appendChild(link_image);
+                            link_a.appendChild(team_m_b);
                             box_links.appendChild(link_a);
                         }
                     }
                     expand_box.appendChild(box_links);
-
+    
                 box.appendChild(expand_box);
             row.appendChild(box);
             if (boxCount % countPerRow == countPerRow-1) {

@@ -459,6 +459,14 @@ var connection_links = {
     "website": {
         "type": "button",
         "label": "Club website"
+    },
+    "team_mem" : {
+        "type" : "button",
+        "label" : "Team Members"
+    },
+    "team_history" : {
+        "type" : "button",
+        "label" : "Team History"
     }
 };
 var athletics = [
@@ -470,8 +478,14 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
+        "team_m_b": "Team Members",
+        "team_history": "Team History",
         "categories": [
             "fall_sports"
+        ],
+        "tm1": [
+            "Athlete Name",
+            "assets/sport_images/running.png"
         ]
     },
     {
