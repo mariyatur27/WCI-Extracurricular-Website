@@ -14,6 +14,12 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
     let totalBoxes = 0;
 
     let row;
+
+    let body = document.getElementsByTagName("body")[0];
+    // Making a pop-up onclick
+    let popup_section = document.createElement("div"); popup_section.classList.add("team_history_section");
+        let s_header = document.createElement("h2"); s_header.classList.add("s_header"); s_header.innerText = "Team History";
+    body.append(popup_section);
     
     boxesSource.sort((boxData1, boxData2) => {
         if (boxData1.name > boxData2.name) {
@@ -90,15 +96,18 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                     if ("team_history" in boxData) {
                         let team_history = document.createElement("button"); team_history.classList.add("web_link_2"); team_history.type="button"; team_history.name = "team_history";
                         team_history.innerText = boxData.team_history;
+                        team_history.id = 'team_history_button';
                         center.appendChild(team_history);
                         expand_box.appendChild(team_history);
                     }
                     if ("team_m_b" in boxData) {
                         let team_m_b = document.createElement("button"); team_m_b.classList.add("web_link_2"); team_m_b.type="button"; team_m_b.name = "team_members";
                         team_m_b.innerText = boxData.team_m_b;
+                        team_m_b.id = 'team_member_button'
                         center.appendChild(team_m_b);
                         expand_box.appendChild(team_m_b);
                     }
+
 
                     let box_links = document.createElement("div"); box_links.classList.add("together", "club-links");
                     for (link of boxData.connection_links) {

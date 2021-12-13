@@ -53,15 +53,15 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-// Uncheck the radio button
-// function check() {
-//     var radio = document.getElementsByName("choice").checked;
-//     if (radio = true){
-//         radio = false;
-//     }else if (radio = false){
-//         radio = true;
-//     }
-// };
+
+// Adding onclick functions to buttons
+const history_section = document.getElementById("team_history_section");
+    history_section.addEventListener('click', function () {
+        alert("test test test");
+        history_section.style.color = "green";
+        console.log("test")
+    });
+
 
 var radio = document.getElementsByName("choice");
 radio.onmouseup = deselectable;

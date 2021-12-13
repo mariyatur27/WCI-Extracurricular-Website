@@ -288,9 +288,12 @@ button.drop {
 .club_box .down {
 	display: block;
 }
-
+.team_history_section {
+	color:  blue;
+}
 .active .down {
 	display: none;
+	display:  fixed;
 }
 
 svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
