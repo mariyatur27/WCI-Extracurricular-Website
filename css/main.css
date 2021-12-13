@@ -84,6 +84,7 @@ input#club_search:focus {
 }
 
 .dropdown-btn {
+	position: relative;
 	height: 40px;
 	width: 97%;
 	border-radius: 33px;
@@ -96,6 +97,13 @@ input#club_search:focus {
 
 .dropdown-btn:focus {
 	outline: rgb(95, 95, 95) solid 1px;
+}
+
+.filter-icon {
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	pointer-events: none;
 }
 
 .dropdown_content {
@@ -226,6 +234,10 @@ h2.section-heading {
 
 .active .expand_box {
 	display: block;
+}
+
+button.drop {
+	padding-left: 0;
 }
 
 .drop {
