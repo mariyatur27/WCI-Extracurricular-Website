@@ -685,7 +685,7 @@ img.main_sm_links {
 	  display: inline-block;
 	  transition: background-color 0.6s ease;
 	}
-	.active, .s-dot:hover {
+	.s-dot:hover {
 	  background-color: #717171;
 	}
 
