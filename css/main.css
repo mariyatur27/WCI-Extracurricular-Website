@@ -284,7 +284,12 @@ button.drop {
 .active .up {
 	display: block;
 }
-
+#history_popup {
+	display: none;
+}
+#team_popup {
+	display:  none;
+}
 .club_box .down {
 	display: block;
 }
