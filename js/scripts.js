@@ -54,14 +54,17 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 
-// Adding onclick functions to buttons
-const history_section = document.getElementById("team_history_section");
-    history_section.addEventListener('click', function () {
-        alert("test test test");
-        history_section.style.color = "green";
-        console.log("test")
-    });
+// // Adding onclick functions to buttons
+// const history_section = document.getElementById("team_history_button");
+//     history_section.addEventListener('click', function () {
+//         alert("test test test");
+//         history_section.style.color = "green";
+//         console.log("test")
+//     });
 
+// function show() {
+//     console.log("test")
+// };
 
 var radio = document.getElementsByName("choice");
 radio.onmouseup = deselectable;

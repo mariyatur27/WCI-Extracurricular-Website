@@ -289,7 +289,22 @@ button.drop {
 	display: block;
 }
 .team_history_section {
-	color:  blue;
+	color: white;
+  background-color: #ac191a;
+  width: 67%;
+  padding: 3%;
+  position: fixed;
+  top: 24%;
+  left: 15%;
+}
+button.close_bt {
+  position: absolute;
+  top: 7%;
+  left: 96%;
+  color: black;
+  font-size: 21px;
+  border: none;
+  background: transparent;
 }
 .active .down {
 	display: none;

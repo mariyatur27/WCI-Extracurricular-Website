@@ -14,12 +14,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
     let totalBoxes = 0;
 
     let row;
-
-    let body = document.getElementsByTagName("body")[0];
-    // Making a pop-up onclick
-    let popup_section = document.createElement("div"); popup_section.classList.add("team_history_section");
-        let s_header = document.createElement("h2"); s_header.classList.add("s_header"); s_header.innerText = "Team History";
-    body.append(popup_section);
     
     boxesSource.sort((boxData1, boxData2) => {
         if (boxData1.name > boxData2.name) {
@@ -86,10 +80,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                                 expand_box_core_content.appendChild(infotext);
                             }
                         }
-                        // if ("team_history" in boxData) {
-                        //     let team_history = document.createElement("button"); team_history.classList.add("web_link"); team_history.type="button"; team_history.name = "team_history";
-                        //     team_history.innerText = boxData.team_history;
-                        // }
                     expand_box.appendChild(expand_box_core_content);
 
                     let center = document.createElement("div"); center.classList.add("center_elements");
@@ -97,13 +87,40 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                         let team_history = document.createElement("button"); team_history.classList.add("web_link_2"); team_history.type="button"; team_history.name = "team_history";
                         team_history.innerText = boxData.team_history;
                         team_history.id = 'team_history_button';
+                        team_history.addEventListener('click', function() {
+                            let body = document.getElementsByTagName("body")[0];
+                            // Making a pop-up onclick
+                                let popup_section = document.createElement("div"); popup_section.classList.add("team_history_section");
+                                    let s_header = document.createElement("h2"); s_header.classList.add("s_header"); s_header.innerText = "Team History";
+                                    popup_section.appendChild(s_header);
+                                    let close = document.createElement("button"); close.classList.add("close_bt"); close.name = "close"; close.type = "button"; close.innerText = "X";
+                                    close.addEventListener('click', function() {
+                                        popup_section.style.display = "none";
+                                    });
+                                    popup_section.appendChild(close);
+
+                            body.appendChild(popup_section);
+                        });
                         center.appendChild(team_history);
                         expand_box.appendChild(team_history);
                     }
                     if ("team_m_b" in boxData) {
                         let team_m_b = document.createElement("button"); team_m_b.classList.add("web_link_2"); team_m_b.type="button"; team_m_b.name = "team_members";
                         team_m_b.innerText = boxData.team_m_b;
-                        team_m_b.id = 'team_member_button'
+                        team_m_b.id = 'team_member_button';
+                        team_m_b.addEventListener('click', function() {
+                            let body = document.getElementsByTagName("body")[0];
+                            // Making a pop-up onclick
+                                let popup_section_2 = document.createElement("div"); popup_section_2.classList.add("team_history_section");
+                                    let s_header_2 = document.createElement("h2"); s_header_2.classList.add("s_header"); s_header_2.innerText = "Team Members";
+                                    popup_section_2.appendChild(s_header_2);
+                                    let close = document.createElement("button"); close.classList.add("close_bt"); close.name = "close"; close.type = "button"; close.innerText = "X";
+                                    close.addEventListener('click', function() {
+                                        popup_section_2.style.display = "none";
+                                    });
+                                    popup_section_2.appendChild(close);
+                            body.appendChild(popup_section_2);
+                        });
                         center.appendChild(team_m_b);
                         expand_box.appendChild(team_m_b);
                     }
