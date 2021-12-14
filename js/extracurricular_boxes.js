@@ -170,7 +170,9 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                             }
 
                             link_a.appendChild(link_image);
-                            link_a.appendChild(team_m_b);
+                            if ("team_m_b" in boxData) {
+                                link_a.appendChild(team_m_b);
+                            }
                             box_links.appendChild(link_a);
                         }
                     }
