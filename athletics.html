@@ -144,6 +144,6 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
          <script>
-            setupBoxes(athletics, "athletics_boxes", 2);
+            setupBoxes(athletics, "athletics_boxes", 2, (new URL(window.location.href).searchParams.get("box")));
         </script>
     </body>

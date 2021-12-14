@@ -26,7 +26,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
     })
 
     boxesSource.forEach((boxData) => {
-
         if ((urlBox == null || ("id" in boxData && boxData.id.includes(urlBox))) && (activeFilters.size == 0 || boxData.categories.some(category => {return activeFilters.has(category)})) && (boxData.name.toLowerCase().includes(searchWord))) {
             totalBoxes++;
             if (boxCount % countPerRow == 0) {
