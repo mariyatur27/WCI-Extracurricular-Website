@@ -154,7 +154,58 @@ function generateSlide(index, slideShowCards, slideShowDiv, pageLocation) {
 
 // Function for expanding and collpasing questions in the FAQ section
 
+async function createAddToCalendar() {
+    if (!dataFetched) {
+        await fetchData();
+    }
+    var today = new Date();
+    today.setHours(0);
+    today.setMinutes(0);
+    today.setSeconds(0);
 
+    var maxDate = new Date(today);
+    maxDate.setDate(maxDate.getDate() + 7);
 
+    var eventDates = {};
 
+    for (var event of events) {
+        var eventdate = new Date(event.start_time*1000);
+        console.log(eventdate);
+        if (eventdate <= maxDate && eventdate >= today) {
+            let distance = eventdate.getDate()-today.getDate();
+            if (distance in eventDates) {
+                eventDates[distance].push(event);
+            } else {
+                eventDates[distance] = [event];
+            }
+        }
+    }
 
+    for (var date in eventDates) {
+        eventDates[date].sort((a, b) => a.start_time - b.start_time);
+        let row = document.createElement("tr");
+        let td = document.createElement("td");
+        td.innerText = {1: "Tomorrow"}[date]
+        row.appendChild(td);
+        for (var event of eventDates[date]) {
+            var start_date = new Date(events[0].start_time*1000);
+            var start_date_string = start_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
+            var end_date = new Date(events[0].end_time*1000);
+            end_date.setDate(end_date.getDate() + 7);
+            var end_date_string = end_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
+            var href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${events[0].title}&dates=${start_date_string}/${end_date_string}&details=${events[0].description}`;
+            let td = document.createElement("td");
+            let a = document.createElement("a");
+            a.href = href;
+            a.innerText = event.title;
+            td.appendChild(a);
+            row.appendChild(td);
+        }
+        document.getElementById("calendar").appendChild(row);
+    }
+
+    console.log(eventDates);
+
+    
+}
+createAddToCalendar();

@@ -910,6 +910,21 @@ var athletics = [
 ];
 var event_popup = {};
 
+var events = [
+    {
+        "start_time": 1639587571,
+        "end_time": 1639598401,
+        "title": "Test event 2",
+        "description": "A second test event"
+    },
+	{
+		"start_time": 1639587570,
+		"end_time": 1639598400,
+		"title": "Test event",
+		"description": "A test event"
+	}
+];
+
 var music = [
     {
         "name": "Junior Orchestra",
@@ -943,6 +958,7 @@ async function fetchData() {
     music = await (await fetch("data/music.json")).json();
     connection_links = await (await fetch("data/connection_links.json")).json();
 	event_popup = await (await fetch("data/event_popup.json")).json();
+	events = await (await fetch("data/events.json")).json();
     console.log("fetchData: Done loading data.");
     dataFetched = true;
 }
