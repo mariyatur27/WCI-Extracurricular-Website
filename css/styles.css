@@ -478,6 +478,8 @@ output {
 
 iframe {
   border: 0;
+  width: 60%;
+  height: 100%;
 }
 
 summary {
