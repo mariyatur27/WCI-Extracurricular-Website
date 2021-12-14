@@ -130,7 +130,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                     }
                     if ("team_m_b" in boxData) {
                         let team_m_b = document.createElement("button"); team_m_b.classList.add("web_link_2"); team_m_b.type="button"; team_m_b.name = "team_members";
-                        team_m_b.innerText = boxData.team_m_b;
+                        team_m_b.innerText = "Team Members";
                         team_m_b.id = 'team_member_button';
                         team_m_b.addEventListener('click', function() {
                             document.getElementById("team_popup").style.display = "block";
