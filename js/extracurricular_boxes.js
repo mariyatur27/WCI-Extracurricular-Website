@@ -85,14 +85,17 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                     let center = document.createElement("div"); center.classList.add("center_elements");
                     if ("team_history" in boxData) {
                         let team_history = document.createElement("button"); team_history.classList.add("web_link_2"); team_history.type="button"; team_history.name = "team_history";
-                        team_history.innerText = boxData.team_history;
+                        team_history.innerText = "Team History";
                         team_history.id = 'team_history_button';
                         team_history.addEventListener('click', function() {
                             let body = document.getElementsByTagName("body")[0];
                             // Making a pop-up onclick
                                 let popup_section = document.createElement("div"); popup_section.classList.add("team_history_section");
+                                popup_section.id = "history_popup";
                                     let s_header = document.createElement("h2"); s_header.classList.add("s_header"); s_header.innerText = "Team History";
                                     popup_section.appendChild(s_header);
+                                    let text = document.createElement("p"); text.classList.add("his_txt"); text.innerText = boxData.team_history;
+                                    popup_section.appendChild(text);
                                     let close = document.createElement("button"); close.classList.add("close_bt"); close.name = "close"; close.type = "button"; close.innerText = "X";
                                     close.addEventListener('click', function() {
                                         popup_section.style.display = "none";
@@ -114,6 +117,10 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                                 let popup_section_2 = document.createElement("div"); popup_section_2.classList.add("team_history_section");
                                     let s_header_2 = document.createElement("h2"); s_header_2.classList.add("s_header"); s_header_2.innerText = "Team Members";
                                     popup_section_2.appendChild(s_header_2);
+                                    let a_row = document.createElement("div"); a_row.classList.add("a_row");
+                                        let athlete_name = document.createElement("h4"); athlete_name.classList.add("athlete_name"); athlete_name.inner = boxData.tm1.name;
+                                        a_row.appendChild(athlete_name);
+                                    popup_section_2.appendChild(a_row);
                                     let close = document.createElement("button"); close.classList.add("close_bt"); close.name = "close"; close.type = "button"; close.innerText = "X";
                                     close.addEventListener('click', function() {
                                         popup_section_2.style.display = "none";
