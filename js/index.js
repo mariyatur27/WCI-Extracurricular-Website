@@ -193,7 +193,7 @@ async function createAddToCalendar() {
             var end_date = new Date(events[0].end_time*1000);
             end_date.setDate(end_date.getDate() + 7);
             var end_date_string = end_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
-            var href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${events[0].title}&dates=${start_date_string}/${end_date_string}&details=${events[0].description}`;
+            var href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${event.title}&dates=${start_date_string}/${end_date_string}&details=${event.description}`;
             let td = document.createElement("td");
             let a = document.createElement("a");
             a.href = href;
