@@ -245,7 +245,54 @@ button.drop {
 	border: none;
 	width: 100%;
 }
-
+.contributors {
+	text-decoration: none;
+  margin-left: 1%;
+  border-radius: 100px;
+  padding: 4px 8px;
+  font-size: 17px;
+  border: none;
+  border: white;
+  border-style: solid;
+}
+button#contributors {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  font-weight: 600;
+}
+#people {
+	display:  none;
+}
+.contributors:hover {
+	color: black;
+}
+#mariya{
+  background-color: #4dc3a3
+}
+#nuha{
+	background-color: #f0b852;
+}
+#charis{
+	background-color: #c7c7fa;
+}
+#tristan{
+	background-color: #678fea;
+	padding: 4px 10px;
+}
+#chinglam{
+	background-color: #f4b4bf;
+}
+#jiwon{
+	background-color: #a3e6a3;
+	padding: 4px 10px;
+}
+#brian{
+	background-color: #fccea4;
+}
+#ali{
+	background-color: #f06060;
+}
 .club_row {
 	display: flex;
 	flex-direction: column;

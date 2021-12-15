@@ -98,6 +98,20 @@ async function showSlides(amount, slideShowSources, slideShowIds, reset, pageLoc
     }
 }
 
+// var expand = document.getElementById("contributors");
+var contributors = document.getElementById("people");
+var expand = document.getElementById("contributors");
+expand.addEventListener('click', function() {
+    var contributors = document.getElementById("people");
+    if (contributors.style.display = "none"){
+        contributors.style.display = "block";
+    }
+    else if (contributors.style.display = "block"){
+        contributors.style.display = "none";
+    }
+    
+});
+
 function moveSlides(startIndex, offset, slideShowSources, slideShowDivIds, pageLocations) {
     for (var slideShowIndex = 0; slideShowIndex < slideShowSources.length; slideShowIndex++) {
         slideIndexes[slideShowIndex] += offset;
