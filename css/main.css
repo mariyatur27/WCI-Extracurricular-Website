@@ -42,7 +42,7 @@ iframe {
 p.descrp {
 	text-align: left;
 	margin-right: 2%;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 .search_bar {
@@ -568,17 +568,17 @@ img.main_sm_links {
 		flex-direction: row;
 	}
 	.search-bar-wrapper {
-		width: 45%;
+		width: 65%;
 		margin-right: 15px;
 	}
 	.dropdown_content {
 		box-shadow: 5px 5px 15px 7px #E7E7E7;
 		margin-left: 2%;
-		width: 20%;
-		right: 34%;
+		width: 30%;
+		right: 3%;
 	}
 	.dropdown-btn {
-		width: 20%;
+		width: 31%;
 	}
 	button.dropbt {
 		border: none;
