@@ -154,7 +154,7 @@ function generateSlide(index, slideShowCards, slideShowDiv, pageLocation) {
 
 // Function for expanding and collpasing questions in the FAQ section
 
-async function createAddToCalendar() {
+async function createCalendar(daysAhead) {
     if (!dataFetched) {
         await fetchData();
     }
@@ -164,7 +164,7 @@ async function createAddToCalendar() {
     today.setSeconds(0);
 
     var maxDate = new Date(today);
-    maxDate.setDate(maxDate.getDate() + 7);
+    maxDate.setDate(maxDate.getDate() + daysAhead);
 
     var eventDates = {};
 
@@ -180,22 +180,31 @@ async function createAddToCalendar() {
             }
         }
     }
+
     var table = document.getElementById("calendar");
     var date = new Date();
     var maxHeight = 0;
-    for (var col of table.getElementsByTagName("td")) {
-        if (col.getAttribute("name") == "give_date") {
+    var overrides = {0: "Today", 1: "Tomorrow"};
+    var row = document.createElement("tr");
+    for (var i = 0; i<daysAhead; i++) {
+        var col = document.createElement("td");
+        if (i in overrides) {
+            col.innerText = overrides[i];
+        } else {
             col.innerText = date.toLocaleDateString("en-US", { weekday: 'long' });
         }
+        row.appendChild(col);
         date.setDate(date.getDate() + 1);
     }
-
+    table.appendChild(row);
     for (var date in eventDates) {
         if (maxHeight < eventDates[date].length) {
             for (var i = 0; i<eventDates[date].length-maxHeight; i++) {
                 console.log("hi");
                 row = document.createElement("tr");
-                row.innerHTML = "<td></td><td></td><td></td><td></td><td></td><td></td><td></td>";
+                for (var c = 0; c<daysAhead; c++){
+                    row.appendChild(document.createElement("td"))
+                }
                 table.appendChild(row);
             }
             maxHeight = eventDates[date].length
@@ -225,4 +234,4 @@ async function createAddToCalendar() {
 
     
 }
-createAddToCalendar();
+createCalendar(7);
