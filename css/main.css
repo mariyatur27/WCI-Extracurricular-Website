@@ -178,6 +178,22 @@ img.club_img {
 	margin: 0 5%;
 }
 
+.calendar_table {
+	margin: auto;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+.calendar_col {
+	width: 10vw;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.calendar_header {
+	border-bottom: 1px solid black;
+}
+
 h2.section-heading {
 	margin-top: 20px;
 	margin-bottom: 40px;

@@ -152,8 +152,6 @@ function generateSlide(index, slideShowCards, slideShowDiv, pageLocation) {
     slideShowDiv.appendChild(carousel_item);
 };
 
-// Function for expanding and collpasing questions in the FAQ section
-
 async function createCalendar(daysAhead) {
     if (!dataFetched) {
         await fetchData();
@@ -188,6 +186,7 @@ async function createCalendar(daysAhead) {
     var row = document.createElement("tr");
     for (var i = 0; i<daysAhead; i++) {
         var col = document.createElement("td");
+        col.classList.add("calendar_col", "calendar_header");
         if (i in overrides) {
             col.innerText = overrides[i];
         } else {
@@ -203,7 +202,9 @@ async function createCalendar(daysAhead) {
                 console.log("hi");
                 row = document.createElement("tr");
                 for (var c = 0; c<daysAhead; c++){
-                    row.appendChild(document.createElement("td"))
+                    var col = document.createElement("td")
+                    col.classList.add("calendar_col")
+                    row.appendChild(col);
                 }
                 table.appendChild(row);
             }
