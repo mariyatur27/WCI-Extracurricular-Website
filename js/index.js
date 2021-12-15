@@ -180,13 +180,32 @@ async function createAddToCalendar() {
             }
         }
     }
+    var table = document.getElementById("calendar");
+    var date = new Date();
+    var maxHeight = 0;
+    for (var col of table.getElementsByTagName("td")) {
+        if (col.getAttribute("name") == "give_date") {
+            col.innerText = date.toLocaleDateString("en-US", { weekday: 'long' });
+        }
+        date.setDate(date.getDate() + 1);
+    }
 
     for (var date in eventDates) {
+        if (maxHeight < eventDates[date].length) {
+            for (var i = 0; i<eventDates[date].length-maxHeight; i++) {
+                console.log("hi");
+                row = document.createElement("tr");
+                row.innerHTML = "<td></td><td></td><td></td><td></td><td></td><td></td><td></td>";
+                table.appendChild(row);
+            }
+            maxHeight = eventDates[date].length
+        }
+        console.log(maxHeight);
+
         eventDates[date].sort((a, b) => a.start_time - b.start_time);
-        let row = document.createElement("tr");
-        let td = document.createElement("td");
-        td.innerText = {1: "Tomorrow"}[date]
-        row.appendChild(td);
+        
+        var tableRowIndex = 1;
+
         for (var event of eventDates[date]) {
             var start_date = new Date(events[0].start_time*1000);
             var start_date_string = start_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
@@ -194,14 +213,12 @@ async function createAddToCalendar() {
             end_date.setDate(end_date.getDate() + 7);
             var end_date_string = end_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
             var href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${event.title}&dates=${start_date_string}/${end_date_string}&details=${event.description}`;
-            let td = document.createElement("td");
             let a = document.createElement("a");
             a.href = href;
             a.innerText = event.title;
-            td.appendChild(a);
-            row.appendChild(td);
+            table.getElementsByTagName("tr")[tableRowIndex].getElementsByTagName("td")[date].appendChild(a);
+            tableRowIndex++;
         }
-        document.getElementById("calendar").appendChild(row);
     }
 
     console.log(eventDates);
