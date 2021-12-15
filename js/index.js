@@ -190,7 +190,7 @@ async function createCalendar(daysAhead) {
         if (i in overrides) {
             col.innerText = overrides[i];
         } else {
-            col.innerText = date.toLocaleDateString("en-US", { weekday: 'long' });
+            col.innerText = date.toLocaleDateString("en-CA", {weekday: 'long'});
         }
         row.appendChild(col);
         date.setDate(date.getDate() + 1);
@@ -224,9 +224,13 @@ async function createCalendar(daysAhead) {
             var end_date_string = end_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
             var href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${event.title}&dates=${start_date_string}/${end_date_string}&details=${event.description}`;
             let a = document.createElement("a");
+            let p = document.createElement("p");
+            p.innerText = start_date.toLocaleTimeString("en-CA", {timeStyle: "short"}).replaceAll(".", "") + " - " + end_date.toLocaleTimeString("en-CA", {timeStyle: "short"}).replaceAll(".", "") + "\n";
             a.href = href;
-            a.innerText = event.title;
-            table.getElementsByTagName("tr")[tableRowIndex].getElementsByTagName("td")[date].appendChild(a);
+            a.innerText =  event.title;
+            p.appendChild(a);
+            let cell = table.getElementsByTagName("tr")[tableRowIndex].getElementsByTagName("td")[date];
+            cell.appendChild(p);
             tableRowIndex++;
         }
     }
@@ -235,4 +239,4 @@ async function createCalendar(daysAhead) {
 
     
 }
-createCalendar(7);
+createCalendar(5);
