@@ -541,7 +541,6 @@ img.c_image {
   display: block; 
   width: 76%;
   position: relative;
-  z-index: 99998;
   font-family: "Open Sans",Roboto,"Helvetica Neue",Helvetica,Optima,Segoe,"Segoe UI",Candara,Calibri,Arial,sans-serif;
   color: #000!important;
   font-weight: 600;
