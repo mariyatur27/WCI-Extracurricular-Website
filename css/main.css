@@ -537,7 +537,37 @@ img.c_image {
 	color: lightblue;
 	background-color: #0A1241;
 }
-.events {
+a.art-form {
+  background-color: #0a1241;
+  color: white;
+  padding: 1% 2%;
+  border: none;
+  border-radius: 33px;
+  text-decoration: none;
+}
+img.art {
+  width: 20%;
+  filter: brightness(100%);
+
+}
+/*#dscr1 , #dscr2 , #dscr3 , #dscr4 , #dscr5 {
+	display:  none;
+}
+*/
+.dscr {
+	display: block;
+	color: transparent;
+}
+section#gallery {
+   margin-top: -21%;
+}
+p.dscr {
+  position: absolute;
+  width: 18%;
+  text-align: center;
+  margin-top: 4%;
+}
+.addeventatc {
   display: block; 
   width: 76%;
   position: relative;
