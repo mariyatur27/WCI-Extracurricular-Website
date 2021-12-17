@@ -912,14 +912,14 @@ var event_popup = {};
 
 var events = [
     {
-        "start_time": 1639587571,
-        "end_time": 1639598401,
+        "start_time": 1639760340,
+        "end_time": 1639771200,
         "title": "Test event 2",
         "description": "A second test event"
     },
 	{
-		"start_time": 1639587570,
-		"end_time": 1639598400,
+		"start_time": 1639846741,
+		"end_time": 1639857601,
 		"title": "Test event",
 		"description": "A test event"
 	}

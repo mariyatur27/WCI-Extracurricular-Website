@@ -222,15 +222,44 @@ async function createCalendar(daysAhead) {
             var end_date = new Date(events[0].end_time*1000);
             end_date.setDate(end_date.getDate() + 7);
             var end_date_string = end_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
-            var href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${event.title}&dates=${start_date_string}/${end_date_string}&details=${event.description}`;
-            let a = document.createElement("a");
-            let p = document.createElement("p");
-            p.innerText = start_date.toLocaleTimeString("en-CA", {timeStyle: "short"}).replaceAll(".", "") + " - " + end_date.toLocaleTimeString("en-CA", {timeStyle: "short"}).replaceAll(".", "") + "\n";
-            a.href = href;
-            a.innerText =  event.title;
-            p.appendChild(a);
+            var google_calendar_href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${event.title}&dates=${start_date_string}/${end_date_string}&details=${event.description}`;
+
+            let main_div = document.createElement("div"); main_div.classList.add("calendar_event")
+            let time_p = document.createElement("p");
+            let title_p = document.createElement("p");
+            let expand_link = document.createElement("button");
+            let hidden_div = document.createElement("div");
+            let add_to_calendar_link = document.createElement("a");
+            let add_to_calendar_icon = document.createElement("img");
+            let download_ics_link = document.createElement("a");
+            let download_ics_icon = document.createElement("img");
+            add_to_calendar_icon.src = "assets/icons/google_calendar.png";
+            add_to_calendar_icon.title = "Add to Google Calendar";
+            download_ics_icon.src = "assets/icons/download.png";
+            download_ics_icon.title = "Download ICS file";
+            add_to_calendar_icon.classList.add("icons");
+            download_ics_icon.classList.add("icons");
+            time_p.innerText = start_date.toLocaleTimeString("en-CA", {timeStyle: "short"}).replaceAll(".", "") + " - " + end_date.toLocaleTimeString("en-CA", {timeStyle: "short"}).replaceAll(".", "") + "\n";
+            title_p.innerText = event.title;
+            time_p.classList.add("calendar_time");
+            title_p.classList.add("calendar_time");
+            expand_link.classList.add("calendar_expand_button");
+            expand_link.addEventListener("click", () => {hidden_div.classList.toggle("expanded"); return false;});
+            expand_link.appendChild(time_p);
+            expand_link.appendChild(title_p);
+            main_div.appendChild(expand_link);
+            hidden_div.innerText = event.description;
+            add_to_calendar_link.href = google_calendar_href;
+            add_to_calendar_link.target = "_blank";
+            add_to_calendar_link.appendChild(add_to_calendar_icon);
+            download_ics_link.appendChild(download_ics_icon);
+            hidden_div.appendChild(document.createElement("br"));
+            hidden_div.appendChild(add_to_calendar_link);
+            hidden_div.appendChild(download_ics_link);
+            hidden_div.classList.add("calendar_event_expand");
+            main_div.appendChild(hidden_div);
             let cell = table.getElementsByTagName("tr")[tableRowIndex].getElementsByTagName("td")[date];
-            cell.appendChild(p);
+            cell.appendChild(main_div);
             tableRowIndex++;
         }
     }
