@@ -21,7 +21,7 @@ iframe {
 }
 #mainNav ul li:hover ul{
 	display: block;
-	background-color: var(--theme-blue);
+	background-color: var(--theme-darkblue);
 }
 
 #mainNav ul ul li{
