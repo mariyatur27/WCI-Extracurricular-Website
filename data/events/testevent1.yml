@@ -1,0 +1,24 @@
+# The name of the event
+name: "Test event 1"
+# The event description
+# Note the 2-space indent at the start, which must be included. It will not appear on the website.
+description: |-
+  This is a test event.
+  The event is used for testing.
+
+  There was an empty line above this one.
+# The date that the event starts on (dd/mm/yyyy)
+start-date: "18/12/2021"
+
+# The time that the event starts at, in 24 hour time (hh:mm:ss)
+# TODO: Make seconds optional
+# TODO: Add AM/PM support
+start-time: "11:59:00"
+
+# The date that the event ends on (dd/mm/yyyy)
+# Currently ignored
+# TODO: Make end date optional, using end date if not available
+end-date: "18/12/2021"
+
+# The time that the event ends at, in 24 hour time (hh:mm:ss)
+end-time: "15:00:00"

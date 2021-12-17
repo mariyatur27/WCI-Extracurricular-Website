@@ -1,0 +1,49 @@
+name: Assemble Data Files
+
+on:
+  push:
+    branches: [
+      main
+    ]
+
+jobs:
+  assemble-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 'Checkout current respository'
+      uses: actions/checkout@v2
+      with:
+        path: main
+        ref: main
+
+    - name: 'Checkout gh-pages branch'
+      uses: actions/checkout@v2
+      with:
+        path: gh-pages
+        ref: gh-pages
+    
+    - name: 'Setup Python'
+      uses: actions/setup-python@v2
+      with:
+        python-version: "3.9.7"
+
+    - name: 'Install requirements'
+      run: pip3 install -r main/data/assemble_data/requirements.txt
+
+    - name: 'Assemble event data'
+      run: python3 data/assemble_data/assemble_events.py
+
+    - name: 'Steal .git from gh-pages'
+      run: |
+        rm -rf main/.git
+        mv gh-pages/.git main/.git
+
+    - name: 'Commit to gh-pages'
+      uses: EndBug/add-and-commit@v7
+      with:
+        author_name: 'github-actions[bot]'
+        author_email: 'github-actions[bot]@users.noreply.github.com'
+        message: 'Copy to gh-pages with updated data'
+        branch: 'gh-pages'
+        cwd: gh-pages
