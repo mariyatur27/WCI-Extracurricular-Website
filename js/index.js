@@ -170,18 +170,18 @@ async function createCalendar(daysAhead) {
     if (!dataFetched) {
         await fetchData();
     }
-    var today = new Date();
+    let today = new Date();
     today.setHours(0);
     today.setMinutes(0);
     today.setSeconds(0);
 
-    var maxDate = new Date(today);
+    let maxDate = new Date(today);
     maxDate.setDate(maxDate.getDate() + daysAhead);
 
-    var eventDates = {};
+    let eventDates = {};
 
-    for (var event of events) {
-        var eventdate = new Date(event.start_time*1000);
+    for (const event of events) {
+        let eventdate = new Date(event.start_time*1000);
         console.log(eventdate);
         if (eventdate <= maxDate && eventdate >= today) {
             let distance = eventdate.getDate()-today.getDate();
@@ -193,13 +193,13 @@ async function createCalendar(daysAhead) {
         }
     }
 
-    var table = document.getElementById("calendar");
-    var date = new Date();
-    var maxHeight = 0;
-    var overrides = {0: "Today", 1: "Tomorrow"};
-    var row = document.createElement("tr");
-    for (var i = 0; i<daysAhead; i++) {
-        var col = document.createElement("td");
+    let table = document.getElementById("calendar");
+    let date = new Date();
+    let maxHeight = 0;
+    let overrides = {0: "Today", 1: "Tomorrow"};
+    let row = document.createElement("tr");
+    for (let i = 0; i<daysAhead; i++) {
+        let col = document.createElement("td");
         col.classList.add("calendar_col", "calendar_header");
         if (i in overrides) {
             col.innerText = overrides[i];
@@ -210,13 +210,13 @@ async function createCalendar(daysAhead) {
         date.setDate(date.getDate() + 1);
     }
     table.appendChild(row);
-    for (var date in eventDates) {
+    for (const date in eventDates) {
         if (maxHeight < eventDates[date].length) {
-            for (var i = 0; i<eventDates[date].length-maxHeight; i++) {
+            for (let i = 0; i<eventDates[date].length-maxHeight; i++) {
                 console.log("hi");
                 row = document.createElement("tr");
-                for (var c = 0; c<daysAhead; c++){
-                    var col = document.createElement("td")
+                for (let c = 0; c<daysAhead; c++){
+                    let col = document.createElement("td")
                     col.classList.add("calendar_col")
                     row.appendChild(col);
                 }
@@ -228,58 +228,55 @@ async function createCalendar(daysAhead) {
 
         eventDates[date].sort((a, b) => a.start_time - b.start_time);
         
-        var tableRowIndex = 1;
+        let tableRowIndex = 1;
 
-        for (var event of eventDates[date]) {
-            var start_date = new Date(events[0].start_time*1000);
-            var start_date_string = start_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
-            var end_date = new Date(events[0].end_time*1000);
-            end_date.setDate(end_date.getDate() + 7);
-            var end_date_string = end_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
-            var google_calendar_href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${event.title}&dates=${start_date_string}/${end_date_string}&details=${event.description}`;
+        for (const event of eventDates[date]) {
+            let start_date = new Date(events[0].start_time*1000);
+            let start_date_string = start_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
+            let end_date = new Date(events[0].end_time*1000);
+            let end_date_string = end_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
+            let google_calendar_href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${event.title}&dates=${start_date_string}/${end_date_string}&details=${event.description}`;
 
             let main_div = document.createElement("div"); main_div.classList.add("calendar_event")
-            let time_p = document.createElement("p");
-            let title_p = document.createElement("p");
-            let expand_link = document.createElement("button");
-            let hidden_div = document.createElement("div");
-            let add_to_calendar_link = document.createElement("a");
-            let add_to_calendar_icon = document.createElement("img");
-            let download_ics_link = document.createElement("a");
-            let download_ics_icon = document.createElement("img");
-            add_to_calendar_icon.src = "assets/icons/google_calendar.png";
-            add_to_calendar_icon.title = "Add to Google Calendar";
-            download_ics_icon.src = "assets/icons/download.png";
-            download_ics_icon.title = "Download ICS file";
-            add_to_calendar_icon.classList.add("icons");
-            download_ics_icon.classList.add("icons");
-            time_p.innerText = start_date.toLocaleTimeString("en-CA", {timeStyle: "short"}).replaceAll(".", "") + " - " + end_date.toLocaleTimeString("en-CA", {timeStyle: "short"}).replaceAll(".", "") + "\n";
-            title_p.innerText = event.title;
-            time_p.classList.add("calendar_time");
-            title_p.classList.add("calendar_time");
-            expand_link.classList.add("calendar_expand_button");
-            expand_link.addEventListener("click", () => {hidden_div.classList.toggle("expanded"); return false;});
-            expand_link.appendChild(time_p);
-            expand_link.appendChild(title_p);
-            main_div.appendChild(expand_link);
-            hidden_div.innerText = event.description;
-            add_to_calendar_link.href = google_calendar_href;
-            add_to_calendar_link.target = "_blank";
-            add_to_calendar_link.appendChild(add_to_calendar_icon);
-            download_ics_link.appendChild(download_ics_icon);
-            hidden_div.appendChild(document.createElement("br"));
-            hidden_div.appendChild(add_to_calendar_link);
-            hidden_div.appendChild(download_ics_link);
-            hidden_div.classList.add("calendar_event_expand");
-            main_div.appendChild(hidden_div);
-            let cell = table.getElementsByTagName("tr")[tableRowIndex].getElementsByTagName("td")[date];
-            cell.appendChild(main_div);
+                let expand_link = document.createElement("button");
+                    expand_link.classList.add("calendar_expand_button");
+                    expand_link.addEventListener("click", () => {hidden_div.classList.toggle("expanded"); return false;});
+                    let time_p = document.createElement("p");
+                        time_p.classList.add("calendar_time");
+                        time_p.innerText = start_date.toLocaleTimeString("en-CA", {timeStyle: "short"}).replaceAll(".", "") + " - " + end_date.toLocaleTimeString("en-CA", {timeStyle: "short"}).replaceAll(".", "");
+                    expand_link.appendChild(time_p);
+                    let title_p = document.createElement("p");
+                        title_p.classList.add("calendar_time");
+                        title_p.innerText = event.title;
+                    expand_link.appendChild(title_p);
+                main_div.appendChild(expand_link);
+                let hidden_div = document.createElement("div");
+                    hidden_div.classList.add("calendar_event_expand");
+                    hidden_div.innerText = event.description;
+                    hidden_div.appendChild(document.createElement("br"));
+                    let add_to_calendar_link = document.createElement("a");
+                        add_to_calendar_link.target = "_blank";
+                        add_to_calendar_link.href = google_calendar_href;
+                        let add_to_calendar_icon = document.createElement("img");
+                            add_to_calendar_icon.classList.add("icons");
+                            add_to_calendar_icon.src = "assets/icons/google_calendar.png";
+                            add_to_calendar_icon.title = "Add to Google Calendar";
+                            add_to_calendar_icon.alt = "Add to Google Calendar";
+                        add_to_calendar_link.appendChild(add_to_calendar_icon);
+                    hidden_div.appendChild(add_to_calendar_link);
+                    let download_ics_link = document.createElement("a");
+                        let download_ics_icon = document.createElement("img");
+                            download_ics_icon.classList.add("icons");
+                            download_ics_icon.src = "assets/icons/download.png";
+                            download_ics_icon.title = "Download ICS file";
+                            download_ics_icon.alt = "Download ICS file";
+                        download_ics_link.appendChild(download_ics_icon);
+                    hidden_div.appendChild(download_ics_link);
+                main_div.appendChild(hidden_div);
+            table.getElementsByTagName("tr")[tableRowIndex].getElementsByTagName("td")[date].appendChild(main_div);
+
             tableRowIndex++;
         }
     }
-
-    console.log(eventDates);
-
-    
 }
 createCalendar(5);
