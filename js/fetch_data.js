@@ -922,6 +922,12 @@ var events = [
 		"end_time": 1639857601,
 		"title": "Test event",
 		"description": "A test event"
+	},
+	{
+		"start_time": 1639846740,
+		"end_time": 1639857600,
+		"title": "Test event 3",
+		"description": "A third test event"
 	}
 ];
 

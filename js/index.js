@@ -210,26 +210,15 @@ async function createCalendar(daysAhead) {
         date.setDate(date.getDate() + 1);
     }
     table.appendChild(row);
+    row = document.createElement("tr");
+    for (let c = 0; c<daysAhead; c++){
+        let col = document.createElement("td");
+        col.classList.add("calendar_col");
+        row.appendChild(col);
+    };
     for (const date in eventDates) {
-        if (maxHeight < eventDates[date].length) {
-            for (let i = 0; i<eventDates[date].length-maxHeight; i++) {
-                console.log("hi");
-                row = document.createElement("tr");
-                for (let c = 0; c<daysAhead; c++){
-                    let col = document.createElement("td")
-                    col.classList.add("calendar_col")
-                    row.appendChild(col);
-                }
-                table.appendChild(row);
-            }
-            maxHeight = eventDates[date].length
-        }
-        console.log(maxHeight);
-
         eventDates[date].sort((a, b) => a.start_time - b.start_time);
-        
-        let tableRowIndex = 1;
-
+        let col = row.getElementsByTagName("td")[date];
         for (const event of eventDates[date]) {
             let start_date = new Date(events[0].start_time*1000);
             let start_date_string = start_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
@@ -273,10 +262,9 @@ async function createCalendar(daysAhead) {
                         download_ics_link.appendChild(download_ics_icon);
                     hidden_div.appendChild(download_ics_link);
                 main_div.appendChild(hidden_div);
-            table.getElementsByTagName("tr")[tableRowIndex].getElementsByTagName("td")[date].appendChild(main_div);
-
-            tableRowIndex++;
+            col.appendChild(main_div);
         }
+        table.appendChild(row);
     }
 }
 createCalendar(5);

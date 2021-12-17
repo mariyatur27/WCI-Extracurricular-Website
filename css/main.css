@@ -198,6 +198,7 @@ iframe#calendar {
 	width: 25vw;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
+	vertical-align: top;
 }
 
 .calendar_header {
