@@ -483,10 +483,10 @@ var athletics = [
         "categories": [
             "fall_sports"
         ],
-        "tm1": [{
+        "tm1": {
             "name" : "Arthur Jackson",
             "image" : "assets/sport_images/running.png"
-        }]
+        }
     },
     {
         "name": "Boys Golf",

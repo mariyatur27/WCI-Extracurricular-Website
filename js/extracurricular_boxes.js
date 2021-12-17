@@ -56,6 +56,8 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                     //     let athlete_name = document.createElement("h4"); athlete_name.classList.add("athlete_name"); athlete_name.innerText = boxData.tm1.name;
                     //     a_row.appendChild(athlete_name);
                     // popup_section_2.appendChild(a_row);
+                    // let athlete_name = document.createElement("h4"); athlete_name.classList.add("athlete_name"); athlete_name.innerText = test.name;
+                    // popup_section_2.appendChild(athlete_name);
                     let close_2 = document.createElement("button"); close_2.classList.add("close_bt"); close_2.name = "close"; close_2.type = "button"; close_2.innerText = "X";
                     close_2.addEventListener('click', function() {
                         popup_section_2.style.display = "none";
