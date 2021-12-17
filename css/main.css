@@ -562,10 +562,12 @@ section#gallery {
    margin-top: -21%;
 }
 p.dscr {
-  position: absolute;
   width: 18%;
   text-align: center;
   margin-top: 4%;
+}
+.box {
+  position: absolute;
 }
 .addeventatc {
   display: block; 
