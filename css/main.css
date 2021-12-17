@@ -301,19 +301,21 @@ button.drop {
 }
 .contributors {
 	text-decoration: none;
-  margin-left: 1%;
-  border-radius: 100px;
-  padding: 4px 8px;
-  font-size: 17px;
-  border: none;
-  border: white;
-  border-style: solid;
+	margin-left: 1%;
+	border-radius: 100px;
+	padding: 4px 8px;
+	font-size: 17px;
+	border: none;
+	border: white;
+	border-style: solid;
+	color: white;
 }
 button#contributors {
   border: none;
   background-color: transparent;
   text-decoration: underline;
   font-weight: 600;
+  color: white;
 }
 #weekly_calendar {
   padding: 0rem 0;
