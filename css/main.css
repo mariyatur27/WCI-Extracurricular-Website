@@ -188,6 +188,50 @@ iframe#calendar {
     height: 684px;
 }
 
+.calendar_table {
+	margin: auto;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+.calendar_col {
+	width: 25vw;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.calendar_header {
+	border-bottom: 1px solid black;
+}
+
+.calendar_time {
+	margin-bottom: 0;
+	white-space: pre-wrap;
+	cursor: pointer;
+}
+
+.calendar_expand_button {
+	background-color: white;
+	border: none;
+}
+
+div.calendar_event {
+	margin: 0.5em;
+	border: 1px solid black;
+	border-radius: 1em;
+	box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+	padding: 5%
+}
+
+.calendar_event_expand {
+	display: none;
+	text-align: left;
+}
+
+.calendar_event_expand.expanded {
+	display: block;
+}
+
 h2.section-heading {
 	margin-top: 20px;
 	margin-bottom: 40px;
