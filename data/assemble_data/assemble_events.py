@@ -18,7 +18,7 @@ for eventFilename in listdir(eventDirectory):
     startDate = datetime.strptime(event["start-date"] + "." + event["start-time"], "%d/%m/%Y.%H:%M:%S")
     endDate = datetime.strptime(event["end-date"] + "." + event["end-time"], "%d/%m/%Y.%H:%M:%S")
     startTime = int(startDate.timestamp())
-    endTime = int(startDate.timestamp())
+    endTime = int(endDate.timestamp())
 
     events.append({
         "start_time": startTime,
