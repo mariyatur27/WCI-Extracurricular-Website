@@ -32,7 +32,7 @@ jobs:
       run: pip3 install -r main/data/assemble_data/requirements.txt
 
     - name: 'Assemble event data'
-      run: python3 data/assemble_data/assemble_events.py
+      run: python3 main/data/assemble_data/assemble_events.py
 
     - name: 'Steal .git from gh-pages'
       run: |
