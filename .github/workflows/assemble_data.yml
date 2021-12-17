@@ -49,4 +49,4 @@ jobs:
         author_email: 'github-actions[bot]@users.noreply.github.com'
         message: 'Copy to gh-pages with updated data'
         branch: 'gh-pages'
-        cwd: gh-pages
+        cwd: main
