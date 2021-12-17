@@ -32,7 +32,10 @@ jobs:
       run: pip3 install -r main/data/assemble_data/requirements.txt
 
     - name: 'Assemble event data'
-      run: python3 data/assemble_data/assemble_events.py
+      run: |
+        cd main
+        python3 data/assemble_data/assemble_events.py
+        cd ..
 
     - name: 'Steal .git from gh-pages'
       run: |
@@ -46,4 +49,4 @@ jobs:
         author_email: 'github-actions[bot]@users.noreply.github.com'
         message: 'Copy to gh-pages with updated data'
         branch: 'gh-pages'
-        cwd: gh-pages
+        cwd: main
