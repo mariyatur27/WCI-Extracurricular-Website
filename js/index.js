@@ -182,7 +182,6 @@ async function createCalendar(daysAhead) {
 
     for (const event of events) {
         let eventdate = new Date(event.start_time*1000);
-        console.log(eventdate);
         if (eventdate <= maxDate && eventdate >= today) {
             let distance = eventdate.getDate()-today.getDate();
             if (distance in eventDates) {
