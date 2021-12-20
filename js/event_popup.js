@@ -1,5 +1,6 @@
 function loadPopupData(){
-	if (event_popup == {}){
+	if (Object.keys(event_popup).length == 0){
+		console.log("loadPopupData: No popup to show.");
 		return;
 		// If there is no upcoming event, don't bother
 		// with this function and don't make the div
