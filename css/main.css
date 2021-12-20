@@ -516,7 +516,6 @@ a.icons {
 
 .contents {
 	font-family: var(--open-sans);
-	margin-top: 20px;
 }
 
 .together2 {
@@ -527,6 +526,9 @@ a.icons {
 
 .together2 h6 {
 	margin-bottom: 0;
+}
+.glue {
+	display: flex;
 }
 
 .carousel_item {

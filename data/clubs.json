@@ -65,6 +65,7 @@
         "connection_links":["classroom"],
         "classroom": "https://classroom.google.com/c/MzQ0ODQ2Mzk2Nzkx?cjc=kjm7ivl",
         "image": "assets/club_images/bookclub.png",
+        "student_leaders": "Amalia C, Jane H, Dana S, Athena X",
         "description": "This club is available for students to meet and read books and share what they think as the group works through books together. Books chosen will be easily available for free on the web or from the library. ", 
         "categories": [
             "recreational_category"
@@ -97,9 +98,13 @@
         "name": "Classics Club",
         "id": "classicsclub",
         "meeting_time": "Tuesday, 3:15 PM - 4:15 PM",
-        "connection_links":[],
+        "connection_links":["classroom", "website", "instagram", "email"],
+        "classroom": "https://classroom.google.com/c/MzYxMDcyNDg5ODE5?cjc=qc6lrdn",
+        "website": "https://sites.google.com/wrdsb.ca/wci-classics/home",
+        "email":"marion_hensel@wrdsb.ca",
         "image": "assets/club_images/classicsclub.png",
-        "description": "Students interested in Latin, Classical Studies, Archaeology and the Ancient World can meet, learn about, discuss, and compete in online contests such as: Latin Vocabulary, Classical Etymology, Classical Mythology, Roman Civilization and more!", 
+        "student_leaders": "Emma Leuty and Zoe Florizone ",
+        "description": "A group of students who are passionate about about all things related to the ancient world. We discuss topics like history, mythology, architecture, fashion, archaeology, linguistics, travel and so much more!", 
         "categories": [
             "recreational_category",
             "academics_category"
@@ -138,6 +143,7 @@
         "instagram" : "https://www.instagram.com/wci_debate",
         "email": "wci.viking.debate@gmail.com",
         "website": "https://sites.google.com/wrdsb.ca/wci-debate-club/home",
+        "student_leaders": "Prem M-S (Co-President), Daniel P. (Co-President), Mariya T. (VP of Administration) , Scott H. (VP of Events), Sissi Wei (VP of Communications and Media)",
         "image": "assets/club_images/debateclub.png",
         "description": "The Debate Club provides students with a fun way to further develop their speaking and presentation skills. In addition, the debate club provides an opportunity for the students to become more informed about political and global affairs. Through a virtual platform, students will train for debate competitions with local schools.",
         "categories": [
@@ -217,9 +223,10 @@
         "name": "HOSA",
         "id": "healthoccupationsstudentsofamericahosa",
         "meeting_time": "Mondays, 3:00 PM - 4:00 PM",
-        "connection_links": ["instagram", "email", "classroom"],
+        "connection_links": ["instagram", "email", "website"],
+        "website" : "https://sites.google.com/wrdsb.ca/wci-hosa/home",
         "instagram" : "https://www.instagram.com/wcihosa",
-        "classroom": "https://classroom.google.com/c/MzY1ODgxMzM1NTcw?cjc=j3ztdep",
+        "student_leaders": "Amrit M. (Co-President) Daniel P. (Co-President) David G. (President), Laura W. (Co-President), Leya O. (Co-President), Nischal G. (Co-President), Prem M-S (Co-President)",
         "email": "wci.hosa@gmail.com ",
         "image": "assets/club_images/healthoccupationsstudentsofamericahosa.png",
         "description": "The mission of HOSA Canada is to enable secondary and post secondary students to become leaders in the healthcare industry by providing future health professionals with knowledge, technical training and leadership development.",
@@ -288,8 +295,12 @@
         "name": "Muslim Student Association",
         "id": "muslimstudentassociation",
         "meeting_time": "Tuesdays, 2:00 PM - 3:00 PM",
-        "connection_links":[],
+        "connection_links":["classroom", "website", "instagram"],
+        "classroom": "https://classroom.google.com/c/MjM5MjQ5MDczMzI2?cjc=mhwgvxo",
+        "website": "https://sites.google.com/wrdsb.ca/wcimuslimstudentassociation/home",
+        "instagram": "https://www.instagram.com/wci_msa_club",
         "image": "assets/club_images/muslimstudentassociation.png",
+        "student_leaders": "Umar Muhammad, Yazan B, Mobina F, Issa B",
         "description": "The Muslim Student Association (MSA) is a safe space for Muslim Students to get together, learn and appreciate their identity, create a welcoming community, and of course, have fun!",
         "categories": [
             "social_justice_category"
@@ -400,11 +411,11 @@
         "name": "Viking Venture",
         "id": "vikingventure",
         "meeting_time": "Wednesday, 3:30 PM - 4:30 PM",
-        "connection_links":["classroom", "instagram", "email"],
-        "classroom": "https://classroom.google.com/c/Mzc3NjAzMzIwMTY3?cjc=etw3jlg",
+        "connection_links":["instagram", "email"],
         "instagram" : "https://www.instagram.com/vikingventure",
         "email": "decavikings@gmail.com",
         "image": "assets/club_images/vikingventure.png",
+        "student_leaders":"Jessica D. (Co-President), Prem M-S (Co-President) Sissi W. (Media Coordinator), Jiwon K. (Communications Officer), David G. (Workshop Officer), Laura W. (Workshop Officer), Dana S. (Workshop Officer), Markos G. (Workshop Officer), Sammi W. (Workshop Officer)",
         "description": "Viking Venture is a WCI business competition offering students a chance to strengthen their interpersonal and professional skills. Students will delve into real-life business environments, hone their leadership skills, and develop problem-solving skills through case studies and presentations.",
         "categories": [
             "business_category"
@@ -419,6 +430,7 @@
         "instagram" : "https://www.instagram.com/wciteded/",
         "email": "wcitededclub@gmail.com",
         "image": "assets/club_images/wcitededclub.png",
+        "student_leaders": "Jessica Diao, Grace Qiu, Morouje Sherif, Alina Armbruster, Emily Cheng and Victoria ZhangLiu",
         "description": "WCI TEDEd Club is a space for all students to consider a myriad of topics and deep dive into something they are interested in. Our club will support you as you discover, explore and present your big ideas in the form of short, TED talks. We strive to empower and celebrate student voices, as part of the global TED community!",
         "categories": [
             "academics_category",
@@ -435,6 +447,7 @@
         "email": "turem4748@wrdsb.ca",
         "join_form": "https://forms.gle/3jH5k2CqeyjtEYwf8",
         "website": "https://www.wciweb-dev.ca/",
+        "student_leaders": "Mariya Turetska, Nuha Akhand and Charis Ho",
         "image": "assets/club_images/wciwebdev.png",
         "description": "WCI Web-Dev is a web-development club where you will get to develop real projects for real people. This club welcomes students from all grades, backgrounds and interests. Everybody is encouraged to join the club and no coding experience is required. You will be taught everything about the design and programming of web platforms and websites. This club will be a mini stimulation of the web development and programming industry. We will all collaborate and work together on creating and developing cool web products.",
         "categories": [

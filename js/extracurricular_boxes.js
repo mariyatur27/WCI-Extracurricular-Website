@@ -93,10 +93,18 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                     let expand_box_core_content = document.createElement("div"); expand_box_core_content.classList.add("expand_box_core_content");
                         let summary = document.createElement("p"); summary.innerHTML = boxData.description;
                         expand_box_core_content.appendChild(summary);
+                        if ("student_leaders" in boxData) {
+                            let together = document.createElement("div"); together.classList.add("glue");
+                                let title = document.createElement("h6"); title.innerText="Student Leaders: ";
+                                together.appendChild(title);
+                                let student_leaders = document.createElement("h6"); student_leaders.classList.add("contents"); student_leaders.innerText = boxData.student_leaders; 
+                                together.appendChild(student_leaders);
+                            expand_box_core_content.appendChild(together);
+                        }
                         let meeting_time_text = document.createElement("h6"); 
                         if ("meeting_time_title" in boxData) {
                             meeting_time_text.innerText = boxData.meeting_time_title.concat(" ").concat(boxData.meeting_time);
-                        } else {
+                        }else {
                             meeting_time_text.innerText = "Meeting time: ".concat(boxData.meeting_time);
                         } meeting_time_text.classList.add("contents");
                         expand_box_core_content.appendChild(meeting_time_text);
@@ -158,9 +166,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                                 var link_image = document.createElement("button"); link_image.classList.add("web_link"); link_image.type="button"; link_image.name="club_btn";
                                 link_image.innerText = connection_links[link].label;
 
-                                // link_a.classList.add("web_link");
-                                // var team_m_b = document.createElement("button"); team_m_b.classList.add("web_link"); team_m_b.type="button"; team_m_b.name = "team_members";
-                                // team_m_b.innerText = connection_links[links].label;
 
                             } else if (connection_links[link].type == "icon") {
                                 link_a.classList.add("icons");
