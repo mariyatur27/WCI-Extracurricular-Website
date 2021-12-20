@@ -276,19 +276,22 @@ h2.section-heading {
 
 .expand_box {
 	text-align: left;
-	margin-top: 10%;
 	margin-left: 6%;
 	display: block;
 	width: 88%;
-	display: none;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.25s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .expand_box_core_content p {
+	margin-top: 10%;
 	text-align: left;
 }
 
 .active .expand_box {
-	display: block;
+	max-height: 100vh;
+	transition: max-height 0.25s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 button.drop {
