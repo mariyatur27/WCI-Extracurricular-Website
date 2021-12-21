@@ -483,7 +483,7 @@ var connection_links = {
     }
 };
 var athletics = [
-        {
+    {
         "name": "Cross Country",
         "id": "crosscountry",
         "connection_links": [],
@@ -503,7 +503,7 @@ var athletics = [
     },
     {
         "name": "Boys Golf",
-        "id": "crosscountry",
+        "id": "boysgolf",
         "connection_links": [],
         "image": "assets/sport_images/football.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -519,7 +519,7 @@ var athletics = [
     },
     {
         "name": "Jr. Boys Football",
-        "id": "crosscountry",
+        "id": "jrboysfootball",
         "connection_links": [],
         "image": "assets/sport_images/football.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -538,7 +538,7 @@ var athletics = [
     },
     {
         "name": "Sr. Boys Football",
-        "id": "crosscountry",
+        "id": "srboysfootball",
         "connection_links": [],
         "image": "assets/sport_images/football.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -557,7 +557,7 @@ var athletics = [
     },
     {
         "name": "Jr. Boys Soccer",
-        "id": "crosscountry",
+        "id": "jrboyssoccer",
         "connection_links": [],
         "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -576,7 +576,7 @@ var athletics = [
     },
     {
         "name": "Jr. Boys Volleyball",
-        "id": "crosscountry",
+        "id": "jrboysvolleyball",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -595,7 +595,7 @@ var athletics = [
     },
     {
         "name": "Sr. Boys Volleyball",
-        "id": "crosscountry",
+        "id": "srboysvolleyball",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -614,7 +614,7 @@ var athletics = [
     },
     {
         "name": "Girls Field Hockey",
-        "id": "crosscountry",
+        "id": "girlsfieldhockey",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -633,7 +633,7 @@ var athletics = [
     },
     {
         "name": "Jr. Girls Basketball",
-        "id": "crosscountry",
+        "id": "jrgirlsbasketball",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -652,7 +652,7 @@ var athletics = [
     },
     {
         "name": "Sr. Girls Basketball",
-        "id": "crosscountry",
+        "id": "srgirlsbasketball",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -671,7 +671,7 @@ var athletics = [
     },
     {
         "name": "Alpine Skiing",
-        "id": "crosscountry",
+        "id": "alpineskiing",
         "connection_links": [],
         "image": "assets/sport_images/skiing.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -690,7 +690,7 @@ var athletics = [
     },
     {
         "name": "Curling",
-        "id": "crosscountry",
+        "id": "curling",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -708,7 +708,7 @@ var athletics = [
     },
     {
         "name": "Swimming",
-        "id": "crosscountry",
+        "id": "swimming",
         "connection_links": [],
         "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -721,7 +721,7 @@ var athletics = [
     },
     {
         "name": "Boys Hockey",
-        "id": "crosscountry",
+        "id": "boyshockey",
         "connection_links": [],
         "image": "assets/sport_images/hockey.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -735,7 +735,7 @@ var athletics = [
     },
     {
         "name": "Jr. Boys Basketball",
-        "id": "crosscountry",
+        "id": "jrboyssbasketball",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -749,7 +749,7 @@ var athletics = [
     },
     {
         "name": "Sr. Boys Basketball",
-        "id": "crosscountry",
+        "id": "srboysbasketball",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -763,7 +763,7 @@ var athletics = [
     },
     {
         "name": "Girls Hockey",
-        "id": "crosscountry",
+        "id": "girlshockey",
         "connection_links": [],
         "image": "assets/sport_images/hockey.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -777,7 +777,7 @@ var athletics = [
     },
     {
         "name": "Jr. Girls Volleyball",
-        "id": "crosscountry",
+        "id": "jrgirlsvolleyball",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -791,7 +791,7 @@ var athletics = [
     },
     {
         "name": "Sr. Girls Volleyball",
-        "id": "crosscountry",
+        "id": "srgirlsvolleyball",
         "connection_links": [],
         "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -805,7 +805,7 @@ var athletics = [
     },
     {
         "name": "Badminton",
-        "id": "crosscountry",
+        "id": "badminton",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -817,7 +817,7 @@ var athletics = [
     },
     {
         "name": "Track and Field",
-        "id": "crosscountry",
+        "id": "trackandfield",
         "connection_links": [],
         "image": "assets/sport_images/running.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -829,7 +829,7 @@ var athletics = [
     },
     {
         "name": "Boys Rugby",
-        "id": "crosscountry",
+        "id": "boysrugby",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -842,7 +842,7 @@ var athletics = [
     },
     {
         "name": "Boys Slo-Pitch",
-        "id": "crosscountry",
+        "id": "boysslopitch",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -855,7 +855,7 @@ var athletics = [
     },
     {
         "name": "Sr. Boys Soccer",
-        "id": "crosscountry",
+        "id": "srboyssoccer",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -868,7 +868,7 @@ var athletics = [
     },
     {
         "name": "Girls Rugby",
-        "id": "crosscountry",
+        "id": "girlsrugby",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -881,7 +881,7 @@ var athletics = [
     },
     {
         "name": "Girls Soccer",
-        "id": "crosscountry",
+        "id": "girlssoccer",
         "connection_links": [],
         "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -894,7 +894,7 @@ var athletics = [
     },
     {
         "name": "Girls Slo-Pitch",
-        "id": "crosscountry",
+        "id": "girlsslopitch",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -907,7 +907,7 @@ var athletics = [
     },
     {
         "name": "Tennis",
-        "id": "crosscountry",
+        "id": "tennis",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
