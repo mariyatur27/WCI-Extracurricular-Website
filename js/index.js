@@ -228,7 +228,7 @@ async function createCalendar(daysAhead) {
             let end_date = new Date(events[0].end_time*1000);
             let end_date_string = end_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
             let google_calendar_href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${event.title}&dates=${start_date_string}/${end_date_string}&details=${event.description}`;
-
+            let ics_file_href = `data/events/${event.id}.ics`
             let main_div = document.createElement("div"); main_div.classList.add("calendar_event")
                 let expand_link = document.createElement("button");
                     expand_link.classList.add("calendar_expand_button");
@@ -257,6 +257,7 @@ async function createCalendar(daysAhead) {
                         add_to_calendar_link.appendChild(add_to_calendar_icon);
                     hidden_div.appendChild(add_to_calendar_link);
                     let download_ics_link = document.createElement("a");
+                    download_ics_link.href = ics_file_href;
                         let download_ics_icon = document.createElement("img");
                             download_ics_icon.classList.add("icons");
                             download_ics_icon.src = "assets/icons/download.png";

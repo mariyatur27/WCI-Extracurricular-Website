@@ -922,23 +922,26 @@ var event_popup = {};
 
 var events = [
     {
-        "start_time": 1639760340,
-        "end_time": 1639771200,
-        "title": "Test event 2",
-        "description": "A second test event"
+        "start_time": 1640365140,
+        "end_time": 1640376000,
+        "title": "Test event 1",
+        "description": "This is a test event.\nThe event is used for testing.\n\nThere was an empty line above this one.",
+        "id": "Test_event_1"
     },
-	{
-		"start_time": 1639846741,
-		"end_time": 1639857601,
-		"title": "Test event",
-		"description": "A test event"
-	},
-	{
-		"start_time": 1639846740,
-		"end_time": 1639857600,
-		"title": "Test event 3",
-		"description": "A third test event"
-	}
+    {
+        "start_time": 1640278740,
+        "end_time": 1640289600,
+        "title": "Test event 3",
+        "description": "This is a third event.",
+        "id": "Test_event_3"
+    },
+    {
+        "start_time": 1640278741,
+        "end_time": 1640289599,
+        "title": "Test event 2",
+        "description": "This is a second test event.",
+        "id": "Test_event_2"
+    }
 ];
 
 var music = [
