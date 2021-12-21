@@ -438,6 +438,9 @@ svg.svg-inline--fa.fa-chevron-down.fa-w-14 {
 .center_elements{
 	justify-content: center;
 }
+.team_members {
+	display: block;
+}
 button.web_link {
 	white-space: nowrap;
 	border: none;
@@ -446,6 +449,7 @@ button.web_link {
 	padding: 2% 4%;
 	margin-top: 2%;
 	margin-right: 1%;
+	margin-left: -323%;
 }
 button.web_link_2{
 	white-space: nowrap;
