@@ -193,6 +193,7 @@ async function createCalendar(daysAhead) {
     }
 
     let table = document.getElementById("calendar");
+    table.innerHTML = "";
     let date = new Date();
     let maxHeight = 0;
     let overrides = {0: "Today", 1: "Tomorrow"};
@@ -266,4 +267,5 @@ async function createCalendar(daysAhead) {
         table.appendChild(row);
     }
 }
-createCalendar(5);
+createCalendar(Math.floor(window.innerWidth/390));
+window.onresize = () => {createCalendar(Math.floor(window.innerWidth/390))}
