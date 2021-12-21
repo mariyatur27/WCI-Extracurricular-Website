@@ -31,7 +31,6 @@ for eventFilename in listdir(eventDirectory):
     while icsID in usedIcsIDs:
         icsID = sha1(bytes(event["name"] + str(startTime) + str(endTime), 'utf-8') + token_bytes()).hexdigest()
     usedIcsIDs.add(icsID)
-    print(icsID)
     events.append({
         "start_time": startTime,
         "end_time": endTime,

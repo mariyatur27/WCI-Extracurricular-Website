@@ -6,7 +6,7 @@ description: |-
   This is a second test event.
 
 # The date that the event starts on (dd/mm/yyyy)
-start-date: "18/12/2021"
+start-date: "23/12/2021"
 
 # The time that the event starts at, in 24 hour time (hh:mm:ss)
 # TODO: Make seconds optional
@@ -16,7 +16,7 @@ start-time: "11:59:01"
 # The date that the event ends on (dd/mm/yyyy)
 # Currently ignored
 # TODO: Make end date optional, using end date if not available
-end-date: "18/12/2021"
+end-date: "23/12/2021"
 
 # The time that the event ends at, in 24 hour time (hh:mm:ss)
 end-time: "14:59:59"
