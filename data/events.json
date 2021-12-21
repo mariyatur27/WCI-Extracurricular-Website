@@ -4,20 +4,20 @@
         "end_time": 1639839600,
         "title": "Test event 1",
         "description": "This is a test event.\nThe event is used for testing.\n\nThere was an empty line above this one.",
-        "id": "af0ece858841100382443ec7e2f6a2f41f33d40c"
+        "id": "testevent1"
     },
     {
         "start_time": 1639742340,
         "end_time": 1639753200,
         "title": "Test event 3",
         "description": "This is a third event.",
-        "id": "4fd6c6329ca1023176cde385836b08ebda79026e"
+        "id": "testevent3"
     },
     {
         "start_time": 1639828741,
         "end_time": 1639839599,
         "title": "Test event 2",
         "description": "This is a second test event.",
-        "id": "239cf715da4d6df10caaef690aad2aaf94b5a61f"
+        "id": "testevent2"
     }
 ]
