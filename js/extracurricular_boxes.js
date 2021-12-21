@@ -50,7 +50,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
             // Making a pop-up onclick
                 let popup_section_2 = document.createElement("div"); popup_section_2.classList.add("team_history_section");
                 popup_section_2.id = "team_popup";
-                    let s_header_2 = document.createElement("h2"); s_header_2.classList.add("s_header"); s_header_2.innerText = "Team Members";
+                    let s_header_2 = document.createElement("h2"); s_header_2.classList.add("s_header"); s_header_2.innerText = "Team Members" + boxData.name;
                     popup_section_2.appendChild(s_header_2);
                     let close_2 = document.createElement("button"); close_2.classList.add("close_bt"); close_2.name = "close"; close_2.type = "button"; close_2.innerText = "X";
                     close_2.addEventListener('click', function() {
@@ -58,12 +58,18 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                     });
                     popup_section_2.appendChild(close_2);
 
-                    let team_members = boxData.members;
+                    for (member in boxData.members){
+                        let member_name = boxData.members[member];
+                        let member_line = document.createElement("h4"); member_line.classList.add("team_members"); member_line.innerText = member_name;
+                        popup_section_2.appendChild(member_line);
+                    }
+
+                    /*let team_members = boxData.members;
                     for (var x = 0; x < 9; x++) {
                         let team_names = boxData.members[x];
                         let member_line = document.createElement("h4"); member_line.classList.add("team_members");  member_line.innerText = team_names;
                     }
-                    popup_section_2.appendChild(member_line);
+                    popup_section_2.appendChild(member_line);*/
 
                     // let member_line = document.createElement("h4"); member_line.classList.add("team_members"); member_line.innerText = team_names;
                     //     for (member in boxData.members) {
