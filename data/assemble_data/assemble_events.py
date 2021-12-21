@@ -25,7 +25,7 @@ for eventFilename in listdir(eventDirectory):
         "end_time": endTime,
         "title": event["name"],
         "description": event["description"],
-        "id": sha1(bytes(event["name"] + str(startTime) + str(endTime), 'utf-8')).hexdigest()
+        "id": eventFilename.split(".")[-2]
         })
 
 with open("data/events.json", "w") as eventJSON:
