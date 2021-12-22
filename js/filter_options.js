@@ -17,6 +17,12 @@ function toggleClubFilter(filter) {
     setupBoxes(clubs, 'club_boxes', 2);
 }
 
+function toggleMusicFilter(filter) {
+    toggleFilter(filter);
+    toggleFilterActive(filter);
+    setupBoxes(music, 'music_boxes', 2);
+}
+
 function toggleAthleticsFilter(filter) {
     toggleFilter(filter);
     toggleFilterActive(filter);
