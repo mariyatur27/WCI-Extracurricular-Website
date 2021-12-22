@@ -307,7 +307,7 @@ button.drop {
 	text-decoration: none;
 	margin-left: 1%;
 	border-radius: 100px;
-	padding: 4px 8px;
+	padding: 7px 8px;
 	font-size: 17px;
 	border: none;
 	border: white;
@@ -320,6 +320,10 @@ button#contributors {
   text-decoration: underline;
   font-weight: 600;
   color: white;
+}
+input#club_search:focus {
+	outline: rgb(95, 95, 95) solid 1px;
+	background-color: #FFF;
 }
 #weekly_calendar {
   padding: 0rem 0;
@@ -341,7 +345,7 @@ button#contributors {
 }
 #tristan{
 	background-color: #678fea;
-	padding: 4px 10px;
+	padding: 9px 10px;
 }
 #chinglam{
 	background-color: #f4b4bf;
