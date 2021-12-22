@@ -68,6 +68,25 @@ p.descrp {
 	margin-bottom: 5px;
 }
 
+.option-colour-circle {
+	border-radius: 50%;
+	width: 14rem;
+	height: 14rem;
+	border: 0.5rem solid rgb(224.5, 224.5, 224.5);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.option-colour-circle.background-blue {
+	background-color: blue;
+}
+.option-colour-circle.background-red {
+	background-color: red;
+}
+.option-colour-circle.background-white {
+	background-color: white;
+}
+
 input#club_search {
 	padding: 0 20px;
 	height: 40px;
