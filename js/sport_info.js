@@ -49,34 +49,37 @@ async function setupSportPage(sportID) {
     page.appendChild(title2);
     let h_title = document.createElement("h4"); h_title.classList.add("t_history"); h_title.innerText = sport.team_history;
     page.appendChild(h_title);
-    let title3 = document.createElement("h3"); title3.classList.add("title2"); title3.innerText = "Team Members";
-    page.appendChild(title3);
-    let a_row = document.createElement("div"); a_row.classList.add("a_row");
-        let members_1 = sport.members_g1;
-        let t_members = " ";
-        let t_pictures = " ";
-            for (const [key, value] of Object.entries(members_1)) {
-                t_members = document.createElement("h6"); t_members.classList.add("t_members"); t_members.innerText = key;
-                a_row.appendChild(t_members);
-                t_pictures = document.createElement("img"); t_pictures.classList.add("t_pictures"); t_pictures.src = value;
-                a_row.appendChild(t_pictures);
-            };
-    page.appendChild(a_row);
-    if (sport.members_g2 != undefined) {
-        let a_row_2 = document.createElement("div"); a_row_2.classList.add("a_row");
-        let a_group = document.createElement("div"); a_group.classList.add("a_group");
-        let members_2 = sport.members_g2;
-        let t_members_2 = " ";
-        let t_pictures_2 = " ";
-            for (const [key, value] of Object.entries(members_2)) {
-                t_members_2 = document.createElement("h6"); t_members_2.classList.add("t_members"); t_members_2.innerText = key;
-                a_group.appendChild(t_members_2);
-                a_row_2.appendChild(t_members_2);
-                t_pictures_2 = document.createElement("img"); t_pictures_2.classList.add("t_pictures"); t_pictures_2.src = value;
-                a_group.appendChild(t_pictures_2);
-                a_row_2.appendChild(t_pictures_2);
-            };
-            a_row_2.appendChild(a_group)
-        page.appendChild(a_row_2);
-    };
+
+    if (sport.members_g1 != undefined) {
+        let title3 = document.createElement("h3"); title3.classList.add("title2"); title3.innerText = "Team Members";
+        page.appendChild(title3);
+        let a_row = document.createElement("div"); a_row.classList.add("a_row");
+            let members_1 = sport.members_g1;
+            let t_members = " ";
+            let t_pictures = " ";
+                for (const [key, value] of Object.entries(members_1)) {
+                    t_members = document.createElement("h6"); t_members.classList.add("t_members"); t_members.innerText = key;
+                    a_row.appendChild(t_members);
+                    t_pictures = document.createElement("img"); t_pictures.classList.add("t_pictures"); t_pictures.src = value;
+                    a_row.appendChild(t_pictures);
+                };
+        page.appendChild(a_row);
+        if (sport.members_g2 != undefined) {
+            let a_row_2 = document.createElement("div"); a_row_2.classList.add("a_row");
+            let a_group = document.createElement("div"); a_group.classList.add("a_group");
+            let members_2 = sport.members_g2;
+            let t_members_2 = " ";
+            let t_pictures_2 = " ";
+                for (const [key, value] of Object.entries(members_2)) {
+                    t_members_2 = document.createElement("h6"); t_members_2.classList.add("t_members"); t_members_2.innerText = key;
+                    a_group.appendChild(t_members_2);
+                    a_row_2.appendChild(t_members_2);
+                    t_pictures_2 = document.createElement("img"); t_pictures_2.classList.add("t_pictures"); t_pictures_2.src = value;
+                    a_group.appendChild(t_pictures_2);
+                    a_row_2.appendChild(t_pictures_2);
+                };
+                a_row_2.appendChild(a_group)
+            page.appendChild(a_row_2);
+        };
+    }
 }
