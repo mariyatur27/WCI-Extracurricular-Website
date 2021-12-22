@@ -24,12 +24,17 @@ async function setupSportPage(sportID) {
                 let members_1 = sport.members_g1;
                 let t_members = " ";
                 let t_pictures = " ";
+                let a_block = document.createElement("div"); a_block.classList.add("a_block");
                     for (const [key, value] of Object.entries(members_1)) {
                         t_members = document.createElement("h6"); t_members.classList.add("t_members"); t_members.innerText = key;
-                        a_row.appendChild(t_members);
+                        // a_row.appendChild(t_members);
                         t_pictures = document.createElement("img"); t_pictures.classList.add("t_pictures"); t_pictures.src = value;
-                        a_row.appendChild(t_pictures);
+                        t_members.appendChild(t_pictures);
+                        a_block.appendChild(t_members);
+                        // a_row.appendChild(t_pictures);
+                        // a_row.appendChild(a_block);
                     };
+                a_row.appendChild(a_block);
             page.appendChild(a_row);
             if (sport.members_g2 != undefined) {
                 console.log("yes it is ");
