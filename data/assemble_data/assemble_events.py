@@ -38,8 +38,8 @@ for eventFilename in listdir(eventDirectory):
         "description": event["description"],
         "id": icsID
     })
-    startTimestamp = startDate.strftime("%Y%m%dT%H%M%SZ")
-    endTimestamp = endDate.strftime("%Y%m%dT%H%M%SZ")
+    startTimestamp = startDate.strftime("%Y%m%dT%H%M%S")
+    endTimestamp = endDate.strftime("%Y%m%dT%H%M%S")
     nl = "\n"
     escapednl = "\\n"
     with open(f"data/events/{icsID}.ics", mode="w") as f:
