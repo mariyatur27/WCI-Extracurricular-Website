@@ -18,22 +18,24 @@ async function searchMainPage(value) {
         }), music.filter(activity => {
             return activity.name.toLowerCase().includes(value);
         })],
-        ["clubs.html", "athletics.html", "music.html"]);
+        ["clubs.html", "sport_info.html", undefined],
+        ["box", "sport", undefined]);
     } else {
         for (const link of smLinks ) {link.style.display = "inline";};
     }
 }
 
 // Showing results from the search
-function showResults(resultsList, pageUrls){
+function showResults(resultsList, pageUrls, urlParameters){
     for (var resultIndex = 0; resultIndex<resultsList.length; resultIndex++) {
         for (const result of resultsList[resultIndex]) {
             const resultItem = document.createElement('a');
             resultItem.innerText = result.name;
             
             resultItem.classList.add('result-item');
-            resultItem.href = pageUrls[resultIndex].concat("?box=").concat(result.id);
-
+            if (pageUrls[resultIndex] && urlParameters[resultIndex]) {
+                resultItem.href = pageUrls[resultIndex].concat("?").concat(urlParameters[resultIndex]).concat("=").concat(result.id);
+            }
             var results = document.getElementById("list");
             results.appendChild(resultItem);
         }
@@ -61,11 +63,11 @@ function clearList(){
 }
 var slideIndexes = [];
 // Slide shows
-showSlides(Math.floor(window.innerWidth/260), [clubs, athletics, music], ["club_slide_show_cards", "athletics_slide_show_cards", "music_slide_show_cards"], true, ["clubs.html", "athletics.html", "index.html"]);
+showSlides(Math.floor(window.innerWidth/260), [clubs, athletics, music], ["club_slide_show_cards", "athletics_slide_show_cards", "music_slide_show_cards"], true, ["clubs.html", "sport_info.html", undefined], ["box", "sport", undefined]);
 
-window.onresize = () => {showSlides(Math.floor(window.innerWidth/260), [clubs, athletics, music], ["club_slide_show_cards", "athletics_slide_show_cards", "music_slide_show_cards"], false, ["clubs.html", "athletics.html", "index.html"])}
+window.onresize = () => {showSlides(Math.floor(window.innerWidth/260), [clubs, athletics, music], ["club_slide_show_cards", "athletics_slide_show_cards", "music_slide_show_cards"], false, ["clubs.html", "sport_info.html", undefined], ["box", "sport", undefined])}
 
-async function showSlides(amount, slideShowSources, slideShowIds, reset, pageLocations) {
+async function showSlides(amount, slideShowSources, slideShowIds, reset, pageLocations, urlParameterNames) {
     if (!dataFetched) {
         await fetchData();
     }
@@ -86,7 +88,7 @@ async function showSlides(amount, slideShowSources, slideShowIds, reset, pageLoc
             } else {
                 var slideIndex = cardIndex
             }
-            generateSlide(slideIndex, slideShowSources[slideShowIndex], slideShowDiv, pageLocations[slideShowIndex]);
+            generateSlide(slideIndex, slideShowSources[slideShowIndex], slideShowDiv, pageLocations[slideShowIndex], urlParameterNames[slideShowIndex]);
         }
         if (reset) {
             slideIndexes.push(0);
@@ -94,7 +96,7 @@ async function showSlides(amount, slideShowSources, slideShowIds, reset, pageLoc
     }
     // Schedule the slides to move in 2 seconds, if we need to
     if (reset) {
-        setTimeout(moveSlides, 2000, amount+1, 1, slideShowSources, slideShowIds, pageLocations);
+        setTimeout(moveSlides, 2000, amount+1, 1, slideShowSources, slideShowIds, pageLocations, urlParameterNames);
     }
 }
 
@@ -112,7 +114,7 @@ expand.addEventListener('click', function() {
     
 });
 
-function moveSlides(startIndex, offset, slideShowSources, slideShowDivIds, pageLocations) {
+function moveSlides(startIndex, offset, slideShowSources, slideShowDivIds, pageLocations, urlParameterNames) {
     for (var slideShowIndex = 0; slideShowIndex < slideShowSources.length; slideShowIndex++) {
         slideIndexes[slideShowIndex] += offset;
         // Get the div we're using
@@ -131,14 +133,14 @@ function moveSlides(startIndex, offset, slideShowSources, slideShowDivIds, pageL
             slideShowDiv.removeChild(c_items[0]);
 
             // Add a new item
-            generateSlide(index, slideShowSource, slideShowDiv, pageLocations[slideShowIndex]);
+            generateSlide(index, slideShowSource, slideShowDiv, pageLocations[slideShowIndex], urlParameterNames[slideShowIndex]);
         }
     }
     // Schedule slides to move again in 2 seconds
-    setTimeout(moveSlides, 2000, startIndex+offset, offset, slideShowSources, slideShowDivIds, pageLocations);
+    setTimeout(moveSlides, 2000, startIndex+offset, offset, slideShowSources, slideShowDivIds, pageLocations, urlParameterNames);
 }
 
-function generateSlide(index, slideShowCards, slideShowDiv, pageLocation) {
+function generateSlide(index, slideShowCards, slideShowDiv, pageLocation, urlParameterName) {
     // Ensure that index is not larger than necessary
     while (index >= slideShowCards.length) {index -= slideShowCards.length}
 
@@ -148,13 +150,14 @@ function generateSlide(index, slideShowCards, slideShowDiv, pageLocation) {
 
     // Link, image and name for our item
     var link = document.createElement("a");
-    link.classList.add("hidden_link")
+    link.classList.add("hidden_link");
     var image = document.createElement("img");
     image.classList.add("c_image");
     var club_name_header = document.createElement("h5");
 
     // Set the link, image and name
-    link.href = pageLocation.concat("?box=".concat(slideShowCards[index].id));
+    if (pageLocation && urlParameterName)
+    link.href = pageLocation.concat("?").concat(urlParameterName).concat("=").concat(slideShowCards[index].id);
     image.src = slideShowCards[index].image;
     club_name_header.innerText = slideShowCards[index].name;
 
@@ -193,6 +196,7 @@ async function createCalendar(daysAhead) {
     }
 
     let table = document.getElementById("calendar");
+    table.innerHTML = "";
     let date = new Date();
     let maxHeight = 0;
     let overrides = {0: "Today", 1: "Tomorrow"};
@@ -224,7 +228,7 @@ async function createCalendar(daysAhead) {
             let end_date = new Date(events[0].end_time*1000);
             let end_date_string = end_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
             let google_calendar_href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${event.title}&dates=${start_date_string}/${end_date_string}&details=${event.description}`;
-
+            let ics_file_href = `data/events/${event.id}.ics`
             let main_div = document.createElement("div"); main_div.classList.add("calendar_event")
                 let expand_link = document.createElement("button");
                     expand_link.classList.add("calendar_expand_button");
@@ -253,6 +257,7 @@ async function createCalendar(daysAhead) {
                         add_to_calendar_link.appendChild(add_to_calendar_icon);
                     hidden_div.appendChild(add_to_calendar_link);
                     let download_ics_link = document.createElement("a");
+                    download_ics_link.href = ics_file_href;
                         let download_ics_icon = document.createElement("img");
                             download_ics_icon.classList.add("icons");
                             download_ics_icon.src = "assets/icons/download.png";
@@ -266,4 +271,5 @@ async function createCalendar(daysAhead) {
         table.appendChild(row);
     }
 }
-createCalendar(5);
+createCalendar(Math.floor(window.innerWidth/290));
+window.onresize = () => {createCalendar(Math.floor(window.innerWidth/290))}

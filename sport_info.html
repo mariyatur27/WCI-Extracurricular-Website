@@ -18,15 +18,9 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- Icons -->
         <script src="https://kit.fontawesome.com/1d181eea71.js" crossorigin="anonymous"></script>
-        <!-- Additional JS/CSS Libraries for Collapsable Stuff-->
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
         <script src="js/fetch_data.js"></script>
-        <script src="js/extracurricular_boxes.js"></script>
-        <script src="js/filter_options.js"></script>
+        <script src="js/sport_info.js"></script>
         <script src="js/scripts.js"></script>
-
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -42,7 +36,6 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="clubs.html">Clubs</a></li>
                         <li class="nav-item"><a class="nav-link" href="athletics.html">Athletics</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="arts.html">Arts <i class="fa fa-caret-down"></i></a>
                             <ul>
                                 <li class="nav-item"><a class="nav-link" href="visual_arts.html">Visual Arts</a></li>
@@ -54,49 +47,10 @@
                 </div>
             </div>
         </nav>
-        
         <section class="main" id="main">
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading" id="clubs_title">Music</h2>
-                    <p class="descrp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. <br><br>Not sure which group is right for you? <a href="#" class="link-quiz">Take this quiz!></a></p>
-                    
-                    <div class="search-wrapper">
-                        <div class="search-bar-wrapper">
-                            <input type="text" id="club_search" class="club_search" oninput="searchWord = this.value.toLowerCase(); setupBoxes(music, 'music_boxes', 2);" placeholder="Search for a music group...">
-                            <i class="fas fa-search search-icon"></i>
-                        </div>
-                        <button class="dropdown-btn" onclick="toggleDropdown()">
-                            Filter
-                            <i class="fas fa-sort-down filter-icon"></i>
-                        </button>
-                    </div>
-
-                    <div class="dropdown">
-                        <div id="dropdown_content" class="dropdown_content">
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleMusicFilter('band')" name="choice" id="band" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="band">Band</label>
-                            </div>
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleMusicFilter('choir')" name="choice" id="choir" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="choir">Choir</label>
-                            </div>
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleMusicFilter('guitar')" name="choice" id="guitar" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="guitar">Guitar</label>
-                            </div>
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleMusicFilter('orchestra')" name="choice" id="orchestra" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="orchestra">Orchestra</label>
-                            </div>
-                        </div>
-                        <div class="clubs" id="music_boxes"></div>
-                    </div>
+                <div id="main_content">
+                    Loading...
                 </div>
             </div>
         </section>
@@ -131,12 +85,12 @@
                 </div>
             </div>
         </footer>
-
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script>
-            setupBoxes(music, "music_boxes", 2, (new URL(window.location.href).searchParams.get("box")));
+         <script>
+            setupSportPage(new URL(window.location.href).searchParams.get("sport"));
         </script>
     </body>
