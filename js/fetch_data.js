@@ -946,19 +946,84 @@ var events = [
 
 var music = [
     {
+        "name": "Band",
+        "image": "assets/club_images/wciwebdev.png",
+        "connection_links": [],
+        "id": "band",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "categories": [
+            "band"
+        ]
+    },
+    {
+        "name": "Choir",
+        "image": "assets/club_images/wciwebdev.png",
+        "connection_links": [],
+        "id": "juniororchestra",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "categories": [
+            "choir"
+        ]
+    },
+    {
+        "name": "Junior Guitar Ensemble",
+        "image": "assets/club_images/wciwebdev.png",
+        "connection_links": [],
+        "id": "juniorguitar",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "categories": [
+            "guitar"
+        ]
+    },
+    {
+        "name": "Senior Guitar",
+        "image": "assets/club_images/wciwebdev.png",
+        "connection_links": [],
+        "id": "seniorguitar",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "categories": [
+            "guitar"
+        ]
+    },
+    {
         "name": "Junior Orchestra",
-        "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
-        "id": "juniororchestra"
+        "image": "assets/club_images/wciwebdev.png",
+        "connection_links": [],
+        "id": "juniororchestra",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "categories": [
+            "orchestra"
+        ]
     },
     {
         "name": "Intermediate Orchestra",
-        "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
-        "id": "intermediateorchestra"
+        "image": "assets/club_images/wciwebdev.png",
+        "connection_links": [],
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "id": "intermediateorchestra",
+        "categories": [
+            "orchestra"
+        ]
     },
     {
         "name": "Senior Orchestra",
-        "image": "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
-        "id": "seniororchestra"
+        "image": "assets/club_images/wciwebdev.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "id": "seniororchestra",
+        "connection_links": [],
+        "categories": [
+          "orchestra"
+        ]
+    },
+    {
+        "name": "Senior Chamber Ensemble",
+        "image": "assets/club_images/wciwebdev.png",
+        "connection_links": [],
+        "id": "seniorchamber",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "categories": [
+            "orchestra"
+        ]
     }
 ];
 // var event_popup = {};
