@@ -400,6 +400,11 @@ input#club_search:focus {
 #history_popup {
 	display: none;
 }
+h4.t_history {
+  font-size: 25px;
+  font-weight: 100;
+  margin-top: 4%;
+}
 #team_popup {
 	display:  none;
 }
@@ -408,6 +413,12 @@ input#club_search:focus {
 }
 .a_row {
 	display: flex;
+}
+.a_row_2 {
+	display: flex;
+}
+.t_pictures {
+	width: 15%;
 }
 .team_history_section {
 	color: white;
