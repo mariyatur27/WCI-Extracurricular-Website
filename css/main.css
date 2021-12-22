@@ -273,8 +273,13 @@ h2.section-heading {
 }
 
 .question {
-	padding: 3% 4%;
+	padding: 30px 4%;
 	border-radius: 21px;
+}
+
+.ques_txt {
+	font-weight: 100;
+	text-align: left;
 }
 
 .question_block .up {
@@ -286,6 +291,10 @@ h2.section-heading {
 	padding: 3% 4%;
 	border-radius: 21px;
 	display: none;
+	text-align: left;
+}
+
+.answer p {
 	text-align: left;
 }
 
@@ -817,9 +826,7 @@ img.main_sm_links {
 	}
 	.ques_txt {
 		margin: 0;
-		font-weight: 100;
 		font-size: 24px;
-		text-align: left;
 	}
 	button.filterbt {
 		border: none;
