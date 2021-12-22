@@ -22,6 +22,10 @@
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+        <script src="js/fetch_data.js"></script>
+        <script src="js/extracurricular_boxes.js"></script>
+        <script src="js/filter_options.js"></script>
+        <script src="js/scripts.js"></script>
 
     </head>
     <body id="page-top">
@@ -50,95 +54,49 @@
                 </div>
             </div>
         </nav>
+        
         <section class="main" id="main">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading" id="clubs_title">Music</h2>
                     <p class="descrp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. <br><br>Not sure which group is right for you? <a href="#" class="link-quiz">Take this quiz!></a></p>
-
-                    <div class="search-bar-wrapper">
-                        <input type="text" id="club_search" class="club_search" onkeyup="search_music()" placeholder="Search for a music group...">
-                        <i class="fas fa-search search-icon"></i>
-                    </div>
-
-                   <!-- Music filter-->
-                    <div class="filterbox">
-                        <a href="#" class="orchbtn btn active" data-filter="all">All</a>
-                        <a href="#" class="orchbtn btn" data-filter="orch">Orchestra</a>
-                        <a href="#" class="orchbtn btn" data-filter="guitar">Guitar</a>
-                        <a href="#" class="orchbtn btn" data-filter="choir">Choir</a>
-                        <a href="#" class="orchbtn btn" data-filter="band">Band</a>
-                    </div>
-
-                    <main>
-                        <div class="slide-container">
-                            <section class="container" id="music-groups">
-                                <ul>
-                                    <!-- CHANGED ALL "orchestra" to "orch" in html and css -->
-                                    <div class="music-groups orch">
-                                        <li class="orchestra">
-                                            <p class="orch-head">Senior Orchestra</p>
-                                            <p class="orch-grade">Grades 11-12</p>
-                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. <br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
-                                        </li>
-                                    </div>
-                                    <div class="music-groups orch">
-                                        <li class="orchestra">
-                                            <p class="orch-head">Intermediate Orchestra</p>
-                                            <p class="orch-grade">Grades 10</p>
-                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.<br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
-                                        </li>
-                                    </div>
-                                    <div class="music-groups orch">
-                                        <li class="orchestra">
-                                            <p class="orch-head">Junior Orchestra</p>
-                                            <p class="orch-grade">Grades 9</p>
-                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. <br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
-                                        </li>
-                                    </div>
-                                    <div class="music-groups guitar">
-                                        <li class="orchestra">
-                                            <p class="orch-head">Senior Guitar Ensemble</p>
-                                            <p class="orch-grade">Grades 11-12</p>
-                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.<br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
-                                        </li>
-                                    </div>
-                                    <div class="music-groups guitar">
-                                        <li class="orchestra">
-                                            <p class="orch-head">Junior Guitar Ensemble</p>
-                                            <p class="orch-grade">Grades 9-10</p>
-                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. <br><br> Want to sign up? <a href="#" class="link-register">Register now!</a> </p>
-                                        </li>
-                                    </div>
-                                    <div class="music-groups choir">
-                                        <!-- <li class="orchestra">
-                                            <p class="orch-head">Choir</p>
-                                            <p class="orch-grade">Grades 11-12</p>
-                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.<br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
-                                        </li> -->
-                                        <li class="orchestra">
-                                            <p class="orch-head" id="choir">Choir</p>
-                                            <p class="orch-grade">All Grades</p>
-                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.<br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
-                                        </li>
-                                    </div>
-                                    <div class="music-groups band">
-                                        <li class="orchestra">
-                                            <p class="orch-head">Band</p>
-                                            <p class="orch-grade">All Grades</p>
-                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. <br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
-                                        </li>
-                                    </div>
-                                    <div class="music-groups orch">
-                                        <li class="orchestra">
-                                            <p class="orch-head">Senior Chamber Orchestra</p>
-                                            <p class="orch-grade">All Grades</p>
-                                            <p class="descrp orch-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat bibendum luctus. Nam tempus consequat mauris, quis convallis tortor dapibus id.<br><br> Want to sign up? <a href="#" class="link-register">Register now!</a></p>
-                                        </li>
-                                    </div>
-                            </section>
+                    
+                    <div class="search-wrapper">
+                        <div class="search-bar-wrapper">
+                            <input type="text" id="club_search" class="club_search" oninput="searchWord = this.value.toLowerCase(); setupBoxes(music, 'music_boxes', 2);" placeholder="Search for a music group...">
+                            <i class="fas fa-search search-icon"></i>
                         </div>
-                    </main>
+                        <button class="dropdown-btn" onclick="toggleDropdown()">
+                            Filter
+                            <i class="fas fa-sort-down filter-icon"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdown">
+                        <div id="dropdown_content" class="dropdown_content">
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleMusicFilter('band')" name="choice" id="band" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="band">Band</label>
+                            </div>
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleMusicFilter('choir')" name="choice" id="choir" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="choir">Choir</label>
+                            </div>
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleMusicFilter('guitar')" name="choice" id="guitar" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="guitar">Guitar</label>
+                            </div>
+                            <div class="filter-wrapper">
+                                <input type="checkbox" onclick="toggleMusicFilter('orchestra')" name="choice" id="orchestra" class="filterbt">
+                                <i class="fas fa-check checkmark"></i>
+                                <label for="orchestra">Orchestra</label>
+                            </div>
+                        </div>
+                        <div class="clubs" id="music_boxes"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -178,5 +136,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script src="js/music.js"></script>
+        <script>
+            setupBoxes(music, "music_boxes", 2, (new URL(window.location.href).searchParams.get("box")));
+        </script>
     </body>
