@@ -422,7 +422,6 @@ input#club_search:focus {
 h4.t_history {
   font-size: 25px;
   font-weight: 100;
-  margin-top: 4%;
 }
 #team_popup {
 	display:  none;
@@ -433,8 +432,24 @@ h4.t_history {
 .a_row {
 	display: flex;
 }
+h3.title2 {
+  margin-top: 3%;
+}
+h5.coach {
+  font-weight: 100;
+}
 .a_row_2 {
 	display: flex;
+}
+h6.t_members {
+    margin-top: 1%;
+    position: absolute;
+    margin-left: 6%;
+}
+.t_pictures {
+    width: 15%;
+    margin-top: 3%;
+    margin-left: 5%;
 }
 .t_pictures {
 	width: 15%;

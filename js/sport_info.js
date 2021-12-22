@@ -32,8 +32,25 @@ async function setupSportPage(sportID) {
     // Building the main page
     let title = document.createElement("h2"); title.classList.add("a_title"); title.innerText = sport.name;
     page.appendChild(title);
+    let title1 = document.createElement("h3"); title1.classList.add("title2"); title1.innerText = "Team Details";
+    page.appendChild(title1);
+    if (sport.coach != undefined) {
+        let coach = document.createElement("h5"); coach.classList.add("coach");
+        coach.innerText = coach.innerText = "Coach: ".concat(" ").concat(sport.coach);
+        page.appendChild(coach);
+    };
+    if (sport.meeting_time != undefined) {
+        let time = document.createElement("h5"); time.classList.add("coach");
+        time.innerText = time.innerText = "Practices: ".concat(" ").concat(sport.meeting_time);
+        page.appendChild(time);
+    };
+
+    let title2 = document.createElement("h3"); title2.classList.add("title2"); title2.innerText = "Team History";
+    page.appendChild(title2);
     let h_title = document.createElement("h4"); h_title.classList.add("t_history"); h_title.innerText = sport.team_history;
     page.appendChild(h_title);
+    let title3 = document.createElement("h3"); title3.classList.add("title2"); title3.innerText = "Team Members";
+    page.appendChild(title3);
     let a_row = document.createElement("div"); a_row.classList.add("a_row");
         let members_1 = sport.members_g1;
         let t_members = " ";
@@ -46,19 +63,20 @@ async function setupSportPage(sportID) {
             };
     page.appendChild(a_row);
     if (sport.members_g2 != undefined) {
-        console.log("yes it is ");
         let a_row_2 = document.createElement("div"); a_row_2.classList.add("a_row");
+        let a_group = document.createElement("div"); a_group.classList.add("a_group");
         let members_2 = sport.members_g2;
         let t_members_2 = " ";
         let t_pictures_2 = " ";
             for (const [key, value] of Object.entries(members_2)) {
                 t_members_2 = document.createElement("h6"); t_members_2.classList.add("t_members"); t_members_2.innerText = key;
-                console.log(key);
-                console.log(value);
+                a_group.appendChild(t_members_2);
                 a_row_2.appendChild(t_members_2);
                 t_pictures_2 = document.createElement("img"); t_pictures_2.classList.add("t_pictures"); t_pictures_2.src = value;
+                a_group.appendChild(t_pictures_2);
                 a_row_2.appendChild(t_pictures_2);
             };
+            a_row_2.appendChild(a_group)
         page.appendChild(a_row_2);
     };
 }
