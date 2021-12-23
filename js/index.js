@@ -76,6 +76,104 @@ expand.addEventListener('click', function() {
     
 });
 
+function moveSlides(startIndex, offset, slideShowSources, slideShowDivIds, pageLocations, urlParameterNames) {
+    for (var slideShowIndex = 0; slideShowIndex < slideShowSources.length; slideShowIndex++) {
+        slideIndexes[slideShowIndex] += offset;
+        // Get the div we're using
+        var slideShowDiv = document.getElementById(slideShowDivIds[slideShowIndex]);
+        var slideShowSource = slideShowSources[slideShowIndex];
+        // Ensure that offset and index aren't overly large
+        while (slideIndexes[slideShowIndex] >= slideShowSource.length) {slideIndexes[slideShowIndex] -= slideShowSource.length} 
+        while (offset >= slideShowSource.length) {offset -= slideShowSource.length}
+
+        for (var new_offset = 0; new_offset < offset; new_offset++) {
+            var index = startIndex + new_offset;
+            // Get all c_item elements in our div
+            var c_items = slideShowDiv.getElementsByClassName("c_item");
+
+            // Remove the first c_item from the carousel
+            slideShowDiv.removeChild(c_items[0]);
+
+            // Add a new item
+            generateSlide(index, slideShowSource, slideShowDiv, pageLocations[slideShowIndex], urlParameterNames[slideShowIndex]);
+        }
+    }
+    // Schedule slides to move again in 2 seconds
+    setTimeout(moveSlides, 2000, startIndex+offset, offset, slideShowSources, slideShowDivIds, pageLocations, urlParameterNames);
+}
+
+function generateSlide(index, slideShowCards, slideShowDiv, pageLocation, urlParameterName) {
+    // Ensure that index is not larger than necessary
+    while (index >= slideShowCards.length) {index -= slideShowCards.length}
+
+    // Create a div for our item
+    var carousel_item = document.createElement("div");
+    carousel_item.classList.add("c_item");
+
+    // Link, image and name for our item
+    var link = document.createElement("a");
+    link.classList.add("hidden_link");
+    var image = document.createElement("img");
+    image.classList.add("c_image");
+    var club_name_header = document.createElement("h5");
+
+    // Set the link, image and name
+    if (pageLocation && urlParameterName)
+    link.href = pageLocation.concat("?").concat(urlParameterName).concat("=").concat(slideShowCards[index].id);
+    image.src = slideShowCards[index].image;
+    club_name_header.innerText = slideShowCards[index].name;
+
+    link.appendChild(image);
+    link.appendChild(club_name_header);
+    carousel_item.appendChild(link);
+
+    // Add the slide
+    slideShowDiv.appendChild(carousel_item);
+};
+// Code for the quiz
+document.one.onclick = function() {
+    window.question1 = document.one.op1.value;
+}
+
+document.two.onclick = function() {
+    window.question2 = document.two.op2.value;
+}
+
+document.three.onclick = function() {
+    window.question3 = document.three.op3.value;
+}
+
+document.four.onclick = function() {
+    window.question4 = document.four.op4.value;
+}
+
+document.five.onclick = function() {
+    window.question5 = document.five.op5.value;
+}
+
+function results() {
+    var user_answers = [window.question1, window.question2, window.question3, window.question4, window.question5];
+    var stem_answers = ["math", "science", "reading", "coding", "hard-working", "no", "yes"];
+    var academics_answers = ["math", "science", "business", "english", "reading", "hard-working", "passionate" ,"yes", "yes"];
+    var recreational_answers = ["art", "gym", "friends", "be on my phone", "friendly", "thoughtful", "no", "yes"];
+    var business_answers = [];
+    var social_justice_answers = [];
+    var leadership_answers = [];
+
+    var stem_l_2 = [];
+    var academics_l_2 = [];
+    var recreational_l_2 = [];
+    var business_l_2 = [];
+    var social_l_2 = [];
+    var leadership_l_2 = [];
+
+    for (i in user_answers) {
+        const occurrencesOf = (array, value) => array.filter((v) => (v === value)).length;
+        var test = occurrencesOf(i, stem_answers);
+
+    }
+}
+
 async function createCalendar(daysAhead) {
     if (!dataFetched) {
         await fetchData();
