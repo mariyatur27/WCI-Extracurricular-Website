@@ -101,12 +101,16 @@ input#club_search {
 	border-radius: 33px;
 	background-color: #F8F8F8;
 }
-
 input#club_search:focus {
 	outline: rgb(95, 95, 95) solid 1px;
 	background-color: #FFF;
 }
-
+.quiz_slide {
+  border: none;
+  box-shadow: 5px 10px 18px #888888;
+  width: 56%;
+  padding: 2%;
+}
 .search-icon {
 	position: absolute;
 	top: 11px;

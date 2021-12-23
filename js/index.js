@@ -168,6 +168,49 @@ function generateSlide(index, slideShowCards, slideShowDiv, pageLocation, urlPar
     // Add the slide
     slideShowDiv.appendChild(carousel_item);
 };
+// Code for the quiz
+document.one.onclick = function() {
+    window.question1 = document.one.op1.value;
+}
+
+document.two.onclick = function() {
+    window.question2 = document.two.op2.value;
+}
+
+document.three.onclick = function() {
+    window.question3 = document.three.op3.value;
+}
+
+document.four.onclick = function() {
+    window.question4 = document.four.op4.value;
+}
+
+document.five.onclick = function() {
+    window.question5 = document.five.op5.value;
+}
+
+function results() {
+    var user_answers = [window.question1, window.question2, window.question3, window.question4, window.question5];
+    var stem_answers = ["math", "science", "reading", "coding", "hard-working", "no", "yes"];
+    var academics_answers = ["math", "science", "business", "english", "reading", "hard-working", "passionate" ,"yes", "yes"];
+    var recreational_answers = ["art", "gym", "friends", "be on my phone", "friendly", "thoughtful", "no", "yes"];
+    var business_answers = [];
+    var social_justice_answers = [];
+    var leadership_answers = [];
+
+    var stem_l_2 = [];
+    var academics_l_2 = [];
+    var recreational_l_2 = [];
+    var business_l_2 = [];
+    var social_l_2 = [];
+    var leadership_l_2 = [];
+
+    for (i in user_answers) {
+        const occurrencesOf = (array, value) => array.filter((v) => (v === value)).length;
+        var test = occurrencesOf(i, stem_answers);
+
+    }
+}
 
 async function createCalendar(daysAhead) {
     if (!dataFetched) {
