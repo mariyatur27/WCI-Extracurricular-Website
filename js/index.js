@@ -61,44 +61,6 @@ function noResults() {
 function clearList(){
     list.innerHTML = "";
 }
-var slideIndexes = [];
-// Slide shows
-showSlides(Math.floor(window.innerWidth/260), [clubs, athletics, music], ["club_slide_show_cards", "athletics_slide_show_cards", "music_slide_show_cards"], true, ["clubs.html", "sport_info.html", undefined], ["box", "sport", undefined]);
-
-window.onresize = () => {showSlides(Math.floor(window.innerWidth/260), [clubs, athletics, music], ["club_slide_show_cards", "athletics_slide_show_cards", "music_slide_show_cards"], false, ["clubs.html", "sport_info.html", undefined], ["box", "sport", undefined])}
-
-async function showSlides(amount, slideShowSources, slideShowIds, reset, pageLocations, urlParameterNames) {
-    if (!dataFetched) {
-        await fetchData();
-    }
-    if (slideShowSources.length != slideShowIds.length) {
-        throw "Slide show contents and ids are not the same length!"
-    }
-    for (var slideShowIndex = 0; slideShowIndex < slideShowSources.length; slideShowIndex++) {
-        // Get the div for this slideshow
-        var slideShowDiv = document.getElementById(slideShowIds[slideShowIndex]);
-
-        // Clear the div
-        slideShowDiv.innerHTML = "";
-
-        // Generate slides for the div
-        for (var cardIndex = 0; cardIndex < amount; cardIndex++) {
-            if (!reset) {
-                var slideIndex = cardIndex + slideIndexes[slideShowIndex]
-            } else {
-                var slideIndex = cardIndex
-            }
-            generateSlide(slideIndex, slideShowSources[slideShowIndex], slideShowDiv, pageLocations[slideShowIndex], urlParameterNames[slideShowIndex]);
-        }
-        if (reset) {
-            slideIndexes.push(0);
-        }
-    }
-    // Schedule the slides to move in 2 seconds, if we need to
-    if (reset) {
-        setTimeout(moveSlides, 2000, amount+1, 1, slideShowSources, slideShowIds, pageLocations, urlParameterNames);
-    }
-}
 
 // var expand = document.getElementById("contributors");
 var contributors = document.getElementById("people");
