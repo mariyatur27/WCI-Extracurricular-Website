@@ -61,44 +61,6 @@ function noResults() {
 function clearList(){
     list.innerHTML = "";
 }
-var slideIndexes = [];
-// Slide shows
-showSlides(Math.floor(window.innerWidth/260), [clubs, athletics, music], ["club_slide_show_cards", "athletics_slide_show_cards", "music_slide_show_cards"], true, ["clubs.html", "sport_info.html", undefined], ["box", "sport", undefined]);
-
-window.onresize = () => {showSlides(Math.floor(window.innerWidth/260), [clubs, athletics, music], ["club_slide_show_cards", "athletics_slide_show_cards", "music_slide_show_cards"], false, ["clubs.html", "sport_info.html", undefined], ["box", "sport", undefined])}
-
-async function showSlides(amount, slideShowSources, slideShowIds, reset, pageLocations, urlParameterNames) {
-    if (!dataFetched) {
-        await fetchData();
-    }
-    if (slideShowSources.length != slideShowIds.length) {
-        throw "Slide show contents and ids are not the same length!"
-    }
-    for (var slideShowIndex = 0; slideShowIndex < slideShowSources.length; slideShowIndex++) {
-        // Get the div for this slideshow
-        var slideShowDiv = document.getElementById(slideShowIds[slideShowIndex]);
-
-        // Clear the div
-        slideShowDiv.innerHTML = "";
-
-        // Generate slides for the div
-        for (var cardIndex = 0; cardIndex < amount; cardIndex++) {
-            if (!reset) {
-                var slideIndex = cardIndex + slideIndexes[slideShowIndex]
-            } else {
-                var slideIndex = cardIndex
-            }
-            generateSlide(slideIndex, slideShowSources[slideShowIndex], slideShowDiv, pageLocations[slideShowIndex], urlParameterNames[slideShowIndex]);
-        }
-        if (reset) {
-            slideIndexes.push(0);
-        }
-    }
-    // Schedule the slides to move in 2 seconds, if we need to
-    if (reset) {
-        setTimeout(moveSlides, 2000, amount+1, 1, slideShowSources, slideShowIds, pageLocations, urlParameterNames);
-    }
-}
 
 // var expand = document.getElementById("contributors");
 var contributors = document.getElementById("people");
@@ -113,61 +75,6 @@ expand.addEventListener('click', function() {
     }
     
 });
-
-function moveSlides(startIndex, offset, slideShowSources, slideShowDivIds, pageLocations, urlParameterNames) {
-    for (var slideShowIndex = 0; slideShowIndex < slideShowSources.length; slideShowIndex++) {
-        slideIndexes[slideShowIndex] += offset;
-        // Get the div we're using
-        var slideShowDiv = document.getElementById(slideShowDivIds[slideShowIndex]);
-        var slideShowSource = slideShowSources[slideShowIndex];
-        // Ensure that offset and index aren't overly large
-        while (slideIndexes[slideShowIndex] >= slideShowSource.length) {slideIndexes[slideShowIndex] -= slideShowSource.length} 
-        while (offset >= slideShowSource.length) {offset -= slideShowSource.length}
-
-        for (var new_offset = 0; new_offset < offset; new_offset++) {
-            var index = startIndex + new_offset;
-            // Get all c_item elements in our div
-            var c_items = slideShowDiv.getElementsByClassName("c_item");
-
-            // Remove the first c_item from the carousel
-            slideShowDiv.removeChild(c_items[0]);
-
-            // Add a new item
-            generateSlide(index, slideShowSource, slideShowDiv, pageLocations[slideShowIndex], urlParameterNames[slideShowIndex]);
-        }
-    }
-    // Schedule slides to move again in 2 seconds
-    setTimeout(moveSlides, 2000, startIndex+offset, offset, slideShowSources, slideShowDivIds, pageLocations, urlParameterNames);
-}
-
-function generateSlide(index, slideShowCards, slideShowDiv, pageLocation, urlParameterName) {
-    // Ensure that index is not larger than necessary
-    while (index >= slideShowCards.length) {index -= slideShowCards.length}
-
-    // Create a div for our item
-    var carousel_item = document.createElement("div");
-    carousel_item.classList.add("c_item");
-
-    // Link, image and name for our item
-    var link = document.createElement("a");
-    link.classList.add("hidden_link");
-    var image = document.createElement("img");
-    image.classList.add("c_image");
-    var club_name_header = document.createElement("h5");
-
-    // Set the link, image and name
-    if (pageLocation && urlParameterName)
-    link.href = pageLocation.concat("?").concat(urlParameterName).concat("=").concat(slideShowCards[index].id);
-    image.src = slideShowCards[index].image;
-    club_name_header.innerText = slideShowCards[index].name;
-
-    link.appendChild(image);
-    link.appendChild(club_name_header);
-    carousel_item.appendChild(link);
-
-    // Add the slide
-    slideShowDiv.appendChild(carousel_item);
-};
 
 async function createCalendar(daysAhead) {
     if (!dataFetched) {
