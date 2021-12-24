@@ -30,29 +30,31 @@ async function setupSportPage(sportID) {
     }
     console.log(sport);
     // Building the main page
-    let title = document.createElement("h2"); title.classList.add("a_title"); title.innerText = sport.name;
-    page.appendChild(title);
-    let title1 = document.createElement("h3"); title1.classList.add("title2"); title1.innerText = "Team Details";
-    page.appendChild(title1);
+    let sport_name = document.createElement("h2"); sport_name.classList.add("a_title"); sport_name.innerText = sport.name;
+    page.appendChild(sport_name);
+    let team_details_title = document.createElement("h3"); team_details_title.classList.add("sport_info_title"); team_details_title.innerText = "Team Details";
+    page.appendChild(team_details_title);
     if ("coach" in sport) {
-        let coach = document.createElement("h5"); coach.classList.add("coach");
-        coach.innerText = coach.innerText = "Coaches: ".concat(" ").concat(sport.coach);
+        let coach = document.createElement("h5"); coach.classList.add("team_details_text");
+        coach.innerText = coach.innerText = "Coaches:".concat(" ").concat(sport.coach);
         page.appendChild(coach);
     };
-    let time = document.createElement("h5"); time.classList.add("coach");
+    let meeting_time = document.createElement("h5"); meeting_time.classList.add("team_details_text");
     if ("meeting_time_title" in sport) {
-        time.innerText = sport.meeting_time_title.concat(" ").concat(sport.meeting_time);
+        meeting_time.innerText = sport.meeting_time_title.concat(" ").concat(sport.meeting_time);
     } else {
-        time.innerText = "Meeting time: ".concat(sport.meeting_time);
+        meeting_time.innerText = "Meeting time: ".concat(sport.meeting_time);
     }
-    page.appendChild(time);
+    page.appendChild(meeting_time);
 
-    let title2 = document.createElement("h3"); title2.classList.add("title2"); title2.innerText = "Team History";
-    page.appendChild(title2);
-    let h_title = document.createElement("h4"); h_title.classList.add("t_history"); h_title.innerText = sport.team_history;
-    page.appendChild(h_title);
+    let team_history_title = document.createElement("h3"); team_history_title.classList.add("sport_info_title"); team_history_title.innerText = "Team History";
+    page.appendChild(team_history_title);
+
+    let team_history_text = document.createElement("h4"); team_history_text.classList.add("t_history"); team_history_text.innerText = sport.team_history;
+    page.appendChild(team_history_text);
+
     if ("members" in sport) {
-        let team_member_title = document.createElement("h3"); team_member_title.classList.add("title2"); team_member_title.innerText = "Team Members";
+        let team_member_title = document.createElement("h3"); team_member_title.classList.add("sport_info_title"); team_member_title.innerText = "Team Members";
         page.append(team_member_title);
         let team_members_div = document.createElement("div"); team_members_div.classList.add("team_members");
         for (const member of sport.members) {

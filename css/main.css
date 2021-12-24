@@ -498,7 +498,7 @@ h4.t_history {
 .a_row {
 	display: flex;
 }
-h3.title2 {
+h3.sport_info_title {
   margin-top: 3%;
 }
 img.t_pictures3 {
@@ -511,7 +511,7 @@ img.t_pictures4 {
     width: 42%;
     margin-bottom: 1%;
 }
-h5.coach {
+h5.team_details_text {
   font-weight: 100;
 }
 .a_row_2 {
