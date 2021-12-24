@@ -267,13 +267,13 @@ iframe#calendar {
 }
 
 .calendar_table {
-	margin: auto;
+	margin: 0 10%;
+	width: 80%;
 	table-layout: fixed;
 	border-collapse: collapse;
 }
 
 .calendar_col {
-	width: 25vw;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
 	vertical-align: top;
