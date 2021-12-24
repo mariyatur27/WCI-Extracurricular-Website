@@ -10,7 +10,9 @@
         "team_m_b": "Team Members",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
         "categories": [
-            "fall_sports"
+            "fall_sports",
+            "junior_sports",
+            "senior_sports"
         ],
         "tm1": {
             "name" : "Arthur Jackson",
@@ -30,7 +32,9 @@
         "members": ["Mariya" , "Tristan", "Charis", "Nuha", "ChingLam"],
         "categories": [
             "fall_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -49,7 +53,8 @@
         }],
         "categories": [
             "fall_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports"
         ]
     },
     {
@@ -68,7 +73,8 @@
         }],
         "categories": [
             "fall_sports",
-            "boys_sports"
+            "boys_sports",
+            "senior_sports"
         ]
     },
     {
@@ -87,7 +93,8 @@
         }],
         "categories": [
             "fall_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports"
         ]
     },
     {
@@ -106,7 +113,8 @@
         }],
         "categories": [
             "fall_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports"
         ]
     },
     {
@@ -125,7 +133,8 @@
         }],
         "categories": [
             "fall_sports",
-            "boys_sports"
+            "boys_sports",
+            "senior_sports"
         ]
     },
     {
@@ -144,7 +153,9 @@
         }],
         "categories": [
             "fall_sports",
-            "girls_sports"
+            "girls_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -163,7 +174,8 @@
         }],
         "categories": [
             "fall_sports",
-            "girls_sports"
+            "girls_sports",
+            "junior_sports"
         ]
     },
     {
@@ -182,7 +194,8 @@
         }],
         "categories": [
             "fall_sports",
-            "girls_sports"
+            "girls_sports",
+            "senior_sports"
         ]
     },
     {
@@ -201,7 +214,9 @@
         }],
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
-            "winter_sports"
+            "winter_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -219,7 +234,9 @@
             "image" : "assets/sport_images/running.png"
         }],
         "categories": [
-            "winter_sports"
+            "winter_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -232,7 +249,9 @@
         "meeting_time_title": "Practices:",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
-            "winter_sports"
+            "winter_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -246,7 +265,9 @@
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -260,7 +281,8 @@
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports"
         ]
     },
     {
@@ -274,7 +296,8 @@
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
-            "boys_sports"
+            "boys_sports",
+            "senior_sports"
         ]
     },
     {
@@ -288,7 +311,9 @@
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
-            "girls_sports"
+            "girls_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -302,7 +327,8 @@
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
-            "girls_sports"
+            "girls_sports",
+            "junior_sports"
         ]
     },
     {
@@ -316,7 +342,8 @@
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
-            "girls_sports"
+            "girls_sports",
+            "senior_sports"
         ]
     },
     {
@@ -328,7 +355,9 @@
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "spring_sports"
+            "spring_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -340,7 +369,9 @@
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "spring_sports"
+            "spring_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -353,7 +384,9 @@
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -366,7 +399,9 @@
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -379,7 +414,9 @@
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -392,7 +429,9 @@
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
-            "girls_sports"
+            "girls_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -405,7 +444,9 @@
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
-            "girls_sports"
+            "girls_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -418,7 +459,9 @@
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
-            "girls_sports"
+            "girls_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -430,7 +473,9 @@
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "spring_sports"
+            "spring_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     }
 ]
