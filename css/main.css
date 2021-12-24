@@ -267,8 +267,8 @@ iframe#calendar {
 }
 
 .calendar_table {
-	margin: 0 10%;
-	width: 80%;
+	margin: 0 2.5%;
+	width: 95%;
 	table-layout: fixed;
 	border-collapse: collapse;
 }
@@ -412,6 +412,7 @@ input#club_search:focus {
 	background-color: #FFF;
 }
 #weekly_calendar {
+  margin-top: 4%;
   padding: 0rem 0;
 }
 #people {
