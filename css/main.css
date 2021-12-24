@@ -392,8 +392,7 @@ button.drop {
 }
 .contributors {
 	text-decoration: none;
-	margin-left: 1%;
-	border-radius: 100px;
+	border-radius: 50%;
 	padding: 7px 8px;
 	font-size: 17px;
 	border: none;
@@ -432,14 +431,12 @@ input#club_search:focus {
 }
 #tristan{
 	background-color: #678fea;
-	padding: 9px 10px;
 }
 #chinglam{
 	background-color: #f4b4bf;
 }
 #jiwon{
 	background-color: #a3e6a3;
-	padding: 4px 10px;
 }
 #brian{
 	background-color: #fccea4;
