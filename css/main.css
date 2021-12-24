@@ -347,18 +347,21 @@ h2.section-heading {
 
 .answer {
 	width: 100%;
-	padding: 3% 4%;
 	border-radius: 21px;
-	display: none;
+	max-height: 0;
+	overflow: hidden;
 	text-align: left;
+	transition: all 0.25s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
 .answer p {
 	text-align: left;
+	padding: 3% 4%;
 }
 
 .active .answer {
-	display: block;
+	max-height: 100vh;
+	transition: all 0.25s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .expand_box {
