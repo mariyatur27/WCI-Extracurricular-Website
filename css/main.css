@@ -104,9 +104,46 @@ p.descrp {
 	margin-bottom: 100px;
 }
 
+.search-form {
+	margin-left: 0;
+}
+
+.results_container {
+	width: 98%;
+	display: flex;
+	justify-content: center;
+}
+
+.results_list {
+	width: 81%;
+	margin-left: 0;
+	padding: 5px 0;
+	margin-top: 10px;
+	border-radius: 5px;
+	background-color: #FFF;
+	list-style-type: none;
+	opacity: 0;
+}
+
+.result-item {
+	color: black;
+	display: block;
+	padding: 15px;
+	padding-left: 40px;
+	text-align: left;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.result-item:hover {
+	color: black;
+	background-color: #e6e6e6;
+	transition: background-color 0.2s ease;
+}
+
 .search_bar {
-	padding: 1% 3%;
-	width: 50%;
+	padding: 1% 50px;
+	width: 80%;
 	border-radius: 27px;
 	border: none;
 }
@@ -160,11 +197,20 @@ input#club_search:focus {
   width: 56%;
   padding: 2%;
 }
+
 .search-icon {
+	color: black;
 	position: relative;
 	top: 11px;
 	right: 35px;
 }
+
+.large-search-icon {
+	font-size: 1.2em;
+	top: 0;
+	right: 40px;
+}
+
 
 .dropdown-btn {
 	position: relative;
@@ -820,19 +866,6 @@ p.dscr {
 #search_button:hover {
 	color: #0A1241;
 	background-color: lightblue;
-}
-
-a.result-item {
-	text-align: center;
-	list-style-type: none;
-	background-color: #f2f2f2;
-	color: black;
-	width: 35%;
-	padding: 1% 1%;
-	margin-top: 1%;
-	border-radius: 33px;
-	margin-left: 27%;
-	display: block;
 }
 
 button.web_button {
