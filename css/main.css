@@ -500,6 +500,28 @@ h4.t_history {
 h3.title2 {
   margin-top: 3%;
 }
+img.t_pictures3 {
+    width: 27%;
+}
+img.t_pictures2 {
+    width: 20%;
+}
+.a_group3 {
+    margin-top: -93.7%;
+    margin-left: 43%;
+}
+.a_group2 {
+    margin-left: 24%;
+    margin-top: -95%;
+}
+.a_group4 {
+    margin-top: -93%;
+    margin-left: 63%;
+}
+img.t_pictures4 {
+    width: 42%;
+    margin-bottom: 1%;
+}
 h5.coach {
   font-weight: 100;
 }
@@ -507,13 +529,12 @@ h5.coach {
 	display: flex;
 }
 h6.t_members {
-    margin-top: 1%;
-    position: absolute;
+    margin-top: 2%;
     margin-left: 6%;
 }
 .t_pictures {
     width: 15%;
-    margin-top: 3%;
+    margin-top: 0%;
     margin-left: 5%;
 }
 .t_pictures {
