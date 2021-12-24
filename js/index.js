@@ -11,26 +11,62 @@ async function searchMainPage(value) {
         value = value.trim().toLowerCase();
 
         // Only returning those results of the showResults that match the user input in the search bar
-        showResults([clubs.filter(activity => {
+        var filteredResults = [clubs.filter(activity => {
             return activity.name.toLowerCase().includes(value);
         }), athletics.filter(activity => {
             return activity.name.toLowerCase().includes(value);
         }), music.filter(activity => {
             return activity.name.toLowerCase().includes(value);
-        })],
+        })]
+        showResults(value, filteredResults,
         ["clubs.html", "sport_info.html", undefined],
         ["box", "sport", undefined]);
     } else {
         for (const link of smLinks ) {link.style.display = "inline";};
+        noResults();
     }
 }
 
+function createSearchResult(value, resultItem) {
+    value = value.toLowerCase();
+    for (var idx = 0; idx < resultItem.length - value.length + 1; idx++) {
+        var resultSubstring = resultItem.substring(idx, idx + value.length).toLowerCase();
+        if (resultSubstring == value) {
+            var resultName = document.createElement('div');
+
+            var resultPrefix = document.createElement('span');
+            resultPrefix.innerText = resultItem.substring(0, idx);
+
+            var resultSuffix = document.createElement('span');
+            resultSuffix.innerText = resultItem.substring(idx + value.length, resultItem.length);
+            
+            var matchingText = document.createElement('b');
+            matchingText.innerText = resultItem.substring(idx, idx + value.length);
+            
+            resultName.appendChild(resultPrefix);
+            resultName.appendChild(matchingText);
+            resultName.appendChild(resultSuffix);
+            return resultName;
+        }
+    }
+
+    return document.createElement('p')
+} 
+
 // Showing results from the search
-function showResults(resultsList, pageUrls, urlParameters){
+function showResults(value, resultsList, pageUrls, urlParameters){
+    var totalResults = 0;
+    var results = document.getElementById("list");
+    results.style.opacity = "1";
+
     for (var resultIndex = 0; resultIndex<resultsList.length; resultIndex++) {
+        totalResults += resultsList[resultIndex].length;
+
         for (const result of resultsList[resultIndex]) {
             const resultItem = document.createElement('a');
-            resultItem.innerText = result.name;
+            var resultName = createSearchResult(value, result.name);
+            
+            resultItem.appendChild(resultName)
             
             resultItem.classList.add('result-item');
             if (pageUrls[resultIndex] && urlParameters[resultIndex]) {
@@ -40,21 +76,16 @@ function showResults(resultsList, pageUrls, urlParameters){
             results.appendChild(resultItem);
         }
     }
-    if (results.length === 0) {
-        noResults()
+
+    if (totalResults == 0) {
+        noResults();
     }
 }
 
 // Showing no results
 function noResults() {
-    const error = document.createElement('li')
-    error.classList.add('error-message')
-
-    const text = document.createTextNode('We were not able to find what you are looking for. Sorry.')
-
-    error.appendChild(text)
-
-    list.appendChild(error)
+    var results = document.getElementById("list");
+    results.style.opacity = "0";
 }
 
 // Clearing results from the page 

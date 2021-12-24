@@ -49,14 +49,14 @@
         </nav>
         <!-- Masthead-->
         <header class="masthead">
-            <div class="container">
+            <div class="container landing">
                 <div class="masthead-subheading">Welcome to WCI Extracurriculars!</div>
                 <div class="masthead-heading text-uppercase">Explore Your Options</div>
                 <!-- Making a Search Bar -->
-                <form class="form">
-                    <input type="text" id="search_bar" class="search_bar" placeholder="Search for an extracurricular activity..." oninput="searchMainPage(this.value);">
-                    <a class="btn btn-primary btn-xl text-uppercase" id="search_button" onclick="searchMainPage(document.getElementById('search_bar').value);">Search</a>
-                </form>
+                <div class="search-form">
+                    <input type="text" id="search_bar" class="search_bar" placeholder="Search for an extracurricular activity..." oninput="searchMainPage(this.value);" autocomplete="off">
+                    <i class="fas fa-search search-icon large-search-icon"></i>
+                </div>
                 <div class="results_container">
                     <ul class="results_list" id="list">
                         
