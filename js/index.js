@@ -141,7 +141,7 @@ function results() {
     var user_answers = [window.question1, window.question2, window.question3, window.question4, window.question5];
     var stem_answers = ["math", "science", "reading", "coding", "hard-working", "no", "yes"];
     var academics_answers = ["math", "science", "business", "english", "reading", "hard-working", "passionate" ,"yes", "yes"];
-    var recreational_answers = ["art", "gym", "friends", "be on my phone", "friendly", "thoughtful", "no", "yes"];
+    var recreational_answers = ["art", "gym", "friends", "be on my phone", "artistic", "thoughtful", "no", "no"];
     var business_answers = [];
     var social_justice_answers = [];
     var leadership_answers = [];
@@ -152,12 +152,48 @@ function results() {
     var business_l_2 = [];
     var social_l_2 = [];
     var leadership_l_2 = [];
+    var final_list = [];
+    let empty_dictionary = [];
 
-    for (i in user_answers) {
-        const occurrencesOf = (array, value) => array.filter((v) => (v === value)).length;
-        var test = occurrencesOf(i, stem_answers);
-
+    for (let i = 0; i < user_answers.length; i++) {
+        if (stem_answers.includes(user_answers[i])) {
+            stem_l_2.push(1);
+        };
+        if (academics_answers.includes(user_answers[i])) {
+            academics_l_2.push(1);
+        };
+        if (recreational_answers.includes(user_answers[i])) {
+            recreational_l_2.push(1);
+        };
+    };
+    let all_lists = [stem_l_2, academics_l_2, recreational_l_2]
+    for (let i = 0; i < all_lists.length; i++){
+        if (all_lists[i].length != 0) {
+            var sum = parseInt(all_lists[i].reduce((partial_sum, a) => partial_sum + a));
+        } else {
+            var sum = 0;
+        }
+        empty_dictionary.push({ key: all_lists[i], value: sum });
+        final_list.push(sum);
     }
+
+    let max_value = Math.max(... final_list);
+    console.log(max_value);
+    console.log(empty_dictionary);
+    console.log(empty_dictionary[1, 1, 1, 1, 1]);
+
+
+    // if (empty_dictionary[stem_l_2] = max_value) {
+    //     console.log("STEM");
+    //     document.getElementById('output').innerHTML = "You should join STEM category clubs";
+    // }else if (empty_dictionary[academics_l_2] = max_value) {
+    //     console.log("ACADEMICS");
+    //     document.getElementById('output').innerHTML = "You should join Academic category clubs";
+    // }else if (empty_dictionary[recreational_l_2] = max_value) {
+    //     console.log("RECREATIONAL");
+    //     document.getElementById('output').innerHTML = "You should join Recreational category clubs";
+    // }
+
 }
 
 async function createCalendar(daysAhead) {
