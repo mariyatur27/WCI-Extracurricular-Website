@@ -161,9 +161,9 @@ input#club_search:focus {
   padding: 2%;
 }
 .search-icon {
-	position: absolute;
+	position: relative;
 	top: 11px;
-	right: 16px;
+	right: 35px;
 }
 
 .dropdown-btn {
