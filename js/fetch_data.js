@@ -494,7 +494,9 @@ var athletics = [
         "team_m_b": "Team Members",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
         "categories": [
-            "fall_sports"
+            "fall_sports",
+            "junior_sports",
+            "senior_sports"
         ],
         "tm1": {
             "name" : "Arthur Jackson",
@@ -514,7 +516,9 @@ var athletics = [
         "members": ["Mariya" , "Tristan", "Charis", "Nuha", "ChingLam"],
         "categories": [
             "fall_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -533,7 +537,8 @@ var athletics = [
         }],
         "categories": [
             "fall_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports"
         ]
     },
     {
@@ -552,37 +557,28 @@ var athletics = [
         }],
         "categories": [
             "fall_sports",
-            "boys_sports"
+            "boys_sports",
+            "senior_sports"
         ]
     },
     {
         "name": "Jr. Boys Soccer",
         "id": "jrboyssoccer",
         "connection_links": [],
-        "coach": "Mr. Nelson",
         "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
-        "members_g1" : {
-            "Mariya" : "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
-            "Tristan" : "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
-            "Nuha" : "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
-            "Charis" : "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
-            "Jiwon" : "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"
-        },
-        "members_g2" : {
-            "Alex" : "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
-            "Theo" : "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
-            "Julia" : "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
-            "Jane" : "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0",
-            "Ale" : "https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"
-        },
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
+         "tm1": [{
+            "name" : "Arthur Jackson",
+            "image" : "assets/sport_images/running.png"
+        }],
         "categories": [
             "fall_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports"
         ]
     },
     {
@@ -601,7 +597,8 @@ var athletics = [
         }],
         "categories": [
             "fall_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports"
         ]
     },
     {
@@ -620,7 +617,8 @@ var athletics = [
         }],
         "categories": [
             "fall_sports",
-            "boys_sports"
+            "boys_sports",
+            "senior_sports"
         ]
     },
     {
@@ -664,7 +662,9 @@ var athletics = [
         },
         "categories": [
             "fall_sports",
-            "girls_sports"
+            "girls_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -683,7 +683,8 @@ var athletics = [
         }],
         "categories": [
             "fall_sports",
-            "girls_sports"
+            "girls_sports",
+            "junior_sports"
         ]
     },
     {
@@ -702,7 +703,8 @@ var athletics = [
         }],
         "categories": [
             "fall_sports",
-            "girls_sports"
+            "girls_sports",
+            "senior_sports"
         ]
     },
     {
@@ -721,7 +723,9 @@ var athletics = [
         }],
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
-            "winter_sports"
+            "winter_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -739,7 +743,9 @@ var athletics = [
             "image" : "assets/sport_images/running.png"
         }],
         "categories": [
-            "winter_sports"
+            "winter_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -752,7 +758,9 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
-            "winter_sports"
+            "winter_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -766,7 +774,9 @@ var athletics = [
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -780,7 +790,8 @@ var athletics = [
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports"
         ]
     },
     {
@@ -794,7 +805,8 @@ var athletics = [
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
-            "boys_sports"
+            "boys_sports",
+            "senior_sports"
         ]
     },
     {
@@ -808,7 +820,9 @@ var athletics = [
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
-            "girls_sports"
+            "girls_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -822,7 +836,8 @@ var athletics = [
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
-            "girls_sports"
+            "girls_sports",
+            "junior_sports"
         ]
     },
     {
@@ -836,7 +851,8 @@ var athletics = [
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
-            "girls_sports"
+            "girls_sports",
+            "senior_sports"
         ]
     },
     {
@@ -848,7 +864,9 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "spring_sports"
+            "spring_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -860,7 +878,9 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "spring_sports"
+            "spring_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -873,7 +893,9 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -886,7 +908,9 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -899,7 +923,9 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
-            "boys_sports"
+            "boys_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -912,7 +938,9 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
-            "girls_sports"
+            "girls_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -925,7 +953,9 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
-            "girls_sports"
+            "girls_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -938,7 +968,9 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
-            "girls_sports"
+            "girls_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     },
     {
@@ -950,7 +982,9 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "spring_sports"
+            "spring_sports",
+            "junior_sports",
+            "senior_sports"
         ]
     }
 ];
