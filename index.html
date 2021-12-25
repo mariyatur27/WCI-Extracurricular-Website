@@ -54,7 +54,7 @@
                 <div class="masthead-heading text-uppercase">Explore Your Options</div>
                 <!-- Making a Search Bar -->
                 <div class="search-form">
-                    <input type="text" id="search_bar" class="search_bar" placeholder="Search for an extracurricular activity..." oninput="searchMainPage(this.value);" autocomplete="off">
+                    <input type="text" id="search_bar" class="search_bar" placeholder="Search for an extracurricular activity..." oninput="searchMainPage(this.value);" autocomplete="off" onfocusin="searchMainPage(this.value)" onfocusout="hideResults()">
                     <i class="fas fa-search search-icon large-search-icon"></i>
                 </div>
                 <div class="results_container">

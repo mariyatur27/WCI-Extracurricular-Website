@@ -14,7 +14,7 @@ async function searchMainPage(value) {
         showResults(value, topResults(value));
     } else {
         for (const link of smLinks ) {link.style.display = "inline";};
-        noResults();
+        hideResults();
     }
 }
 
@@ -119,12 +119,12 @@ function showResults(value, resultsList) {
     }
 
     if (resultsList.length == 0) {
-        noResults();
+        hideResults();
     }
 }
 
 // Showing no results
-function noResults() {
+function hideResults() {
     var results = document.getElementById("list");
     results.style.opacity = "0";
 }

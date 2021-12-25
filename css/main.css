@@ -115,7 +115,8 @@ p.descrp {
 }
 
 .results_list {
-	width: 81%;
+	position: absolute;
+	width: 68vw;
 	margin-left: 0;
 	padding: 5px 0;
 	margin-top: 10px;
@@ -123,13 +124,14 @@ p.descrp {
 	background-color: #FFF;
 	list-style-type: none;
 	opacity: 0;
+	box-shadow: 5px 5px 18px 6px rgba(2, 13, 27, 0.18);
 }
 
 .result-item {
 	color: black;
 	display: block;
-	padding: 15px;
-	padding-left: 40px;
+	padding: 12px 20px;
+	padding-left: 50px;
 	text-align: left;
 	list-style-type: none;
 	text-decoration: none;
@@ -143,7 +145,7 @@ p.descrp {
 
 .search_bar {
 	padding: 1% 50px;
-	width: 80%;
+	width: 68vw;
 	border-radius: 27px;
 	border: none;
 }
