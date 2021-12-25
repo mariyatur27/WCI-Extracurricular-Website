@@ -10,74 +10,115 @@ async function searchMainPage(value) {
         for (const link of smLinks ) {link.style.display = "none";};
         value = value.trim().toLowerCase();
 
-        // Only returning those results of the showResults that match the user input in the search bar
-        var filteredResults = [clubs.filter(activity => {
-            return activity.name.toLowerCase().includes(value);
-        }), athletics.filter(activity => {
-            return activity.name.toLowerCase().includes(value);
-        }), music.filter(activity => {
-            return activity.name.toLowerCase().includes(value);
-        })]
-        showResults(value, filteredResults,
-        ["clubs.html", "sport_info.html", undefined],
-        ["box", "sport", undefined]);
+        // Only returning those results of the showResults that match the user input in the search bar     
+        showResults(value, topResults(value));
     } else {
         for (const link of smLinks ) {link.style.display = "inline";};
         noResults();
     }
 }
 
-function createSearchResult(value, resultItem) {
-    value = value.toLowerCase();
-    for (var idx = 0; idx < resultItem.length - value.length + 1; idx++) {
-        var resultSubstring = resultItem.substring(idx, idx + value.length).toLowerCase();
-        if (resultSubstring == value) {
-            var resultName = document.createElement('div');
-
-            var resultPrefix = document.createElement('span');
-            resultPrefix.innerText = resultItem.substring(0, idx);
-
-            var resultSuffix = document.createElement('span');
-            resultSuffix.innerText = resultItem.substring(idx + value.length, resultItem.length);
-            
-            var matchingText = document.createElement('b');
-            matchingText.innerText = resultItem.substring(idx, idx + value.length);
-            
-            resultName.appendChild(resultPrefix);
-            resultName.appendChild(matchingText);
-            resultName.appendChild(resultSuffix);
-            return resultName;
+function generateMatchScore(value, name, originalName) {
+    // generate a score based on how good the match is
+    // 1. search value matches the beginning of the string
+    // 2. search value matches a substring beginning with an uppercase 
+    var score = -1;
+    var start, end;
+    for (var idx = 0; idx < name.length - value.length + 1; idx++) {
+        var tmpScore = 0;
+        var nameSubstring = name.substring(idx, idx + value.length).toLowerCase();
+        if (nameSubstring == value) {
+            if (idx == 0) tmpScore++;
+            if (originalName[idx] == originalName[idx].toUpperCase()) tmpScore++;
+            if (tmpScore > score) {
+                score = tmpScore;
+                start = idx;
+                end = idx + value.length;
+            }
         }
     }
+    return {score, start, end};
+}
 
-    return document.createElement('p')
+function filterResults(value, activities, redirectPage, urlParamName) {
+    // filters results that contain the search value
+    // information is attached to each activity
+    var resultsList = [];
+    for (var activity of activities) {
+        var name = activity.name.toLowerCase()
+        if (name.includes(value)) {
+            var {score, start, end} = generateMatchScore(value, name, activity.name);
+            activity.score = score;
+            activity.start = start;
+            activity.end = end;
+
+            activity.redirectPage = redirectPage;
+            activity.urlParamName = urlParamName;
+            
+            resultsList.push(activity);
+        }
+    }
+    return resultsList;
+}
+
+function topResults(value) {
+    // sorts results based on scores
+    // shows a maximum of 6 results
+    var filteredResults = filterResults(value, clubs, "clubs.html", "box");
+    filteredResults = filteredResults.concat(filterResults(value, athletics, "sport_info.html", "sport"));
+    filteredResults = filteredResults.concat(filterResults(value, music));
+    filteredResults.sort(function(a, b) {
+        return - (a.score - b.score);
+    });
+    
+    if (filteredResults.length > 6) {
+        filteredResults = filteredResults.slice(0, 6);
+    }
+    return filteredResults;
+}
+
+function createSearchResult(value, resultItem) {
+    // substring that matches the search value is bolded
+    value = value.toLowerCase();
+    var name = resultItem.name;
+
+    var resultName = document.createElement('div');
+
+    var resultPrefix = document.createElement('span');
+    resultPrefix.innerText = name.substring(0, resultItem.start);
+
+    var resultSuffix = document.createElement('span');
+    resultSuffix.innerText = name.substring(resultItem.end, name.length);
+    
+    var matchingText = document.createElement('b');
+    matchingText.innerText = name.substring(resultItem.start, resultItem.end);
+    
+    resultName.appendChild(resultPrefix);
+    resultName.appendChild(matchingText);
+    resultName.appendChild(resultSuffix);
+    return resultName;
 } 
 
 // Showing results from the search
-function showResults(value, resultsList, pageUrls, urlParameters){
-    var totalResults = 0;
+function showResults(value, resultsList) {
     var results = document.getElementById("list");
     results.style.opacity = "1";
 
-    for (var resultIndex = 0; resultIndex<resultsList.length; resultIndex++) {
-        totalResults += resultsList[resultIndex].length;
-
-        for (const result of resultsList[resultIndex]) {
-            const resultItem = document.createElement('a');
-            var resultName = createSearchResult(value, result.name);
-            
-            resultItem.appendChild(resultName)
-            
-            resultItem.classList.add('result-item');
-            if (pageUrls[resultIndex] && urlParameters[resultIndex]) {
-                resultItem.href = pageUrls[resultIndex].concat("?").concat(urlParameters[resultIndex]).concat("=").concat(result.id);
-            }
-            var results = document.getElementById("list");
-            results.appendChild(resultItem);
+    for (const result of resultsList) {
+        const resultItem = document.createElement('a');
+        var resultName = createSearchResult(value, result);
+        
+        resultItem.appendChild(resultName)
+        
+        resultItem.classList.add('result-item');
+        if (result.redirectPage && result.urlParamName) {
+            resultItem.href = result.redirectPage + "?" + result.urlParamName + "=" + result.id;
         }
+        var results = document.getElementById("list");
+        results.appendChild(resultItem);
     }
 
-    if (totalResults == 0) {
+    if (resultsList.length == 0) {
         noResults();
     }
 }
