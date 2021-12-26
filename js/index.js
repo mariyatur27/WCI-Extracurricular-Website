@@ -316,5 +316,5 @@ async function createCalendar(daysAhead) {
         table.appendChild(row);
     }
 }
-createCalendar(Math.floor(window.innerWidth/290));
-window.onresize = () => {createCalendar(Math.floor(window.innerWidth/290))}
+createCalendar(Math.min(Math.floor(window.innerWidth/250), 7));
+window.onresize = () => {createCalendar(Math.min(Math.floor(window.innerWidth/250), 7))}
