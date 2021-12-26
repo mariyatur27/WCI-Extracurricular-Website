@@ -318,3 +318,20 @@ async function createCalendar(daysAhead) {
 }
 createCalendar(Math.floor(window.innerWidth/290));
 window.onresize = () => {createCalendar(Math.floor(window.innerWidth/290))}
+
+async function createPopup() {
+    if (!dataFetched) {
+        await fetchData();
+    }
+    let event = events[0];
+    var div = document.getElementById("event-popup");
+	var txt = document.getElementById("event-popup-text");
+	var icon = document.getElementById("event-popup-icon");
+	div.style.display = "flex";
+	txt.innerHTML = event.title;
+	div.style.backgroundColor = "#00F";
+	icon.src = "";
+	icon.style.display = "none";
+	txt.style.left = "8px";
+}
+createPopup();
