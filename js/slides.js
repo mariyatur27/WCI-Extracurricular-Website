@@ -1,4 +1,7 @@
-function generateSlideshow(cardsData, slideshowId, redirectPage, urlParamName) {
+async function generateSlideshow(cardsData, slideshowId, redirectPage, urlParamName) {
+    if (!dataFetched) {
+        await fetchData();
+    }
     var slideAt = 1;
     var slideshow = document.getElementById(slideshowId);
 
