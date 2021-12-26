@@ -31,57 +31,6 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
             if (boxCount % countPerRow == 0) {
                 row = document.createElement("div"); row.classList.add("club_row");
             }
-            let body = document.getElementsByTagName("body")[0];
-            // Making a pop-up onclick
-                let popup_section = document.createElement("div"); popup_section.classList.add("team_history_section");
-                popup_section.id = "history_popup";
-                    let s_header = document.createElement("h2"); s_header.classList.add("s_header"); s_header.innerText = "Team History";
-                    popup_section.appendChild(s_header);
-                    let text = document.createElement("p"); text.classList.add("his_txt"); text.innerText = boxData.team_history;
-                    popup_section.appendChild(text);
-                    let close_1 = document.createElement("button"); close_1.classList.add("close_bt"); close_1.name = "close"; close_1.type = "button"; close_1.innerText = "X";
-                    close_1.addEventListener('click', function() {
-                        popup_section.style.display = "none";
-                    });
-                popup_section.appendChild(close_1);
-            body.appendChild(popup_section);
-
-            let body2 = document.getElementsByTagName("body")[0];
-            // Making a pop-up onclick
-                let popup_section_2 = document.createElement("div"); popup_section_2.classList.add("team_history_section");
-                popup_section_2.id = "team_popup";
-                    let s_header_2 = document.createElement("h2"); s_header_2.classList.add("s_header"); s_header_2.innerText = "Team Members" + boxData.name;
-                    popup_section_2.appendChild(s_header_2);
-                    let close_2 = document.createElement("button"); close_2.classList.add("close_bt"); close_2.name = "close"; close_2.type = "button"; close_2.innerText = "X";
-                    close_2.addEventListener('click', function() {
-                        popup_section_2.style.display = "none";
-                    });
-                    popup_section_2.appendChild(close_2);
-
-                    for (member in boxData.members){
-                        let member_name = boxData.members[member];
-                        let member_line = document.createElement("h4"); member_line.classList.add("team_members"); member_line.innerText = member_name;
-                        popup_section_2.appendChild(member_line);
-                    }
-
-                    /*let team_members = boxData.members;
-                    for (var x = 0; x < 9; x++) {
-                        let team_names = boxData.members[x];
-                        let member_line = document.createElement("h4"); member_line.classList.add("team_members");  member_line.innerText = team_names;
-                    }
-                    popup_section_2.appendChild(member_line);*/
-
-                    // let member_line = document.createElement("h4"); member_line.classList.add("team_members"); member_line.innerText = team_names;
-                    //     for (member in boxData.members) {
-                    //         let team_names = boxData.members[member];
-                    //         console.log(team_names);
-                    //         member_line.innerText = team_names;
-                    //         member_line.appendChild(team_names);
-                    // }
-                    // popup_section_2.appendChild(member_line);
-
-            body2.appendChild(popup_section_2);
-
             let box = document.createElement("div"); box.classList.add("club_box", "seperate");
                 let header = document.createElement("div"); header.classList.add("club_header");
                     let main_image = document.createElement("img"); main_image.classList.add("club_img"); main_image.src = boxData.image;
@@ -141,61 +90,33 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                         }
                     expand_box.appendChild(expand_box_core_content);
 
-                    let center = document.createElement("div"); center.classList.add("center_elements");
-                    if ("team_history" in boxData) {
-                        let team_history = document.createElement("button"); team_history.classList.add("web_link_2"); team_history.type="button"; team_history.name = "team_history";
-                        team_history.innerText = "Team History";
-                        team_history.id = 'team_history_button';
-                        team_history.addEventListener('click', function() {
-                            document.getElementById("history_popup").style.display = "block";
-                            document.getElementById("team_popup").style.display = "none";
-
-                        });
-                        center.appendChild(team_history);
-                        expand_box.appendChild(team_history);
-                    }
-                    if ("team_m_b" in boxData) {
-                        let team_m_b = document.createElement("button"); team_m_b.classList.add("web_link_2"); team_m_b.type="button"; team_m_b.name = "team_members";
-                        team_m_b.innerText = "Team Members";
-                        team_m_b.id = 'team_member_button';
-                        team_m_b.addEventListener('click', function() {
-                            document.getElementById("team_popup").style.display = "block";
-                            document.getElementById("history_popup").style.display = "none";
-
-                        });
-                        center.appendChild(team_m_b);
-                        expand_box.appendChild(team_m_b);
-                    }
-
-
                     let box_links = document.createElement("div"); box_links.classList.add("together", "club-links");
                     for (link of boxData.connection_links) {
                         if (link in connection_links) {
+                            let connection_link = connection_links[link];
                             let link_a = document.createElement("a");
-                            if ("link_prefix" in connection_links[link]) {
-                                link_a.href = connection_links[link].link_prefix.concat(boxData[link]);
-                            } else {
-                                link_a.href = boxData[link];
+                            let link_href = boxData[link];
+                            if (link_href == undefined) {
+                                link_href = "";
                             }
-
-                            if (connection_links[link].type == "button") {
+                            if ("link_prefix" in connection_link) link_href = connection_link.link_prefix.concat(link_href);
+                            if ("postfix_id" in connection_link) if (connection_link.postfix_id) link_href = link_href.concat(boxData.id);
+                            
+                            link_a.href = link_href;
+                            
+                            if (connection_link.type == "button") {
                                 link_a.classList.add("web_link");
                                 var link_image = document.createElement("button"); link_image.classList.add("web_link"); link_image.type="button"; link_image.name="club_btn";
-                                link_image.innerText = connection_links[link].label;
-
-
-                            } else if (connection_links[link].type == "icon") {
+                                link_image.innerText = connection_link.label;
+                            } else if (connection_link.type == "icon") {
                                 link_a.classList.add("icons");
                                 var link_image = document.createElement("img"); link_image.classList.add("icons");
-                                link_image.src = connection_links[link].icon;
+                                link_image.src = connection_link.icon;
                             } else {
-                                throw "Unrecognized connection link type: ".concat(connection_links[link].type)
+                                throw "Unrecognized connection link type: ".concat(connection_link.type)
                             }
-
+                            
                             link_a.appendChild(link_image);
-                            if ("team_m_b" in boxData) {
-                                link_a.appendChild(team_m_b);
-                            }
                             box_links.appendChild(link_a);
                         }
                     }

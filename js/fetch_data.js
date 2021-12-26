@@ -469,17 +469,16 @@ var connection_links = {
         "icon": "assets/icons/email.png",
         "link_prefix": "mailto:"
     },
-    "team_mem" : {
-        "type" : "button",
-        "label" : "Team Members"
-    },
-    "team_history" : {
-        "type" : "button",
-        "label" : "Team History"
-    },
     "website": {
         "type": "button",
-        "label": "Club website"
+        "label": "Club website",
+        "icon": "assets/icons/website.png"
+    },
+    "more_info": {
+        "type": "button",
+        "label": "More Information",
+        "link_prefix": "sport_info.html?sport=",
+        "postfix_id": true
     }
 };
 var athletics = [
@@ -624,7 +623,7 @@ var athletics = [
     {
         "name": "Girls Field Hockey",
         "id": "girlsfieldhockey",
-        "connection_links": [],
+        "connection_links": ["more_info"],
         "image": "assets/sport_images/volleyball.png",
         "coach" : "L. Gowing, R. Notarfranco",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",

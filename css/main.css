@@ -367,7 +367,7 @@ h2.section-heading {
 	display: block;
 	width: 88%;
 	max-height: 0;
-	overflow: hidden;
+	overflow-y: clip;
 	transition: max-height 0.25s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
@@ -574,10 +574,11 @@ button.web_link {
 	border: none;
 	background-color: #ac191a;
 	color: white;
-	padding: 2% 4%;
+	padding: 5% 7%;
+}
+a.web_link {
 	margin-top: 2%;
-	margin-right: 1%;
-	margin-left: -323%;
+	margin-left: auto;
 }
 button.web_link_2{
 	white-space: nowrap;
@@ -963,10 +964,6 @@ img.main_sm_links {
 	}
 	.club_info {
 		margin-top: 0;
-	}
-	a.web_link {
-		margin-left: auto;
-		margin-top: 3%;
 	}
 	img.main_sm_links {
 		width: 4%;
