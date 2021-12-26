@@ -1115,7 +1115,7 @@ var music = [
 var dataFetched = false;
 
 async function fetchData() {
-    if (window.location.protocol == "file:") {
+    if (window.location.protocol == "file:"){
         console.log("fetchData: Running from a file, won't attempt to load data.");
         dataFetched = true;
         return;
