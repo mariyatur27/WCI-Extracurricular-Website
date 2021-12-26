@@ -11354,7 +11354,7 @@ p {
 }
 
 section {
-  padding: 9rem 0;
+  padding: 3rem 0;
 }
 
 .btn-xl {
@@ -11826,7 +11826,6 @@ section#contact form#contactForm :-ms-input-placeholder {
   margin: 0;
   padding: 0;
   width: 100%;
-  margin-top: 10%;
 }
 
 .footer a {
