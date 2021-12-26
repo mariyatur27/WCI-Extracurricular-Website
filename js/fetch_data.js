@@ -1,5 +1,5 @@
 var clubs = [
-{
+    {
         "name": "Ambassadors Christian Fellowship",
         "id": "ambassadorschristianfellowship",
         "meeting_time": "Wednesdays, 2:45 PM - 3:45 PM",
@@ -98,7 +98,7 @@ var clubs = [
         "name": "Classics Club",
         "id": "classicsclub",
         "meeting_time": "Tuesday, 3:15 PM - 4:15 PM",
-        "connection_links":["classroom", "website", "instagram", "email"],
+        "connection_links":["classroom", "instagram", "email", "website"],
         "classroom": "https://classroom.google.com/c/MzYxMDcyNDg5ODE5?cjc=qc6lrdn",
         "website": "https://sites.google.com/wrdsb.ca/wci-classics/home",
         "email":"marion_hensel@wrdsb.ca",
@@ -295,7 +295,7 @@ var clubs = [
         "name": "Muslim Student Association",
         "id": "muslimstudentassociation",
         "meeting_time": "Tuesdays, 2:00 PM - 3:00 PM",
-        "connection_links":["classroom", "website", "instagram"],
+        "connection_links":["classroom", "instagram", "website"],
         "classroom": "https://classroom.google.com/c/MjM5MjQ5MDczMzI2?cjc=mhwgvxo",
         "website": "https://sites.google.com/wrdsb.ca/wcimuslimstudentassociation/home",
         "instagram": "https://www.instagram.com/wci_msa_club",
@@ -1115,7 +1115,7 @@ var music = [
 var dataFetched = false;
 
 async function fetchData() {
-    if (window.location.protocol == "file:"){
+    if (window.location.protocol == "file:") {
         console.log("fetchData: Running from a file, won't attempt to load data.");
         dataFetched = true;
         return;
