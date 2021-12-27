@@ -774,7 +774,9 @@ img.c_image {
 	margin-bottom: 7%;
 	object-fit: contain;
 }
-
+.s2 {
+	display: none;
+}
 .c_item {
 	height: 240px;
 	width: 240px;

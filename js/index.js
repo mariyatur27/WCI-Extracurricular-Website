@@ -223,9 +223,20 @@ function results() {
     console.log(result_list);
 
     document.getElementById('output').innerHTML = "We recommend that you join clubs of this categoty: ".concat(result_list);
-
-
 }
+
+// Next button
+var one = document.getElementById("quiz_slide_2");
+var two = document.getElementById("quiz_slide_3");
+var three = document.getElementById("quiz_slide_4");
+var four = document.getElementById("quiz_slide_5");
+
+var slides = [one, two, three, four];
+document.getElementById("next1").addEventListener('click', function() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'block';
+    }
+});
 
 async function createCalendar(daysAhead) {
     if (!dataFetched) {
