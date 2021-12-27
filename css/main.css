@@ -448,15 +448,15 @@ button.drop {
 	width: 100%;
 }
 .contributors {
-	box-sizing: border-box;
 	text-decoration: none;
-	text-align: center;
 	border: white;
 	border-style: solid;
-	padding: 7px 7px;
+	padding-top: 2.5px;
 	font-size: 13px;
 	border-radius: 50%;
-	line-height: 42px;
+	width: 30px;
+	height: 30px;
+	margin: 2px;
 }
 button#contributors {
   border: none;
@@ -474,7 +474,11 @@ input#club_search:focus {
   padding: 0rem 0;
 }
 #people {
-	display:  none;
+	display:  flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
 }
 .contributors:hover {
 	color: black;
