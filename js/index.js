@@ -158,11 +158,11 @@ document.five.onclick = function() {
 function results() {
     var user_answers = [window.question1, window.question2, window.question3, window.question4, window.question5];
     var stem_answers = ["math", "science", "reading", "coding", "hard-working", "no", "yes"];
-    var academics_answers = ["math", "science", "business", "english", "reading", "hard-working", "passionate" ,"yes", "yes"];
-    var recreational_answers = ["art", "gym", "friends", "be on my phone", "artistic", "thoughtful", "no", "no"];
-    var business_answers = [];
-    var social_justice_answers = [];
-    var leadership_answers = [];
+    var academics_answers = ["math", "science", "business", "studying", "english", "reading", "hard-working", "passionate" ,"yes", "yes"];
+    var recreational_answers = ["art", "gym", "friends", "cooking", "be on my phone", "artistic", "thoughtful", "no", "no"];
+    var business_answers = ["english", "math", "studying", "reading", "ambitiouse", "hard-working", "yes", "yes"];
+    var social_justice_answers = ["english", "art", "reading", "studying", "thoughtful", "no", "yes"];
+    var leadership_answers = ["gym", "english", "friends", "reading", "creative", "ambitiouse", "yes", "yes"];
 
     var stem_l_2 = [];
     var academics_l_2 = [];
@@ -171,7 +171,7 @@ function results() {
     var social_l_2 = [];
     var leadership_l_2 = [];
     var sum_list = [];
-    var name_list = ["stem", "academics", "recreational"];
+    var name_list = ["STEM", "Academics", "Recreational", "Business", "Social Justice", "Leadership"];
     var result_list = [];
 
     for (let i = 0; i < user_answers.length; i++) {
@@ -184,8 +184,17 @@ function results() {
         if (recreational_answers.includes(user_answers[i])) {
             recreational_l_2.push(1);
         };
+        if (business_answers.includes(user_answers[i])) {
+            business_l_2.push(1);
+        };
+        if (social_justice_answers.includes(user_answers[i])) {
+            social_l_2.push(1);
+        };
+        if (leadership_answers.includes(user_answers[i])) {
+            leadership_l_2.push(1);
+        };
     };
-    let all_lists = [stem_l_2, academics_l_2, recreational_l_2]
+    let all_lists = [stem_l_2, academics_l_2, recreational_l_2, business_l_2, social_l_2, leadership_l_2]
     for (let i = 0; i < all_lists.length; i++){
         if (all_lists[i].length != 0) {
             var sum = parseInt(all_lists[i].reduce((partial_sum, a) => partial_sum + a));
@@ -211,7 +220,7 @@ function results() {
     }
     console.log(result_list);
 
-    document.getElementById('output').innerHTML = "You should join clubs of category: ".concat(result_list);
+    document.getElementById('output').innerHTML = "We recommend that you join clubs of this categoty: ".concat(result_list);
 
 
 }
