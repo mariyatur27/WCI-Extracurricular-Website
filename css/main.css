@@ -477,7 +477,7 @@ input#club_search:focus {
 	display:  flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: left;
 	text-align: center;
 }
 .contributors:hover {
@@ -1385,5 +1385,8 @@ img.main_sm_links {
 	}
 	.link-register {
 		color: #A7501F;
+	}
+	#people {
+		justify-content: center;
 	}
 }
