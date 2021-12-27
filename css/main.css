@@ -150,6 +150,12 @@ p.descrp {
 	border: none;
 }
 
+#clubs_title {
+	font-size: 2.2rem;
+	text-align: center;
+	margin-top: 10%;
+}
+
 .search-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -418,7 +424,7 @@ h2.section-heading {
 	display: block;
 	width: 88%;
 	max-height: 0;
-	overflow: hidden;
+	overflow-y: clip;
 	transition: max-height 0.25s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
@@ -443,13 +449,12 @@ button.drop {
 }
 .contributors {
 	text-decoration: none;
-	border-radius: 50%;
-	padding: 7px 8px;
-	font-size: 17px;
-	border: none;
+	text-align: center;
 	border: white;
 	border-style: solid;
-	color: white;
+	padding: 7px 7px;
+	font-size: 13px;
+	border-radius: 50%;
 }
 button#contributors {
   border: none;
@@ -471,6 +476,8 @@ input#club_search:focus {
 }
 .contributors:hover {
 	color: black;
+	border: black;
+	border-style: solid;
 }
 #mariya{
   background-color: #4dc3a3
@@ -625,10 +632,11 @@ button.web_link {
 	border: none;
 	background-color: #ac191a;
 	color: white;
-	padding: 2% 4%;
+	padding: 5% 7%;
+}
+a.web_link {
 	margin-top: 2%;
-	margin-right: 1%;
-	margin-left: -323%;
+	margin-left: auto;
 }
 button.web_link_2{
 	white-space: nowrap;
@@ -932,9 +940,10 @@ img.main_sm_links {
 	}
 	.search-wrapper {
 		flex-direction: row;
+		justify-content: space-between;
 	}
 	.search-bar-wrapper {
-		width: 65%;
+		width: 50%;
 		margin-right: 15px;
 	}
 	.dropdown_content {
@@ -979,9 +988,7 @@ img.main_sm_links {
 		margin-top: 7%;
 	}
 	#clubs_title {
-		font-size: 2.2rem;
 		text-align: left;
-		margin-top: 4%;
 	}
 	.slideshow-container {
 		max-width: 1000px;
@@ -1001,10 +1008,6 @@ img.main_sm_links {
 	}
 	.club_info {
 		margin-top: 0;
-	}
-	a.web_link {
-		margin-left: auto;
-		margin-top: 3%;
 	}
 	img.main_sm_links {
 		width: 4%;
@@ -1151,7 +1154,7 @@ img.main_sm_links {
 	.link-register {
 	  color: #A7501F;
 	}
-  }
+}
 
 /*Responsive Design*/
 /* Extra small devices (phones, 600px and down) */
@@ -1241,93 +1244,93 @@ img.main_sm_links {
 
 }
 
-  @media (max-width: 575.98px) {
-    .table-responsive-sm {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-    .orchestra {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      background: #CCCCCC;
-      margin: 0;
-      border-radius: 1em;
-      padding: 2em;
-      margin-top: 2em;
-      margin-bottom: 2em;
-      text-align: center;
-    }
-    .orch-head {
-      font-size: 2rem;
-      color: #000000;
-      line-height: 1.2;
-      text-decoration: underline;
-      text-decoration-color: #A7501F;
-      text-align: center;
-    }
-    .orch-grade {
-      font-size: 1.3rem;
-      color: #A7501F;
-      line-height: 1.2;
-      text-align: center;
-    }
-    .orch-p {
-      font-size: 0.875rem;
-      color: #000000;
-      line-height: 1.2;
-      text-align: center;
-    }
-    .link-register {
-      color: #A7501F;
-    }
-  }
-  @media (max-width: 767.98px) {
-    .table-responsive-md {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-    .orchestra {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      background: #CCCCCC;
-      margin: 0;
-      border-radius: 1em;
-      padding: 2em;
-      margin-top: 2em;
-      margin-bottom: 2em;
-      text-align: center;
-    }
-    button.faq-btn {
-      border: none;
-      background: transparent;
-    }
-    .orch-head {
-      font-size: 2rem;
-      color: #000000;
-      line-height: 1.2;
-      text-decoration: underline;
-      text-decoration-color: #A7501F;
-      text-align: center;
-    }
-    .orch-grade {
-      font-size: 1.3rem;
-      color: #A7501F;
-      line-height: 1.2;
-      text-align: center;
-    }
-    .orch-p {
-      font-size: 0.875rem;
-      color: #000000;
-      line-height: 1.2;
-    }
-    .link-register {
-      color: #A7501F;
-      text-align: center;
-    }
-  }
-  @media (max-width: 991.98px) {
+@media (max-width: 575.98px) {
+	.table-responsive-sm {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.orchestra {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		background: #CCCCCC;
+		margin: 0;
+		border-radius: 1em;
+		padding: 2em;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+	.orch-head {
+		font-size: 2rem;
+		color: #000000;
+		line-height: 1.2;
+		text-decoration: underline;
+		text-decoration-color: #A7501F;
+		text-align: center;
+	}
+	.orch-grade {
+		font-size: 1.3rem;
+		color: #A7501F;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.orch-p {
+		font-size: 0.875rem;
+		color: #000000;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.link-register {
+		color: #A7501F;
+	}
+}
+@media (max-width: 767.98px) {
+	.table-responsive-md {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.orchestra {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		background: #CCCCCC;
+		margin: 0;
+		border-radius: 1em;
+		padding: 2em;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+	button.faq-btn {
+		border: none;
+		background: transparent;
+	}
+	.orch-head {
+		font-size: 2rem;
+		color: #000000;
+		line-height: 1.2;
+		text-decoration: underline;
+		text-decoration-color: #A7501F;
+		text-align: center;
+	}
+	.orch-grade {
+		font-size: 1.3rem;
+		color: #A7501F;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.orch-p {
+		font-size: 0.875rem;
+		color: #000000;
+		line-height: 1.2;
+	}
+	.link-register {
+		color: #A7501F;
+		text-align: center;
+	}
+}
+	@media (max-width: 991.98px) {
 	#mainNav ul ul{
 		padding: 1% 2%;
 	}
@@ -1341,43 +1344,43 @@ img.main_sm_links {
 		border-radius: 56px;
 		border: none;
 	}
-    .table-responsive-lg {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-    .orchestra {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      background: #CCCCCC;
-      margin: 0;
-      border-radius: 1em;
-      padding: 2em;
-      margin-top: 2em;
-      margin-bottom: 2em;
-      text-align: center;
-    }
-    .orch-head {
-      font-size: 2rem;
-      color: #000000;
-      line-height: 1.2;
-      text-decoration: underline;
-      text-decoration-color: #A7501F;
-      text-align: center;
-    }
-    .orch-grade {
-      font-size: 1.3rem;
-      color: #A7501F;
-      line-height: 1.2;
-      text-align: center;
-    }
-    .orch-p {
-      font-size: 0.875rem;
-      color: #000000;
-      line-height: 1.2;
-      text-align: center;
-    }
-    .link-register {
-      color: #A7501F;
-    }
-  }
+	.table-responsive-lg {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.orchestra {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		background: #CCCCCC;
+		margin: 0;
+		border-radius: 1em;
+		padding: 2em;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+	.orch-head {
+		font-size: 2rem;
+		color: #000000;
+		line-height: 1.2;
+		text-decoration: underline;
+		text-decoration-color: #A7501F;
+		text-align: center;
+	}
+	.orch-grade {
+		font-size: 1.3rem;
+		color: #A7501F;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.orch-p {
+		font-size: 0.875rem;
+		color: #000000;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.link-register {
+		color: #A7501F;
+	}
+}

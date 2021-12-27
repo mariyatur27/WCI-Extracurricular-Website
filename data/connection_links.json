@@ -16,5 +16,11 @@
         "type": "button",
         "label": "Club website",
         "icon": "assets/icons/website.png"
+    },
+    "more_info": {
+        "type": "button",
+        "label": "More Information",
+        "link_prefix": "sport_info.html?sport=",
+        "postfix_id": true
     }
 }
