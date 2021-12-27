@@ -449,17 +449,12 @@ button.drop {
 }
 .contributors {
 	text-decoration: none;
-	border-radius: 50%;
-	padding: 8px 8px;
-	font-size: 13px;
+	text-align: center;
 	border: white;
 	border-style: solid;
-	color: white;
-	text-align: center;
-	width: 30px;
-	height: 30px;
-	align-items: center;
-	justify-content: center;
+	padding: 7px 7px;
+	font-size: 13px;
+	border-radius: 50%;
 }
 button#contributors {
   border: none;
