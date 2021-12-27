@@ -213,6 +213,8 @@ function results() {
     let max_value = Math.max(... sum_list);
 
     for (const [key, value] of Object.entries(data_dict)) {
+        // This is not working 100% properly. If there's a tie between several categories, it will output the right number of tied elements, but they
+        // will all be named like one
         if (value == max_value) {
             var result = Object.keys(data_dict).find(key => data_dict[key] == value);
             result_list.push(result);
