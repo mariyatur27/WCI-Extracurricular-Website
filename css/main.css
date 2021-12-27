@@ -481,10 +481,6 @@ input#club_search:focus {
 }
 #people {
 	display:  none;
-	/* flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: left;
-	text-align: center; */
 }
 .contributors:hover {
 	color: black;
