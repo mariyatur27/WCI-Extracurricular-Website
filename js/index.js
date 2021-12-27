@@ -170,8 +170,9 @@ function results() {
     var business_l_2 = [];
     var social_l_2 = [];
     var leadership_l_2 = [];
-    var final_list = [];
-    let empty_dictionary = [];
+    var sum_list = [];
+    var name_list = ["stem", "academics", "recreational"];
+    var result_list = [];
 
     for (let i = 0; i < user_answers.length; i++) {
         if (stem_answers.includes(user_answers[i])) {
@@ -191,26 +192,27 @@ function results() {
         } else {
             var sum = 0;
         }
-        empty_dictionary.push({ key: all_lists[i], value: sum });
-        final_list.push(sum);
+        sum_list.push(sum);
     }
+    console.log(sum_list);
+    console.log(name_list);
 
-    let max_value = Math.max(... final_list);
-    console.log(max_value);
-    console.log(empty_dictionary);
-    console.log(empty_dictionary[1, 1, 1, 1, 1]);
+    var data_dict = {};
+    name_list.forEach((key, i) => data_dict[key] = sum_list[i]);
+    console.log(data_dict);
 
+    let max_value = Math.max(... sum_list);
 
-    // if (empty_dictionary[stem_l_2] = max_value) {
-    //     console.log("STEM");
-    //     document.getElementById('output').innerHTML = "You should join STEM category clubs";
-    // }else if (empty_dictionary[academics_l_2] = max_value) {
-    //     console.log("ACADEMICS");
-    //     document.getElementById('output').innerHTML = "You should join Academic category clubs";
-    // }else if (empty_dictionary[recreational_l_2] = max_value) {
-    //     console.log("RECREATIONAL");
-    //     document.getElementById('output').innerHTML = "You should join Recreational category clubs";
-    // }
+    for (const [key, value] of Object.entries(data_dict)) {
+        if (value == max_value) {
+            var result = Object.keys(data_dict).find(key => data_dict[key] == value);
+            result_list.push(result);
+        }
+    }
+    console.log(result_list);
+
+    document.getElementById('output').innerHTML = "You should join clubs of category: ".concat(result_list);
+
 
 }
 
