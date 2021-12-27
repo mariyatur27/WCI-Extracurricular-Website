@@ -448,6 +448,7 @@ button.drop {
 	width: 100%;
 }
 .contributors {
+	box-sizing: border-box;
 	text-decoration: none;
 	text-align: center;
 	border: white;
@@ -455,6 +456,7 @@ button.drop {
 	padding: 7px 7px;
 	font-size: 13px;
 	border-radius: 50%;
+	line-height: 42px;
 }
 button#contributors {
   border: none;
@@ -896,12 +898,12 @@ button.web_button:hover {
 
 img.footer_sm_links {
 	color: white;
-	width: 7%;
+	width: 27px;
 	margin-right: 10px;
 }
 
 img.main_sm_links {
-	width: 6%;
+	width: 4%;
 	margin-top: 2%;
 }
 
@@ -1010,11 +1012,7 @@ img.main_sm_links {
 	}
 	.club_info {
 		margin-top: 0;
-	}
-	img.main_sm_links {
-		width: 4%;
-	}
-	
+	}	
 	.together {
 		display: flex;
 	}
@@ -1161,10 +1159,6 @@ img.main_sm_links {
 /*Responsive Design*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    img.main_sm_links {
-        width: 6%;
-        margin-top: 2%;
-    }
     .page-section h2.section-heading, .page-section .section-heading.h2 {
       font-size: 1.5rem;
       margin-top: 0;
@@ -1288,6 +1282,9 @@ img.main_sm_links {
 	}
 }
 @media (max-width: 767.98px) {
+	img.main_sm_links {
+		width: 27px;
+	}
 	.table-responsive-md {
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
@@ -1332,7 +1329,7 @@ img.main_sm_links {
 		text-align: center;
 	}
 }
-	@media (max-width: 991.98px) {
+@media (max-width: 991.98px) {
 	#mainNav ul ul{
 		padding: 1% 2%;
 	}
