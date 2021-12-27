@@ -150,6 +150,12 @@ p.descrp {
 	border: none;
 }
 
+#clubs_title {
+	font-size: 2.2rem;
+	text-align: center;
+	margin-top: 10%;
+}
+
 .search-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -445,13 +451,13 @@ button.drop {
 	text-decoration: none;
 	border-radius: 50%;
 	padding: 8px 8px;
-	font-size: 15px;
+	font-size: 13px;
 	border: white;
 	border-style: solid;
 	color: white;
 	text-align: center;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	align-items: center;
 	justify-content: center;
 }
@@ -987,9 +993,7 @@ img.main_sm_links {
 		margin-top: 7%;
 	}
 	#clubs_title {
-		font-size: 2.2rem;
 		text-align: left;
-		margin-top: 4%;
 	}
 	.slideshow-container {
 		max-width: 1000px;
@@ -1155,7 +1159,7 @@ img.main_sm_links {
 	.link-register {
 	  color: #A7501F;
 	}
-  }
+}
 
 /*Responsive Design*/
 /* Extra small devices (phones, 600px and down) */
@@ -1245,93 +1249,93 @@ img.main_sm_links {
 
 }
 
-  @media (max-width: 575.98px) {
-    .table-responsive-sm {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-    .orchestra {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      background: #CCCCCC;
-      margin: 0;
-      border-radius: 1em;
-      padding: 2em;
-      margin-top: 2em;
-      margin-bottom: 2em;
-      text-align: center;
-    }
-    .orch-head {
-      font-size: 2rem;
-      color: #000000;
-      line-height: 1.2;
-      text-decoration: underline;
-      text-decoration-color: #A7501F;
-      text-align: center;
-    }
-    .orch-grade {
-      font-size: 1.3rem;
-      color: #A7501F;
-      line-height: 1.2;
-      text-align: center;
-    }
-    .orch-p {
-      font-size: 0.875rem;
-      color: #000000;
-      line-height: 1.2;
-      text-align: center;
-    }
-    .link-register {
-      color: #A7501F;
-    }
-  }
-  @media (max-width: 767.98px) {
-    .table-responsive-md {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-    .orchestra {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      background: #CCCCCC;
-      margin: 0;
-      border-radius: 1em;
-      padding: 2em;
-      margin-top: 2em;
-      margin-bottom: 2em;
-      text-align: center;
-    }
-    button.faq-btn {
-      border: none;
-      background: transparent;
-    }
-    .orch-head {
-      font-size: 2rem;
-      color: #000000;
-      line-height: 1.2;
-      text-decoration: underline;
-      text-decoration-color: #A7501F;
-      text-align: center;
-    }
-    .orch-grade {
-      font-size: 1.3rem;
-      color: #A7501F;
-      line-height: 1.2;
-      text-align: center;
-    }
-    .orch-p {
-      font-size: 0.875rem;
-      color: #000000;
-      line-height: 1.2;
-    }
-    .link-register {
-      color: #A7501F;
-      text-align: center;
-    }
-  }
-  @media (max-width: 991.98px) {
+@media (max-width: 575.98px) {
+	.table-responsive-sm {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.orchestra {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		background: #CCCCCC;
+		margin: 0;
+		border-radius: 1em;
+		padding: 2em;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+	.orch-head {
+		font-size: 2rem;
+		color: #000000;
+		line-height: 1.2;
+		text-decoration: underline;
+		text-decoration-color: #A7501F;
+		text-align: center;
+	}
+	.orch-grade {
+		font-size: 1.3rem;
+		color: #A7501F;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.orch-p {
+		font-size: 0.875rem;
+		color: #000000;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.link-register {
+		color: #A7501F;
+	}
+}
+@media (max-width: 767.98px) {
+	.table-responsive-md {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.orchestra {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		background: #CCCCCC;
+		margin: 0;
+		border-radius: 1em;
+		padding: 2em;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+	button.faq-btn {
+		border: none;
+		background: transparent;
+	}
+	.orch-head {
+		font-size: 2rem;
+		color: #000000;
+		line-height: 1.2;
+		text-decoration: underline;
+		text-decoration-color: #A7501F;
+		text-align: center;
+	}
+	.orch-grade {
+		font-size: 1.3rem;
+		color: #A7501F;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.orch-p {
+		font-size: 0.875rem;
+		color: #000000;
+		line-height: 1.2;
+	}
+	.link-register {
+		color: #A7501F;
+		text-align: center;
+	}
+}
+	@media (max-width: 991.98px) {
 	#mainNav ul ul{
 		padding: 1% 2%;
 	}
@@ -1345,43 +1349,43 @@ img.main_sm_links {
 		border-radius: 56px;
 		border: none;
 	}
-    .table-responsive-lg {
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-    .orchestra {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      background: #CCCCCC;
-      margin: 0;
-      border-radius: 1em;
-      padding: 2em;
-      margin-top: 2em;
-      margin-bottom: 2em;
-      text-align: center;
-    }
-    .orch-head {
-      font-size: 2rem;
-      color: #000000;
-      line-height: 1.2;
-      text-decoration: underline;
-      text-decoration-color: #A7501F;
-      text-align: center;
-    }
-    .orch-grade {
-      font-size: 1.3rem;
-      color: #A7501F;
-      line-height: 1.2;
-      text-align: center;
-    }
-    .orch-p {
-      font-size: 0.875rem;
-      color: #000000;
-      line-height: 1.2;
-      text-align: center;
-    }
-    .link-register {
-      color: #A7501F;
-    }
-  }
+	.table-responsive-lg {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	.orchestra {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		background: #CCCCCC;
+		margin: 0;
+		border-radius: 1em;
+		padding: 2em;
+		margin-top: 2em;
+		margin-bottom: 2em;
+		text-align: center;
+	}
+	.orch-head {
+		font-size: 2rem;
+		color: #000000;
+		line-height: 1.2;
+		text-decoration: underline;
+		text-decoration-color: #A7501F;
+		text-align: center;
+	}
+	.orch-grade {
+		font-size: 1.3rem;
+		color: #A7501F;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.orch-p {
+		font-size: 0.875rem;
+		color: #000000;
+		line-height: 1.2;
+		text-align: center;
+	}
+	.link-register {
+		color: #A7501F;
+	}
+}
