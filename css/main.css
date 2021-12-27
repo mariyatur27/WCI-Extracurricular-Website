@@ -83,7 +83,7 @@ header.masthead {
 	background: rgba(60, 127, 207, 0.9);
 }
 
-.container .landing {
+.container.landing {
 	z-index: 10;
 	position: absolute;
 }
