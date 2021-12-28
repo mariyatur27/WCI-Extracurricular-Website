@@ -1001,7 +1001,8 @@ img.main_sm_links {
 		right: 3%;
 	}
 	.dropdown-btn {
-		width: 31%;
+		width: 25%;
+    	margin-left: 1%;
 	}
 	button.dropbt {
 		border: none;
