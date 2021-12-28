@@ -83,6 +83,37 @@ header.masthead {
 	background: rgba(60, 127, 207, 0.9);
 }
 
+/* .img-container.arts {
+	background-image: url(/assets/artspageimgs/artsheaderbg.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.img-container.arts::after {
+	background: none;
+}
+
+header .text-center h2 {
+	position: absolute;
+} */
+
+header.arts {
+	height: 100vh;
+	background-image: url(/assets/artspageimgs/artsheaderbg.jpg);
+	background-size: cover;
+	background-position: top;
+	position: relative;
+}
+
+.arts #clubs_title h2 {
+	color: white;
+	text-align: center;
+	z-index: 2;
+	justify-content: center;
+	align-items: center;
+}
+
 .container.landing {
 	z-index: 1;
 	position: absolute;
