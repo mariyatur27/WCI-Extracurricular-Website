@@ -84,7 +84,7 @@ header.masthead {
 }
 
 .container.landing {
-	z-index: 10;
+	z-index: 1;
 	position: absolute;
 }
 
@@ -708,6 +708,7 @@ button.web_link_2{
   align-items: center;
   color: white;
   background-color: #0a1241;
+  z-index: 2;
 }
 
 .event-popup-icon {
