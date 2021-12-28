@@ -29,14 +29,35 @@ function toggleAthleticsFilter(filter) {
     setupBoxes(athletics, 'athletics_boxes', 2);
 }
 
-function toggleDropdown() {
-    var dropdown_content = document.getElementById('dropdown_content');
+function toggleDropdown1() {
+    var dropdown_content = document.getElementById('dropdown_content1');
+    dropdown_content.classList.toggle('dropdown-active');
+}
+
+function toggleDropdown2() {
+    var dropdown_content = document.getElementById('dropdown_content2');
+    dropdown_content.classList.toggle('dropdown-active');
+}
+
+function toggleDropdown3() {
+    var dropdown_content = document.getElementById('dropdown_content3');
+    dropdown_content.classList.toggle('dropdown-active');
+}
+
+function toggleDropdown4() {
+    var dropdown_content = document.getElementById('dropdown_content4');
     dropdown_content.classList.toggle('dropdown-active');
 }
 
 function hideDropdown() {
-    var dropdown_content = document.getElementById('dropdown_content');
-    dropdown_content.classList.remove('dropdown-active');
+    var dropdown_content1 = document.getElementById('dropdown_content1');
+    var dropdown_content2 = document.getElementById('dropdown_content2');
+    var dropdown_content3 = document.getElementById('dropdown_content3');
+    var dropdown_content4 = document.getElementById('dropdown_content4');
+    dropdown_content1.classList.remove('dropdown-active');
+    dropdown_content2.classList.remove('dropdown-active');
+    dropdown_content3.classList.remove('dropdown-active');
+    dropdown_content4.classList.remove('dropdown-active');
 }
 
 window.onclick = function (event) {
