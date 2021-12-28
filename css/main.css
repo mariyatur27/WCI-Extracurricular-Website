@@ -139,7 +139,7 @@ header.masthead {
 p.descrp {
 	text-align: left;
 	margin-right: 2%;
-	margin-bottom: 100px;
+	margin-bottom: 20px;
 }
 
 .search-form {
@@ -1428,5 +1428,43 @@ img.main_sm_links {
 	}
 	#people {
 		justify-content: center;
+	}
+}
+
+/* For super small devices (320px and lower)*/
+@media only screen and (max-width: 320px) {
+	header {
+		margin-top: 40px;
+	}
+	header.masthead .masthead-subheading {
+		margin-bottom: 10px;
+	}
+	.search_bar {
+		width: 95%;
+	}
+	.large-search-icon {
+		position: relative;
+		font-size: 1em;
+		float: right;
+		top: -26px;
+		right: 20px;
+	}
+	.page-section h3.section-subheading, 
+	.page-section .section-subheading.h3 {
+		margin-bottom: -1rem;
+	}
+	img.slide-img {
+		width: 100px;
+		margin: 10px;
+	}
+	.slide-link h5 {
+		margin-top: -45px;
+	}
+}
+
+@media (max-width: 399px) {
+	#clubs_title {
+		margin-top: 80px;
+		margin-bottom: 20px;
 	}
 }

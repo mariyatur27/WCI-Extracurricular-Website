@@ -156,6 +156,11 @@ h5, .h5 {
   font-size: 1.25rem;
 }
 
+@media (max-width: 320px) {
+  h5, .h5 {
+    font-size: small;
+  }  
+}
 h6, .h6 {
   font-size: 1rem;
 }
