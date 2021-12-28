@@ -1,26 +1,28 @@
-function loadPopupData(){
-	if (Object.keys(event_popup).length == 0){
-		console.log("loadPopupData: No popup to show.");
-		return;
-		// If there is no upcoming event, don't bother
-		// with this function and don't make the div
-		// visible, so it never shows up
+async function createPopup() {
+    if (!dataFetched) {
+        await fetchData();
+    }
+	let found = false;
+	for (var event of events) {
+		if (new Date(event.start_time*1000) > new Date()) {
+			found = true;
+			break;
+		}
 	}
-	var div = document.getElementById("event-popup");
+	if (!found) {
+		return;
+	}
+    var div = document.getElementById("event-popup");
 	var txt = document.getElementById("event-popup-text");
 	var icon = document.getElementById("event-popup-icon");
 	div.style.display = "flex";
-	txt.innerHTML = event_popup["text"];
-	div.style.backgroundColor = event_popup["color"];
-	icon.src = event_popup["icon"];
-	console.log(event_popup["icon"]);
-	console.log(icon.src);
-	if (event_popup["icon"] == ""){
-		icon.style.display = "none";
-		txt.style.left = "8px";
-		// If there is no image to show, move the text over to the left to avoid an awkward gap
-	}
-};
+	txt.innerHTML = event.title;
+	div.style.backgroundColor = "#00F";
+	icon.src = "";
+	icon.style.display = "none";
+	txt.style.left = "8px";
+}
+createPopup();
 
 function closePopup(){
 	var div = document.getElementById("event-popup");

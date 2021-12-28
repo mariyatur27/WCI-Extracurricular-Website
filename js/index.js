@@ -292,9 +292,9 @@ async function createCalendar(daysAhead) {
         eventDates[date].sort((a, b) => a.start_time - b.start_time);
         let col = row.getElementsByTagName("td")[date];
         for (const event of eventDates[date]) {
-            let start_date = new Date(events[0].start_time*1000);
+            let start_date = new Date(event.start_time*1000);
             let start_date_string = start_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
-            let end_date = new Date(events[0].end_time*1000);
+            let end_date = new Date(event.end_time*1000);
             let end_date_string = end_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
             let google_calendar_href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${event.title}&dates=${start_date_string}/${end_date_string}&details=${event.description}`;
             let ics_file_href = `data/events/${event.id}.ics`

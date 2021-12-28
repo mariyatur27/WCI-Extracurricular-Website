@@ -396,7 +396,7 @@ div.calendar_event {
 	border: 1px solid black;
 	border-radius: 1em;
 	box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
-	padding: 5%
+	padding: 5%;
 }
 
 .calendar_event_expand {
