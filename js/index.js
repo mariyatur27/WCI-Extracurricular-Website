@@ -253,6 +253,11 @@ async function createCalendar(daysAhead) {
     if (!dataFetched) {
         await fetchData();
     }
+    let displayVertical = false;
+    if (daysAhead == 1) {
+        daysAhead = 5;
+        displayVertical = true;
+    }
     let today = new Date();
     today.setHours(0);
     today.setMinutes(0);
@@ -266,7 +271,7 @@ async function createCalendar(daysAhead) {
     for (const event of events) {
         let eventdate = new Date(event.start_time*1000);
         if (eventdate <= maxDate && eventdate >= today) {
-            let distance = eventdate.getDate()-today.getDate();
+            let distance = new Date(eventdate-today).getDate()-1;
             if (distance in eventDates) {
                 eventDates[distance].push(event);
             } else {
@@ -278,18 +283,27 @@ async function createCalendar(daysAhead) {
     let table = document.getElementById("calendar");
     table.innerHTML = "";
     let date = new Date();
-    let maxHeight = 0;
     let overrides = {0: "Today", 1: "Tomorrow"};
     let row = document.createElement("tr");
     for (let i = 0; i<daysAhead; i++) {
         let col = document.createElement("td");
         col.classList.add("calendar_col", "calendar_header");
+        if (displayVertical) {
+            row = document.createElement("tr");
+            col.classList.add("full_width");
+        }
         if (i in overrides) {
             col.innerText = overrides[i];
         } else {
             col.innerText = date.toLocaleDateString("en-CA", {weekday: 'long'});
         }
         row.appendChild(col);
+        if (displayVertical) {
+            table.appendChild(row);
+            row = document.createElement("tr");
+            row.appendChild(document.createElement("td"));
+            table.appendChild(row);
+        }
         date.setDate(date.getDate() + 1);
     }
     table.appendChild(row);
@@ -298,10 +312,16 @@ async function createCalendar(daysAhead) {
         let col = document.createElement("td");
         col.classList.add("calendar_col");
         row.appendChild(col);
-    };
+    }
     for (const date in eventDates) {
         eventDates[date].sort((a, b) => a.start_time - b.start_time);
-        let col = row.getElementsByTagName("td")[date];
+        let col;
+        if (displayVertical) {
+            row = table.getElementsByTagName("tr")[date*2+1];
+            col = row.getElementsByTagName("td")[0];
+        } else {
+            col = row.getElementsByTagName("td")[date];
+        }
         for (const event of eventDates[date]) {
             let start_date = new Date(event.start_time*1000);
             let start_date_string = start_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";
@@ -348,7 +368,9 @@ async function createCalendar(daysAhead) {
                 main_div.appendChild(hidden_div);
             col.appendChild(main_div);
         }
-        table.appendChild(row);
+        if (!displayVertical) {
+            table.appendChild(row);
+        }
     }
 }
 createCalendar(Math.min(Math.floor(window.innerWidth/250), 7));
