@@ -83,40 +83,67 @@ header.masthead {
 	background: rgba(60, 127, 207, 0.9);
 }
 
-/* .img-container.arts {
-	background-image: url(/assets/artspageimgs/artsheaderbg.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.img-container.arts::after {
-	background: none;
-}
-
-header .text-center h2 {
-	position: absolute;
-} */
-
 header.arts {
 	height: 100vh;
 	background-image: url(/assets/artspageimgs/artsheaderbg.jpg);
 	background-size: cover;
 	background-position: top;
 	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 10em;
 }
 
-.arts #clubs_title h2 {
+.arts h2#clubs_title {
 	color: white;
-	text-align: center;
 	z-index: 2;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+	line-height: 24em;
+	margin-bottom: 0em;
 }
 
 .container.landing {
 	z-index: 1;
 	position: absolute;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(9, 5vw);
+	grid-gap: 15px;
+	justify-items: center;
+	padding: 0 50px;
+}
+
+.grid-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.grid-item_1 {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 5;
+}
+
+.grid-item_2 {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 5;
+	grid-row-end: 9;
+}
+
+.grid-item_3 {
+	grid-column-start: 5;
+	grid-column-end: 15;
+	grid-row-start: 1;
+	grid-row-end: 9;
 }
 
 #main {
