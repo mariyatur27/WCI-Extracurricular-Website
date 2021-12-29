@@ -221,18 +221,29 @@ function results() {
         }
     }
     console.log(result_list);
+    if (max_value !== 0){
+        document.getElementById('output').innerHTML = "We recommend that you join clubs of this categoty: ".concat(result_list);
+    }else{
+        document.getElementById('output').innerHTML = "You have to complete the quiz in order to get the results!";
+    }
+};
+// Making the button visible only when all the radio buttons are checked
+var section1_r = document.getElementsByName("op1");
+var section2_r = document.querySelectorAll('input[name="op2"]');
+var section3_r = document.querySelectorAll('input[name="op3"]');
+var section4_r = document.querySelectorAll('input[name="op4"]');
+var section5_r = document.querySelectorAll('op5');
 
-    document.getElementById('output').innerHTML = "We recommend that you join clubs of this categoty: ".concat(result_list);
+for (var i = 0; i < section1_r.length; i++) {
+    if (section1_r[i].checked) {
+        console.log("test");
+    }
 }
 
 // Next button
-var one = document.getElementById("quiz_slide_2");
-var two = document.getElementById("quiz_slide_3");
-var three = document.getElementById("quiz_slide_4");
-var four = document.getElementById("quiz_slide_5");
 
-var slides = [one, two, three, four];
-document.getElementById("next1").addEventListener('click', function() {
+var slides = document.getElementsByClassName('s2')
+document.getElementById("next").addEventListener('click', function() {
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = 'block';
     }
