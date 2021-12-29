@@ -943,6 +943,20 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "team_section_id": "srgirlsvolleyball_team",
         "history_section_id" : "srgirlsvolleyball_history",
+        "members" : [
+            {"name": "Chloe Taylor", "image": "assets/sport_team_members/srgirlsvolleyball/Chloe Taylor.png"},
+            {"name": "Claire Chen", "image": "assets/sport_team_members/srgirlsvolleyball/Claire Chen.png"},
+            {"name": "Erin Kim", "image": "assets/sport_team_members/srgirlsvolleyball/Erin Kim.png"},
+            {"name": "Grace Wang", "image": "assets/sport_team_members/srgirlsvolleyball/Grace Wang.png"},
+            {"name": "Jackie Dent", "image": "assets/sport_team_members/srgirlsvolleyball/Jackie Dent.png"},
+            {"name": "Kristina Gladovic", "image": "assets/sport_team_members/srgirlsvolleyball/Kristina Gladovic.png"},
+            {"name": "Leanne Cherry", "image": "assets/sport_team_members/srgirlsvolleyball/Leanne Cherry.png"},
+            {"name": "Lowen Dusselier", "image": "assets/sport_team_members/srgirlsvolleyball/Lowen Dusselier.png"},
+            {"name": "Marissa Coe", "image": "assets/sport_team_members/srgirlsvolleyball/Marissa Coe.png"},
+            {"name": "Sam Durbin", "image": "assets/sport_team_members/srgirlsvolleyball/Sam Durbin.png"},
+            {"name": "Sophia Murphy", "image": "assets/sport_team_members/srgirlsvolleyball/Sophia Murphy.png"},
+            {"name": "Zeyneb Tuk Suleyman", "image": "assets/sport_team_members/srgirlsvolleyball/Zeyneb Tuk Suleyman.png"}
+        ],
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
