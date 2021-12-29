@@ -526,7 +526,7 @@ var athletics = [
             {"name": "Victor Z", "image": "assets/sport_team_members/crosscountry/Victor Z.png"},
             {"name": "William B", "image": "assets/sport_team_members/crosscountry/William B.png"},
             {"name": "Zina K", "image": "assets/sport_team_members/crosscountry/Zina K.png"}
-        ],
+        ]
     },
     {
         "name": "Boys Golf",
@@ -723,7 +723,7 @@ var athletics = [
             {"name": "Ella S", "image": "assets/sport_team_members/jrgirlsbasketball/Ella S.png"},
             {"name": "Grace S", "image": "assets/sport_team_members/jrgirlsbasketball/Grace S.png"},
             {"name": "Kimaya T", "image": "assets/sport_team_members/jrgirlsbasketball/Kimaya T.png"},
-            {"name": "Pari T", "image": "assets/sport_team_members/jrgirlsbasketball/Pari T.png"},
+            {"name": "Pari T", "image": "assets/sport_team_members/jrgirlsbasketball/Pari T.png"}
         ],
         "categories": [
             "fall_sports",
@@ -880,7 +880,7 @@ var athletics = [
             {"name": "Rachel P", "image": "assets/sport_team_members/girlshockey/Rachel P.png"},
             {"name": "Rowan J", "image": "assets/sport_team_members/girlshockey/Rowan J.png"},
             {"name": "Sadie B", "image": "assets/sport_team_members/girlshockey/Sadie B.png"},
-            {"name": "Sofia W", "image": "assets/sport_team_members/girlshockey/Sofia W.png"},
+            {"name": "Sofia W", "image": "assets/sport_team_members/girlshockey/Sofia W.png"}
         ],
         "categories": [
             "winter_sports",
