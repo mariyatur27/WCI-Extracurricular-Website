@@ -742,10 +742,19 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-         "tm1": [{
-            "name" : "Arthur Jackson",
-            "image" : "assets/sport_images/running.png"
-        }],
+        "members" : [
+            {"name": "Ana C", "image": "assets/sport_team_members/srgirlsbasketball/Ana C.png"},
+            {"name": "Cameron B", "image": "assets/sport_team_members/srgirlsbasketball/Cameron B.png"},
+            {"name": "Chloe T", "image": "assets/sport_team_members/srgirlsbasketball/Chloe T.png"},
+            {"name": "Christa W", "image": "assets/sport_team_members/srgirlsbasketball/Christa W.png"},
+            {"name": "Dacia C", "image": "assets/sport_team_members/srgirlsbasketball/Dacia C.png"},
+            {"name": "Lowen D", "image": "assets/sport_team_members/srgirlsbasketball/Lowen D.png"},
+            {"name": "Melissa B", "image": "assets/sport_team_members/srgirlsbasketball/Melissa B.png"},
+            {"name": "Sara H", "image": "assets/sport_team_members/srgirlsbasketball/Sara H.png"},
+            {"name": "Sarah B", "image": "assets/sport_team_members/srgirlsbasketball/Sarah B.png"},
+            {"name": "Sophia M", "image": "assets/sport_team_members/srgirlsbasketball/Sophia M.png"},
+            {"name": "Zeyneb S", "image": "assets/sport_team_members/srgirlsbasketball/Zeyneb S.png"}
+        ],
         "categories": [
             "fall_sports",
             "girls_sports",
@@ -762,10 +771,6 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-         "tm1": [{
-            "name" : "Arthur Jackson",
-            "image" : "assets/sport_images/running.png"
-        }],
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
@@ -863,6 +868,20 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
+        "members" : [
+            {"name": "Addison S", "image": "assets/sport_team_members/girlshockey/Addison S.png"},
+            {"name": "Booke T", "image": "assets/sport_team_members/girlshockey/Booke T.png"},
+            {"name": "Brooke B", "image": "assets/sport_team_members/girlshockey/Brooke B.png"},
+            {"name": "Charis H", "image": "assets/sport_team_members/girlshockey/Charis H.png"},
+            {"name": "Faye K", "image": "assets/sport_team_members/girlshockey/Faye K.png"},
+            {"name": "Kaylanah T", "image": "assets/sport_team_members/girlshockey/Kaylanah T.png"},
+            {"name": "Lilly M", "image": "assets/sport_team_members/girlshockey/Lilly M.png"},
+            {"name": "Mira K", "image": "assets/sport_team_members/girlshockey/Mira K.png"},
+            {"name": "Rachel P", "image": "assets/sport_team_members/girlshockey/Rachel P.png"},
+            {"name": "Rowan J", "image": "assets/sport_team_members/girlshockey/Rowan J.png"},
+            {"name": "Sadie B", "image": "assets/sport_team_members/girlshockey/Sadie B.png"},
+            {"name": "Sofia W", "image": "assets/sport_team_members/girlshockey/Sofia W.png"},
+        ],
         "categories": [
             "winter_sports",
             "girls_sports",
