@@ -39,11 +39,6 @@ team-history: |-
   
   Awesome job Vikes!
 
-# Team's members
-team-members:
-- name: Adam L
-  image: "assets/sport_team_members/crosscountry/Adam L.png"
-
 # Categories the sport fits into
 categories: 
 - fall_sports
@@ -54,3 +49,22 @@ categories:
 extra-info:
 - type: important_text
   text: Past experience is not required.
+
+# The folder where all the team member's photos are stored
+# Ommitting this will remove images for all team members
+team-member-image-folder: "assets/sport_team_members/crosscountry/"
+
+# A list of the names of all team members
+# Team member images determined by root-image-folder + team member's name + ".png"
+team-members:
+- Adam L
+- Alina A
+
+# TODO: Verify that there are images for all team members
+
+# A list of team member image names, without the .png extension
+# Either this or team-members should be included
+# If both are included, only team-members will be used
+# Omitting team-member-image-folder will cause this to be ignored
+#team-images:
+#- 778bdc491858ceb0d74e48fe287e3ff478f8bdc1
