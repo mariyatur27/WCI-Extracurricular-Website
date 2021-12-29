@@ -90,6 +90,19 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                         }
                     expand_box.appendChild(expand_box_core_content);
 
+                    let team_link = document.createElement("a");
+                    let redirectPage = "sport_info.html";
+                    let urlParamName = "sport";
+                    if ("members" in boxData && "section_id" in boxData) {
+                        let team_href = redirectPage + "?" + urlParamName + "=" + boxData.id + "#" + boxData.section_id;
+                        team_link.href = team_href;
+                        team_link.classList.add("team_link");
+                        var team_button = document.createElement("button"); team_button.classList.add("web_link"); team_button.type="button"; team_button.name="team_button";
+                        team_button.innerText = "Search the Team";
+                        team_link.appendChild(team_button);
+                        expand_box.appendChild(team_link);
+                    };
+
                     let box_links = document.createElement("div"); box_links.classList.add("together", "club-links");
                     for (link of boxData.connection_links) {
                         if (link in connection_links) {

@@ -57,6 +57,7 @@ async function setupSportPage(sportID) {
     if ("members" in sport) {
         let team_member_title = document.createElement("h3"); team_member_title.classList.add("sport_info_title"); team_member_title.innerText = "Team Members";
         page.append(team_member_title);
+        team_member_title.id = sport.section_id;
         let team_members_div = document.createElement("div"); team_members_div.classList.add("team_members");
         for (const member of sport.members) {
             console.log(member);
