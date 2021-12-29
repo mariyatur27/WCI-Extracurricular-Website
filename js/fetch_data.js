@@ -491,8 +491,8 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
-        "team_section_id": "cross_country_team",
-        "history_section_id" : "cross_country_history",
+        "team_section_id": "crosscountry_team",
+        "history_section_id" : "crosscountry_history",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
         "categories": [
             "fall_sports",
@@ -538,6 +538,8 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
+        "team_section_id": "boysgolf_team",
+        "history_section_id" : "boysgolf_history",
         "team_m_b": "Team Members",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
         "categories": [
@@ -555,6 +557,8 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
+        "team_section_id": "jrboysfootball_team",
+        "history_section_id" : "jrboysfootball_history",
         "team_m_b": "Team Members",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
         "categories": [
@@ -572,6 +576,8 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
+        "team_section_id": "srboysfootball_team",
+        "history_section_id" : "srboysfootball_history",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
         "categories": [
             "fall_sports",
@@ -588,11 +594,9 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
+        "team_section_id": "jrboyssoccer_team",
+        "history_section_id" : "jrboyssoccer_history",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-         "tm1": [{
-            "name" : "Arthur Jackson",
-            "image" : "assets/sport_images/running.png"
-        }],
         "categories": [
             "fall_sports",
             "boys_sports",
@@ -608,6 +612,8 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
+        "team_section_id": "jrboysvolleyball_team",
+        "history_section_id" : "jrboysvolleyball_history",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
         "members" : [
             {"name": "Aiden D", "image": "assets/sport_team_members/jrboysvolleyball/Aiden D.png"},
@@ -638,6 +644,8 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
+        "team_section_id": "srboysvolleyball_team",
+        "history_section_id" : "srboysvolleyball_history",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
         "members" : [
             {"name": "Blake T", "image": "assets/sport_team_members/srboysvolleyball/Blake T.png"},
@@ -671,6 +679,8 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
+        "team_section_id": "girlsfieldhockey_team",
+        "history_section_id" : "girlsfieldhockey_history",
         "team_history": "The Girls Field Hockey team had a stellar season, ranking 5th in their pod (L3-W2)! The girls worked hard despite their losses and made it to the quarter-finals in the playoffs after beating SSS 3-2! Unfortunately, they were put up against BCI who hadn't let a goal in all season. The girls gave it their all (5-0 L) and although it was a short season we are still super proud of the team! Awesome job Vikes!        ",
         "members" : [
             {"name": "Lauren A", "image": "assets/sport_team_members/girlsfieldhockey/Lauren A.png"},
@@ -711,6 +721,8 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
+        "team_section_id": "jrgirlsbasketball_team",
+        "history_section_id" : "jrgirlsbasketball_history",
         "team_history": "These Jr. girls have had an incredible start to their careers as high school athletes. With a first place ranking in their pod (6-0) they clearly dominated all regular season. They began to breeze through playoffs starting with easy wins in the preliminary round and the quarter-finals. Although after a tough match up against CHCI, they lost in the semi-finals. Congrats to these athletes on an incredible season! Go Vikes!",
         "members" : [
             {"name": "Alice W", "image": "assets/sport_team_members/jrgirlsbasketball/Alice W.png"},
@@ -743,6 +755,8 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
+        "team_section_id": "srgirlsbasketball_team",
+        "history_section_id" : "srgirlsbasketball_history",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
         "members" : [
             {"name": "Ana C", "image": "assets/sport_team_members/srgirlsbasketball/Ana C.png"},
@@ -775,6 +789,8 @@ var athletics = [
         "team_member_button": "Search Team",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
+        "team_section_id": "alpineskiing_team",
+        "history_section_id" : "alpineskiing_history",
         "categories": [
             "winter_sports",
             "junior_sports",
@@ -790,11 +806,9 @@ var athletics = [
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
+        "team_section_id": "curling_team",
+        "history_section_id" : "curling_history",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-         "tm1": [{
-            "name" : "Arthur Jackson",
-            "image" : "assets/sport_images/running.png"
-        }],
         "categories": [
             "winter_sports",
             "junior_sports",
@@ -808,6 +822,8 @@ var athletics = [
         "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "team_section_id": "swimming_team",
+        "history_section_id" : "swimming_history",
         "meeting_time_title": "Practices:",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
@@ -824,6 +840,8 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
+        "team_section_id": "boyshockey_team",
+        "history_section_id" : "boyshockey_history",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
@@ -840,6 +858,8 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
+        "team_section_id": "jrboyssbasketball_team",
+        "history_section_id" : "jrboyssbasketball_history",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
@@ -855,6 +875,8 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
+        "team_section_id": "srboysbasketball_team",
+        "history_section_id" : "srboysbasketball_history",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
@@ -870,6 +892,8 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
+        "team_section_id": "girlshockey_team",
+        "history_section_id" : "girlshockey_history",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "members" : [
             {"name": "Addison S", "image": "assets/sport_team_members/girlshockey/Addison S.png"},
@@ -900,6 +924,8 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
+        "team_section_id": "jrgirlsvolleyball_team",
+        "history_section_id" : "jrgirlsvolleyball_history",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
@@ -915,6 +941,8 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
+        "team_section_id": "srgirlsvolleyball_team",
+        "history_section_id" : "srgirlsvolleyball_history",
         "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
@@ -929,6 +957,8 @@ var athletics = [
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "team_section_id": "badminton_team",
+        "history_section_id" : "badminton_history",
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
@@ -943,6 +973,8 @@ var athletics = [
         "image": "assets/sport_images/running.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "team_section_id": "trackandfield_team",
+        "history_section_id" : "trackandfield_history",
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
@@ -957,6 +989,8 @@ var athletics = [
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "team_section_id": "boysrugby_team",
+        "history_section_id" : "boysrugby_history",
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
@@ -973,6 +1007,8 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
+        "team_section_id": "boysslopitch_team",
+        "history_section_id" : "boysslopitch_history",
         "categories": [
             "spring_sports",
             "boys_sports",
@@ -988,6 +1024,8 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
+        "team_section_id": "srboyssoccer_team",
+        "history_section_id" : "srboyssoccer_history",
         "categories": [
             "spring_sports",
             "boys_sports",
@@ -1003,6 +1041,8 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
+        "team_section_id": "girlsrugby_team",
+        "history_section_id" : "girlsrugby_history",
         "categories": [
             "spring_sports",
             "girls_sports",
@@ -1018,6 +1058,8 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
+        "team_section_id": "girlssoccer_team",
+        "history_section_id" : "girlssoccer_history",
         "categories": [
             "spring_sports",
             "girls_sports",
@@ -1033,6 +1075,8 @@ var athletics = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
+        "team_section_id": "girlsslopitch_team",
+        "history_section_id" : "girlsslopitch_history",
         "categories": [
             "spring_sports",
             "girls_sports",
@@ -1043,6 +1087,8 @@ var athletics = [
     {
         "name": "Tennis",
         "id": "tennis",
+        "team_section_id": "tennis_team",
+        "history_section_id" : "tennis_history",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
