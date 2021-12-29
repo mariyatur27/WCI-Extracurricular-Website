@@ -47,12 +47,13 @@ async function setupSportPage(sportID) {
     }
     page.appendChild(meeting_time);
 
-    let team_history_title = document.createElement("h3"); team_history_title.classList.add("sport_info_title"); team_history_title.innerText = "Team History";
-    page.appendChild(team_history_title);
+    if ("team_history" in sport) {
+        let team_history_title = document.createElement("h3"); team_history_title.classList.add("sport_info_title"); team_history_title.innerText = "Team History";
+        page.appendChild(team_history_title);
 
-    let team_history_text = document.createElement("h4"); team_history_text.classList.add("t_history"); team_history_text.innerText = sport.team_history;
-    page.appendChild(team_history_text);
-
+        let team_history_text = document.createElement("h4"); team_history_text.classList.add("t_history"); team_history_text.innerText = sport.team_history;
+        page.appendChild(team_history_text);
+    }
     if ("members" in sport) {
         let team_member_title = document.createElement("h3"); team_member_title.classList.add("sport_info_title"); team_member_title.innerText = "Team Members";
         page.append(team_member_title);
