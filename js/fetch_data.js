@@ -637,10 +637,22 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-         "tm1": [{
-            "name" : "Arthur Jackson",
-            "image" : "assets/sport_images/running.png"
-        }],
+        "members" : [
+            {"name": "Blake T", "image": "assets/sport_team_members/srboysvolleyball/Blake T.png"},
+            {"name": "Brandon K", "image": "assets/sport_team_members/srboysvolleyball/Brandon K.png"},
+            {"name": "Carson H", "image": "assets/sport_team_members/srboysvolleyball/Carson H.png"},
+            {"name": "Charles E", "image": "assets/sport_team_members/srboysvolleyball/Charles E.png"},
+            {"name": "Elai M", "image": "assets/sport_team_members/srboysvolleyball/Elai M.png"},
+            {"name": "Jude M", "image": "assets/sport_team_members/srboysvolleyball/Jude M.png"},
+            {"name": "Michael M", "image": "assets/sport_team_members/srboysvolleyball/Michael M.png"},
+            {"name": "Nathan G", "image": "assets/sport_team_members/srboysvolleyball/Nathan G.png"},
+            {"name": "Oliver D", "image": "assets/sport_team_members/srboysvolleyball/Oliver D.png"},
+            {"name": "Sam R", "image": "assets/sport_team_members/srboysvolleyball/Sam R.png"},
+            {"name": "Thomas S", "image": "assets/sport_team_members/srboysvolleyball/Thomas S.png"},
+            {"name": "Trent F", "image": "assets/sport_team_members/srboysvolleyball/Trent F.png"},
+            {"name": "Trent L", "image": "assets/sport_team_members/srboysvolleyball/Trent L.png"},
+            {"name": "Zack M", "image": "assets/sport_team_members/srboysvolleyball/Zack M.png"}
+        ],
         "categories": [
             "fall_sports",
             "boys_sports",
