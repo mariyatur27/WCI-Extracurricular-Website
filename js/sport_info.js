@@ -60,7 +60,10 @@ async function setupSportPage(sportID) {
         for (const member of sport.members) {
             console.log(member);
             let member_div = document.createElement("div"); member_div.classList.add("team_member");
-            let member_name = document.createElement("h6"); member_name.classList.add("t_members"); member_name.innerText = member.name;
+            let member_name = document.createElement("h6"); member_name.classList.add("t_members");
+            if ("name" in member) {
+                member_name.innerText = member.name;
+            }
             let member_picture = document.createElement("img"); member_picture.classList.add("t_pictures"); member_picture.src = member.image;
             member_div.appendChild(member_picture);
             member_div.appendChild(member_name);
