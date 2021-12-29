@@ -85,7 +85,7 @@ header.masthead {
 
 header.arts {
 	height: 100vh;
-	background-image: url(/assets/artspageimgs/artsheaderbg.jpg);
+	background-image: url(assets/artspageimgs/artsheaderbg.jpg);
 	background-size: cover;
 	background-position: top;
 	position: relative;
