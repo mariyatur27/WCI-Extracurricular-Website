@@ -497,10 +497,36 @@ var athletics = [
             "junior_sports",
             "senior_sports"
         ],
-        "tm1": {
-            "name" : "Arthur Jackson",
-            "image" : "assets/sport_images/running.png"
-        }
+        "members" : [
+            {"name": "Adam L", "image": "assets/sport_team_members/crosscountry/Adam L.png"},
+            {"name": "Alina A", "image": "assets/sport_team_members/crosscountry/Alina A.png"},
+            {"name": "Arman Z", "image": "assets/sport_team_members/crosscountry/Arman Z.png"},
+            {"name": "Avery V", "image": "assets/sport_team_members/crosscountry/Avery V.png"},
+            {"name": "Carolyn H", "image": "assets/sport_team_members/crosscountry/Carolyn H.png"},
+            {"name": "Carter M", "image": "assets/sport_team_members/crosscountry/Carter M.png"},
+            {"name": "Ferguson B", "image": "assets/sport_team_members/crosscountry/Ferguson B.png"},
+            {"name": "Gabirel P", "image": "assets/sport_team_members/crosscountry/Gabirel P.png"},
+            {"name": "Grace Q", "image": "assets/sport_team_members/crosscountry/Grace Q.png"},
+            {"name": "Hugh M", "image": "assets/sport_team_members/crosscountry/Hugh M.png"},
+            {"name": "Jacob B", "image": "assets/sport_team_members/crosscountry/Jacob B.png"},
+            {"name": "Joshua D", "image": "assets/sport_team_members/crosscountry/Joshua D.png"},
+            {"name": "Kohei A", "image": "assets/sport_team_members/crosscountry/Kohei A.png"},
+            {"name": "Kristina K", "image": "assets/sport_team_members/crosscountry/Kristina K.png"},
+            {"name": "Laura W", "image": "assets/sport_team_members/crosscountry/Laura W.png"},
+            {"name": "Leya O", "image": "assets/sport_team_members/crosscountry/Leya O.png"},
+            {"name": "Lucas G", "image": "assets/sport_team_members/crosscountry/Lucas G.png"},
+            {"name": "Matt B", "image": "assets/sport_team_members/crosscountry/Matt B.png"},
+            {"name": "Matthew A", "image": "assets/sport_team_members/crosscountry/Matthew A.png"},
+            {"name": "My Chau T", "image": "assets/sport_team_members/crosscountry/My Chau T.png"},
+            {"name": "Nathan I", "image": "assets/sport_team_members/crosscountry/Nathan I.png"},
+            {"name": "Sarah R", "image": "assets/sport_team_members/crosscountry/Sarah R.png"},
+            {"name": "Theo D", "image": "assets/sport_team_members/crosscountry/Theo D.png"},
+            {"name": "Tim L", "image": "assets/sport_team_members/crosscountry/Tim L.png"},
+            {"name": "Tyler B", "image": "assets/sport_team_members/crosscountry/Tyler B.png"},
+            {"name": "Victor Z", "image": "assets/sport_team_members/crosscountry/Victor Z.png"},
+            {"name": "William B", "image": "assets/sport_team_members/crosscountry/William B.png"},
+            {"name": "Zina K", "image": "assets/sport_team_members/crosscountry/Zina K.png"}
+        ],
     },
     {
         "name": "Boys Golf",
