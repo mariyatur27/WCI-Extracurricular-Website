@@ -975,6 +975,9 @@ a.art-form {
 	font-size: 25px;
 	font-weight: bold;
 }
+h2.a_title {
+    margin-top: 6%;
+}
 #gallery .box .text .content p{
 	margin: 0;
 	padding: 0;
