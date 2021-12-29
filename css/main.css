@@ -984,7 +984,9 @@ a.art-form {
 	font-weight: bold;
 }
 h2.a_title {
-    margin-top: 6%;
+    margin-top: 9%;
+	text-align: center;
+	font-size: 2.5em;
 }
 #gallery .box .text .content p{
 	margin: 0;
