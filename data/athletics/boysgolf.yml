@@ -1,5 +1,6 @@
 categories:
 - fall_sports
+- boys_sports
 - junior_sports
 - senior_sports
 connection-links: []
@@ -8,37 +9,7 @@ description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum v
   consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe
   pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi
   debitis sint tempora mollitia at?
-image: assets/sport_images/running.png
-name: Cross Country
+image: assets/sport_images/football.png
+name: Boys Golf
 practice-time: Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM
 practice-time-label: 'Practices:'
-team-member-image-folder: assets/sport_team_members/crosscountry/
-team-members:
-- Adam L
-- Alina A
-- Arman Z
-- Avery V
-- Carolyn H
-- Carter M
-- Ferguson B
-- Gabirel P
-- Grace Q
-- Hugh M
-- Jacob B
-- Joshua D
-- Kohei A
-- Kristina K
-- Laura W
-- Leya O
-- Lucas G
-- Matt B
-- Matthew A
-- My Chau T
-- Nathan I
-- Sarah R
-- Theo D
-- Tim L
-- Tyler B
-- Victor Z
-- William B
-- Zina K

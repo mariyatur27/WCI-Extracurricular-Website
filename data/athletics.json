@@ -1,175 +1,52 @@
 [
     {
-        "name": "Cross Country",
-        "id": "crosscountry",
-        "connection_links": [],
-        "image": "assets/sport_images/running.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "team_m_b": "Team Members",
-        "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-        "categories": [
-            "fall_sports",
-            "junior_sports",
-            "senior_sports"
+        "connection_links": [
+            "more_info"
         ],
-        "members" : [
-            {"name": "Adam L", "image": "assets/sport_team_members/crosscountry/Adam L.png"},
-            {"name": "Alina A", "image": "assets/sport_team_members/crosscountry/Alina A.png"},
-            {"name": "Arman Z", "image": "assets/sport_team_members/crosscountry/Arman Z.png"},
-            {"name": "Avery V", "image": "assets/sport_team_members/crosscountry/Avery V.png"},
-            {"name": "Carolyn H", "image": "assets/sport_team_members/crosscountry/Carolyn H.png"},
-            {"name": "Carter M", "image": "assets/sport_team_members/crosscountry/Carter M.png"},
-            {"name": "Ferguson B", "image": "assets/sport_team_members/crosscountry/Ferguson B.png"},
-            {"name": "Gabirel P", "image": "assets/sport_team_members/crosscountry/Gabirel P.png"},
-            {"name": "Grace Q", "image": "assets/sport_team_members/crosscountry/Grace Q.png"},
-            {"name": "Hugh M", "image": "assets/sport_team_members/crosscountry/Hugh M.png"},
-            {"name": "Jacob B", "image": "assets/sport_team_members/crosscountry/Jacob B.png"},
-            {"name": "Joshua D", "image": "assets/sport_team_members/crosscountry/Joshua D.png"},
-            {"name": "Kohei A", "image": "assets/sport_team_members/crosscountry/Kohei A.png"},
-            {"name": "Kristina K", "image": "assets/sport_team_members/crosscountry/Kristina K.png"},
-            {"name": "Laura W", "image": "assets/sport_team_members/crosscountry/Laura W.png"},
-            {"name": "Leya O", "image": "assets/sport_team_members/crosscountry/Leya O.png"},
-            {"name": "Lucas G", "image": "assets/sport_team_members/crosscountry/Lucas G.png"},
-            {"name": "Matt B", "image": "assets/sport_team_members/crosscountry/Matt B.png"},
-            {"name": "Matthew A", "image": "assets/sport_team_members/crosscountry/Matthew A.png"},
-            {"name": "My Chau T", "image": "assets/sport_team_members/crosscountry/My Chau T.png"},
-            {"name": "Nathan I", "image": "assets/sport_team_members/crosscountry/Nathan I.png"},
-            {"name": "Sarah R", "image": "assets/sport_team_members/crosscountry/Sarah R.png"},
-            {"name": "Theo D", "image": "assets/sport_team_members/crosscountry/Theo D.png"},
-            {"name": "Tim L", "image": "assets/sport_team_members/crosscountry/Tim L.png"},
-            {"name": "Tyler B", "image": "assets/sport_team_members/crosscountry/Tyler B.png"},
-            {"name": "Victor Z", "image": "assets/sport_team_members/crosscountry/Victor Z.png"},
-            {"name": "William B", "image": "assets/sport_team_members/crosscountry/William B.png"},
-            {"name": "Zina K", "image": "assets/sport_team_members/crosscountry/Zina K.png"}
-        ]
-    },
-    {
-        "name": "Boys Golf",
-        "id": "boysgolf",
-        "connection_links": [],
-        "image": "assets/sport_images/football.png",
+        "id": "badminton",
+        "name": "Badminton",
+        "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
-        "team_m_b": "Team Members",
-        "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
         "categories": [
-            "fall_sports",
-            "boys_sports",
+            "spring_sports",
             "junior_sports",
             "senior_sports"
         ]
     },
     {
-        "name": "Jr. Boys Football",
-        "id": "jrboysfootball",
-        "connection_links": [],
-        "image": "assets/sport_images/football.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "team_m_b": "Team Members",
-        "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-        "categories": [
-            "fall_sports",
-            "boys_sports",
-            "junior_sports"
-        ]
-    },
-    {
-        "name": "Sr. Boys Football",
-        "id": "srboysfootball",
-        "connection_links": [],
-        "image": "assets/sport_images/football.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "team_m_b": "Team Members",
-        "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-        "categories": [
-            "fall_sports",
-            "boys_sports",
-            "senior_sports"
-        ]
-    },
-    {
-        "name": "Jr. Boys Soccer",
-        "id": "jrboyssoccer",
-        "connection_links": [],
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "swimming",
+        "name": "Swimming",
         "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
-        "team_m_b": "Team Members",
-        "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-         "tm1": [{
-            "name" : "Arthur Jackson",
-            "image" : "assets/sport_images/running.png"
-        }],
         "categories": [
-            "fall_sports",
-            "boys_sports",
-            "junior_sports"
+            "winter_sports",
+            "junior_sports",
+            "senior_sports"
+        ],
+        "extra_info": [
+            {
+                "text": "Past experience is required.",
+                "type": "important_text"
+            }
         ]
     },
     {
-        "name": "Jr. Boys Volleyball",
-        "id": "jrboysvolleyball",
-        "connection_links": [],
-        "image": "assets/sport_images/volleyball.png",
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "srboysfootball",
+        "name": "Sr. Boys Football",
+        "image": "assets/sport_images/football.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
-        "team_m_b": "Team Members",
-        "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-        "members" : [
-            {"name": "Aiden D", "image": "assets/sport_team_members/jrboysvolleyball/Aiden D.png"},
-            {"name": "Ben M", "image": "assets/sport_team_members/jrboysvolleyball/Ben M.png"},
-            {"name": "Ben T", "image": "assets/sport_team_members/jrboysvolleyball/Ben T.png"},
-            {"name": "Cale B", "image": "assets/sport_team_members/jrboysvolleyball/Cale B.png"},
-            {"name": "Daniel J", "image": "assets/sport_team_members/jrboysvolleyball/Daniel J.png"},
-            {"name": "Ernie B", "image": "assets/sport_team_members/jrboysvolleyball/Ernie B.png"},
-            {"name": "Jack M", "image": "assets/sport_team_members/jrboysvolleyball/Jack M.png"},
-            {"name": "Jacob T", "image": "assets/sport_team_members/jrboysvolleyball/Jacob T.png"},
-            {"name": "Khaled M", "image": "assets/sport_team_members/jrboysvolleyball/Khaled M.png"},
-            {"name": "Paul T", "image": "assets/sport_team_members/jrboysvolleyball/Paul T.png"},
-            {"name": "Seb", "image": "assets/sport_team_members/jrboysvolleyball/Seb.png"},
-            {"name": "Umar M", "image": "assets/sport_team_members/jrboysvolleyball/Umar M.png"}
-        ],
-        "categories": [
-            "fall_sports",
-            "boys_sports",
-            "junior_sports"
-        ]
-    },
-    {
-        "name": "Sr. Boys Volleyball",
-        "id": "srboysvolleyball",
-        "connection_links": [],
-        "image": "assets/sport_images/volleyball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "team_m_b": "Team Members",
-        "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-        "members" : [
-            {"name": "Blake T", "image": "assets/sport_team_members/srboysvolleyball/Blake T.png"},
-            {"name": "Brandon K", "image": "assets/sport_team_members/srboysvolleyball/Brandon K.png"},
-            {"name": "Carson H", "image": "assets/sport_team_members/srboysvolleyball/Carson H.png"},
-            {"name": "Charles E", "image": "assets/sport_team_members/srboysvolleyball/Charles E.png"},
-            {"name": "Elai M", "image": "assets/sport_team_members/srboysvolleyball/Elai M.png"},
-            {"name": "Jude M", "image": "assets/sport_team_members/srboysvolleyball/Jude M.png"},
-            {"name": "Michael M", "image": "assets/sport_team_members/srboysvolleyball/Michael M.png"},
-            {"name": "Nathan G", "image": "assets/sport_team_members/srboysvolleyball/Nathan G.png"},
-            {"name": "Oliver D", "image": "assets/sport_team_members/srboysvolleyball/Oliver D.png"},
-            {"name": "Sam R", "image": "assets/sport_team_members/srboysvolleyball/Sam R.png"},
-            {"name": "Thomas S", "image": "assets/sport_team_members/srboysvolleyball/Thomas S.png"},
-            {"name": "Trent F", "image": "assets/sport_team_members/srboysvolleyball/Trent F.png"},
-            {"name": "Trent L", "image": "assets/sport_team_members/srboysvolleyball/Trent L.png"},
-            {"name": "Zack M", "image": "assets/sport_team_members/srboysvolleyball/Zack M.png"}
-        ],
         "categories": [
             "fall_sports",
             "boys_sports",
@@ -177,395 +54,962 @@
         ]
     },
     {
-        "name": "Girls Field Hockey",
-        "id": "girlsfieldhockey",
-        "connection_links": ["more_info"],
-        "image": "assets/sport_images/volleyball.png",
-        "coach" : "L. Gowing, R. Notarfranco",
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "girlssoccer",
+        "name": "Girls Soccer",
+        "image": "assets/sport_images/soccer.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
-        "team_m_b": "Team Members",
-        "team_history": "The Girls Field Hockey team had a stellar season, ranking 5th in their pod (L3-W2)! The girls worked hard despite their losses and made it to the quarter-finals in the playoffs after beating SSS 3-2! Unfortunately, they were put up against BCI who hadn't let a goal in all season. The girls gave it their all (5-0 L) and although it was a short season we are still super proud of the team! Awesome job Vikes!        ",
-        "members" : [
-            {"name": "Lauren A", "image": "assets/sport_team_members/girlsfieldhockey/Lauren A.png"},
-            {"name": "Sadie B", "image": "assets/sport_team_members/girlsfieldhockey/Sadie B.png"},
-            {"name": "Nimo B", "image": "assets/sport_team_members/girlsfieldhockey/Nimo B.png"},
-            {"name": "Lia E", "image": "assets/sport_team_members/girlsfieldhockey/Lia E.png"},
-            {"name": "Charis H", "image": "assets/sport_team_members/girlsfieldhockey/Charis H.png"},
-            {"name": "Harper G", "image": "assets/sport_team_members/girlsfieldhockey/Harper G.png"},
-            {"name": "Poorvi J", "image": "assets/sport_team_members/girlsfieldhockey/Poorvi J.png"},
-            {"name": "Lucy G", "image": "assets/sport_team_members/girlsfieldhockey/Lucy G.png"},
-            {"name": "Tanya B", "image": "assets/sport_team_members/girlsfieldhockey/Tanya B.png"},
-            {"name": "Brooke B", "image": "assets/sport_team_members/girlsfieldhockey/Brooke B.png"},
-            {"name": "Nina W", "image": "assets/sport_team_members/girlsfieldhockey/Nina W.png"},
-            {"name": "Jaidan B", "image": "assets/sport_team_members/girlsfieldhockey/Jaiden B.png"},
-            {"name": "Olivia K", "image": "assets/sport_team_members/girlsfieldhockey/Olivia K.png"},
-            {"name": "Brooke T", "image": "assets/sport_team_members/girlsfieldhockey/Brooke T.png"},
-            {"name": "Addison S", "image": "assets/sport_team_members/girlsfieldhockey/Addison S.png"},
-            {"name": "Logan S", "image": "assets/sport_team_members/girlsfieldhockey/Logan S.png"},
-            {"name": "Faye K", "image": "assets/sport_team_members/girlsfieldhockey/Faye K.png"},
-            {"name": "Faeron R", "image": "assets/sport_team_members/girlsfieldhockey/Faeron R.png"},
-            {"name": "Ainslee C", "image": "assets/sport_team_members/girlsfieldhockey/Ainslee C.png"},
-            {"name": "Sammi W", "image": "assets/sport_team_members/girlsfieldhockey/Sammi W.png"}
-        ],
         "categories": [
-            "fall_sports",
+            "spring_sports",
             "girls_sports",
             "junior_sports",
             "senior_sports"
         ]
     },
     {
-        "name": "Jr. Girls Basketball",
-        "id": "jrgirlsbasketball",
-        "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
-        "coach" : "K. Jilesen",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "team_m_b": "Team Members",
-        "team_history": "These Jr. girls have had an incredible start to their careers as high school athletes. With a first place ranking in their pod (6-0) they clearly dominated all regular season. They began to breeze through playoffs starting with easy wins in the preliminary round and the quarter-finals. Although after a tough match up against CHCI, they lost in the semi-finals. Congrats to these athletes on an incredible season! Go Vikes!",
-        "members" : [
-            {"name": "Alice W", "image": "assets/sport_team_members/jrgirlsbasketball/Alice W.png"},
-            {"name": "Aynaz M", "image": "assets/sport_team_members/jrgirlsbasketball/Aynaz M.png"},
-            {"name": "Adhara C", "image": "assets/sport_team_members/jrgirlsbasketball/Adhara C.png"},
-            {"name": "Zara Z", "image": "assets/sport_team_members/jrgirlsbasketball/Zara Z.png"},
-            {"name": "Jessica C", "image": "assets/sport_team_members/jrgirlsbasketball/Jessica C.png"},
-            {"name": "Rihana A", "image": "assets/sport_team_members/jrgirlsbasketball/Rihana A.png"},
-            {"name": "Michelle O", "image": "assets/sport_team_members/jrgirlsbasketball/Michelle O.png"},
-            {"name": "Caira P", "image": "assets/sport_team_members/jrgirlsbasketball/Caira P.png"},
-            {"name": "Bushra S", "image": "assets/sport_team_members/jrgirlsbasketball/Bushra S.png"},
-            {"name": "Ella S", "image": "assets/sport_team_members/jrgirlsbasketball/Ella S.png"},
-            {"name": "Grace S", "image": "assets/sport_team_members/jrgirlsbasketball/Grace S.png"},
-            {"name": "Kimaya T", "image": "assets/sport_team_members/jrgirlsbasketball/Kimaya T.png"},
-            {"name": "Pari T", "image": "assets/sport_team_members/jrgirlsbasketball/Pari T.png"}
+        "connection_links": [
+            "more_info"
         ],
-        "categories": [
-            "fall_sports",
-            "girls_sports",
-            "junior_sports"
-        ]
-    },
-    {
-        "name": "Sr. Girls Basketball",
-        "id": "srgirlsbasketball",
-        "connection_links": [],
-        "coach": "J.Wesson, M. Cowburn, Galin Moir, Dahir Abdiaziz",
+        "id": "boysslopitch",
+        "name": "Boys Slo-Pitch",
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
-        "team_m_b": "Team Members",
-        "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-        "members" : [
-            {"name": "Ana C", "image": "assets/sport_team_members/srgirlsbasketball/Ana C.png"},
-            {"name": "Cameron B", "image": "assets/sport_team_members/srgirlsbasketball/Cameron B.png"},
-            {"name": "Chloe T", "image": "assets/sport_team_members/srgirlsbasketball/Chloe T.png"},
-            {"name": "Christa W", "image": "assets/sport_team_members/srgirlsbasketball/Christa W.png"},
-            {"name": "Dacia C", "image": "assets/sport_team_members/srgirlsbasketball/Dacia C.png"},
-            {"name": "Lowen D", "image": "assets/sport_team_members/srgirlsbasketball/Lowen D.png"},
-            {"name": "Melissa B", "image": "assets/sport_team_members/srgirlsbasketball/Melissa B.png"},
-            {"name": "Sara H", "image": "assets/sport_team_members/srgirlsbasketball/Sara H.png"},
-            {"name": "Sarah B", "image": "assets/sport_team_members/srgirlsbasketball/Sarah B.png"},
-            {"name": "Sophia M", "image": "assets/sport_team_members/srgirlsbasketball/Sophia M.png"},
-            {"name": "Zeyneb S", "image": "assets/sport_team_members/srgirlsbasketball/Zeyneb S.png"}
-        ],
         "categories": [
-            "fall_sports",
-            "girls_sports",
+            "spring_sports",
+            "boys_sports",
+            "junior_sports",
             "senior_sports"
         ]
     },
     {
-        "name": "Alpine Skiing",
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "srboyssoccer",
+        "name": "Sr. Boys Soccer",
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "spring_sports",
+            "boys_sports",
+            "junior_sports",
+            "senior_sports"
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "girlsfieldhockey",
+        "name": "Girls Field Hockey",
+        "image": "assets/sport_images/volleyball.png",
+        "coach": "L. Gowing, R. Notarfranco",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "fall_sports",
+            "girls_sports",
+            "junior_sports",
+            "senior_sports"
+        ],
+        "members": [
+            {
+                "name": "Lauren A",
+                "image": "assets/sport_team_members/girlsfieldhockey/Lauren A.png"
+            },
+            {
+                "name": "Sadie B",
+                "image": "assets/sport_team_members/girlsfieldhockey/Sadie B.png"
+            },
+            {
+                "name": "Nimo B",
+                "image": "assets/sport_team_members/girlsfieldhockey/Nimo B.png"
+            },
+            {
+                "name": "Lia E",
+                "image": "assets/sport_team_members/girlsfieldhockey/Lia E.png"
+            },
+            {
+                "name": "Charis H",
+                "image": "assets/sport_team_members/girlsfieldhockey/Charis H.png"
+            },
+            {
+                "name": "Harper G",
+                "image": "assets/sport_team_members/girlsfieldhockey/Harper G.png"
+            },
+            {
+                "name": "Poorvi J",
+                "image": "assets/sport_team_members/girlsfieldhockey/Poorvi J.png"
+            },
+            {
+                "name": "Lucy G",
+                "image": "assets/sport_team_members/girlsfieldhockey/Lucy G.png"
+            },
+            {
+                "name": "Tanya B",
+                "image": "assets/sport_team_members/girlsfieldhockey/Tanya B.png"
+            },
+            {
+                "name": "Brooke B",
+                "image": "assets/sport_team_members/girlsfieldhockey/Brooke B.png"
+            },
+            {
+                "name": "Nina W",
+                "image": "assets/sport_team_members/girlsfieldhockey/Nina W.png"
+            },
+            {
+                "name": "Jaidan B",
+                "image": "assets/sport_team_members/girlsfieldhockey/Jaidan B.png"
+            },
+            {
+                "name": "Olivia K",
+                "image": "assets/sport_team_members/girlsfieldhockey/Olivia K.png"
+            },
+            {
+                "name": "Brooke T",
+                "image": "assets/sport_team_members/girlsfieldhockey/Brooke T.png"
+            },
+            {
+                "name": "Addison S",
+                "image": "assets/sport_team_members/girlsfieldhockey/Addison S.png"
+            },
+            {
+                "name": "Logan S",
+                "image": "assets/sport_team_members/girlsfieldhockey/Logan S.png"
+            },
+            {
+                "name": "Faye K",
+                "image": "assets/sport_team_members/girlsfieldhockey/Faye K.png"
+            },
+            {
+                "name": "Faeron R",
+                "image": "assets/sport_team_members/girlsfieldhockey/Faeron R.png"
+            },
+            {
+                "name": "Ainslee C",
+                "image": "assets/sport_team_members/girlsfieldhockey/Ainslee C.png"
+            },
+            {
+                "name": "Sammi W",
+                "image": "assets/sport_team_members/girlsfieldhockey/Sammi W.png"
+            }
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "boyshockey",
+        "name": "Boys Hockey",
+        "image": "assets/sport_images/hockey.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "winter_sports",
+            "boys_sports",
+            "junior_sports",
+            "senior_sports"
+        ],
+        "extra_info": [
+            {
+                "text": "Past experience is required.",
+                "type": "important_text"
+            }
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "jrboyssbasketball",
+        "name": "Jr. Boys Basketball",
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "winter_sports",
+            "boys_sports",
+            "junior_sports"
+        ],
+        "extra_info": [
+            {
+                "text": "Past experience is required.",
+                "type": "important_text"
+            }
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "trackandfield",
+        "name": "Track and Field",
+        "image": "assets/sport_images/running.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "spring_sports",
+            "junior_sports",
+            "senior_sports"
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "jrboyssoccer",
+        "name": "Jr. Boys Soccer",
+        "image": "assets/sport_images/soccer.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "fall_sports",
+            "boys_sports",
+            "junior_sports"
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "curling",
+        "name": "Curling",
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "winter_sports",
+            "junior_sports",
+            "senior_sports"
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "tennis",
+        "name": "Tennis",
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "spring_sports",
+            "junior_sports",
+            "senior_sports"
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "srgirlsbasketball",
+        "name": "Sr. Girls Basketball",
+        "image": "assets/sport_images/basketball.png",
+        "coach": "J.Wesson, M. Cowburn, Galin Moir, Dahir Abdiaziz",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "fall_sports",
+            "girls_sports",
+            "senior_sports"
+        ],
+        "members": [
+            {
+                "name": "Ana C",
+                "image": "assets/sport_team_members/srgirlsbasketball/Ana C.png"
+            },
+            {
+                "name": "Cameron B",
+                "image": "assets/sport_team_members/srgirlsbasketball/Cameron B.png"
+            },
+            {
+                "name": "Chloe T",
+                "image": "assets/sport_team_members/srgirlsbasketball/Chloe T.png"
+            },
+            {
+                "name": "Christa W",
+                "image": "assets/sport_team_members/srgirlsbasketball/Christa W.png"
+            },
+            {
+                "name": "Dacia C",
+                "image": "assets/sport_team_members/srgirlsbasketball/Dacia C.png"
+            },
+            {
+                "name": "Lowen D",
+                "image": "assets/sport_team_members/srgirlsbasketball/Lowen D.png"
+            },
+            {
+                "name": "Melissa B",
+                "image": "assets/sport_team_members/srgirlsbasketball/Melissa B.png"
+            },
+            {
+                "name": "Sara H",
+                "image": "assets/sport_team_members/srgirlsbasketball/Sara H.png"
+            },
+            {
+                "name": "Sarah B",
+                "image": "assets/sport_team_members/srgirlsbasketball/Sarah B.png"
+            },
+            {
+                "name": "Sophia M",
+                "image": "assets/sport_team_members/srgirlsbasketball/Sophia M.png"
+            },
+            {
+                "name": "Zeyneb S",
+                "image": "assets/sport_team_members/srgirlsbasketball/Zeyneb S.png"
+            }
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "girlsslopitch",
+        "name": "Girls Slo-Pitch",
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "spring_sports",
+            "girls_sports",
+            "junior_sports",
+            "senior_sports"
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "jrboysfootball",
+        "name": "Jr. Boys Football",
+        "image": "assets/sport_images/football.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "fall_sports",
+            "boys_sports",
+            "junior_sports"
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "jrgirlsvolleyball",
+        "name": "Jr. Girls Volleyball",
+        "image": "assets/sport_images/volleyball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "winter_sports",
+            "girls_sports",
+            "junior_sports"
+        ],
+        "extra_info": [
+            {
+                "text": "Past experience is required.",
+                "type": "important_text"
+            }
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "girlshockey",
+        "name": "Girls Hockey",
+        "image": "assets/sport_images/hockey.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "winter_sports",
+            "girls_sports",
+            "junior_sports",
+            "senior_sports"
+        ],
+        "extra_info": [
+            {
+                "text": "Past experience is required.",
+                "type": "important_text"
+            }
+        ],
+        "members": [
+            {
+                "name": "Addison S",
+                "image": "assets/sport_team_members/girlshockey/Addison S.png"
+            },
+            {
+                "name": "Booke T",
+                "image": "assets/sport_team_members/girlshockey/Booke T.png"
+            },
+            {
+                "name": "Brooke B",
+                "image": "assets/sport_team_members/girlshockey/Brooke B.png"
+            },
+            {
+                "name": "Charis H",
+                "image": "assets/sport_team_members/girlshockey/Charis H.png"
+            },
+            {
+                "name": "Faye K",
+                "image": "assets/sport_team_members/girlshockey/Faye K.png"
+            },
+            {
+                "name": "Kaylanah T",
+                "image": "assets/sport_team_members/girlshockey/Kaylanah T.png"
+            },
+            {
+                "name": "Lilly M",
+                "image": "assets/sport_team_members/girlshockey/Lilly M.png"
+            },
+            {
+                "name": "Mira K",
+                "image": "assets/sport_team_members/girlshockey/Mira K.png"
+            },
+            {
+                "name": "Rachel P",
+                "image": "assets/sport_team_members/girlshockey/Rachel P.png"
+            },
+            {
+                "name": "Rowan J",
+                "image": "assets/sport_team_members/girlshockey/Rowan J.png"
+            },
+            {
+                "name": "Sadie B",
+                "image": "assets/sport_team_members/girlshockey/Sadie B.png"
+            },
+            {
+                "name": "Sofia W",
+                "image": "assets/sport_team_members/girlshockey/Sofia W.png"
+            }
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "girlsrugby",
+        "name": "Girls Rugby",
+        "image": "assets/sport_images/basketball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "spring_sports",
+            "girls_sports",
+            "junior_sports",
+            "senior_sports"
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "boysgolf",
+        "name": "Boys Golf",
+        "image": "assets/sport_images/football.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "fall_sports",
+            "boys_sports",
+            "junior_sports",
+            "senior_sports"
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "srboysvolleyball",
+        "name": "Sr. Boys Volleyball",
+        "image": "assets/sport_images/volleyball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "fall_sports",
+            "boys_sports",
+            "senior_sports"
+        ],
+        "members": [
+            {
+                "name": "Blake T",
+                "image": "assets/sport_team_members/srboysvolleyball/Blake T.png"
+            },
+            {
+                "name": "Brandon K",
+                "image": "assets/sport_team_members/srboysvolleyball/Brandon K.png"
+            },
+            {
+                "name": "Carson H",
+                "image": "assets/sport_team_members/srboysvolleyball/Carson H.png"
+            },
+            {
+                "name": "Charles E",
+                "image": "assets/sport_team_members/srboysvolleyball/Charles E.png"
+            },
+            {
+                "name": "Elai M",
+                "image": "assets/sport_team_members/srboysvolleyball/Elai M.png"
+            },
+            {
+                "name": "Jude M",
+                "image": "assets/sport_team_members/srboysvolleyball/Jude M.png"
+            },
+            {
+                "name": "Michael M",
+                "image": "assets/sport_team_members/srboysvolleyball/Michael M.png"
+            },
+            {
+                "name": "Nathan G",
+                "image": "assets/sport_team_members/srboysvolleyball/Nathan G.png"
+            },
+            {
+                "name": "Oliver D",
+                "image": "assets/sport_team_members/srboysvolleyball/Oliver D.png"
+            },
+            {
+                "name": "Sam R",
+                "image": "assets/sport_team_members/srboysvolleyball/Sam R.png"
+            },
+            {
+                "name": "Thomas S",
+                "image": "assets/sport_team_members/srboysvolleyball/Thomas S.png"
+            },
+            {
+                "name": "Trent F",
+                "image": "assets/sport_team_members/srboysvolleyball/Trent F.png"
+            },
+            {
+                "name": "Trent L",
+                "image": "assets/sport_team_members/srboysvolleyball/Trent L.png"
+            },
+            {
+                "name": "Zack M",
+                "image": "assets/sport_team_members/srboysvolleyball/Zack M.png"
+            }
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "srgirlsvolleyball",
+        "name": "Sr. Girls Volleyball",
+        "image": "assets/sport_images/volleyball.png",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "winter_sports",
+            "girls_sports",
+            "senior_sports"
+        ],
+        "extra_info": [
+            {
+                "text": "Past experience is required.",
+                "type": "important_text"
+            }
+        ],
+        "members": [
+            {
+                "name": "Chloe Taylor",
+                "image": "assets/sport_team_members/srgirlsvolleyball/Chloe Taylor.png"
+            },
+            {
+                "name": "Claire Chen",
+                "image": "assets/sport_team_members/srgirlsvolleyball/Claire Chen.png"
+            },
+            {
+                "name": "Erin Kim",
+                "image": "assets/sport_team_members/srgirlsvolleyball/Erin Kim.png"
+            },
+            {
+                "name": "Grace Wang",
+                "image": "assets/sport_team_members/srgirlsvolleyball/Grace Wang.png"
+            },
+            {
+                "name": "Jackie Dent",
+                "image": "assets/sport_team_members/srgirlsvolleyball/Jackie Dent.png"
+            },
+            {
+                "name": "Kristina Gladovic",
+                "image": "assets/sport_team_members/srgirlsvolleyball/Kristina Gladovic.png"
+            },
+            {
+                "name": "Leanne Cherry",
+                "image": "assets/sport_team_members/srgirlsvolleyball/Leanne Cherry.png"
+            },
+            {
+                "name": "Lowen Dusselier",
+                "image": "assets/sport_team_members/srgirlsvolleyball/Lowen Dusselier.png"
+            },
+            {
+                "name": "Marissa Coe",
+                "image": "assets/sport_team_members/srgirlsvolleyball/Marissa Coe.png"
+            },
+            {
+                "name": "Sam Durbin",
+                "image": "assets/sport_team_members/srgirlsvolleyball/Sam Durbin.png"
+            },
+            {
+                "name": "Sophia Murphy",
+                "image": "assets/sport_team_members/srgirlsvolleyball/Sophia Murphy.png"
+            },
+            {
+                "name": "Zeyneb Tuk Suleyman",
+                "image": "assets/sport_team_members/srgirlsvolleyball/Zeyneb Tuk Suleyman.png"
+            }
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "jrgirlsbasketball",
+        "name": "Jr. Girls Basketball",
+        "image": "assets/sport_images/basketball.png",
+        "coach": "K. Jilesen",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
+        "meeting_time_title": "Practices:",
+        "categories": [
+            "fall_sports",
+            "girls_sports",
+            "junior_sports"
+        ],
+        "members": [
+            {
+                "name": "Alice W",
+                "image": "assets/sport_team_members/jrgirlsbasketball/Alice W.png"
+            },
+            {
+                "name": "Aynaz M",
+                "image": "assets/sport_team_members/jrgirlsbasketball/Aynaz M.png"
+            },
+            {
+                "name": "Adhara C",
+                "image": "assets/sport_team_members/jrgirlsbasketball/Adhara C.png"
+            },
+            {
+                "name": "Zara Z",
+                "image": "assets/sport_team_members/jrgirlsbasketball/Zara Z.png"
+            },
+            {
+                "name": "Jessica C",
+                "image": "assets/sport_team_members/jrgirlsbasketball/Jessica C.png"
+            },
+            {
+                "name": "Rihana A",
+                "image": "assets/sport_team_members/jrgirlsbasketball/Rihana A.png"
+            },
+            {
+                "name": "Michelle O",
+                "image": "assets/sport_team_members/jrgirlsbasketball/Michelle O.png"
+            },
+            {
+                "name": "Caira P",
+                "image": "assets/sport_team_members/jrgirlsbasketball/Caira P.png"
+            },
+            {
+                "name": "Bushra S",
+                "image": "assets/sport_team_members/jrgirlsbasketball/Bushra S.png"
+            },
+            {
+                "name": "Ella S",
+                "image": "assets/sport_team_members/jrgirlsbasketball/Ella S.png"
+            },
+            {
+                "name": "Grace S",
+                "image": "assets/sport_team_members/jrgirlsbasketball/Grace S.png"
+            },
+            {
+                "name": "Kimaya T",
+                "image": "assets/sport_team_members/jrgirlsbasketball/Kimaya T.png"
+            },
+            {
+                "name": "Pari T",
+                "image": "assets/sport_team_members/jrgirlsbasketball/Pari T.png"
+            }
+        ]
+    },
+    {
+        "connection_links": [
+            "more_info"
+        ],
         "id": "alpineskiing",
-        "connection_links": [],
+        "name": "Alpine Skiing",
         "image": "assets/sport_images/skiing.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
-        "team_m_b": "Team Members",
-        "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-        "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
             "junior_sports",
             "senior_sports"
-        ]
-    },
-    {
-        "name": "Curling",
-        "id": "curling",
-        "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "team_m_b": "Team Members",
-        "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-         "tm1": [{
-            "name" : "Arthur Jackson",
-            "image" : "assets/sport_images/running.png"
-        }],
-        "categories": [
-            "winter_sports",
-            "junior_sports",
-            "senior_sports"
-        ]
-    },
-    {
-        "name": "Swimming",
-        "id": "swimming",
-        "connection_links": [],
-        "image": "assets/sport_images/soccer.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
-        "categories": [
-            "winter_sports",
-            "junior_sports",
-            "senior_sports"
-        ]
-    },
-    {
-        "name": "Boys Hockey",
-        "id": "boyshockey",
-        "connection_links": [],
-        "image": "assets/sport_images/hockey.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
-        "categories": [
-            "winter_sports",
-            "boys_sports",
-            "junior_sports",
-            "senior_sports"
-        ]
-    },
-    {
-        "name": "Jr. Boys Basketball",
-        "id": "jrboyssbasketball",
-        "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
-        "categories": [
-            "winter_sports",
-            "boys_sports",
-            "junior_sports"
-        ]
-    },
-    {
-        "name": "Sr. Boys Basketball",
-        "id": "srboysbasketball",
-        "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
-        "categories": [
-            "winter_sports",
-            "boys_sports",
-            "senior_sports"
-        ]
-    },
-    {
-        "name": "Girls Hockey",
-        "id": "girlshockey",
-        "connection_links": [],
-        "image": "assets/sport_images/hockey.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
-        "members" : [
-            {"name": "Addison S", "image": "assets/sport_team_members/girlshockey/Addison S.png"},
-            {"name": "Booke T", "image": "assets/sport_team_members/girlshockey/Booke T.png"},
-            {"name": "Brooke B", "image": "assets/sport_team_members/girlshockey/Brooke B.png"},
-            {"name": "Charis H", "image": "assets/sport_team_members/girlshockey/Charis H.png"},
-            {"name": "Faye K", "image": "assets/sport_team_members/girlshockey/Faye K.png"},
-            {"name": "Kaylanah T", "image": "assets/sport_team_members/girlshockey/Kaylanah T.png"},
-            {"name": "Lilly M", "image": "assets/sport_team_members/girlshockey/Lilly M.png"},
-            {"name": "Mira K", "image": "assets/sport_team_members/girlshockey/Mira K.png"},
-            {"name": "Rachel P", "image": "assets/sport_team_members/girlshockey/Rachel P.png"},
-            {"name": "Rowan J", "image": "assets/sport_team_members/girlshockey/Rowan J.png"},
-            {"name": "Sadie B", "image": "assets/sport_team_members/girlshockey/Sadie B.png"},
-            {"name": "Sofia W", "image": "assets/sport_team_members/girlshockey/Sofia W.png"}
         ],
-        "categories": [
-            "winter_sports",
-            "girls_sports",
-            "junior_sports",
-            "senior_sports"
+        "extra_info": [
+            {
+                "text": "Past experience is required.",
+                "type": "important_text"
+            }
         ]
     },
     {
-        "name": "Jr. Girls Volleyball",
-        "id": "jrgirlsvolleyball",
-        "connection_links": [],
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "jrboysvolleyball",
+        "name": "Jr. Boys Volleyball",
         "image": "assets/sport_images/volleyball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
-        "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
-            "winter_sports",
-            "girls_sports",
+            "fall_sports",
+            "boys_sports",
             "junior_sports"
+        ],
+        "members": [
+            {
+                "name": "Aiden D",
+                "image": "assets/sport_team_members/jrboysvolleyball/Aiden D.png"
+            },
+            {
+                "name": "Ben M",
+                "image": "assets/sport_team_members/jrboysvolleyball/Ben M.png"
+            },
+            {
+                "name": "Ben T",
+                "image": "assets/sport_team_members/jrboysvolleyball/Ben T.png"
+            },
+            {
+                "name": "Cale B",
+                "image": "assets/sport_team_members/jrboysvolleyball/Cale B.png"
+            },
+            {
+                "name": "Daniel J",
+                "image": "assets/sport_team_members/jrboysvolleyball/Daniel J.png"
+            },
+            {
+                "name": "Ernie B",
+                "image": "assets/sport_team_members/jrboysvolleyball/Ernie B.png"
+            },
+            {
+                "name": "Jack M",
+                "image": "assets/sport_team_members/jrboysvolleyball/Jack M.png"
+            },
+            {
+                "name": "Jacob T",
+                "image": "assets/sport_team_members/jrboysvolleyball/Jacob T.png"
+            },
+            {
+                "name": "Khaled M",
+                "image": "assets/sport_team_members/jrboysvolleyball/Khaled M.png"
+            },
+            {
+                "name": "Paul T",
+                "image": "assets/sport_team_members/jrboysvolleyball/Paul T.png"
+            },
+            {
+                "name": "Seb",
+                "image": "assets/sport_team_members/jrboysvolleyball/Seb.png"
+            },
+            {
+                "name": "Umar M",
+                "image": "assets/sport_team_members/jrboysvolleyball/Umar M.png"
+            }
         ]
     },
     {
-        "name": "Sr. Girls Volleyball",
-        "id": "srgirlsvolleyball",
-        "connection_links": [],
-        "image": "assets/sport_images/volleyball.png",
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "srboysbasketball",
+        "name": "Sr. Boys Basketball",
+        "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
-        "extra_info": [{"type": "important_text", "text": "Past experience is required."}],
         "categories": [
             "winter_sports",
-            "girls_sports",
+            "boys_sports",
             "senior_sports"
+        ],
+        "extra_info": [
+            {
+                "text": "Past experience is required.",
+                "type": "important_text"
+            }
         ]
     },
     {
-        "name": "Badminton",
-        "id": "badminton",
-        "connection_links": [],
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "boysrugby",
+        "name": "Boys Rugby",
         "image": "assets/sport_images/basketball.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
             "spring_sports",
+            "boys_sports",
             "junior_sports",
             "senior_sports"
         ]
     },
     {
-        "name": "Track and Field",
-        "id": "trackandfield",
-        "connection_links": [],
+        "connection_links": [
+            "more_info"
+        ],
+        "id": "crosscountry",
+        "name": "Cross Country",
         "image": "assets/sport_images/running.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Practices:",
         "categories": [
-            "spring_sports",
+            "fall_sports",
             "junior_sports",
             "senior_sports"
-        ]
-    },
-    {
-        "name": "Boys Rugby",
-        "id": "boysrugby",
-        "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "categories": [
-            "spring_sports",
-            "boys_sports",
-            "junior_sports",
-            "senior_sports"
-        ]
-    },
-    {
-        "name": "Boys Slo-Pitch",
-        "id": "boysslopitch",
-        "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "categories": [
-            "spring_sports",
-            "boys_sports",
-            "junior_sports",
-            "senior_sports"
-        ]
-    },
-    {
-        "name": "Sr. Boys Soccer",
-        "id": "srboyssoccer",
-        "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "categories": [
-            "spring_sports",
-            "boys_sports",
-            "junior_sports",
-            "senior_sports"
-        ]
-    },
-    {
-        "name": "Girls Rugby",
-        "id": "girlsrugby",
-        "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "categories": [
-            "spring_sports",
-            "girls_sports",
-            "junior_sports",
-            "senior_sports"
-        ]
-    },
-    {
-        "name": "Girls Soccer",
-        "id": "girlssoccer",
-        "connection_links": [],
-        "image": "assets/sport_images/soccer.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "categories": [
-            "spring_sports",
-            "girls_sports",
-            "junior_sports",
-            "senior_sports"
-        ]
-    },
-    {
-        "name": "Girls Slo-Pitch",
-        "id": "girlsslopitch",
-        "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "categories": [
-            "spring_sports",
-            "girls_sports",
-            "junior_sports",
-            "senior_sports"
-        ]
-    },
-    {
-        "name": "Tennis",
-        "id": "tennis",
-        "connection_links": [],
-        "image": "assets/sport_images/basketball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
-        "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
-        "meeting_time_title": "Practices:",
-        "categories": [
-            "spring_sports",
-            "junior_sports",
-            "senior_sports"
+        ],
+        "members": [
+            {
+                "name": "Adam L",
+                "image": "assets/sport_team_members/crosscountry/Adam L.png"
+            },
+            {
+                "name": "Alina A",
+                "image": "assets/sport_team_members/crosscountry/Alina A.png"
+            },
+            {
+                "name": "Arman Z",
+                "image": "assets/sport_team_members/crosscountry/Arman Z.png"
+            },
+            {
+                "name": "Avery V",
+                "image": "assets/sport_team_members/crosscountry/Avery V.png"
+            },
+            {
+                "name": "Carolyn H",
+                "image": "assets/sport_team_members/crosscountry/Carolyn H.png"
+            },
+            {
+                "name": "Carter M",
+                "image": "assets/sport_team_members/crosscountry/Carter M.png"
+            },
+            {
+                "name": "Ferguson B",
+                "image": "assets/sport_team_members/crosscountry/Ferguson B.png"
+            },
+            {
+                "name": "Gabirel P",
+                "image": "assets/sport_team_members/crosscountry/Gabirel P.png"
+            },
+            {
+                "name": "Grace Q",
+                "image": "assets/sport_team_members/crosscountry/Grace Q.png"
+            },
+            {
+                "name": "Hugh M",
+                "image": "assets/sport_team_members/crosscountry/Hugh M.png"
+            },
+            {
+                "name": "Jacob B",
+                "image": "assets/sport_team_members/crosscountry/Jacob B.png"
+            },
+            {
+                "name": "Joshua D",
+                "image": "assets/sport_team_members/crosscountry/Joshua D.png"
+            },
+            {
+                "name": "Kohei A",
+                "image": "assets/sport_team_members/crosscountry/Kohei A.png"
+            },
+            {
+                "name": "Kristina K",
+                "image": "assets/sport_team_members/crosscountry/Kristina K.png"
+            },
+            {
+                "name": "Laura W",
+                "image": "assets/sport_team_members/crosscountry/Laura W.png"
+            },
+            {
+                "name": "Leya O",
+                "image": "assets/sport_team_members/crosscountry/Leya O.png"
+            },
+            {
+                "name": "Lucas G",
+                "image": "assets/sport_team_members/crosscountry/Lucas G.png"
+            },
+            {
+                "name": "Matt B",
+                "image": "assets/sport_team_members/crosscountry/Matt B.png"
+            },
+            {
+                "name": "Matthew A",
+                "image": "assets/sport_team_members/crosscountry/Matthew A.png"
+            },
+            {
+                "name": "My Chau T",
+                "image": "assets/sport_team_members/crosscountry/My Chau T.png"
+            },
+            {
+                "name": "Nathan I",
+                "image": "assets/sport_team_members/crosscountry/Nathan I.png"
+            },
+            {
+                "name": "Sarah R",
+                "image": "assets/sport_team_members/crosscountry/Sarah R.png"
+            },
+            {
+                "name": "Theo D",
+                "image": "assets/sport_team_members/crosscountry/Theo D.png"
+            },
+            {
+                "name": "Tim L",
+                "image": "assets/sport_team_members/crosscountry/Tim L.png"
+            },
+            {
+                "name": "Tyler B",
+                "image": "assets/sport_team_members/crosscountry/Tyler B.png"
+            },
+            {
+                "name": "Victor Z",
+                "image": "assets/sport_team_members/crosscountry/Victor Z.png"
+            },
+            {
+                "name": "William B",
+                "image": "assets/sport_team_members/crosscountry/William B.png"
+            },
+            {
+                "name": "Zina K",
+                "image": "assets/sport_team_members/crosscountry/Zina K.png"
+            }
         ]
     }
 ]

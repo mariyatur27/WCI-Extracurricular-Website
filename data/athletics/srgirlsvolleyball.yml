@@ -1,6 +1,6 @@
 categories:
-- fall_sports
-- junior_sports
+- winter_sports
+- girls_sports
 - senior_sports
 connection-links: []
 description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit,
@@ -8,37 +8,24 @@ description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum v
   consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe
   pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi
   debitis sint tempora mollitia at?
-image: assets/sport_images/running.png
-name: Cross Country
+extra-info:
+- text: Past experience is required.
+  type: important_text
+image: assets/sport_images/volleyball.png
+name: Sr. Girls Volleyball
 practice-time: Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM
 practice-time-label: 'Practices:'
-team-member-image-folder: assets/sport_team_members/crosscountry/
+team-member-image-folder: assets/sport_team_members/srgirlsvolleyball/
 team-members:
-- Adam L
-- Alina A
-- Arman Z
-- Avery V
-- Carolyn H
-- Carter M
-- Ferguson B
-- Gabirel P
-- Grace Q
-- Hugh M
-- Jacob B
-- Joshua D
-- Kohei A
-- Kristina K
-- Laura W
-- Leya O
-- Lucas G
-- Matt B
-- Matthew A
-- My Chau T
-- Nathan I
-- Sarah R
-- Theo D
-- Tim L
-- Tyler B
-- Victor Z
-- William B
-- Zina K
+- Chloe Taylor
+- Claire Chen
+- Erin Kim
+- Grace Wang
+- Jackie Dent
+- Kristina Gladovic
+- Leanne Cherry
+- Lowen Dusselier
+- Marissa Coe
+- Sam Durbin
+- Sophia Murphy
+- Zeyneb Tuk Suleyman

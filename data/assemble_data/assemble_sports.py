@@ -28,7 +28,6 @@ for sportFilename in listdir(sportDirectory):
             connectionLinks.append(connectionLink["type"])
             connectionLinkVals[connectionLink["type"]] = connectionLink["value"]
 
-    # TODO: Accuire button-type links automatically
     connectionLinks.sort(key=lambda link: (1 if link in buttonConnectionLinks else 0))
     
     final_dict = dict({"connection_links": connectionLinks, "id": ".".join(sportFilename.split(".")[:-1])}, **connectionLinkVals)
@@ -47,7 +46,7 @@ for sportFilename in listdir(sportDirectory):
     elif "team-images" in sport and "team-member-image-folder" in sport:
         teamMembers = []
         for image in sport["team-images"]:
-            teamMembers.append({"image": sport["team-member-image-folder"] + image + ".png"})
+            teamMembers.append({"image": sport["team-member-image-folder"] +  image + ".png"})
         final_dict["members"] = teamMembers
 
     athletics.append(final_dict)

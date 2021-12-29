@@ -35,6 +35,7 @@ jobs:
       run: |
         cd main
         python3 data/assemble_data/assemble_events.py
+        python3 data/assemble_data/assemble_sports.py
         cd ..
 
     - name: 'Steal .git from gh-pages'
