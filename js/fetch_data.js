@@ -1006,8 +1006,8 @@ var events = [
         "id": "Test_event_1"
     },
     {
-        "start_time": 1640278740,
-        "end_time": 1640289600,
+        "start_time": 1640720516,
+        "end_time": 1640722000,
         "title": "Test event 3",
         "description": "This is a third event.",
         "id": "Test_event_3"
@@ -1119,14 +1119,18 @@ async function fetchData() {
         console.log("fetchData: Running from a file, won't attempt to load data.");
         dataFetched = true;
         return;
+    } else {
+        console.log("fetchData: Starting to load data.");
+        clubs = await (await fetch("data/clubs.json")).json();
+        athletics = await (await fetch("data/athletics.json")).json();
+        music = await (await fetch("data/music.json")).json();
+        connection_links = await (await fetch("data/connection_links.json")).json();
+        event_popup = await (await fetch("data/event_popup.json")).json();
+        events = await (await fetch("data/events.json")).json();
+        console.log("fetchData: Done loading data.");
     }
-    console.log("fetchData: Starting to load data.");
-    clubs = await (await fetch("data/clubs.json")).json();
-    athletics = await (await fetch("data/athletics.json")).json();
-    music = await (await fetch("data/music.json")).json();
-    connection_links = await (await fetch("data/connection_links.json")).json();
-	event_popup = await (await fetch("data/event_popup.json")).json();
-	events = await (await fetch("data/events.json")).json();
-    console.log("fetchData: Done loading data.");
+    console.log("fetchData: Starting to sort data.");
+    events.sort((event1, event2) => {event1.start_time - event2.start_time});
+    console.log("fetchData: Done sorting data.");
     dataFetched = true;
 }
