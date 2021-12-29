@@ -1,10 +1,19 @@
 from yaml import safe_load as yaml_load
 from os import listdir
 from os.path import join as path_join
-from json import dump as json_dump
+from json import dump as json_dump, load as json_load
 
 athletics = []
 sportDirectory = "data/athletics"
+
+with open("data/connection_links.json") as f:
+    connectionLinks = json_load(f)
+
+buttonConnectionLinks = []
+
+for id, data in connectionLinks.items():
+    if data["type"] == "button":
+        buttonConnectionLinks.append(id)
 
 for sportFilename in listdir(sportDirectory):
     if not (sportFilename[-4:] == ".yml" or sportFilename[-5:] == ".yaml"):
@@ -20,7 +29,7 @@ for sportFilename in listdir(sportDirectory):
             connectionLinkVals[connectionLink["type"]] = connectionLink["value"]
 
     # TODO: Accuire button-type links automatically
-    connectionLinks.sort(key=lambda link: (1 if link in ["website", "more_info"] else 0))
+    connectionLinks.sort(key=lambda link: (1 if link in buttonConnectionLinks else 0))
     
     final_dict = dict({"connection_links": connectionLinks, "id": ".".join(sportFilename.split(".")[:-1])}, **connectionLinkVals)
     for originalLabel, newLabel in {"name": "name", "image": "image", "coach": "coach", "description": "description", "practice-time": "meeting_time", "practice-time-label": "meeting_time_title", "categories": "categories", "extra-info": "extra_info"}.items():
