@@ -999,28 +999,28 @@ var event_popup = {};
 
 var events = [
     {
-        "start_time": 1640365140,
-        "end_time": 1640376000,
+        "start_time": 1641153600,
+        "end_time": 1641157200,
         "title": "Test event 1",
         "description": "This is a test event.\nThe event is used for testing.\n\nThere was an empty line above this one.",
         "id": "Test_event_1"
     },
     {
-        "start_time": 1640720516,
-        "end_time": 1640722000,
+        "start_time": 1641067200,
+        "end_time": 1641070800,
         "title": "Test event 3",
         "description": "This is a third event.",
         "id": "Test_event_3"
     },
     {
-        "start_time": 1640278741,
-        "end_time": 1640289599,
+        "start_time": 1640811600,
+        "end_time": 1640811600,
         "title": "Test event 2",
         "description": "This is a second test event.",
         "id": "Test_event_2"
     },
     {
-        "start_time": 1640203200,
+        "start_time": 1640883540,
         "end_time": 1640214000,
         "title": "Test event 4",
         "description": "This is a fourth test event.",

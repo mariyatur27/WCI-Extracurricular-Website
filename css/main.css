@@ -438,6 +438,12 @@ iframe#calendar {
 	vertical-align: top;
 }
 
+.calendar_col.full_width {
+	width: 100%;
+	border-left: 0px;
+	border-right: 0px;
+}
+
 .calendar_header {
 	border-bottom: 1px solid black;
 }
