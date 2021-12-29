@@ -11,7 +11,7 @@ events = []
 eventDirectory = "data/events"
 usedIcsIDs = set()
 
-# TODO: make resilient to typos
+# TODO: make resilient to typos and missing data
 for eventFilename in listdir(eventDirectory):
     if not (eventFilename[-4:] == ".yml" or eventFilename[-5:] == ".yaml"):
         continue

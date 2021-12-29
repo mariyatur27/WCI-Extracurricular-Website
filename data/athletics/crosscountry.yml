@@ -1,0 +1,51 @@
+# Name of the sport team
+name: Cross Country
+
+# Image coresponding to the sport team
+image: assets/sport_images/running.png
+
+# Additional connection links, "more_info" is automatically included
+connection-links:
+- type: website
+  value: "https://www.wciweb-dev.ca/"
+- type: instagram
+  value: "https://www.instagram.com/wci.astro.club/"
+
+# Team's coaches
+coach: "Malo, Islam, Joseph, Steacy"
+
+# Description of the team
+# TODO: Make description shown above history on team page
+# Note that a single line break will be removed, and replaced with a single space
+# Double line breaks will be converted to single line breaks
+description: >-
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+  Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste.
+
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?
+
+# When the team practices
+practice-time: "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM"
+
+# The label for the practice times
+# Note that a space is added between this label and the practice time text
+practice-time-label: "Practices:"
+
+# Team history
+# All line breaks are kept, except for any at the end of the text.
+team-history: |-
+  The Cross-Country team had a great start to their season with some PR's emerging from the first-time runners.
+  There were some outstanding Rookies that competed and represented the school on the podium. We are super proud of them and can't wait for the next season! 
+  
+  Awesome job Vikes!
+
+# Team's members
+team-members:
+- name: Adam L
+  image: "assets/sport_team_members/crosscountry/Adam L.png"
+
+# Categories the sport fits into
+categories: 
+- fall_sports
+- junior_sports
+- senior_sports
