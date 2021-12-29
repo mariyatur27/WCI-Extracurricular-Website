@@ -33,6 +33,8 @@ async function setupSportPage(sportID) {
     let sport_name = document.createElement("h2"); sport_name.classList.add("a_title"); sport_name.innerText = sport.name;
     page.appendChild(sport_name);
     let team_details_title = document.createElement("h3"); team_details_title.classList.add("sport_info_title"); team_details_title.innerText = "Team Details";
+    // The history section id will be here because when the button is clicked it lands right on the history section.
+    team_details_title.id = sport.history_section_id;
     page.appendChild(team_details_title);
     if ("coach" in sport) {
         let coach = document.createElement("h5"); coach.classList.add("team_details_text");
@@ -57,7 +59,7 @@ async function setupSportPage(sportID) {
     if ("members" in sport) {
         let team_member_title = document.createElement("h3"); team_member_title.classList.add("sport_info_title"); team_member_title.innerText = "Team Members";
         page.append(team_member_title);
-        team_member_title.id = sport.section_id;
+        team_member_title.id = sport.team_section_id;
         let team_members_div = document.createElement("div"); team_members_div.classList.add("team_members");
         for (const member of sport.members) {
             console.log(member);

@@ -748,7 +748,15 @@ button.web_link {
 	color: white;
 	padding: 5% 7%;
 }
-a.web_link {
+button.page_link {
+	white-space: nowrap;
+    border: none;
+    background-color: #ac191a;
+    color: white;
+    padding: 2% 6%;
+    margin-right: 3%;
+}
+a.web_link , a.page_link {
 	margin-top: 2%;
 	margin-left: auto;
 }
