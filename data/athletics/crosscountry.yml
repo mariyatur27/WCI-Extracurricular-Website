@@ -49,3 +49,8 @@ categories:
 - fall_sports
 - junior_sports
 - senior_sports
+
+# More text, to be displayed below practice time
+extra-info:
+- type: important_text
+  text: Past experience is not required.
