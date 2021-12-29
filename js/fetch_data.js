@@ -538,7 +538,6 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-        "members": ["Mariya" , "Tristan", "Charis", "Nuha", "ChingLam"],
         "categories": [
             "fall_sports",
             "boys_sports",
@@ -556,10 +555,6 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-         "tm1": [{
-            "name" : "Arthur Jackson",
-            "image" : "assets/sport_images/running.png"
-        }],
         "categories": [
             "fall_sports",
             "boys_sports",
@@ -576,10 +571,6 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-         "tm1": [{
-            "name" : "Arthur Jackson",
-            "image" : "assets/sport_images/running.png"
-        }],
         "categories": [
             "fall_sports",
             "boys_sports",
@@ -616,10 +607,20 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
-         "tm1": [{
-            "name" : "Arthur Jackson",
-            "image" : "assets/sport_images/running.png"
-        }],
+        "members" : [
+            {"name": "Aiden D", "image": "assets/sport_team_members/jrboysvolleyball/Aiden D.png"},
+            {"name": "Ben M", "image": "assets/sport_team_members/jrboysvolleyball/Ben M.png"},
+            {"name": "Ben T", "image": "assets/sport_team_members/jrboysvolleyball/Ben T.png"},
+            {"name": "Cale B", "image": "assets/sport_team_members/jrboysvolleyball/Cale B.png"},
+            {"name": "Daniel J", "image": "assets/sport_team_members/jrboysvolleyball/Daniel J.png"},
+            {"name": "Ernie B", "image": "assets/sport_team_members/jrboysvolleyball/Ernie B.png"},
+            {"name": "Jack M", "image": "assets/sport_team_members/jrboysvolleyball/Jack M.png"},
+            {"name": "Jacob T", "image": "assets/sport_team_members/jrboysvolleyball/Jacob T.png"},
+            {"name": "Khaled M", "image": "assets/sport_team_members/jrboysvolleyball/Khaled M.png"},
+            {"name": "Paul T", "image": "assets/sport_team_members/jrboysvolleyball/Paul T.png"},
+            {"name": "Seb", "image": "assets/sport_team_members/jrboysvolleyball/Seb.png"},
+            {"name": "Umar M", "image": "assets/sport_team_members/jrboysvolleyball/Umar M.png"}
+        ],
         "categories": [
             "fall_sports",
             "boys_sports",
