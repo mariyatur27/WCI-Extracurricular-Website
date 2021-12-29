@@ -270,9 +270,7 @@ async function createCalendar(daysAhead) {
 
     for (const event of events) {
         let eventdate = new Date(event.start_time*1000);
-        console.log(eventdate);
         if (eventdate <= maxDate && eventdate >= today) {
-            console.log(new Date(eventdate-today).getDate());
             let distance = new Date(eventdate-today).getDate()-1;
             if (distance in eventDates) {
                 eventDates[distance].push(event);
@@ -324,9 +322,6 @@ async function createCalendar(daysAhead) {
         } else {
             col = row.getElementsByTagName("td")[date];
         }
-        console.log(date, date*2);
-        console.log(table.getElementsByTagName("td").length);
-        console.log(col);
         for (const event of eventDates[date]) {
             let start_date = new Date(event.start_time*1000);
             let start_date_string = start_date.toISOString().replaceAll(/[-:]/g, "").split(".")[0] + "Z";

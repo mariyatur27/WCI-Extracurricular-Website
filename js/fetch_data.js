@@ -1118,7 +1118,6 @@ async function fetchData() {
     if (window.location.protocol == "file:") {
         console.log("fetchData: Running from a file, won't attempt to load data.");
         dataFetched = true;
-        return;
     } else {
         console.log("fetchData: Starting to load data.");
         clubs = await (await fetch("data/clubs.json")).json();
@@ -1130,7 +1129,7 @@ async function fetchData() {
         console.log("fetchData: Done loading data.");
     }
     console.log("fetchData: Starting to sort data.");
-    events.sort((event1, event2) => {event1.start_time - event2.start_time});
+    events.sort((event1, event2) => {return event1.start_time - event2.start_time});
     console.log("fetchData: Done sorting data.");
     dataFetched = true;
 }
