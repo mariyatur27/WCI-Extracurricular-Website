@@ -45,7 +45,7 @@ async function setupSportPage(sportID) {
     if ("meeting_time_title" in sport) {
         meeting_time.innerText = sport.meeting_time_title.concat(" ").concat(sport.meeting_time);
     } else {
-        meeting_time.innerText = "Meeting time: ".concat(sport.meeting_time);
+        meeting_time.innerText = "Practices: ".concat(sport.meeting_time);
     }
     page.appendChild(meeting_time);
 
