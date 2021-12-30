@@ -1,0 +1,27 @@
+header.arts {
+	height:auto;
+	background-image: url(../assets/artspageimgs/artsheaderbg.jpg);
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	margin-top: 10em;
+	justify-content: center;
+	align-items: center;
+}
+
+.arts h2#clubs_title {
+	color: white;
+	z-index: 2;
+	text-align: center;
+	line-height: 13em;
+	margin-top: 10vh;
+}
+
+#main.main.arts {
+	position: relative;
+	margin-top: -20em;
+}
