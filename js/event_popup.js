@@ -15,8 +15,10 @@ async function createPopup() {
     var div = document.getElementById("event-popup");
 	var txt = document.getElementById("event-popup-text");
 	var icon = document.getElementById("event-popup-icon");
+	var dscr = document.getElementById("event-description");
 	div.style.display = "flex";
 	txt.innerHTML = event.title;
+	dscr.innerHTML = event.description;
 	div.style.backgroundColor = "#00F";
 	icon.src = "";
 	icon.style.display = "none";
