@@ -83,28 +83,6 @@ header.masthead {
 	background: rgba(60, 127, 207, 0.9);
 }
 
-header.arts {
-	background-image: url(../assets/artspageimgs/artsheaderbg.jpg);
-	background-size: cover;
-	background-position: top;
-	background-repeat: no-repeat;
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -60%);
-	margin-top: 10em;
-	justify-content: center;
-	align-items: center;
-}
-
-.arts h2#clubs_title {
-	color: white;
-	z-index: 2;
-	text-align: center;
-	line-height: 13em;
-	margin-top: 4em;
-}
-
 .container.landing {
 	z-index: 1;
 	position: absolute;
@@ -150,11 +128,6 @@ header.arts {
 	display: flex;
 	justify-content: center;
 	padding-left: 2%;
-}
-
-#main.main.arts {
-	position: relative;
-	margin-top: -20em;
 }
 
 .slideshows {
