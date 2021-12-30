@@ -26,6 +26,13 @@ iframe {
     width: 60%;
     height: 684px;
 }
+.iframe_m {
+	height: unset;
+	width: unset;
+    width: 30%;
+    height: 30%;
+    padding: 5% 1%;
+}
 #mainNav ul li:hover ul{
 	display: block;
 	background-color: var(--theme-darkblue);
