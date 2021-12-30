@@ -748,6 +748,12 @@ button.web_link_2{
 	margin-right: 1%;
 	margin-left:  12%;
 }
+.circles {
+    margin-right: -12%;
+}
+#main {
+    margin-top: -24%;
+}
 .event-popup {
   position: fixed;
   bottom: 40px;
