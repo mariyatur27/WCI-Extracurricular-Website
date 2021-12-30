@@ -83,28 +83,6 @@ header.masthead {
 	background: rgba(60, 127, 207, 0.9);
 }
 
-header.arts {
-	height: 100vh;
-	background-image: url(../assets/artspageimgs/artsheaderbg.jpg);
-	background-size: cover;
-	background-position: top;
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	margin-top: 10em;
-}
-
-.arts h2#clubs_title {
-	color: white;
-	z-index: 2;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	line-height: 24em;
-	margin-bottom: 0em;
-}
-
 .container.landing {
 	z-index: 1;
 	position: absolute;
