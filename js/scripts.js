@@ -60,3 +60,25 @@ function search_club() {
         }
     }
 };
+
+function generateMatchScore(value, name, originalName) {
+    // generate a score based on how good the match is
+    // 1. search value matches the beginning of the string
+    // 2. search value matches a substring beginning with an uppercase 
+    var score = -1;
+    var start, end;
+    for (var idx = 0; idx < name.length - value.length + 1; idx++) {
+        var tmpScore = 0;
+        var nameSubstring = name.substring(idx, idx + value.length).toLowerCase();
+        if (nameSubstring == value) {
+            if (idx == 0) tmpScore++;
+            if (originalName[idx] == originalName[idx].toUpperCase()) tmpScore++;
+            if (tmpScore > score) {
+                score = tmpScore;
+                start = idx;
+                end = idx + value.length;
+            }
+        }
+    }
+    return {score, start, end};
+}
