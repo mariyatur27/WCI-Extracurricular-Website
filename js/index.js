@@ -46,7 +46,17 @@ function topResults(value) {
     filteredResults = filteredResults.concat(filterResults(value, athletics, "sport_info.html", "sport"));
     filteredResults = filteredResults.concat(filterResults(value, music));
     filteredResults.sort(function(a, b) {
-        return - (a.score - b.score);
+        let val = -(a.score - b.score);
+            if (val == 0) {
+                if (a.name > b.name) {
+                    return 1
+                } else if (a.name < b.name) {
+                    return -1
+                } else {
+                    return 0
+                }
+            }
+            return val;
     });
     
     if (filteredResults.length > 6) {
