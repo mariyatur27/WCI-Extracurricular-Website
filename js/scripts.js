@@ -1,12 +1,3 @@
-/*!
-* Start Bootstrap - Agency v7.0.10 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -52,22 +43,6 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
-
-
-// // Adding onclick functions to buttons
-// const history_section = document.getElementById("team_history_button");
-//     history_section.addEventListener('click', function () {
-//         alert("test test test");
-//         history_section.style.color = "green";
-//         console.log("test")
-//     });
-
-// function show() {
-//     console.log("test")
-// };
-
-var radio = document.getElementsByName("choice");
-radio.onmouseup = deselectable;
 
 // Function for the club search bar
 function search_club() {
