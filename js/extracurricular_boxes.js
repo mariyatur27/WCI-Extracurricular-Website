@@ -15,17 +15,46 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
 
     let row;
     
-    boxesSource.sort((boxData1, boxData2) => {
-        if (boxData1.name > boxData2.name) {
-            return 1
-        } else if (boxData1.name < boxData2.name) {
-            return -1
-        } else {
-            return 0
+    let displayBoxes = [];
+    if (searchWord == "") {
+        boxesSource.sort((boxData1, boxData2) => {
+            if (boxData1.name > boxData2.name) {
+                return 1
+            } else if (boxData1.name < boxData2.name) {
+                return -1
+            } else {
+                return 0
+            }
+        })
+        displayBoxes = boxesSource;
+    } else {
+        for (activity of boxesSource) {
+            let name = activity.name.toLowerCase();
+            if (name.includes(searchWord)) {
+                let {score, start, end} = generateMatchScore(searchWord, name, activity.name);
+                activity.score = score;
+                activity.start = start;
+                activity.end = end;
+                displayBoxes.push(activity);
+            }
         }
-    })
+        displayBoxes.sort(function(a, b) {
+            let val = -(a.score - b.score);
+            if (val == 0) {
+                if (a.name > b.name) {
+                    return 1
+                } else if (a.name < b.name) {
+                    return -1
+                } else {
+                    return 0
+                }
+            }
+            return val;
+        });
+    }
 
-    boxesSource.forEach((boxData) => {
+
+    displayBoxes.forEach((boxData) => {
         if ((urlBox == null || ("id" in boxData && boxData.id.includes(urlBox))) && (activeFilters.size == 0 || boxData.categories.some(category => {return activeFilters.has(category)})) && (boxData.name.toLowerCase().includes(searchWord))) {
             totalBoxes++;
             if (boxCount % countPerRow == 0) {
