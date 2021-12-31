@@ -216,8 +216,8 @@ function results() {
         // This is not working 100% properly. If there's a tie between several categories, it will output the right number of tied elements, but they
         // will all be named like one
         if (value == max_value) {
-            var result = Object.keys(data_dict).find(key => data_dict[key] == value);
-            result_list.push(result);
+            // var result = Object.keys(data_dict).find(key => data_dict[key] == value);
+            result_list.push(key);
         }
     }
     console.log(result_list);
