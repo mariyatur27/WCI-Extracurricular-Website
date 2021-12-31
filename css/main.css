@@ -243,6 +243,7 @@ p.descrp {
 .search-wrapper {
 	display: flex;
 	flex-direction: column;
+	margin-right: 2%;
 }
 
 .search-bar-wrapper {
@@ -250,6 +251,7 @@ p.descrp {
 	display: flex;
 	width: 97%;
 	margin-bottom: 5px;
+	margin-right: -15px;
 }
 
 .option-colour-circle {
@@ -272,7 +274,7 @@ p.descrp {
 }
 
 input#club_search {
-	padding: 0 20px;
+	padding: 0 45px 0 20px;
 	height: 40px;
 	width: 100%;
 	border: 1px solid rgb(177, 177, 177);
@@ -1067,7 +1069,6 @@ img.main_sm_links {
 	}
 	.search-bar-wrapper {
 		width: 50%;
-		margin-right: 15px;
 	}
 	.dropdown_content {
 		box-shadow: 5px 5px 15px 7px #E7E7E7;
