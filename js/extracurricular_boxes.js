@@ -55,7 +55,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
 
 
     displayBoxes.forEach((boxData) => {
-        if ((urlBox == null || ("id" in boxData && boxData.id.includes(urlBox))) && (activeFilters.size == 0 || boxData.categories.some(category => {return activeFilters.has(category)})) && (boxData.name.toLowerCase().includes(searchWord))) {
+        if ((urlBox == null || ("id" in boxData && boxData.id.includes(urlBox))) && (activeFilters.size == 0 || boxData.categories.some(category => {return activeFilters.has(category)}))) {
             totalBoxes++;
             if (boxCount % countPerRow == 0) {
                 row = document.createElement("div"); row.classList.add("club_row");
@@ -65,7 +65,17 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                     let main_image = document.createElement("img"); main_image.classList.add("club_img"); main_image.src = boxData.image;
                     header.appendChild(main_image);
                     let info_div = document.createElement("div"); info_div.classList.add("club_info");
-                        let name_header = document.createElement("h2"); name_header.classList.add("lrn"); name_header.innerText = boxData.name;
+                        let name_header = document.createElement("h2"); name_header.classList.add("lrn");
+                        if (searchWord != "") {
+                            name_header.classList.add("no_bold");
+                            name_header.innerText = boxData.name.substring(0, boxData.start);
+                            let name_header_bold = document.createElement("b"); name_header_bold.innerText = boxData.name.substring(boxData.start, boxData.end);
+                            name_header.appendChild(name_header_bold);
+                            let name_header_pt2 = document.createElement("span"); name_header_pt2.innerText = boxData.name.substring(boxData.end, boxData.name.length);
+                            name_header.appendChild(name_header_pt2);
+                        } else {
+                            name_header.innerText = boxData.name;
+                        }
                         if (boxData.name.length > 15) {
                             name_header.classList.add("lrn_small");
                         }
