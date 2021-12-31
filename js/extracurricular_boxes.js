@@ -68,11 +68,17 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                             expand_box_core_content.appendChild(together);
                         }
                         let meeting_time_text = document.createElement("h6"); 
+                        let tryouts = document.createElement("h6");  tryouts.innerText = boxData.meeting_time_1; 
                         if ("meeting_time_title" in boxData) {
-                            meeting_time_text.innerText = boxData.meeting_time_title.concat(" ").concat(boxData.meeting_time);
-                        }else {
-                            meeting_time_text.innerText = "Meeting time: ".concat(boxData.meeting_time);
-                        } meeting_time_text.classList.add("contents");
+                            if (boxData.meeting_time = "Over") {
+                                tryouts.style.color = "red";
+                            }else if (tryouts.innerText = "Have Not Started Yet") {
+                                tryouts.style.color = "green";
+                            }else{
+                                tryouts.style.color = "black";
+                            }
+                            meeting_time_text.innerText = boxData.meeting_time_title.concat(" ").concat(tryouts);
+                        }
                         expand_box_core_content.appendChild(meeting_time_text);
                         if ("extra_info" in boxData) {
                             for (info of boxData.extra_info) {
@@ -107,7 +113,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                         let his_href = redirectPage + "?" + urlParamName + "=" + boxData.id + "#" + boxData.history_section_id;
                         his_link.href = his_href;
                         his_link.classList.add("history_link");
-                        var his_button = document.createElement("button"); his_button.classList.add("page_link"); his_button.type="button"; his_button.name="history_button";
+                        var his_button = document.createElement("button"); his_button.classList.add("web_link"); his_button.type="button"; his_button.name="history_button";
                         his_button.innerText = "Team History";
                         his_link.appendChild(his_button);
                         expand_box.appendChild(his_link);
