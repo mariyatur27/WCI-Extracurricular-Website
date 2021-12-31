@@ -41,13 +41,17 @@ async function setupSportPage(sportID) {
         coach.innerText = coach.innerText = "Coaches:".concat(" ").concat(sport.coach);
         page.appendChild(coach);
     };
-    let meeting_time = document.createElement("h5"); meeting_time.classList.add("team_details_text");
-    if ("meeting_time_title" in sport) {
-        meeting_time.innerText = sport.meeting_time_title.concat(" ").concat(sport.meeting_time);
-    } else {
-        meeting_time.innerText = "Practices: ".concat(sport.meeting_time);
+    let a_list = [];
+    let category = document.createElement("h5"); category.classList.add("team_details_text");
+    let categories = sport.categories;
+    let categories2;
+    for (var i = 0; i < categories.length; i++) {
+        categories2 = categories[i].replace(/_/g, " ").replace(/(\d+,)/g, '$1 ');;
+        a_list.push(categories2);
     }
-    page.appendChild(meeting_time);
+    console.log(a_list);
+    category.innerText = category.innerText = "Sport Category: ".concat(" ").concat(a_list);
+    page.appendChild(category);
 
     if ("team_history" in sport) {
         let team_history_title = document.createElement("h3"); team_history_title.classList.add("sport_info_title"); team_history_title.innerText = "Team History";
