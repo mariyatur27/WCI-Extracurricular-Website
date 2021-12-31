@@ -646,6 +646,11 @@ input#club_search:focus {
 	margin-left: 6%;
 	margin-top: 1%;
 }
+
+.no_bold {
+	font-weight: normal;
+}
+
 .active .up {
 	display: block;
 }
