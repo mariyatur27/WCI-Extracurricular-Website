@@ -493,6 +493,7 @@ var athletics = [
         "team_m_b": "Team Members",
         "team_section_id": "crosscountry_team",
         "history_section_id" : "crosscountry_history",
+        "team_photo" : "assets/sport_team_members/crosscountry/Team Photo.png",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
         "categories": [
             "fall_sports",
@@ -614,6 +615,7 @@ var athletics = [
         "team_m_b": "Team Members",
         "team_section_id": "jrboysvolleyball_team",
         "history_section_id" : "jrboysvolleyball_history",
+        "team_photo" : "assets/sport_team_members/jrboysvolleyball/Team Photo.png",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
         "members" : [
             {"name": "Aiden D", "image": "assets/sport_team_members/jrboysvolleyball/Aiden D.png"},
@@ -645,6 +647,7 @@ var athletics = [
         "meeting_time_title": "Practices:",
         "team_m_b": "Team Members",
         "team_section_id": "srboysvolleyball_team",
+        "team_photo" : "assets/sport_team_members/srboysvolleyball/Team Photo.png",
         "history_section_id" : "srboysvolleyball_history",
         "team_history": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at.",
         "members" : [
@@ -723,6 +726,7 @@ var athletics = [
         "team_m_b": "Team Members",
         "team_section_id": "jrgirlsbasketball_team",
         "history_section_id" : "jrgirlsbasketball_history",
+        "team_photo" : "assets/sport_team_members/jrgirlsbasketball/Team Photo.png",
         "team_history": "These Jr. girls have had an incredible start to their careers as high school athletes. With a first place ranking in their pod (6-0) they clearly dominated all regular season. They began to breeze through playoffs starting with easy wins in the preliminary round and the quarter-finals. Although after a tough match up against CHCI, they lost in the semi-finals. Congrats to these athletes on an incredible season! Go Vikes!",
         "members" : [
             {"name": "Alice W", "image": "assets/sport_team_members/jrgirlsbasketball/Alice W.png"},

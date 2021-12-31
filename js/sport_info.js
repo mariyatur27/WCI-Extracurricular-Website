@@ -56,6 +56,14 @@ async function setupSportPage(sportID) {
         let team_history_text = document.createElement("h4"); team_history_text.classList.add("t_history"); team_history_text.innerText = sport.team_history;
         page.appendChild(team_history_text);
     }
+    
+    if ("team_photo" in sport) {
+        let team_photo_title = document.createElement("h3"); team_photo_title.classList.add("sport_info_title"); team_photo_title.innerText = "Team Photo";
+        page.appendChild(team_photo_title);
+        let team_photo = document.createElement("img"); team_photo.classList.add("team_photo"); team_photo.src = sport.team_photo;
+        page.appendChild(team_photo);
+    }
+
     if ("members" in sport) {
         let team_member_title = document.createElement("h3"); team_member_title.classList.add("sport_info_title"); team_member_title.innerText = "Team Members";
         page.append(team_member_title);
