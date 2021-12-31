@@ -299,54 +299,6 @@
             </div>
         </section>
 
-        <!-- Slideshow -->
-        <section>
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Art on Display</h2>
-                </div>
-            </div>
-            <div class="drama-slideshow">
-
-                <div class="d-slides">
-                    <img src="https://pbs.twimg.com/media/DoH3ejnXUAAY1mm.jpg" style="width:100%">
-
-                </div>
-
-                <div class="d-slides">
-                    <img src="https://pbs.twimg.com/media/DoH3ejnXUAAY1mm.jpg" style="width:100%">
-                </div>
-
-                <div class="d-slides">
-                    <img src="https://pbs.twimg.com/media/DoH3ejnXUAAY1mm.jpg" style="width:100%">
-
-                </div>
-
-                <div class="d-slides">
-                    <img src="https://pbs.twimg.com/media/DoH3ejnXUAAY1mm.jpg" style="width:100%">
-
-                </div>
-
-                <div class="d-slides">
-                    <img src="https://pbs.twimg.com/media/DoH3ejnXUAAY1mm.jpg" style="width:100%">
-                </div>
-
-
-                <a class="d-prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="d-next" onclick="plusSlides(1)">&#10095;</a>
-
-            </div>
-            <br>
-
-            <div style="text-align:center">
-                <span class="s-dot" onclick="currentSlide(1)"></span>
-                <span class="s-dot" onclick="currentSlide(2)"></span>
-                <span class="s-dot" onclick="currentSlide(3)"></span>
-                <span class="s-dot" onclick="currentSlide(4)"></span>
-                <span class="s-dot" onclick="currentSlide(5)"></span>
-            </div>
-        </section>
-
         <!-- Footer -->
         <footer class="footer py-4">
             <div class="container">
@@ -383,36 +335,5 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="js/global.js"></script>
-        <script>
-            setupBoxes(clubs, "club_boxes", 2, (new URL(window.location.href).searchParams.get("box")));
-        </script>
-        <script>
-            var slideIndex = 1;
-                showSlides(slideIndex);
-
-                function plusSlides(n) {
-                  showSlides(slideIndex += n);
-                }
-
-                function currentSlide(n) {
-                  showSlides(slideIndex = n);
-                }
-
-                function showSlides(n) {
-                  var i;
-                  var slides = document.getElementsByClassName("d-slides");
-                  var dots = document.getElementsByClassName("s-dot");
-                  if (n > slides.length) {slideIndex = 1}
-                  if (n < 1) {slideIndex = slides.length}
-                  for (i = 0; i < slides.length; i++) {
-                      slides[i].style.display = "none";
-                  }
-                  for (i = 0; i < dots.length; i++) {
-                      dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                  slides[slideIndex-1].style.display = "block";
-                  dots[slideIndex-1].className += " active";
-                }
-        </script>
     </body>
 </html> 
