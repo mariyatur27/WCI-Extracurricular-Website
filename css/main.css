@@ -1490,6 +1490,7 @@ img.main_sm_links {
 	.club_header {
 		flex-direction: column;
 		margin: 20px 0;
+		height: 290px;
 	}	
 	.orchestra {
 		margin: 0;
