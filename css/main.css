@@ -942,7 +942,7 @@ a.art-form {
 
 #gallery {
    display: flex;
-   max-width: 1200px;
+   max-width: auto;
    width: 100%;
    flex-direction: row;
    flex-wrap: wrap;
@@ -953,8 +953,8 @@ a.art-form {
 }
 #gallery .box {
 	position: relative;
-	width: 250px;
-	height: 250px;
+	width: 350px;
+	height: 530px;
 	margin: 10px;
 	box-sizing: border-box;
 	display: inline-block;
@@ -962,6 +962,7 @@ a.art-form {
 #gallery .box .img-box{
 	position: relative;
 	overflow: hidden;
+	height: 530px;
 }
 #gallery .box .img-box img{
 	max-width: 100%;
@@ -1490,7 +1491,6 @@ img.main_sm_links {
 	.club_header {
 		flex-direction: column;
 		margin: 20px 0;
-		height: 290px;
 	}	
 	.orchestra {
 		margin: 0;
