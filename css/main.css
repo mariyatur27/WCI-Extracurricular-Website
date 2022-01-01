@@ -1132,10 +1132,6 @@ img.main_sm_links {
 		position: relative;
 		margin: auto;
 	}
-	.club_row {
-		flex-direction: row;
-		align-items: flex-start;
-	}
 	.together {
 		display: flex;
 	}
@@ -1450,7 +1446,10 @@ img.main_sm_links {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+	.club_row {
+		flex-direction: row;
+		align-items: flex-start;
+	}
 }
 
 @media (max-width: 575.98px) {
