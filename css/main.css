@@ -631,6 +631,7 @@ input#club_search:focus {
 	flex-direction: row;
 	margin: 0 13%;
 	justify-content: center;
+	height: 150px;
 }
 
 .club_box {
