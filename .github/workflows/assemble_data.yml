@@ -31,11 +31,10 @@ jobs:
     - name: 'Install requirements'
       run: pip3 install -r main/data/assemble_data/requirements.txt
 
-    - name: 'Assemble event data'
+    - name: 'Assemble data'
       run: |
         cd main
         python3 data/assemble_data/assemble_events.py
-        python3 data/assemble_data/assemble_sports.py
         cd ..
 
     - name: 'Steal .git from gh-pages'

@@ -41,13 +41,17 @@ async function setupSportPage(sportID) {
         coach.innerText = coach.innerText = "Coaches:".concat(" ").concat(sport.coach);
         page.appendChild(coach);
     };
-    let meeting_time = document.createElement("h5"); meeting_time.classList.add("team_details_text");
-    if ("meeting_time_title" in sport) {
-        meeting_time.innerText = sport.meeting_time_title.concat(" ").concat(sport.meeting_time);
-    } else {
-        meeting_time.innerText = "Meeting time: ".concat(sport.meeting_time);
+    let a_list = [];
+    let category = document.createElement("h5"); category.classList.add("team_details_text");
+    let categories = sport.categories;
+    let categories2;
+    for (var i = 0; i < categories.length; i++) {
+        categories2 = categories[i].replace(/_/g, " ").replace(/(\d+,)/g, '$1 ');;
+        a_list.push(categories2);
     }
-    page.appendChild(meeting_time);
+    console.log(a_list);
+    category.innerText = category.innerText = "Sport Category: ".concat(" ").concat(a_list);
+    page.appendChild(category);
 
     if ("team_history" in sport) {
         let team_history_title = document.createElement("h3"); team_history_title.classList.add("sport_info_title"); team_history_title.innerText = "Team History";
@@ -56,6 +60,14 @@ async function setupSportPage(sportID) {
         let team_history_text = document.createElement("h4"); team_history_text.classList.add("t_history"); team_history_text.innerText = sport.team_history;
         page.appendChild(team_history_text);
     }
+    
+    if ("team_photo" in sport) {
+        let team_photo_title = document.createElement("h3"); team_photo_title.classList.add("sport_info_title"); team_photo_title.innerText = "Team Photo";
+        page.appendChild(team_photo_title);
+        let team_photo = document.createElement("img"); team_photo.classList.add("team_photo"); team_photo.src = sport.team_photo;
+        page.appendChild(team_photo);
+    }
+
     if ("members" in sport) {
         let team_member_title = document.createElement("h3"); team_member_title.classList.add("sport_info_title"); team_member_title.innerText = "Team Members";
         page.append(team_member_title);

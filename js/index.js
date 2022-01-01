@@ -18,28 +18,6 @@ async function searchMainPage(value) {
     }
 }
 
-function generateMatchScore(value, name, originalName) {
-    // generate a score based on how good the match is
-    // 1. search value matches the beginning of the string
-    // 2. search value matches a substring beginning with an uppercase 
-    var score = -1;
-    var start, end;
-    for (var idx = 0; idx < name.length - value.length + 1; idx++) {
-        var tmpScore = 0;
-        var nameSubstring = name.substring(idx, idx + value.length).toLowerCase();
-        if (nameSubstring == value) {
-            if (idx == 0) tmpScore++;
-            if (originalName[idx] == originalName[idx].toUpperCase()) tmpScore++;
-            if (tmpScore > score) {
-                score = tmpScore;
-                start = idx;
-                end = idx + value.length;
-            }
-        }
-    }
-    return {score, start, end};
-}
-
 function filterResults(value, activities, redirectPage, urlParamName) {
     // filters results that contain the search value
     // information is attached to each activity
@@ -68,7 +46,17 @@ function topResults(value) {
     filteredResults = filteredResults.concat(filterResults(value, athletics, "sport_info.html", "sport"));
     filteredResults = filteredResults.concat(filterResults(value, music));
     filteredResults.sort(function(a, b) {
-        return - (a.score - b.score);
+        let val = -(a.score - b.score);
+            if (val == 0) {
+                if (a.name > b.name) {
+                    return 1
+                } else if (a.name < b.name) {
+                    return -1
+                } else {
+                    return 0
+                }
+            }
+            return val;
     });
     
     if (filteredResults.length > 6) {
@@ -216,8 +204,8 @@ function results() {
         // This is not working 100% properly. If there's a tie between several categories, it will output the right number of tied elements, but they
         // will all be named like one
         if (value == max_value) {
-            var result = Object.keys(data_dict).find(key => data_dict[key] == value);
-            result_list.push(result);
+            // var result = Object.keys(data_dict).find(key => data_dict[key] == value);
+            result_list.push(key);
         }
     }
     console.log(result_list);

@@ -23,6 +23,8 @@ async function createPopup() {
 	icon.src = "";
 	icon.style.display = "none";
 	txt.style.left = "8px";
+
+	// Things to add in the future: A button that downloads the ics file about the eventS
 }
 createPopup();
 
