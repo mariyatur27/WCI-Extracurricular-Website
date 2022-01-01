@@ -53,8 +53,8 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
         });
     }
 
-
     displayBoxes.forEach((boxData) => {
+        let reduce_space_between_learn_more = false;
         if ((urlBox == null || ("id" in boxData && boxData.id.includes(urlBox))) && (activeFilters.size == 0 || boxData.categories.some(category => {return activeFilters.has(category)}))) {
             totalBoxes++;
             if (boxCount % countPerRow == 0) {
@@ -76,11 +76,21 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                         } else {
                             name_header.innerText = boxData.name;
                         }
-                        if (boxData.name.length > 15) {
-                            name_header.classList.add("lrn_small");
+                        switch (true) {
+                            case (boxData.name.length > 25):
+                                reduce_space_between_learn_more = true;
+                            case (boxData.name.length > 20):
+                                name_header.classList.add("lrn_very_small");
+                                break;
+                            case (boxData.name.length > 15):
+                                name_header.classList.add("lrn_small");
+                                break;
+                            default:
+                                break;
                         }
                         info_div.appendChild(name_header);
                         let drop_div = document.createElement("div"); drop_div.classList.add("together2");
+                        if (reduce_space_between_learn_more) drop_div.classList.add("small_margin");
                             let drop_button = document.createElement("button"); drop_button.classList.add("drop"); drop_button.addEventListener("click", () => {box.classList.toggle("active");});
                                 let drop_inner_div = document.createElement("div"); drop_inner_div.classList.add("together2");
                                     let learn_more_header = document.createElement("h6"); learn_more_header.innerText = "Learn More";
@@ -99,10 +109,10 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                         let summary = document.createElement("p"); summary.innerHTML = boxData.description;
                         expand_box_core_content.appendChild(summary);
                         if ("student_leaders" in boxData) {
-                            let together = document.createElement("div"); together.classList.add("glue");
-                                let title = document.createElement("h6"); title.innerText="Student Leaders: ";
+                            let together = document.createElement("div");
+                                let title = document.createElement("h6"); title.innerText="Student Leaders: "; title.classList.add("inline_header");
                                 together.appendChild(title);
-                                let student_leaders = document.createElement("h6"); student_leaders.classList.add("contents"); student_leaders.innerText = boxData.student_leaders; 
+                                let student_leaders = document.createElement("h6"); student_leaders.classList.add("contents"); student_leaders.innerText = boxData.student_leaders; student_leaders.classList.add("inline_header");
                                 together.appendChild(student_leaders);
                             expand_box_core_content.appendChild(together);
                         }

@@ -644,6 +644,15 @@ input#club_search:focus {
 	border-radius: 5px;
 }
 
+.expand_box_core_content {
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.inline_header {
+	display: inline;
+}
+
 .club_box .up {
 	display: none;
 	margin-left: 6%;
@@ -749,7 +758,7 @@ button.web_link {
 	border: none;
 	background-color: #ac191a;
 	color: white;
-	padding: 5% 7%;
+	padding: 0.25em 0.5em;
 }
 button.page_link {
 	white-space: nowrap;
@@ -835,6 +844,10 @@ a.icons {
 	font-size: 1.5em;
 }
 
+.lrn_very_small {
+	font-size: 1.25em;
+}
+
 .contents {
 	font-family: var(--open-sans);
 }
@@ -843,6 +856,10 @@ a.icons {
 	margin-top: 12px;
 	display: flex;
 	align-items: center;
+}
+
+.together2.small_margin {
+	margin-top: 0;
 }
 
 .together2 h6 {
