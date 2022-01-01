@@ -1,0 +1,9 @@
+.tweet-text {
+  background-color: #fff2ac;
+  background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+  font-weight: bolder;
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+  padding: 4px;
+}
+
