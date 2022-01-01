@@ -243,6 +243,7 @@ p.descrp {
 .search-wrapper {
 	display: flex;
 	flex-direction: column;
+	margin-right: 2%;
 }
 
 .search-bar-wrapper {
@@ -272,12 +273,13 @@ p.descrp {
 }
 
 input#club_search {
-	padding: 0 20px;
+	padding: 0 45px 0 20px;
 	height: 40px;
 	width: 100%;
 	border: 1px solid rgb(177, 177, 177);
 	border-radius: 33px;
 	background-color: #F8F8F8;
+	margin-right: -15px;
 }
 input#club_search:focus {
 	outline: rgb(95, 95, 95) solid 1px;
@@ -299,7 +301,7 @@ input#club_search:focus {
 	color: black;
 	position: relative;
 	top: 11px;
-	right: 35px;
+	right: 20px;
 }
 
 .large-search-icon {
@@ -1076,7 +1078,6 @@ img.main_sm_links {
 	}
 	.search-bar-wrapper {
 		width: 50%;
-		margin-right: 15px;
 	}
 	.dropdown_content {
 		box-shadow: 5px 5px 15px 7px #E7E7E7;
