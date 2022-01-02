@@ -942,7 +942,7 @@ a.art-form {
 
 #gallery {
    display: flex;
-   max-width: auto;
+   max-width: 1200px;
    width: 100%;
    flex-direction: row;
    flex-wrap: wrap;
