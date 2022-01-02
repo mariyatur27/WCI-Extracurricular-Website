@@ -29,23 +29,7 @@ function toggleAthleticsFilter(filter) {
     setupBoxes(athletics, 'athletics_boxes', 2);
 }
 
-function toggleDropdown1() {
-    var dropdown_content = document.getElementById('dropdown_content1');
-    dropdown_content.classList.toggle('dropdown-active');
-}
-
-function toggleDropdown2() {
-    var dropdown_content = document.getElementById('dropdown_content2');
-    dropdown_content.classList.toggle('dropdown-active');
-}
-
-function toggleDropdown3() {
-    var dropdown_content = document.getElementById('dropdown_content3');
-    dropdown_content.classList.toggle('dropdown-active');
-}
-
-function toggleDropdown4() {
-    var dropdown_content = document.getElementById('dropdown_content4');
+function toggleDropdown(dropdown_content) {
     dropdown_content.classList.toggle('dropdown-active');
 }
 
