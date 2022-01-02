@@ -942,7 +942,7 @@ a.art-form {
 
 #gallery {
    display: flex;
-   max-width: 1200px;
+   max-width: auto;
    width: 100%;
    flex-direction: row;
    flex-wrap: wrap;
@@ -962,16 +962,17 @@ a.art-form {
 #gallery .box .img-box{
 	position: relative;
 	overflow: hidden;
+	height: 250px;
 }
 #gallery .box .img-box img{
 	max-width: 100%;
 	transition: 1.5s ease;
-	opacity: .2;
+	opacity: 1;
 }
 
 #gallery .box:hover .img-box img{
 	transform: scale(1.2);
-	opacity: 1;
+	opacity: .2;
 }
 
 #gallery .box .text{
