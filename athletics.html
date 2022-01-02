@@ -72,49 +72,49 @@
                             <input type="text" id="club_search" class="club_search" onkeyup="searchWord = this.value.toLowerCase(); setupBoxes(athletics, 'athletics_boxes', 2);" placeholder="Search for a sport...">
                             <i class="fas fa-search search-icon"></i>
                         </div>
-                        <button class="dropdown-btn athletics-dropdown-btn" onclick="toggleDropdown(document.getElementById('dropdown_content4'))">
+                        <button class="dropdown-btn athletics-dropdown-btn" onclick="toggleDropdown(this)">
                             Filter
                             <i class="fas fa-sort-down filter-icon"></i>
                             <div class="dropdown">
                                 <div id="dropdown_content4" class="dropdown_content">
                                     <div class="filter-wrapper">
-                                        <input type="checkbox" onclick="toggleAthleticsFilter('fall_sports')" name="choice" id="fall_sports" class="filterbt">
+                                        <input type="checkbox" onclick="toggleAthleticsFilter(this)" name="choice" id="fall_sports" class="filterbt">
                                         <i class="fas fa-check checkmark"></i>
                                         <label for="fall_sports">Fall Sports</label>
                                     </div>
                                     
                                     <div class="filter-wrapper">
-                                        <input type="checkbox" onclick="toggleAthleticsFilter('winter_sports')" name="choice" id="winter_sports" class="filterbt">
+                                        <input type="checkbox" onclick="toggleAthleticsFilter(this)" name="choice" id="winter_sports" class="filterbt">
                                         <i class="fas fa-check checkmark"></i>
                                         <label for="winter_sports">Winter Sports</label>
                                     </div>
                                     
                                     <div class="filter-wrapper">
-                                        <input type="checkbox" onclick="toggleAthleticsFilter('spring_sports')" name="choice" id="spring_sports" class="filterbt">
+                                        <input type="checkbox" onclick="toggleAthleticsFilter(this)" name="choice" id="spring_sports" class="filterbt">
                                         <i class="fas fa-check checkmark"></i>
                                         <label for="spring_sports">Spring Sports</label>
                                     </div>
                                     
                                     <div class="filter-wrapper">
-                                        <input type="checkbox" onclick="toggleAthleticsFilter('boys_sports')" name="choice" id="boys_sports" class="filterbt">
+                                        <input type="checkbox" onclick="toggleAthleticsFilter(this)" name="choice" id="boys_sports" class="filterbt">
                                         <i class="fas fa-check checkmark"></i>
                                         <label for="boys_sports">Boys Sports</label>
                                     </div>
                                     
                                     <div class="filter-wrapper">
-                                        <input type="checkbox" onclick="toggleAthleticsFilter('girls_sports')" name="choice" id="girls_sports" class="filterbt">
+                                        <input type="checkbox" onclick="toggleAthleticsFilter(this)" name="choice" id="girls_sports" class="filterbt">
                                         <i class="fas fa-check checkmark"></i>
                                         <label for="girls_sports">Girls Sports</label>
                                     </div>
 
                                     <div class="filter-wrapper">
-                                        <input type="checkbox" onclick="toggleAthleticsFilter('junior_sports')" name="choice" id="junior_sports" class="filterbt">
+                                        <input type="checkbox" onclick="toggleAthleticsFilter(this)" name="choice" id="junior_sports" class="filterbt">
                                         <i class="fas fa-check checkmark"></i>
                                         <label for="junior_sports">Junior Sports</label>
                                     </div>
 
                                     <div class="filter-wrapper">
-                                        <input type="checkbox" onclick="toggleAthleticsFilter('senior_sports')" name="choice" id="senior_sports" class="filterbt">
+                                        <input type="checkbox" onclick="toggleAthleticsFilter(this)" name="choice" id="senior_sports" class="filterbt">
                                         <i class="fas fa-check checkmark"></i>
                                                 <label for="senior_sports">Senior Sports</label>  
                                     </div>

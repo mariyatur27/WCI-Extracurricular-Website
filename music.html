@@ -66,9 +66,13 @@
                     <h4 class="descrp">Check out some of their work!</h4>
 
                     <!-- Trying out putting a video -->
+                    <!--
+                        Stores cookies, removed for now.
+                        Maybe put the thumbnail and a link to the video?
+                    -->
+                    <!--<iframe src="https://www.youtube.com/embed/Bd8_vO5zrjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe_m"></iframe>
                     <iframe src="https://www.youtube.com/embed/Bd8_vO5zrjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe_m"></iframe>
-                    <iframe src="https://www.youtube.com/embed/Bd8_vO5zrjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe_m"></iframe>
-                    <iframe src="https://www.youtube.com/embed/Bd8_vO5zrjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe_m"></iframe>
+                    <iframe src="https://www.youtube.com/embed/Bd8_vO5zrjo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe_m"></iframe>-->
 
 
 
@@ -78,37 +82,36 @@
                             <input type="text" id="club_search" class="club_search" oninput="searchWord = this.value.toLowerCase(); setupBoxes(music, 'music_boxes', 2);" placeholder="Search for a music group...">
                             <i class="fas fa-search search-icon"></i>
                         </div>
-                        <button class="dropdown-btn" onclick="toggleDropdown()">
+                        <button class="dropdown-btn" onclick="toggleDropdown(this)">
                             Filter
                             <i class="fas fa-sort-down filter-icon"></i>
+                            <div class="dropdown">
+                                <div id="dropdown_content" class="dropdown_content">
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleMusicFilter(this)" name="choice" id="band" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="band">Band</label>
+                                    </div>
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleMusicFilter(this)" name="choice" id="choir" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="choir">Choir</label>
+                                    </div>
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleMusicFilter(this)" name="choice" id="guitar" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="guitar">Guitar</label>
+                                    </div>
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleMusicFilter(this)" name="choice" id="orchestra" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="orchestra">Orchestra</label>
+                                    </div>
+                                </div>
+                            </div>
                         </button>
                     </div>
-
-                    <div class="dropdown">
-                        <div id="dropdown_content" class="dropdown_content">
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleMusicFilter('band')" name="choice" id="band" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="band">Band</label>
-                            </div>
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleMusicFilter('choir')" name="choice" id="choir" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="choir">Choir</label>
-                            </div>
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleMusicFilter('guitar')" name="choice" id="guitar" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="guitar">Guitar</label>
-                            </div>
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleMusicFilter('orchestra')" name="choice" id="orchestra" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="orchestra">Orchestra</label>
-                            </div>
-                        </div>
-                        <div class="clubs" id="music_boxes"></div>
-                    </div>
+                    <div class="clubs" id="music_boxes"></div>
                 </div>
             </div>
         </section>

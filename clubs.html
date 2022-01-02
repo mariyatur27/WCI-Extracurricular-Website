@@ -66,99 +66,94 @@
                             <input type="text" id="club_search" class="club_search" oninput="searchWord = this.value.toLowerCase(); setupBoxes(clubs, 'club_boxes', 2);" placeholder="Search for a club...">
                             <i class="fas fa-search search-icon"></i>
                         </div>
-                        <button class="dropdown-btn" onclick="toggleDropdown(document.getElementById('dropdown_content1'))"">
+                        <button class="dropdown-btn" onclick="toggleDropdown(this)">
                             Category
                             <i class="fas fa-sort-down filter-icon"></i>
-                    <div class="dropdown">
-                        
-                        <div id="dropdown_content1" class="dropdown_content">
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleClubFilter('stem')" name="choice" id="stem" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="stem">STEM</label>
+                            <div class="dropdown">
+                                <div id="dropdown_content1" class="dropdown_content">
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleClubFilter(this)" name="choice" id="stem" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="stem">STEM</label>
+                                    </div>
+                                    
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleClubFilter(this)" name="choice" id="academics" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="academics">Academics</label>
+                                    </div>
+                                    
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleClubFilter(this)" name="choice" id="recreational" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="recreational">Recreational</label>
+                                    </div>
+                                    
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleClubFilter(this)" name="choice" id="business" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="business">Business</label>
+                                    </div>
+                                    
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleClubFilter(this)" name="choice" id="social_justice" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="social_justice">Social Justice</label>
+                                    </div>
+                                    
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleClubFilter(this)" name="choice" id="leadership" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="leadership">Leadership</label>
+                                    </div>
+                                </div>
                             </div>
-                            
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleClubFilter('academics')" name="choice" id="academics" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="academics">Academics</label>
+                        </button>
+                        <button class="dropdown-btn" onclick="toggleDropdown(this);">
+                            Commitment 
+                            <i class="fas fa-sort-down filter-icon"></i>
+                            <div class="dropdown">
+                                <div id="dropdown_content2" class="dropdown_content">
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleClubFilter(this)" name="choice" id="c_low" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="c_low">Low</label>
+                                    </div>
+                                    
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleClubFilter(this)" name="choice" id="c_medium" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="c_medium">Medium</label>
+                                    </div>
+                                    
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleClubFilter(this)" name="choice" id="c_high" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="c_high">High</label>
+                                    </div>
+                                </div>
                             </div>
-                            
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleClubFilter('recreational')" name="choice" id="recreational" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="recreational">Recreational</label>
+                        </button>
+                        <button class="dropdown-btn" onclick="toggleDropdown(this);">
+                            Competition 
+                            <i class="fas fa-sort-down filter-icon"></i>
+                            <div class="dropdown">
+                                <div id="dropdown_content3" class="dropdown_content">
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleClubFilter(this)" name="choice" id="com_none" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="com_none">None</label>
+                                    </div>
+                                    
+                                    <div class="filter-wrapper">
+                                        <input type="checkbox" onclick="toggleClubFilter(this)" name="choice" id="com_present" class="filterbt">
+                                        <i class="fas fa-check checkmark"></i>
+                                        <label for="com_present">Present</label>
+                                    </div>
+                                </div>
                             </div>
-                            
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleClubFilter('business')" name="choice" id="business" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="business">Business</label>
-                            </div>
-                            
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleClubFilter('social_justice')" name="choice" id="social_justice" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="social_justice">Social Justice</label>
-                            </div>
-                            
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleClubFilter('leadership')" name="choice" id="leadership" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="leadership">Leadership</label>
-                            </div>
-                        </div>
+                        </button>
                     </div>
-                    </button>
-                    <button class="dropdown-btn" onclick="toggleDropdown(document.getElementById('dropdown_content2'))">
-                        Commitment 
-                        <i class="fas fa-sort-down filter-icon"></i>
-                    <div class="dropdown">
-                        
-                        <div id="dropdown_content2" class="dropdown_content">
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleClubFilter('low')" name="choice" id="c_low" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="c_low">Low</label>
-                            </div>
-                            
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleClubFilter('medium')" name="choice" id="c_medium" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="c_medium">Medium</label>
-                            </div>
-                            
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleClubFilter('high')" name="choice" id="c_high" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="c_high">High</label>
-                            </div>
-                        </div>
-
-                    </div>
-                    </button>
-                    <button class="dropdown-btn" onclick="toggleDropdown(document.getElementById('dropdown_content3'))">
-                        Competition 
-                        <i class="fas fa-sort-down filter-icon"></i>
-                    <div class="dropdown">
-                        
-                        <div id="dropdown_content3" class="dropdown_content">
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleClubFilter('none')" name="choice" id="com_none" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="com_none">None</label>
-                            </div>
-                            
-                            <div class="filter-wrapper">
-                                <input type="checkbox" onclick="toggleClubFilter('present')" name="choice" id="com_present" class="filterbt">
-                                <i class="fas fa-check checkmark"></i>
-                                <label for="com_present">Present</label>
-                            </div>
-                        </div>
-
-                    </div>
-                    </button>
-                </div>
                     <div class="clubs" id="club_boxes"></div>
                 </div>
             </div>
