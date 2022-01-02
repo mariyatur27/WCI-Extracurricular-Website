@@ -21,6 +21,7 @@ async function generateSlideshow(cardsData, slideshowId, redirectPage, urlParamN
             var image = document.createElement("img");
             image.classList.add("slide-img")
             image.src = card.image;
+            image.alt = card.name + "'s logo";
 
             var clubNameHeader = document.createElement("h5");
             clubNameHeader.innerText = card.name;
