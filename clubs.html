@@ -66,7 +66,7 @@
                             <input type="text" id="club_search" class="club_search" oninput="searchWord = this.value.toLowerCase(); setupBoxes(clubs, 'club_boxes', 2);" placeholder="Search for a club...">
                             <i class="fas fa-search search-icon"></i>
                         </div>
-                        <button class="dropdown-btn" onclick="toggleDropdown1()">
+                        <button class="dropdown-btn" onclick="toggleDropdown(document.getElementById('dropdown_content1'))"">
                             Category
                             <i class="fas fa-sort-down filter-icon"></i>
                         </button>
@@ -110,7 +110,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="dropdown-btn" onclick="toggleDropdown2()">
+                    <button class="dropdown-btn" onclick="toggleDropdown(document.getElementById('dropdown_content2'))">
                         Commitment 
                         <i class="fas fa-sort-down filter-icon"></i>
                     </button>
@@ -137,7 +137,7 @@
                         </div>
 
                     </div>
-                    <button class="dropdown-btn" onclick="toggleDropdown3()">
+                    <button class="dropdown-btn" onclick="toggleDropdown(document.getElementById('dropdown_content3'))">
                         Competition 
                         <i class="fas fa-sort-down filter-icon"></i>
                     </button>
