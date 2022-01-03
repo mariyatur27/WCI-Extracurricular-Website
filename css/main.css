@@ -340,9 +340,11 @@ input#club_search:focus {
 
 .dropdown_content {
 	position: absolute;
+	left: 0;
 	display: none;
 	padding: 10px 0;
-	width: 95%;
+	margin-top: 18px;
+	width: 100%;
 	background-color: white;
 	border-radius: 5px;
 	border: 1px solid rgb(184, 184, 184);
@@ -1102,10 +1104,6 @@ img.main_sm_links {
 	}
 	.search-bar-wrapper {
 		width: 50%;
-	}
-	.dropdown_content {
-		margin-left: 2%;
-		right: 3%;
 	}
 	.dropdown-btn {
 		width: 25%;
