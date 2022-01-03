@@ -32,7 +32,6 @@ function toggleAthleticsFilter(filterElement) {
 }
 
 function toggleDropdown(dropdown_button) {
-    hideDropdown();
     dropdown_button.getElementsByClassName('dropdown_content')[0].classList.toggle('dropdown-active');
 }
 
@@ -46,7 +45,6 @@ window.onclick = function (event) {
     // if the user clicks anywhere outside of the filters dropdown menu, hide menu
     // check if the id, className, or tagName of event.target matches any of the elements of the dropdown menu
     var exceptions = ["filterbt", "dropdown-btn", "LABEL", "dropdown_content", "dropdown"];
-    var hide = true;
     for (let exception of exceptions) {
         var className = event.target.classList.value;
         var id = event.target.id;
