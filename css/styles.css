@@ -251,7 +251,7 @@ a {
   color: var(--theme-darkblue);
   text-decoration: underline;
 }
-a:hover {
+a:not(.icons):hover {
   color: lightblue;
 }
 

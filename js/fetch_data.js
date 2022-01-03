@@ -461,18 +461,17 @@ var connection_links = {
         "icon": "assets/icons/classroom.png"
     },
     "instagram": {
-        "type": "icon",
-        "icon": "assets/icons/instagram.png"
+        "type": "font-awesome-icon",
+        "icon": "fab fa-instagram fa-2x"
     },
     "email": {
-        "type": "icon",
-        "icon": "assets/icons/email.png",
+        "type": "font-awesome-icon",
+        "icon": "far fa-envelope fa-2x",
         "link_prefix": "mailto:"
     },
     "website": {
         "type": "button",
-        "label": "Club website",
-        "icon": "assets/icons/website.png"
+        "label": "Club website"
     },
     "more_info": {
         "type": "button",
