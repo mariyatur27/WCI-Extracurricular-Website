@@ -5,15 +5,12 @@ async function searchMainPage(value) {
     clearList();
 
     // Checking if there's any input inside the search bar
-    var smLinks = document.getElementsByClassName("main_sm_links");
     if (value && value.trim().length > 0){
-        for (const link of smLinks ) {link.style.display = "none";};
         value = value.trim().toLowerCase();
 
         // Only returning those results of the showResults that match the user input in the search bar     
         showResults(value, topResults(value));
     } else {
-        for (const link of smLinks ) {link.style.display = "inline";};
         hideResults();
     }
 }

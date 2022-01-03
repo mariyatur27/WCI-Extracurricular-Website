@@ -1054,15 +1054,16 @@ button.web_button:hover {
 	background-color: #3c7fcf;
 }
 
-img.footer_sm_links {
+.footer_sm_links {
 	color: white;
 	width: 27px;
 	margin-right: 10px;
 }
 
-img.main_sm_links {
+.main_sm_links {
 	width: 4%;
 	margin-top: 2%;
+	color: white;
 }
 
 @media (min-width: 500px) {
