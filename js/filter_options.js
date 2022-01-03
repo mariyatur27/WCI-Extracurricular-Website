@@ -32,7 +32,12 @@ function toggleAthleticsFilter(filterElement) {
 }
 
 function toggleDropdown(dropdown_button) {
-    dropdown_button.getElementsByClassName('dropdown_content')[0].classList.toggle('dropdown-active');
+    let dropDownElement = dropdown_button.getElementsByClassName('dropdown_content')[0];
+    let enableDropdown = !dropDownElement.classList.contains('dropdown-active');
+    hideDropdown();
+    if (enableDropdown) {
+        dropDownElement.classList.toggle('dropdown-active');
+    }
 }
 
 function hideDropdown() {
@@ -44,11 +49,11 @@ function hideDropdown() {
 window.onclick = function (event) {
     // if the user clicks anywhere outside of the filters dropdown menu, hide menu
     // check if the id, className, or tagName of event.target matches any of the elements of the dropdown menu
-    var exceptions = ["filterbt", "dropdown-btn", "LABEL", "dropdown_content", "dropdown"];
-    for (let exception of exceptions) {
-        var className = event.target.classList.value;
-        var id = event.target.id;
-        var tagName = event.target.tagName;
+    const exceptions = ["filterbt", "dropdown-btn", "LABEL", "dropdown_content", "dropdown"];
+    for (const exception of exceptions) {
+        let className = event.target.classList.value;
+        let id = event.target.id;
+        let tagName = event.target.tagName;
         if (className.includes(exception) || exception == id || exception == tagName) {
             return;
         }
