@@ -186,6 +186,10 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
                                 link_a.classList.add("web_link");
                                 var link_image = document.createElement("button"); link_image.classList.add("web_link"); link_image.type="button"; link_image.name="club_btn";
                                 link_image.innerText = connection_link.label;
+                            } else if (connection_link.type == "font-awesome-icon") {
+                                link_a.classList.add("icons");
+                                var link_image = document.createElement("i"); link_image.classList.add("icons");
+                                link_image.classList.add(...connection_link.icon.split(" "));
                             } else if (connection_link.type == "icon") {
                                 link_a.classList.add("icons");
                                 var link_image = document.createElement("img"); link_image.classList.add("icons");
