@@ -51,6 +51,10 @@ iframe {
 }
 /* nav bar done */
 
+.main {
+	min-height: calc(100vh - 122px);
+}
+
 header.masthead {
 	min-height: 100vh;
 	display: flex;
