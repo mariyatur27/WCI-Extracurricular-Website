@@ -645,10 +645,10 @@ input#club_search:focus {
 	padding: 2.5% 1%;
 	margin-top: 25px;
 	margin-right: 2%;
-	width: 96%;
 	height: 100%;
 	border: 1px solid rgb(182, 182, 182);
 	border-radius: 5px;
+	max-width: 50%;
 }
 
 .expand_box_core_content {
@@ -1484,11 +1484,12 @@ button.web_button:hover {
 		margin: 0 5%;	
 	}
 	.club_info {
-		width: 100%;
+		width: 95%;
 		margin-top: 30px;
 	}
 	.seperate {
 		width: 95%;
+		max-width: 95%;
 	}
 	.club_header {
 		flex-direction: column;
