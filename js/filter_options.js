@@ -12,7 +12,7 @@ function toggleFilterActive(filterElement) {
 
 function toggleClubFilter(filterElement) {
     let filter = filterElement.id;
-    toggleFilter(filter + "_category");
+    toggleFilter(filter);
     toggleFilterActive(filterElement);
     setupBoxes(clubs, 'club_boxes', 2);
 }
