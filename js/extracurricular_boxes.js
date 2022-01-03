@@ -1,9 +1,21 @@
 var activeFilters = new Set();
 var searchWord = "";
 
-async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null) {
+async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null, filters=null) {
     if (!dataFetched) {
         await fetchData();
+    }
+    if (filters != null) {
+        filters = filters.split(",");
+        for (const filter of filters) {
+            let filterElement = document.getElementById(filter);
+            if (filterElement != null) {
+                filterElement.parentElement.classList.toggle("filter-active");
+                activeFilters.add(filter);
+            } else {
+                console.log("Unrecognized filter: " + filter)
+            }
+        }
     }
 
     let boxes = document.getElementById(divID);
