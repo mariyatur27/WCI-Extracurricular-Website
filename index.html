@@ -148,8 +148,10 @@
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Extracurriculars Quiz</h2>
                     <h3 class="section-subheading text-muted">Take this quiz to find our what category of clubs you should join ...</h3>
+                    <button id="show-quiz" class="show">Show Quiz</button>
                 </div>
-                
+            
+            <div id="all_slides">
                 <div id="slide1">
                     <div class="s1">
                         <div class="quiz_slide" id="quiz_slide_1">
@@ -170,7 +172,6 @@
                                 <input class="1_op" id="1_op5" name="op1" type="radio" value="gym">
                                 <label for="1_op5">Gym</label><br>
                             </form>
-                            <button class="next" id="next" >Next</button>
                         </div>
                     </div>
                 </div>
@@ -195,7 +196,6 @@
                                 <input class="1_op" id="1_op5" name="op2" type="radio" value="studying">
                                 <label for="1_op5">Studying</label><br>
                             </form>
-                            <button class="next" id="next2" >Next</button>
                         </div>
                     </div>
                 </div>
@@ -220,7 +220,6 @@
                                 <input class="1_op" id="1_op5" name="op3" type="radio" value="ambitiouse">
                                 <label for="1_op5">Ambitious</label><br>
                             </form>
-                            <button class="next" id="next3">Next</button>
                         </div>
                     </div>
                 </div>
@@ -236,7 +235,6 @@
                                 <input class="1_op" id="1_op2" name="op4" type="radio" value="no">
                                 <label for="1_op2">No</label><br>
                             </form>
-                            <button class="next" id="next4" >Next</button>
                         </div>
                     </div>
                 </div>
@@ -253,12 +251,13 @@
                                 <label for="1_op2">No</label><br>
                             </form>
 
-                            <button onclick="results()">Get Results</button><br>
-                            <span id="output"></span>
+                            <button onclick="results()" class="show">Get Results</button><br>
+                            <a href="clubs.html"><span id="output"></span></a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </section>
 
         <section class="page-section bg-light" id="portfolio">

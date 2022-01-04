@@ -157,7 +157,7 @@ function results() {
     var leadership_l_2 = [];
     var sum_list = [];
     var name_list = ["STEM", "Academics", "Recreational", "Business", "Social Justice", "Leadership"];
-    var categoty_list = ["stem_category", "academics_category", "recreational_category", "business_category", "social_justice_category", "leadership_category"];
+    var category_list = ["stem_category", "academics_category", "recreational_category", "business_category", "social_justice_category", "leadership_category"];
     var result_list = [];
 
     for (let i = 0; i < user_answers.length; i++) {
@@ -204,6 +204,7 @@ function results() {
         }
     }
     console.log(result_list);
+    // result_list.classList.toggle("the_result");
     if (max_value !== 0){
         document.getElementById('output').innerHTML = "We recommend that you join clubs of this categoty: ".concat(result_list);
     }else{
@@ -212,24 +213,17 @@ function results() {
 };
 
 
-// Next button
-// var button_list = ["next", "next2", "next3", "next4"];
-// var slide_list = ["slide2", "slide3", "slide4", "slide5"]
-// var a_dict = {};
-// button_list.forEach((key, i) => a_dict[key] = slide_list[i]);
-// console.log(a_dict);
-// for (var i = 0; i < button_list.length; i++) {
-//     document.getElementById(button_list[i]).addEventListener('click', function() {
-//     for (var key in a_dict) {
-//         console.log(document.getElementById(key[button_list[i]]))
-//     }
-//  });
-// }
-// for (var key in a_dict) {
-//     document.getElementById(a_dict[key]).addEventListener('click', function() {
-//         console.log(key);
-//     }) 
-// };
+// Open Button
+document.getElementById('show-quiz').addEventListener('click', function() {
+    var quiz =  document.getElementById('all_slides');
+    if (quiz.style.display === 'none') {
+        quiz.style.display = 'block';
+        document.getElementById('show-quiz').innerHTML = "Close Quiz";
+    }else{
+        quiz.style.display = 'none';
+        document.getElementById('show-quiz').innerHTML = "Show Quiz";
+    }
+});
 
 async function createCalendar(daysAhead) {
     if (!dataFetched) {
