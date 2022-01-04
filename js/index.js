@@ -198,10 +198,7 @@ function results() {
     let max_value = Math.max(... sum_list);
 
     for (const [key, value] of Object.entries(data_dict)) {
-        // This is not working 100% properly. If there's a tie between several categories, it will output the right number of tied elements, but they
-        // will all be named like one
         if (value == max_value) {
-            // var result = Object.keys(data_dict).find(key => data_dict[key] == value);
             result_list.push(key);
         }
     }
@@ -226,13 +223,23 @@ for (var i = 0; i < section1_r.length; i++) {
 }
 
 // Next button
-
-var slides = document.getElementsByClassName('s2')
-document.getElementById("next").addEventListener('click', function() {
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'block';
-    }
-});
+var button_list = ["next", "next2", "next3", "next4"];
+var slide_list = ["slide2", "slide3", "slide4", "slide5"]
+var a_dict = {};
+slide_list.forEach((key, i) => a_dict[key] = button_list[i]);
+console.log(a_dict);
+for (var key in a_dict) {
+    document.getElementById(a_dict[key]).addEventListener('click', function() {
+        document.getElementById(key).style.display = 'block';
+        console.log("test");
+    }) 
+};
+// for (const [key, value] of Object.entries(a_dict)) {
+//     document.getElementById(value).addEventListener('click', function() {
+//         console.log("skfasf");
+//         document.getElementById(key).style.display = 'block';
+//     })
+//   }
 
 async function createCalendar(daysAhead) {
     if (!dataFetched) {
