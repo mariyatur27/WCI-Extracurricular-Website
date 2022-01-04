@@ -129,16 +129,17 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null, filters=
                             expand_box_core_content.appendChild(together);
                         }
                         let meeting_time_text = document.createElement("h6"); 
-                        let tryouts = document.createElement("h6");  tryouts.innerText = boxData.meeting_time_1; 
+                        let tryouts = document.createElement("h6");  tryouts.innerText = boxData.meeting_time; 
+                        console.log(tryouts);
                         if ("meeting_time_title" in boxData) {
-                            if (boxData.meeting_time = "Over") {
-                                tryouts.style.color = "red";
-                            }else if (tryouts.innerText = "Have Not Started Yet") {
-                                tryouts.style.color = "green";
+                            if (boxData.meeting_time === "Over") {
+                                meeting_time_text.classList.add("red");
+                            }else if (tryouts.innerText === "Have Not Started Yet") {
+                                meeting_time_text.classList.add("green");
                             }else{
-                                tryouts.style.color = "black";
+                                meeting_time_text.classList.add("yellow");
                             }
-                            meeting_time_text.innerText = boxData.meeting_time_title.concat(" ").concat(tryouts);
+                            meeting_time_text.innerText = boxData.meeting_time_title.concat(" ").concat(boxData.meeting_time);
                         }
                         expand_box_core_content.appendChild(meeting_time_text);
                         if ("extra_info" in boxData) {

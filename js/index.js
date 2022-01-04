@@ -209,37 +209,26 @@ function results() {
         document.getElementById('output').innerHTML = "You have to complete the quiz in order to get the results!";
     }
 };
-// Making the button visible only when all the radio buttons are checked
-var section1_r = document.getElementsByName("op1");
-var section2_r = document.querySelectorAll('input[name="op2"]');
-var section3_r = document.querySelectorAll('input[name="op3"]');
-var section4_r = document.querySelectorAll('input[name="op4"]');
-var section5_r = document.querySelectorAll('op5');
 
-for (var i = 0; i < section1_r.length; i++) {
-    if (section1_r[i].checked) {
-        console.log("test");
-    }
-}
 
 // Next button
 var button_list = ["next", "next2", "next3", "next4"];
 var slide_list = ["slide2", "slide3", "slide4", "slide5"]
 var a_dict = {};
-slide_list.forEach((key, i) => a_dict[key] = button_list[i]);
+button_list.forEach((key, i) => a_dict[key] = slide_list[i]);
 console.log(a_dict);
-for (var key in a_dict) {
-    document.getElementById(a_dict[key]).addEventListener('click', function() {
-        document.getElementById(key).style.display = 'block';
-        console.log("test");
-    }) 
-};
-// for (const [key, value] of Object.entries(a_dict)) {
-//     document.getElementById(value).addEventListener('click', function() {
-//         console.log("skfasf");
-//         document.getElementById(key).style.display = 'block';
-//     })
-//   }
+for (var i = 0; i < button_list.length; i++) {
+    document.getElementById(button_list[i]).addEventListener('click', function() {
+    for (var key in a_dict) {
+        console.log(document.getElementById(key[button_list[i]]))
+    }
+ });
+}
+// for (var key in a_dict) {
+//     document.getElementById(a_dict[key]).addEventListener('click', function() {
+//         console.log(key);
+//     }) 
+// };
 
 async function createCalendar(daysAhead) {
     if (!dataFetched) {
