@@ -157,6 +157,7 @@ function results() {
     var leadership_l_2 = [];
     var sum_list = [];
     var name_list = ["STEM", "Academics", "Recreational", "Business", "Social Justice", "Leadership"];
+    var categoty_list = ["stem_category", "academics_category", "recreational_category", "business_category", "social_justice_category", "leadership_category"];
     var result_list = [];
 
     for (let i = 0; i < user_answers.length; i++) {
@@ -212,18 +213,18 @@ function results() {
 
 
 // Next button
-var button_list = ["next", "next2", "next3", "next4"];
-var slide_list = ["slide2", "slide3", "slide4", "slide5"]
-var a_dict = {};
-button_list.forEach((key, i) => a_dict[key] = slide_list[i]);
-console.log(a_dict);
-for (var i = 0; i < button_list.length; i++) {
-    document.getElementById(button_list[i]).addEventListener('click', function() {
-    for (var key in a_dict) {
-        console.log(document.getElementById(key[button_list[i]]))
-    }
- });
-}
+// var button_list = ["next", "next2", "next3", "next4"];
+// var slide_list = ["slide2", "slide3", "slide4", "slide5"]
+// var a_dict = {};
+// button_list.forEach((key, i) => a_dict[key] = slide_list[i]);
+// console.log(a_dict);
+// for (var i = 0; i < button_list.length; i++) {
+//     document.getElementById(button_list[i]).addEventListener('click', function() {
+//     for (var key in a_dict) {
+//         console.log(document.getElementById(key[button_list[i]]))
+//     }
+//  });
+// }
 // for (var key in a_dict) {
 //     document.getElementById(a_dict[key]).addEventListener('click', function() {
 //         console.log(key);

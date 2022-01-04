@@ -300,9 +300,9 @@ input#club_search:focus {
 .next {
 	float: right;
 }
-#slide2 , #slide3 , #slide4 , #slide5 {
+/* #slide2 , #slide3 , #slide4 , #slide5 {
 	display: none;
-}
+} */
 .red {
 	background-color: red;
 	padding: 2%;
