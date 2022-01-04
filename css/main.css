@@ -1140,6 +1140,7 @@ button.web_button:hover {
 	}	
 	.text_p {
 		width: 70%;
+		margin-bottom: 3%;
 	}
 	.show {
 		display: block;
