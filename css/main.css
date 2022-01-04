@@ -1301,7 +1301,6 @@ button.web_button:hover {
 	.container-sm, .container {
 	  max-width: 540px;
 	}
-  
 	.orchestra {
 	  margin: 0;
 	  padding: 0;
@@ -1537,6 +1536,13 @@ button.web_button:hover {
 	.club_info {
 		width: 90%;
 		margin-top: 30px;
+	}
+	#show-quiz {
+		margin-left: 0%;
+	}
+	#all_slides {
+		width: 96%;
+		margin-left: 2%;
 	}
 	.seperate {
 		width: 95%;
