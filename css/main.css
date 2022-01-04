@@ -300,8 +300,32 @@ input#club_search:focus {
 .next {
 	float: right;
 }
-#slide2 {
+#slide2 , #slide3 , #slide4 , #slide5 {
 	display: none;
+}
+.red {
+	background-color: red;
+	padding: 2%;
+    width: 66%;
+}
+.green {
+	background-color: rgb(138, 226, 138);
+	padding: 2%;
+    width: 66%;
+}
+.yellow {
+	background-color: yellow;
+	padding: 2%;
+    width: 66%;
+}
+.next {
+    border: none;
+    padding: 1%;
+    background-color: red;
+    color: white;
+    margin-top: -5%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .search-icon {
 	color: black;
@@ -932,9 +956,7 @@ img.c_image {
 	margin-bottom: 7%;
 	object-fit: contain;
 }
-.s2 {
-	display: none;
-}
+
 .c_item {
 	height: 240px;
 	width: 240px;
