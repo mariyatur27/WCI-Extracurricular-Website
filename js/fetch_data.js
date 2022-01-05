@@ -1155,7 +1155,7 @@ var events = [
 var music = [
     {
         "name": "Band",
-        "image": "assets/club_images/wciwebdev.png",
+        "image": "assets/music_icons/in2.png",
         "connection_links": [],
         "id": "band",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -1165,7 +1165,7 @@ var music = [
     },
     {
         "name": "Choir",
-        "image": "assets/club_images/wciwebdev.png",
+        "image": "assets/music_icons/in3.png",
         "connection_links": [],
         "id": "juniororchestra",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -1175,7 +1175,7 @@ var music = [
     },
     {
         "name": "Junior Guitar Ensemble",
-        "image": "assets/club_images/wciwebdev.png",
+        "image": "assets/music_icons/in4.png",
         "connection_links": [],
         "id": "juniorguitar",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -1185,7 +1185,7 @@ var music = [
     },
     {
         "name": "Senior Guitar",
-        "image": "assets/club_images/wciwebdev.png",
+        "image": "assets/music_icons/in4.png",
         "connection_links": [],
         "id": "seniorguitar",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -1195,7 +1195,7 @@ var music = [
     },
     {
         "name": "Junior Orchestra",
-        "image": "assets/club_images/wciwebdev.png",
+        "image": "assets/music_icons/in1.png",
         "connection_links": [],
         "id": "juniororchestra",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -1205,7 +1205,7 @@ var music = [
     },
     {
         "name": "Intermediate Orchestra",
-        "image": "assets/club_images/wciwebdev.png",
+        "image": "assets/music_icons/in1.png",
         "connection_links": [],
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "id": "intermediateorchestra",
@@ -1215,7 +1215,7 @@ var music = [
     },
     {
         "name": "Senior Orchestra",
-        "image": "assets/club_images/wciwebdev.png",
+        "image": "assets/music_icons/in1.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "id": "seniororchestra",
         "connection_links": [],
@@ -1225,7 +1225,7 @@ var music = [
     },
     {
         "name": "Senior Chamber Ensemble",
-        "image": "assets/club_images/wciwebdev.png",
+        "image": "assets/music_icons/in4.png",
         "connection_links": [],
         "id": "seniorchamber",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
