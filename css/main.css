@@ -1530,8 +1530,7 @@ button.web_button:hover {
 		-webkit-overflow-scrolling: touch;
 	}
 	img.club_img {
-		width: 90%;
-		margin: 0 5%;	
+		width: 100%;	
 	}
 	#hide {
 		display: none;
@@ -1543,8 +1542,25 @@ button.web_button:hover {
 	h3.sport_info_title {
 		margin-top: 10%;
 	}
+	.grid-container {
+		justify-items: center;
+		padding: none;
+		display: block;
+	}
 	.t_pictures {
 		width: 112%;
+	}
+	.arts h2 {
+		line-height: 7em;
+		margin-top: 80%;
+		margin-bottom: 45%;
+	}
+	.grid-img {
+		width: 89%;
+		margin-left: 5%;
+	}
+	#main {
+		display: block;
 	}
 	img.team_photo {
 		max-width: 98%;
