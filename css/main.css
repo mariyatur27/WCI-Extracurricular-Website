@@ -357,9 +357,9 @@ input#club_search:focus {
 }
 
 .large-search-icon {
-	font-size: 1.2em;
-	top: 0;
-	right: 40px;
+	font-size: 0.9em;
+    right: -147px;
+    top: -30px;
 }
 
 
@@ -1533,9 +1533,29 @@ button.web_button:hover {
 		width: 90%;
 		margin: 0 5%;	
 	}
+	#hide {
+		display: none;
+	}
+	h2.a_title {
+		font-size: 2.0em;
+		margin-top: 26%;
+	}
+	h3.sport_info_title {
+		margin-top: 10%;
+	}
+	.t_pictures {
+		width: 112%;
+	}
+	img.team_photo {
+		max-width: 98%;
+	}
 	.club_info {
 		width: 90%;
 		margin-top: 30px;
+	}
+	h4.t_history {
+		font-size: 20px;
+		width: 100%;
 	}
 	#show-quiz {
 		margin-left: 0%;
@@ -1646,7 +1666,7 @@ button.web_button:hover {
 	}
 	.search_bar {
 		padding: 2% 3%;
-		width: 75%;
+		width: 95%;
 		margin-top: 5%;
 		border-radius: 56px;
 		border: none;
