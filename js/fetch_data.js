@@ -5,6 +5,7 @@ var clubs = [
         "meeting_time": "Wednesdays, 2:45 PM - 3:45 PM",
         "connection_links":[],
         "commitment": "medium",
+        "competition": "none",
         "image": "assets/club_images/ambassadorschristianfellowship.png",
         "description": "A place for anyone to ask questions about and explore a life with Jesus. The goal is to serve the WCI community while providing a safe place for fellowship.",
         "categories": [
