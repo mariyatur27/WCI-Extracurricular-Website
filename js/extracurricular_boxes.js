@@ -181,6 +181,18 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null, filters=
                         expand_box.appendChild(his_link);
                     };
 
+                    let a_link = document.createElement("a");
+                    let redirectPage2 = "music_info.html";
+                    let urlParamName2 = "music";
+                    if ("music_id" in boxData) {
+                        console.log(boxData.music_id);
+                        let link_href = redirectPage2 + "?" + urlParamName2 + "=" + boxData.music_id;
+                        a_link.href = link_href;
+                        a_link.classList.add("history_link");
+                        let lrn_b = document.createElement("button"); lrn_b.classList.add("web_link"); lrn_b.name = "lrn_b"; lrn_b.innerHTML = "Learn More";
+                        a_link.appendChild(lrn_b);
+                        expand_box.appendChild(a_link);
+                    }
                     let box_links = document.createElement("div"); box_links.classList.add("together", "club-links");
                     for (link of boxData.connection_links) {
                         if (link in connection_links) {
