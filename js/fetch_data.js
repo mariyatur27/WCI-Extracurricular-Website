@@ -1192,7 +1192,8 @@ var music = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
             "guitar"
-        ]
+        ],
+        "audition": "Not Required"
     },
     {
         "name": "Senior Guitar",
@@ -1262,7 +1263,8 @@ var music = [
             {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/BzTBtTXzfo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
             {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/3t7kiCJyBoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'}
         ],
-        "v_id": "seniorchamber_video"
+        "v_id": "seniorchamber_video",
+        "audition" : "Required"
     }
 ];
 // var event_popup = {};
