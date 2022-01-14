@@ -180,7 +180,15 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null, filters=
                         his_link.appendChild(his_button);
                         expand_box.appendChild(his_link);
                     };
-
+                    if ("audition" in boxData) {
+                        let audition = document.createElement("h4"); audition.classList.add("audition"); audition.innerText = "Auditions: ".concat(boxData.audition);
+                        if (boxData.audition == "Required") {
+                            audition.style.color = "#eb6e84";
+                        } else if (boxData.audition == "Not Required") {
+                            audition.style.color = "green";
+                        }
+                        expand_box.appendChild(audition);
+                    }
                     let status = document.createElement("h4"); status.classList.add("red2"); status.innerText = boxData.status;
                     if ("status" in boxData) {
                         if (boxData.status == "Postponed Due To Covid-19") {
