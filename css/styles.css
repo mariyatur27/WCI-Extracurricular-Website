@@ -490,10 +490,18 @@ output {
 }
 
 iframe {
-  border: 0;
-  width: 60%;
-  height: 100%;
+  width: 613px;
+  height: 400px;
 }
+.iframe_div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.iframe_video {
+  box-sizing: border-box;
+  width: 50%;
+}
+
 
 summary {
   display: list-item;
