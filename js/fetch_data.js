@@ -1177,6 +1177,10 @@ var music = [
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
             "choir"
+        ],
+        "video" : [
+            {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/YG5R8VTZGZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
+            {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/JJs-y7Z5fhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'}
         ]
     },
     {
@@ -1217,6 +1221,10 @@ var music = [
         "music_id": "intermediateorchestra",
         "categories": [
             "orchestra"
+        ],
+        "video" : [
+            {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/txPo0gaRDuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
+            {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/h8v-z4E-Wo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'}
         ]
     },
     {
@@ -1228,8 +1236,9 @@ var music = [
         "status":"Takes Place Online",
         "teacher": "Teacher Name",
         "video": [
-            {"source" : '<iframe width="700px" height="400px" src="https://www.youtube.com/embed/mpzuvwt_hx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
-            {"source" : '<iframe width="700px" height="400px" src="https://www.youtube.com/embed/0OO2jzo7RzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'}
+            {"source" : '<iframe width="700px" height="400px" src="https://www.youtube.com/embed/0OO2jzo7RzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
+            {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/U5j3tlGclb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
+            {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/CGCYFifomnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'}
         ],
         "connection_links": [],
         "categories": [
@@ -1237,13 +1246,18 @@ var music = [
         ]
     },
     {
-        "name": "Senior Chamber Ensemble",
+        "name": "Senior Chamber Orchestra",
         "image": "assets/music_icons/in4.png",
         "connection_links": [],
         "music_id": "seniorchamber",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
             "orchestra"
+        ],
+        "video" : [
+            {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/WUmV-xlYdvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
+            {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/BzTBtTXzfo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
+            {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/3t7kiCJyBoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'}
         ]
     }
 ];
