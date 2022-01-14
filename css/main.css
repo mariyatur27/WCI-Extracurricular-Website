@@ -825,14 +825,15 @@ button.web_link {
 	background-color: #ac191a;
 	color: white;
 	padding: 0.25em 0.5em;
+	margin-right: 2%;
 }
 button.page_link {
 	white-space: nowrap;
     border: none;
     background-color: #ac191a;
     color: white;
-    padding: 2% 6%;
-    margin-right: 3%;
+    padding: 0.25em 0.5em;
+	margin-right: 2%;
 }
 a.web_link , a.page_link {
 	margin-top: 2%;

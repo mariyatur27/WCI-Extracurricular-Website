@@ -1181,7 +1181,8 @@ var music = [
         "video" : [
             {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/YG5R8VTZGZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
             {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/JJs-y7Z5fhI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'}
-        ]
+        ],
+        "v_id": "choir_video"
     },
     {
         "name": "Junior Guitar Ensemble",
@@ -1225,7 +1226,8 @@ var music = [
         "video" : [
             {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/txPo0gaRDuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
             {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/h8v-z4E-Wo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'}
-        ]
+        ],
+        "v_id": "intermediateorchestra_video"
     },
     {
         "name": "Senior Orchestra",
@@ -1243,11 +1245,12 @@ var music = [
         "connection_links": [],
         "categories": [
           "orchestra"
-        ]
+        ],
+        "v_id": "seniororchestra_video"
     },
     {
         "name": "Senior Chamber Orchestra",
-        "image": "assets/music_icons/in4.png",
+        "image": "assets/music_icons/in1.png",
         "connection_links": [],
         "music_id": "seniorchamber",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
@@ -1258,7 +1261,8 @@ var music = [
             {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/WUmV-xlYdvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
             {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/BzTBtTXzfo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
             {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/3t7kiCJyBoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'}
-        ]
+        ],
+        "v_id": "seniorchamber_video"
     }
 ];
 // var event_popup = {};

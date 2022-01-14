@@ -193,6 +193,14 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null, filters=
                         a_link.appendChild(lrn_b);
                         expand_box.appendChild(a_link);
                     }
+                    let v_link = document.createElement("a");
+                    if ("music_id" in boxData && "video" in boxData) {
+                        v_link.href = redirectPage2 + "?" + urlParamName2 + "=" + boxData.music_id + "#" + boxData.v_id;
+                        v_link.classList.add("history_link");
+                        let explr = document.createElement("button"); explr.classList.add("web_link"); explr.name = "listen"; explr.innerHTML = "Listen";
+                        v_link.appendChild(explr);
+                        expand_box.appendChild(v_link);
+                    }
                     let box_links = document.createElement("div"); box_links.classList.add("together", "club-links");
                     for (link of boxData.connection_links) {
                         if (link in connection_links) {
