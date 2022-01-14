@@ -7,17 +7,17 @@
         "id": "Test_event_1"
     },
     {
-        "start_time": 1640260740,
-        "end_time": 1640271600,
-        "title": "Test event 3",
-        "description": "This is a third event.",
-        "id": "Test_event_3"
-    },
-    {
         "start_time": 1640260741,
         "end_time": 1640271599,
         "title": "Test event 2",
         "description": "This is a second test event.",
         "id": "Test_event_2"
+    },
+    {
+        "start_time": 1640260740,
+        "end_time": 1640271600,
+        "title": "Test event 3",
+        "description": "This is a third event.",
+        "id": "Test_event_3"
     }
 ]
