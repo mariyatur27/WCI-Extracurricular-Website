@@ -44,7 +44,7 @@ if (!found) {
     if ("video" in info) {
         let title = document.createElement("h3"); title.innerText = "Listen To Some Of The Recordins: "; title.classList.add("v_title");
         page.appendChild(title);
-        let iframe_div = document.createElement("div"); iframe_div.classList.add("iframe_div");
+        let iframe_div = document.createElement("div"); iframe_div.classList.add("iframe_div"); iframe_div.id = info.v_id;
         for (const video of info.video) {
             let iframe = document.createElement("div"); iframe.classList.add("iframe_video");
             iframe.innerHTML = video.source;
