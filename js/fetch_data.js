@@ -1162,7 +1162,7 @@ var music = [
         "connection_links": [],
         "music_id": "band",
         "experience": "previous experience is required",
-        "status":"Takes Place Online",
+        "status":"Postponed Due To Covid-19",
         "teacher": "Teacher Name",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [

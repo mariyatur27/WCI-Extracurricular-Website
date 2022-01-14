@@ -181,6 +181,18 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null, filters=
                         expand_box.appendChild(his_link);
                     };
 
+                    let status = document.createElement("h4"); status.classList.add("red2"); status.innerText = boxData.status;
+                    if ("status" in boxData) {
+                        if (boxData.status == "Postponed Due To Covid-19") {
+                            status.classList.add("red2");
+                            expand_box.appendChild(status);
+                        }
+                        else if (boxData.status == "Takes Place Online") {
+                            status.classList.add("green2");
+                            expand_box.appendChild(status);
+                        }
+                    }
+
                     let a_link = document.createElement("a");
                     let redirectPage2 = "music_info.html";
                     let urlParamName2 = "music";

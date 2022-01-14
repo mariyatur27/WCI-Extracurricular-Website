@@ -341,6 +341,20 @@ input#club_search:focus {
 	padding: 2%;
     width: 66%;
 }
+.red2 {
+    background-color: red;
+    padding: 2%;
+    width: 44%;
+    font-size: medium;
+    font-weight: 500;
+}
+.green2 {
+    background-color: rgb(138, 226, 138);;
+    padding: 2%;
+    width: 44%;
+    font-size: medium;
+    font-weight: 500;
+}
 .green {
 	background-color: rgb(138, 226, 138);
 	padding: 2%;
