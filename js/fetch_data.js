@@ -1228,7 +1228,8 @@ var music = [
         "status":"Takes Place Online",
         "teacher": "Teacher Name",
         "video": [
-            {"source" : '<iframe width="942" height="700" src="https://www.youtube.com/embed/mpzuvwt_hx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'}
+            {"source" : '<iframe width="700px" height="400px" src="https://www.youtube.com/embed/mpzuvwt_hx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
+            {"source" : '<iframe width="700px" height="400px" src="https://www.youtube.com/embed/0OO2jzo7RzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'}
         ],
         "connection_links": [],
         "categories": [

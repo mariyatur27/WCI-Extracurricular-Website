@@ -15,6 +15,11 @@
 	float: left;
 	position: relative;
 }
+iframe {
+    border: 0;
+    width: 700px;
+    height: 400px;
+}
 button.wcssa_button {
     border: none;
     color: white;
@@ -37,18 +42,8 @@ h3.v_title {
 	padding: 5%;
 	display: none;
 }
-iframe {
-    border: 0;
-    width: 60%;
-    height: 684px;
-}
-.iframe_m {
-	height: unset;
-	width: unset;
-    width: 30%;
-    height: 30%;
-    padding: 5% 1%;
-}
+
+
 #mainNav ul li:hover ul{
 	display: block;
 	background-color: var(--theme-darkblue);
@@ -481,11 +476,7 @@ img.club_img {
 	height: 150px;
 	object-fit: contain;
 }
-iframe#calendar {
-    border: 0;
-    width: 60%;
-    height: 684px;
-}
+
 
 .calendar_table {
 	margin: 0 2.5%;
