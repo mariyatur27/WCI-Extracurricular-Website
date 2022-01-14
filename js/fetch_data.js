@@ -487,6 +487,7 @@ var athletics = [
     {
         "name": "Cross Country",
         "id": "crosscountry",
+        "wcssaa": "",
         "connection_links": [],
         "image": "assets/sport_images/running.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
