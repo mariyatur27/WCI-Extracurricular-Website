@@ -25,6 +25,13 @@ button.wcssa_button {
     border-radius: 33px;
     margin-top: 1%;
 }
+h5.more_info {
+    font-weight: 100;
+    font-size: 17px;
+}
+h3.v_title {
+    margin-top: 5%;
+}
 #mainNav ul ul{
 	position: absolute;
 	padding: 5%;

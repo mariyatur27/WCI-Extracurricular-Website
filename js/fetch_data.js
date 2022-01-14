@@ -1161,6 +1161,9 @@ var music = [
         "image": "assets/music_icons/in2.png",
         "connection_links": [],
         "music_id": "band",
+        "experience": "previous experience is required",
+        "status":"Takes Place Online",
+        "teacher": "Teacher Name",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
             "band"
@@ -1221,6 +1224,12 @@ var music = [
         "image": "assets/music_icons/in1.png",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "music_id": "seniororchestra",
+        "experience": "previous experience is required",
+        "status":"Takes Place Online",
+        "teacher": "Teacher Name",
+        "video": [
+            {"source" : '<iframe width="942" height="700" src="https://www.youtube.com/embed/mpzuvwt_hx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'}
+        ],
         "connection_links": [],
         "categories": [
           "orchestra"
