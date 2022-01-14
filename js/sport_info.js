@@ -53,6 +53,14 @@ async function setupSportPage(sportID) {
     category.innerText = category.innerText = "Sport Category: ".concat(" ").concat(a_list);
     page.appendChild(category);
 
+    if ("wcssaa" in sport) {
+        let link = document.createElement("a");
+        link.href = sport.wcssaa;
+        let button = document.createElement("button"); button.name = "wcssaa"; button.classList.add("wcssa_button"); button.innerHTML = "Checkout The Scores";
+        link.appendChild(button)
+        page.appendChild(link)
+    }
+
     if ("team_history" in sport) {
         let team_history_title = document.createElement("h3"); team_history_title.classList.add("sport_info_title"); team_history_title.innerText = "Team History";
         page.appendChild(team_history_title);
