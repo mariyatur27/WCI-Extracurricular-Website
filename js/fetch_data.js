@@ -860,9 +860,11 @@ var athletics = [
     {
         "name": "Jr. Boys Basketball",
         "id": "jrboyssbasketball",
+        "coach" : "J. Wesson, C. Nickel, A. Willms",
+        "wcssaa" : "https://www.wcssaa.ca/displayStandings.php?leagueid=9",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "description": "The Jr Boys had a great start to their season with a two-game W streak, and a WCSSAA Pool B third place ranking going into the winter break! Good Job Vikes! ",
         "meeting_time": "Monday, Tuesday, Wednesday, Friday, 2:00 PM - 3:00 PM",
         "meeting_time_title": "Tryouts: ",
         "team_section_id": "jrboyssbasketball_team",
