@@ -1210,7 +1210,7 @@ var music = [
         "image": "assets/music_icons/in1.png",
         "connection_links": [],
         "music_id": "juniororchestra",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "description": "Are you in Grade 9 and play the violin, viola, cello, or double bass? Want to meet other musicians at WCI? Join WCI's Junior Orchestra!",
         "categories": [
             "orchestra"
         ]
@@ -1219,7 +1219,7 @@ var music = [
         "name": "Intermediate Orchestra",
         "image": "assets/music_icons/in1.png",
         "connection_links": [],
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "description": "Are you in Grade 10 and play the violin, viola, cello, or double bass? Want to meet other musicians at WCI? Join WCI's Intermediate Orchestra!",
         "music_id": "intermediateorchestra",
         "categories": [
             "orchestra"
@@ -1233,7 +1233,7 @@ var music = [
     {
         "name": "Senior Orchestra",
         "image": "assets/music_icons/in1.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "description": "Are you in Grade 11 or 12 and play the violin, viola, cello, or double bass? Want to meet other musicians at WCI? Join WCI's Senior Orchestra!",
         "music_id": "seniororchestra",
         "experience": "previous experience is required",
         "status":"Takes Place Online",
@@ -1254,7 +1254,7 @@ var music = [
         "image": "assets/music_icons/in1.png",
         "connection_links": [],
         "music_id": "seniorchamber",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "description": "Senior Chamber Ensemble is a smaller group of string musicians dedicated to playing at a high level. This group is perfect for experienced violin, viola, cello, or double bass players.",
         "categories": [
             "orchestra"
         ],
