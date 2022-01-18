@@ -6,7 +6,8 @@
         "id": "band",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
-            "band"
+            "band",
+            "Grade 10"
         ]
     },
     {
@@ -16,7 +17,8 @@
         "id": "choir",
         "description": "Do you love to SING? Want to showcase your voice on stage? Join WCI's choir, Viking Singers! Everyone is always welcome.",
         "categories": [
-            "choir"
+            "choir",
+            "Grade 10"
         ]
     },
     {
@@ -26,7 +28,8 @@
         "id": "juniorguitar",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
-            "guitar"
+            "guitar",
+            "Grade 10"
         ]
     },
     {
@@ -36,7 +39,8 @@
         "id": "seniorguitar",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
-            "guitar"
+            "guitar",
+            "Grade 10"
         ]
     },
     {
@@ -46,7 +50,8 @@
         "id": "juniororchestra",
         "description": "Are you in Grade 9 and play the violin, viola, cello, or double bass? Want to meet other musicians at WCI? Join WCI's Junior Orchestra!",
         "categories": [
-            "orchestra"
+            "orchestra",
+            "Grade 11"
         ]
     },
     {
@@ -56,7 +61,8 @@
         "description": "Are you in Grade 10 and play the violin, viola, cello, or double bass? Want to meet other musicians at WCI? Join WCI's Intermediate Orchestra!",
         "id": "intermediateorchestra",
         "categories": [
-            "orchestra"
+            "orchestra",
+            "Grade 11"
         ]
     },
     {
@@ -66,7 +72,8 @@
         "id": "seniororchestra",
         "connection_links": [],
         "categories": [
-          "orchestra"
+          "orchestra",
+          "Grade 11"
         ]
     },
     {
@@ -76,7 +83,8 @@
         "id": "seniorchamber",
         "description": "Senior Chamber Ensemble is a smaller group of string musicians dedicated to playing at a high level. This group is perfect for experienced violin, viola, cello, or double bass players.",
         "categories": [
-            "orchestra"
+            "orchestra",
+            "Grade 11"
         ]
     }
 ]
