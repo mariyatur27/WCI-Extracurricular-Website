@@ -13,8 +13,8 @@
         "name": "Choir",
         "image": "assets/music_icons/in3.png",
         "connection_links": [],
-        "id": "juniororchestra",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "id": "choir",
+        "description": "Do you love to SING? Want to showcase your voice on stage? Join WCI's choir, Viking Singers! Everyone is always welcome.",
         "categories": [
             "choir"
         ]
