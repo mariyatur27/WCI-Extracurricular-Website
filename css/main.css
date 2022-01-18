@@ -1799,3 +1799,14 @@ button.web_button:hover {
 		margin-bottom: 20px;
 	}
 }
+
+#problem-button {
+  background-color: #0a1241;
+    color: white;
+    padding: 1%;
+    border-radius: 33px;
+    padding-right: 2%;
+    padding-left: 2%;
+    margin-bottom: 2%;
+}
+
