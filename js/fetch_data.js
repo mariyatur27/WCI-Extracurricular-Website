@@ -1170,7 +1170,7 @@ var music = [
         "teacher": "Teacher Name",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
-            "band"
+            "band",
         ]
     },
     {
@@ -1216,7 +1216,8 @@ var music = [
         "music_id": "juniororchestra",
         "description": "Are you in Grade 9 and play the violin, viola, cello, or double bass? Want to meet other musicians at WCI? Join WCI's Junior Orchestra!",
         "categories": [
-            "orchestra"
+            "orchestra",
+            "Grade 9"
         ]
     },
     {
@@ -1226,7 +1227,8 @@ var music = [
         "description": "Are you in Grade 10 and play the violin, viola, cello, or double bass? Want to meet other musicians at WCI? Join WCI's Intermediate Orchestra!",
         "music_id": "intermediateorchestra",
         "categories": [
-            "orchestra"
+            "orchestra",
+            "Grade 10"
         ],
         "video" : [
             {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/txPo0gaRDuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
@@ -1249,7 +1251,9 @@ var music = [
         ],
         "connection_links": [],
         "categories": [
-          "orchestra"
+          "orchestra",
+          "Grade 11",
+          "Grade 12"
         ],
         "v_id": "seniororchestra_video"
     },
