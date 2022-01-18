@@ -26,7 +26,7 @@
         "image": "assets/music_icons/in4.png",
         "connection_links": [],
         "id": "juniorguitar",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "description": "Are you a beginner guitarist and know how to read tab? Want to learn how to play with other guitar players? Come join Junior Guitar Ensemble!",
         "categories": [
             "guitar",
             "Grade 10"
@@ -37,7 +37,7 @@
         "image": "assets/music_icons/in4.png",
         "connection_links": [],
         "id": "seniorguitar",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "description": "Are you an experienced guitarist and know how to read tab? Want to learn how to play with other guitar players? Come join Senior Guitar Ensemble!",
         "categories": [
             "guitar",
             "Grade 10"
