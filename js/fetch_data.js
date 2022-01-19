@@ -174,7 +174,6 @@ var clubs = [
         "image": "assets/club_images/debateclub.png",
         "commitment": "high",
         "competition": "present",
-        "student_leaders": "Prem M-S, Daniel P, Mariya T, Scott H",
         "description": "The Debate Club provides students with a fun way to further develop their speaking and presentation skills. In addition, the debate club provides an opportunity for the students to become more informed about political and global affairs. Through a virtual platform, students will train for debate competitions with local schools.",
         "categories": [
             "business_category"
@@ -185,7 +184,6 @@ var clubs = [
         "id": "ecoclub",
         "connection_links":["instagram", "classroom", "website"],
         "website": "https://sites.google.com/wrdsb.ca/ecoclub/home",
-        "student_leaders": "Nur Iscan and Ella Williamson",
         "classroom": "https://classroom.google.com/c/MjQ5OTc5MjQ0NTNa?cjc=7h4m3em",
         "instagram" : "https://www.instagram.com/wci_ecoclub/",
         "image": "assets/club_images/ecoclub.png",
@@ -313,7 +311,6 @@ var clubs = [
         "meeting_time": "Mondays at Lunch",
         "student_leaders" : "Ally M, Michael M",
         "connection_links": [],
-        "student_leaders": " Mingyi L, Sophia M, Steven L",
         "commitment": "high",
         "competition": "none",
         "image": "assets/club_images/jrleadership.png",
