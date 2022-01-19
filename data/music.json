@@ -3,55 +3,60 @@
         "name": "Band",
         "image": "assets/music_icons/in2.png",
         "connection_links": [],
-        "id": "band",
+        "music_id": "band",
+        "experience": "previous experience is required",
+        "status":"Postponed Due To Covid-19",
+        "teacher": "Teacher Name",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
-            "band",
-            "Grade 10"
+            "band"
         ]
     },
     {
         "name": "Choir",
         "image": "assets/music_icons/in3.png",
         "connection_links": [],
-        "id": "choir",
+        "music_id": "choir",
         "description": "Do you love to SING? Want to showcase your voice on stage? Join WCI's choir, Viking Singers! Everyone is always welcome.",
         "categories": [
-            "choir",
-            "Grade 10"
-        ]
+            "choir"
+        ],
+        "video" : [
+            {"source" : "<iframe width='1520' height='57' src='https://www.youtube.com/embed/YG5R8VTZGZw' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"},
+            {"source" : "<iframe width='1520' height='577' src='https://www.youtube.com/embed/JJs-y7Z5fhI' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"}
+        ],
+        "v_id": "choir_video"
     },
     {
         "name": "Junior Guitar Ensemble",
         "image": "assets/music_icons/in4.png",
         "connection_links": [],
-        "id": "juniorguitar",
-        "description": "Are you a beginner guitarist and know how to read tab? Want to learn how to play with other guitar players? Come join Junior Guitar Ensemble!",
+        "music_id": "juniorguitar",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
-            "guitar",
-            "Grade 10"
-        ]
+            "guitar"
+        ],
+        "audition": "Not Required"
     },
     {
         "name": "Senior Guitar",
         "image": "assets/music_icons/in4.png",
         "connection_links": [],
-        "id": "seniorguitar",
-        "description": "Are you an experienced guitarist and know how to read tab? Want to learn how to play with other guitar players? Come join Senior Guitar Ensemble!",
+        "music_id": "seniorguitar",
+        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
-            "guitar",
-            "Grade 10"
+            "guitar"
         ]
     },
     {
         "name": "Junior Orchestra",
         "image": "assets/music_icons/in1.png",
         "connection_links": [],
-        "id": "juniororchestra",
+        "music_id": "juniororchestra",
         "description": "Are you in Grade 9 and play the violin, viola, cello, or double bass? Want to meet other musicians at WCI? Join WCI's Junior Orchestra!",
         "categories": [
             "orchestra",
-            "Grade 11"
+            "Grade 9"
         ]
     },
     {
@@ -59,32 +64,53 @@
         "image": "assets/music_icons/in1.png",
         "connection_links": [],
         "description": "Are you in Grade 10 and play the violin, viola, cello, or double bass? Want to meet other musicians at WCI? Join WCI's Intermediate Orchestra!",
-        "id": "intermediateorchestra",
+        "music_id": "intermediateorchestra",
         "categories": [
             "orchestra",
-            "Grade 11"
-        ]
+            "Grade 10"
+        ],
+        "video" : [
+            {"source" : "<iframe width='1520' height='577' src='https://www.youtube.com/embed/txPo0gaRDuI' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"},
+            {"source" : "<iframe width='1520' height='577' src='https://www.youtube.com/embed/h8v-z4E-Wo4' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"}
+        ],
+        "v_id": "intermediateorchestra_video"
     },
     {
         "name": "Senior Orchestra",
         "image": "assets/music_icons/in1.png",
         "description": "Are you in Grade 11 or 12 and play the violin, viola, cello, or double bass? Want to meet other musicians at WCI? Join WCI's Senior Orchestra!",
-        "id": "seniororchestra",
+        "music_id": "seniororchestra",
+        "experience": "previous experience is required",
+        "status":"Takes Place Online",
+        "teacher": "Teacher Name",
+        "video": [
+            {"source" : "<iframe width='700px' height='400px' src='https://www.youtube.com/embed/0OO2jzo7RzQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"},
+            {"source" : "<iframe width='1520' height='577' src='https://www.youtube.com/embed/U5j3tlGclb8' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"},
+            {"source" : "<iframe width='1520' height='577' src='https://www.youtube.com/embed/CGCYFifomnE' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"}
+        ],
         "connection_links": [],
         "categories": [
           "orchestra",
-          "Grade 11"
-        ]
+          "Grade 11",
+          "Grade 12"
+        ],
+        "v_id": "seniororchestra_video"
     },
     {
-        "name": "Senior Chamber Ensemble",
-        "image": "assets/music_icons/in4.png",
+        "name": "Senior Chamber Orchestra",
+        "image": "assets/music_icons/in1.png",
         "connection_links": [],
-        "id": "seniorchamber",
+        "music_id": "seniorchamber",
         "description": "Senior Chamber Ensemble is a smaller group of string musicians dedicated to playing at a high level. This group is perfect for experienced violin, viola, cello, or double bass players.",
         "categories": [
-            "orchestra",
-            "Grade 11"
-        ]
+            "orchestra"
+        ],
+        "video" : [
+            {"source" : "<iframe width='1520' height='577' src='https://www.youtube.com/embed/WUmV-xlYdvw' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"},
+            {"source" : "<iframe width='1520' height='577' src='https://www.youtube.com/embed/BzTBtTXzfo8' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"},
+            {"source" : "<iframe width='1520' height='577' src='https://www.youtube.com/embed/3t7kiCJyBoY' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"}
+        ],
+        "v_id": "seniorchamber_video",
+        "audition" : "Required"
     }
 ]
