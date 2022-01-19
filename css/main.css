@@ -1801,12 +1801,17 @@ button.web_button:hover {
 }
 
 #problem-button {
-  background-color: #0a1241;
+	background-color: #ed1c24;
     color: white;
-    padding: 1%;
+    border: none;
+    padding: 9%;
     border-radius: 33px;
     padding-right: 2%;
     padding-left: 2%;
-    margin-bottom: 2%;
+    width: 146%;
+	transition-duration: 1s;
+}
+#problem-button:hover{
+	background-color: #ba0007;
 }
 
