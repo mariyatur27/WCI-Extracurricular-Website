@@ -128,6 +128,14 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null, filters=
                                 together.appendChild(student_leaders);
                             expand_box_core_content.appendChild(together);
                         }
+                        if ("meeting_time" in boxData) {
+                            let together2 = document.createElement("div");
+                                let title2 = document.createElement("h6"); title2.innerText="Meeting Time: "; title2.classList.add("inline_header");
+                                together2.appendChild(title2);
+                                let time = document.createElement("h6"); time.classList.add("contents"); time.innerText = boxData.meeting_time; time.classList.add("inline_header");
+                                together2.appendChild(time);
+                            expand_box_core_content.appendChild(together2);
+                        }
                         let meeting_time_text = document.createElement("h6"); 
                         let tryouts = document.createElement("h6");  tryouts.innerText = boxData.meeting_time_title; 
                         console.log(tryouts);
