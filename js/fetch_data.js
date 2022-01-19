@@ -1259,7 +1259,7 @@ var events = [
 var music = [
     {
         "name": "Band",
-        "image": "assets/music_icons/in2.png",
+        "image": "Assets/music_icons/in2.png",
         "connection_links": [],
         "music_id": "band",
         "experience": "previous experience is required",
