@@ -42,33 +42,33 @@ async function generateSlideshow(cardsData, slideshowId, redirectPage, urlParamN
 
     // animates slides by translating a slide's x position,
     // and easing its transition in CSS
-    function moveSlides() {
-        var slides = slideshow.getElementsByClassName("slide-wrapper");
+    // function moveSlides() {
+    //     var slides = slideshow.getElementsByClassName("slide-wrapper");
 
-        var idx = 1;
-        for (var slide of slides) {
-            // set opacity to 0 when the slide is moved back to the right
-            if (idx == slideAt - 1 || (idx == cardsData.length && slideAt == 1)) {
-                slide.style.opacity = "0";
-            } else {
-                slide.style.opacity = "1";
-            }
+    //     var idx = 1;
+    //     for (var slide of slides) {
+    //         // set opacity to 0 when the slide is moved back to the right
+    //         if (idx == slideAt - 1 || (idx == cardsData.length && slideAt == 1)) {
+    //             slide.style.opacity = "0";
+    //         } else {
+    //             slide.style.opacity = "1";
+    //         }
 
-            if (slideAt <= idx) {
-                var transformBy = - (slideAt * 100);
-            } else {
-                var transformBy = (cardsData.length - slideAt) * 100;
-            }
-            slide.style.transform = `translateX(${transformBy}%)`;
+    //         if (slideAt <= idx) {
+    //             var transformBy = - (slideAt * 100);
+    //         } else {
+    //             var transformBy = (cardsData.length - slideAt) * 100;
+    //         }
+    //         slide.style.transform = `translateX(${transformBy}%)`;
             
-            idx++;
-        }
+    //         idx++;
+    //     }
 
-        slideAt++;
-        if (slideAt > cardsData.length) {
-            slideAt = 1;
-        }
-    }
+    //     slideAt++;
+    //     if (slideAt > cardsData.length) {
+    //         slideAt = 1;
+    //     }
+    // }
 
     generateSlides();
     setInterval(moveSlides, 2000);
@@ -77,3 +77,11 @@ async function generateSlideshow(cardsData, slideshowId, redirectPage, urlParamN
 generateSlideshow(clubs, "clubs-slideshow", "clubs.html", "box");
 generateSlideshow(athletics, "athletics-slideshow", "sport_info.html", "sport");
 generateSlideshow(music, "music-slideshow");
+
+
+new Glider(document.querySelector('.glider'), {
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    draggable: true,
+    dots: '.dots',
+  });
