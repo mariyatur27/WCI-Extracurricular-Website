@@ -501,7 +501,14 @@ iframe {
   box-sizing: border-box;
   width: 50%;
 }
-
+.slideshow {
+  overflow-x: auto(show when needed) or hidden(never) or scroll(always scroll);
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.slide-wrapper {
+  display: inline-block;
+}
 
 summary {
   display: list-item;
