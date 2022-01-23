@@ -17,6 +17,7 @@ function toggleClubFilter(filterElement) {
     setupBoxes(clubs, 'club_boxes', 2);
 }
 
+
 function toggleMusicFilter(filterElement) {
     let filter = filterElement.id;
     toggleFilter(filter);
