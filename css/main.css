@@ -602,6 +602,7 @@ h2.section-heading {
 	display: block;
 	width: 88%;
 	max-height: 0;
+	overflow: hidden;
 	overflow-y: clip;
 	transition: max-height 0.25s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
