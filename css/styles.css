@@ -3676,6 +3676,13 @@ button.faq-btn {
     left: auto;
   }
 }
+@media (max-width: 768px){
+  #problem-button {
+    width: 40%;
+    padding: 2%;
+    margin-left: 61%;
+  }
+}
 @media (min-width: 768px) {
   .dropdown-menu-md-start {
     --bs-position: start;
