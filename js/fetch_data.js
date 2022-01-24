@@ -1083,7 +1083,7 @@ var athletics = [
         "id": "badminton",
         "connection_links": [],
         "image": "assets/sport_images/basketball.png",
-        "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
+        "description": "Do you like to play badminton? Reflexes and coordination, tactics and strategy - badminton has it all! Come join WCI's Badminton Team! Compete amongst others to improve and get better while having a great time.",
         "meeting_time": "Have Not Started Yet",
         "team_section_id": "badminton_team",
         "history_section_id" : "badminton_history",
