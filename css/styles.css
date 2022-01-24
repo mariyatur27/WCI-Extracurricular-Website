@@ -3682,6 +3682,7 @@ button.faq-btn {
     padding: 2%;
     margin-left: 61%;
   }
+
   svg.svg-inline--fa.fa-search.fa-w-16.search-icon.large-search-icon {
     top: -30px;
     right: -151px;
@@ -5802,6 +5803,11 @@ button.faq-btn {
   }
   .modal-fullscreen-lg-down .modal-footer {
     border-radius: 0;
+  }
+  #problem-button {
+    width: 40%;
+    padding: 2%;
+    margin-left: 61%;
   }
 }
 @media (max-width: 1199.98px) {
