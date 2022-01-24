@@ -1704,6 +1704,20 @@ button.web_button:hover {
 		color: #A7501F;
 		text-align: center;
 	}
+	#problem-button {
+		background-color: #ed1c24;
+	    color: white;
+	    border: none;
+	    padding: 9%;
+	    border-radius: 33px;
+	    padding-right: 2%;
+	    padding-left: 2%;
+	    width: 146%;
+		transition-duration: 1s;
+	}
+	#problem-button:hover{
+		background-color: #ba0007;
+	}
 }
 @media (max-width: 991.98px) {
 	#mainNav ul ul{
