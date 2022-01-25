@@ -4,7 +4,156 @@ var gallery = [
         "description": "This is a sample text to help complete the html file.",
         "image": "assets/img/visual_arts/01.jpg",
         "instagram": "https://www.instagram.com/p/B76krFdpAEE/?utm_source=ig_web_copy_link",
-        "id": "work1"
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/02.jpg",
+        "instagram": "https://www.instagram.com/p/B-XUhJCpTDc/?utm_source=ig_web_copy_link",
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/03.jpg",
+        "instagram": "https://www.instagram.com/p/CKMvFA7JwWR/?utm_source=ig_web_copy_link",
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/04.jpg",
+        "instagram": "https://www.instagram.com/p/CK6uRNzpWs0/?utm_source=ig_web_copy_link",
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/05.jpg",
+        "instagram": "https://www.instagram.com/p/CK6uRNzpWs0/?utm_source=ig_web_copy_link",
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/06.jpg",
+        "instagram": "https://www.instagram.com/p/CLGBEjfpQa5/?utm_source=ig_web_copy_link",
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/07.jpg",
+        "instagram": "https://www.instagram.com/p/CLGBEjfpQa5/?utm_source=ig_web_copy_link",
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/08.jpg",
+        "instagram": "https://www.instagram.com/p/CMQPHBAJbc8/?utm_source=ig_web_copy_link",
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/09.jpg",
+        "instagram": "https://www.instagram.com/p/CMVZlh9Dy4g/?utm_source=ig_web_copy_link",
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/10.jpg",
+        "instagram": "https://www.instagram.com/p/CMVZlh9Dy4g/?utm_source=ig_web_copy_link",
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/11.jpg",
+        "instagram": "https://www.instagram.com/p/CNagMCyp331/?utm_source=ig_web_copy_link",
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/12.jpg",
+        "instagram": "https://www.instagram.com/p/CNagMCyp331/?utm_source=ig_web_copy_link",
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/13.jpg",
+        "instagram": "https://www.instagram.com/p/CPqmQ8ZJp71/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/14.jpg",
+        "instagram": "https://www.instagram.com/p/CQL8tFZpIcQ/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/15.jpg",
+        "instagram": "https://www.instagram.com/p/CUIzk_fJSOI/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/16.jpg",
+        "instagram": "https://www.instagram.com/p/CUIzk_fJSOI/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/17.jpg",
+        "instagram": "https://www.instagram.com/p/CVEKvfTvIbb/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/18.jpg",
+        "instagram": "https://www.instagram.com/p/CWOhukppN0j/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/19.jpg",
+        "instagram": "https://www.instagram.com/p/CV6EtojpZpX/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/20.jpg",
+        "instagram": "https://www.instagram.com/p/CV6EtojpZpX/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/21.jpg",
+        "instagram": "https://www.instagram.com/p/CWEfgvgJfBa/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/22.jpg",
+        "instagram": "https://www.instagram.com/p/CWEfgvgJfBa/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/23.jpg",
+        "instagram": "https://www.instagram.com/p/CWOhukppN0j/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/24.jpg",
+        "instagram": "https://www.instagram.com/p/CWq0lAOpjkP/?utm_source=ig_web_copy_link",
+        "class": "hide"
     }
 ];
 var clubs = [
