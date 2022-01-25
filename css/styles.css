@@ -3700,6 +3700,9 @@ button.faq-btn {
   svg.svg-inline--fa.fa-twitter.fa-w-16.fa-4x.main_sm_links {
     width: 10%;
   }
+  div#the_gallery {
+    margin-left: 14%;
+  }
 }
 @media (min-width: 768px) {
   .dropdown-menu-md-start {
