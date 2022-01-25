@@ -1,3 +1,12 @@
+var gallery = [
+    {
+        "title": "sample_title",
+        "description": "This is a sample text to help complete the html file.",
+        "image": "assets/img/visual_arts/01.jpg",
+        "instagram": "https://www.instagram.com/p/B76krFdpAEE/?utm_source=ig_web_copy_link",
+        "id": "work1"
+    }
+];
 var clubs = [
     {
         "name": "Ambassadors Christian Fellowship",
@@ -1386,6 +1395,7 @@ async function fetchData() {
         connection_links = await (await fetch("data/connection_links.json")).json();
         event_popup = await (await fetch("data/event_popup.json")).json();
         events = await (await fetch("data/events.json")).json();
+        gallery = await (await fetch("data/art_gallery.json")).json();
         console.log("fetchData: Done loading data.");
     }
     console.log("fetchData: Starting to sort data.");
