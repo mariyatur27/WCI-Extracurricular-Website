@@ -75,7 +75,7 @@ async function generateSlideshow(cardsData, slideshowId, redirectPage, urlParamN
 }
 
 generateSlideshow(clubs, "clubs-slideshow", "clubs.html", "box");
-generateSlideshow(athletics, "athletics-slideshow", "sport_info.html", "sport");
+generateSlideshow(athletics, "athletics-slideshow", "athletics.html", "box");
 generateSlideshow(music, "music-slideshow");
 
 
