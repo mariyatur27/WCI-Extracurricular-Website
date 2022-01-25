@@ -136,20 +136,20 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null, filters=
                                 together2.appendChild(time);
                             expand_box_core_content.appendChild(together2);
                         }
-                        let meeting_time_text = document.createElement("h6"); 
-                        let tryouts = document.createElement("h6");  tryouts.innerText = boxData.meeting_time_title; 
-                        console.log(tryouts);
-                        if ("meeting_time_title" in boxData) {
-                            if (boxData.meeting_time_title === "Over") {
-                                meeting_time_text.classList.add("red");
-                            }else if (tryouts.innerText === "Have Not Started Yet") {
-                                meeting_time_text.classList.add("green");
-                            }else{
-                                meeting_time_text.classList.add("yellow");
-                            }
-                            meeting_time_text.innerText = "Tryouts: ".concat(" ").concat(boxData.meeting_time_title);
-                        }
-                        expand_box_core_content.appendChild(meeting_time_text);
+                        // let meeting_time_text = document.createElement("h6"); 
+                        // let tryouts = document.createElement("h6");  tryouts.innerText = boxData.meeting_time_title; 
+                        // console.log(tryouts);
+                        // if ("meeting_time_title" in boxData) {
+                        //     if (boxData.meeting_time_title === "Over") {
+                        //         meeting_time_text.classList.add("red");
+                        //     }else if (tryouts.innerText === "Have Not Started Yet") {
+                        //         meeting_time_text.classList.add("green");
+                        //     }else{
+                        //         meeting_time_text.classList.add("yellow");
+                        //     }
+                        //     meeting_time_text.innerText = "Tryouts: ".concat(" ").concat(boxData.meeting_time_title);
+                        // }
+                        // expand_box_core_content.appendChild(meeting_time_text);
                         if ("extra_info" in boxData) {
                             for (info of boxData.extra_info) {
                                 if (info.type == "important_text") {
@@ -166,28 +166,28 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null, filters=
                         }
                     expand_box.appendChild(expand_box_core_content);
 
-                    let team_link = document.createElement("a");
-                    let his_link = document.createElement("a");
-                    let redirectPage = "sport_info.html";
-                    let urlParamName = "sport";
-                    if ("members" in boxData && "team_section_id" in boxData) {
-                        let team_href = redirectPage + "?" + urlParamName + "=" + boxData.id + "#" + boxData.team_section_id;
-                        team_link.href = team_href;
-                        team_link.classList.add("team_link");
-                        var team_button = document.createElement("button"); team_button.classList.add("page_link"); team_button.type="button"; team_button.name="team_button";
-                        team_button.innerText = "Team Members";
-                        team_link.appendChild(team_button);
-                        expand_box.appendChild(team_link);
-                    };
-                    if ("team_history" in boxData && "history_section_id" in boxData) {
-                        let his_href = redirectPage + "?" + urlParamName + "=" + boxData.id + "#" + boxData.history_section_id;
-                        his_link.href = his_href;
-                        his_link.classList.add("history_link");
-                        var his_button = document.createElement("button"); his_button.classList.add("web_link"); his_button.type="button"; his_button.name="history_button";
-                        his_button.innerText = "Team History";
-                        his_link.appendChild(his_button);
-                        expand_box.appendChild(his_link);
-                    };
+                    // let team_link = document.createElement("a");
+                    // let his_link = document.createElement("a");
+                    // let redirectPage = "sport_info.html";
+                    // let urlParamName = "sport";
+                    // if ("members" in boxData && "team_section_id" in boxData) {
+                    //     let team_href = redirectPage + "?" + urlParamName + "=" + boxData.id + "#" + boxData.team_section_id;
+                    //     team_link.href = team_href;
+                    //     team_link.classList.add("team_link");
+                    //     var team_button = document.createElement("button"); team_button.classList.add("page_link"); team_button.type="button"; team_button.name="team_button";
+                    //     team_button.innerText = "Team Members";
+                    //     team_link.appendChild(team_button);
+                    //     expand_box.appendChild(team_link);
+                    // };
+                    // if ("team_history" in boxData && "history_section_id" in boxData) {
+                    //     let his_href = redirectPage + "?" + urlParamName + "=" + boxData.id + "#" + boxData.history_section_id;
+                    //     his_link.href = his_href;
+                    //     his_link.classList.add("history_link");
+                    //     var his_button = document.createElement("button"); his_button.classList.add("web_link"); his_button.type="button"; his_button.name="history_button";
+                    //     his_button.innerText = "Team History";
+                    //     his_link.appendChild(his_button);
+                    //     expand_box.appendChild(his_link);
+                    // };
                     if ("audition" in boxData) {
                         let audition = document.createElement("h4"); audition.classList.add("audition"); audition.innerText = "Auditions: ".concat(boxData.audition);
                         if (boxData.audition == "Required") {
