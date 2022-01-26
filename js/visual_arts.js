@@ -19,11 +19,11 @@ async function buildGallery(galleryID) {
                 box.appendChild(imgDiv);
                 let info = document.createElement("div"); info.classList.add("text");
                     let content = document.createElement("div"); content.classList.add("content");
-                        let title = document.createElement("h1"); title.innerText = art.title;
+                        let title = document.createElement("h1"); title.innerText = "Art Work By: ".concat(art.title);
                         content.appendChild(title);
                         let dscr = document.createElement("p"); dscr.innerText = art.description;
                         content.appendChild(dscr);
-                        let link = document.createElement("a"); link.href = art.instagram;
+                        let link = document.createElement("a"); link.href = art.instagram; link.setAttribute("target", "_blank");
                         let button = document.createElement("button"); button.classList.add("web_link"); button.type = "button"; button.name = "club_btn"; button.innerHTML = "Visit Instagram";
                         link.appendChild(button);
                         content.appendChild(link);                
