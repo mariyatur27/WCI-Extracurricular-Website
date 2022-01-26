@@ -1542,7 +1542,7 @@ async function fetchData() {
         athletics = await (await fetch("data/athletics.json")).json();
         music = await (await fetch("data/music.json")).json();
         connection_links = await (await fetch("data/connection_links.json")).json();
-        event_popup = await (await fetch("data/event_popup.json")).json();
+        // event_popup = await (await fetch("data/event_popup.json")).json();
         events = await (await fetch("data/events.json")).json();
         gallery = await (await fetch("data/art_gallery.json")).json();
         console.log("fetchData: Done loading data.");
