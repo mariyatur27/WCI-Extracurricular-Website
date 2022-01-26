@@ -1,12 +1,10 @@
 # The name of the event
-name: "Test event 1"
+name: "Instructional Support Day"
 # The event description
 # Note the 2-space indent at the start, which must be included. It will not appear on the website.
 description: |-
-  This is a test event.
-  The event is used for testing.
-
-  There was an empty line above this one.
+  Instructional Support Day for course C & D.
+  
 # The date that the event starts on (dd/mm/yyyy)
 start-date: "28/1/2022"
 
