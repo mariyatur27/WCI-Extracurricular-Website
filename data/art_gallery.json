@@ -1,8 +1,158 @@
 [
     {
-        "title": "sample_title",
-        "description": "This is a sample text to help complete the html file.",
+        "title": "Saba B.",
+        "description": "No matter how heavy the rain, there will always be someone there to hold an umbrella",
         "image": "assets/img/visual_arts/01.jpg",
         "instagram": "https://www.instagram.com/p/B76krFdpAEE/?utm_source=ig_web_copy_link"
+    },
+    {
+        "title": "Sophie S.",
+        "description": "These are dark and challenging times artists, try to make something every day, and it will go by faster.",
+        "image": "assets/img/visual_arts/02.jpg",
+        "instagram": "https://www.instagram.com/p/B-XUhJCpTDc/?utm_source=ig_web_copy_link"
+    },
+    {
+        "title": "Lauren H.",
+        "description": "Check out these ✨stunning ✨winter photographs. Using manual camera techniques @nikoncanada and angels...",
+        "image": "assets/img/visual_arts/03.jpg",
+        "instagram": "https://www.instagram.com/p/CKMvFA7JwWR/?utm_source=ig_web_copy_link"
+    },
+    {
+        "title": "Kira B",
+        "description": "Mixed media never looked so good! Check out these sketches combining different materials to create...",
+        "image": "assets/img/visual_arts/04.jpg",
+        "instagram": "https://www.instagram.com/p/CK6uRNzpWs0/?utm_source=ig_web_copy_link"
+    },
+    {
+        "title": "Kira B",
+        "description": "Mixed media never looked so good! Check out these sketches combining different materials to create...",
+        "image": "assets/img/visual_arts/05.jpg",
+        "instagram": "https://www.instagram.com/p/CK6uRNzpWs0/?utm_source=ig_web_copy_link"
+    },
+    {
+        "title": "Alice",
+        "description": "Inspired by Lorraine O’Grady’s “Art Is...” photo series, these artists reflected on themes of inclusion...",
+        "image": "assets/img/visual_arts/06.jpg",
+        "instagram": "https://www.instagram.com/p/CLGBEjfpQa5/?utm_source=ig_web_copy_link"
+    },
+    {
+        "title": "Athena",
+        "description": "Inspired by Lorraine O’Grady’s “Art Is...” photo series, these artists reflected on themes of inclusion...",
+        "image": "assets/img/visual_arts/07.jpg",
+        "instagram": "https://www.instagram.com/p/CLGBEjfpQa5/?utm_source=ig_web_copy_link"
+    },
+    {
+        "title": "Mary",
+        "description": "Mary’s digital drawing skills are EPIC! This ethereal piece conveys exceptional realism and captures light...",
+        "image": "assets/img/visual_arts/08.jpg",
+        "instagram": "https://www.instagram.com/p/CMQPHBAJbc8/?utm_source=ig_web_copy_link"
+    },
+    {
+        "title": "Alice",
+        "description": "This sunny FriYAY art is influenced by mixed media, bold colours, and/or portraiture ☀️",
+        "image": "assets/img/visual_arts/09.jpg",
+        "instagram": "https://www.instagram.com/p/CMVZlh9Dy4g/?utm_source=ig_web_copy_link"
+    },
+    {
+        "title": "Paige B",
+        "description": "This sunny FriYAY art is influenced by mixed media, bold colours, and/or portraiture ☀️",
+        "image": "assets/img/visual_arts/10.jpg",
+        "instagram": "https://www.instagram.com/p/CMVZlh9Dy4g/?utm_source=ig_web_copy_link"
+    },
+    {
+        "title": "Manjot",
+        "description": "Portraits of Kira and Andres.",
+        "image": "assets/img/visual_arts/11.jpg",
+        "instagram": "https://www.instagram.com/p/CNagMCyp331/?utm_source=ig_web_copy_link"
+    },
+    {
+        "title": "Manjot",
+        "description": "Portraits of Kira and Andres.",
+        "image": "assets/img/visual_arts/12.jpg",
+        "instagram": "https://www.instagram.com/p/CNagMCyp331/?utm_source=ig_web_copy_link"
+    },
+    {
+        "title": "Mikhael",
+        "description": "Representing intersectionality in identity ❤️🧡💛💚💙💜",
+        "image": "assets/img/visual_arts/13.jpg",
+        "instagram": "https://www.instagram.com/p/CPqmQ8ZJp71/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "Ching",
+        "description": "This beautiful painting is made with ☕️COFFEE☕️ What non-traditional media have you tried? ",
+        "image": "assets/img/visual_arts/14.jpg",
+        "instagram": "https://www.instagram.com/p/CQL8tFZpIcQ/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "Mariya T.",
+        "description": "Photography students are working on something special, which will be exhibited next week...",
+        "image": "assets/img/visual_arts/15.jpg",
+        "instagram": "https://www.instagram.com/p/CUIzk_fJSOI/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "Mariya T.",
+        "description": "Photography students are working on something special, which will be exhibited next week...",
+        "image": "assets/img/visual_arts/16.jpg",
+        "instagram": "https://www.instagram.com/p/CUIzk_fJSOI/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "Emily C.",
+        "description": "This ghastly zombie was created using willow charcoal, conte, and compressed charcoal ...",
+        "image": "assets/img/visual_arts/17.jpg",
+        "instagram": "https://www.instagram.com/p/CVEKvfTvIbb/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "Celeste",
+        "description": "Some beautiful weekend inspiration right here 🙌🏻🙌🏼🙌🏽🙌🏾🙌🏿",
+        "image": "assets/img/visual_arts/18.jpg",
+        "instagram": "https://www.instagram.com/p/CWOhukppN0j/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "Grade 9 Art Student",
+        "description": "Check out these awesome Google Avatars! Digital artworks that use...",
+        "image": "assets/img/visual_arts/19.jpg",
+        "instagram": "https://www.instagram.com/p/CV6EtojpZpX/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "Grade 9 Art Student",
+        "description": "Check out these awesome Google Avatars! Digital artworks that use...",
+        "image": "assets/img/visual_arts/20.jpg",
+        "instagram": "https://www.instagram.com/p/CV6EtojpZpX/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "Celeste",
+        "description": "Today’s Fit 🙌🏿🙌🏾🙌🏽🙌🏼🙌🏻",
+        "image": "assets/img/visual_arts/21.jpg",
+        "instagram": "https://www.instagram.com/p/CWEfgvgJfBa/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "Lukas",
+        "description": "Today’s Fit 🙌🏿🙌🏾🙌🏽🙌🏼🙌🏻",
+        "image": "assets/img/visual_arts/22.jpg",
+        "instagram": "https://www.instagram.com/p/CWEfgvgJfBa/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "Emily",
+        "description": "Some beautiful weekend inspiration right here 🙌🏻🙌🏼🙌🏽🙌🏾🙌🏿",
+        "image": "assets/img/visual_arts/23.jpg",
+        "instagram": "https://www.instagram.com/p/CWOhukppN0j/?utm_source=ig_web_copy_link",
+        "class": "hide"
+    },
+    {
+        "title": "Grade 9 Art Student",
+        "description": "Visual Pun Clay Sculptures created by some incredibly talented grade 9 students!",
+        "image": "assets/img/visual_arts/24.jpg",
+        "instagram": "https://www.instagram.com/p/CWq0lAOpjkP/?utm_source=ig_web_copy_link",
+        "class": "hide"
     }
 ]

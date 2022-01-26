@@ -36,3 +36,8 @@ h4 a {
 h4 a:hover {
 	color: var(--theme-red);
 }
+@media (max-width: 756px){
+	div#the_gallery {
+		margin-left: 6%;
+	}
+}
