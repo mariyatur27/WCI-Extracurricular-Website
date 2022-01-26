@@ -6,7 +6,6 @@ async function buildGallery(galleryID) {
     let section = document.getElementById("the_gallery");
     
     for (const art of gallery) {
-            console.log(art);
             let box = document.createElement("div"); box.classList.add("box");
                 let imgDiv = document.createElement("div");
                 if ("class" in art){
