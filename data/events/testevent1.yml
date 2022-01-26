@@ -8,17 +8,17 @@ description: |-
 
   There was an empty line above this one.
 # The date that the event starts on (dd/mm/yyyy)
-start-date: "24/12/2021"
+start-date: "28/1/2022"
 
 # The time that the event starts at, in 24 hour time (hh:mm:ss)
 # TODO: Make seconds optional
 # TODO: Add AM/PM support
-start-time: "11:59:00"
+start-time: "8:00:00"
 
 # The date that the event ends on (dd/mm/yyyy)
 # Currently ignored
 # TODO: Make end date optional, using end date if not available
-end-date: "24/12/2021"
+end-date: "28/1/2022"
 
 # The time that the event ends at, in 24 hour time (hh:mm:ss)
-end-time: "15:00:00"
+end-time: "21:00:00"
