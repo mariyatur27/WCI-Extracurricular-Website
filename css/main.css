@@ -42,7 +42,10 @@ h3.v_title {
 	padding: 5%;
 	display: none;
 }
-
+/* This code removes the scroll bar but still allowing the user to scroll */
+.slideshow::-webkit-scrollbar {
+	display: none;
+}
 
 #mainNav ul li:hover ul{
 	display: block;
