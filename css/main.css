@@ -42,6 +42,9 @@ h3.v_title {
 	padding: 5%;
 	display: none;
 }
+.footer{
+	margin-top: 20.2%;
+}
 /* This code removes the scroll bar but still allowing the user to scroll */
 .slideshow::-webkit-scrollbar {
 	display: none;

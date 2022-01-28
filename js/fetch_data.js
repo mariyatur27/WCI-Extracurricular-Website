@@ -1418,7 +1418,7 @@ var music = [
         "music_id": "band",
         "experience": "previous experience is required",
         "status":"Postponed Due To Covid-19",
-        "teacher": "Teacher Name",
+        "audition": "Required",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum velit, libero laboriosam, sed voluptatum optio blanditiis iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, delectus iure in voluptatem saepe pariatur dolor, numquam dignissimos quisquam nemo ipsa quibusdam quasi, veniam commodi debitis sint tempora mollitia at?",
         "categories": [
             "band",
@@ -1429,6 +1429,8 @@ var music = [
         "image": "assets/music_icons/in3.png",
         "connection_links": [],
         "music_id": "choir",
+        "audition": "Not Required",
+        "status":"Postponed Due To Covid-19",
         "description": "Do you love to SING? Want to showcase your voice on stage? Join WCI's choir, Viking Singers! Everyone is always welcome.",
         "categories": [
             "choir"
@@ -1444,7 +1446,10 @@ var music = [
         "image": "assets/music_icons/in4.png",
         "connection_links": [],
         "music_id": "juniorguitar",
-        "description": "",
+        "connection_links": ["clasroom"],
+        "status":"Takes Place Online",
+        "classroom" : "classroom.google.com/c/MzQ2NTYyMzc1ODU0?cjc=jjqe6vz",
+        "description": "This ensemble is for any guitarists new to guitar and/or ensemble playing while reading music/tab.",
         "categories": [
             "guitar"
         ],
@@ -1455,7 +1460,9 @@ var music = [
         "image": "assets/music_icons/in4.png",
         "connection_links": [],
         "music_id": "seniorguitar",
-        "description": "",
+        "status":"Takes Place Online",
+        "audition": "Not Required",
+        "description": "This ensemble is for any guitarists new to guitar and/or ensemble playing while reading music/tab.",
         "categories": [
             "guitar"
         ]
@@ -1464,6 +1471,7 @@ var music = [
         "name": "Junior Orchestra",
         "image": "assets/music_icons/in1.png",
         "connection_links": [],
+        "status":"Postponed Due To Covid-19",
         "music_id": "juniororchestra",
         "description": "Are you in Grade 9 and play the violin, viola, cello, or double bass? Want to meet other musicians at WCI? Join WCI's Junior Orchestra!",
         "categories": [
@@ -1477,6 +1485,7 @@ var music = [
         "connection_links": [],
         "description": "Are you in Grade 10 and play the violin, viola, cello, or double bass? Want to meet other musicians at WCI? Join WCI's Intermediate Orchestra!",
         "music_id": "intermediateorchestra",
+        "status":"Takes Place Online",
         "categories": [
             "orchestra",
             "Grade 10"
@@ -1513,6 +1522,7 @@ var music = [
         "image": "assets/music_icons/in1.png",
         "connection_links": [],
         "music_id": "seniorchamber",
+        "status":"Takes Place Online",
         "description": "Senior Chamber Ensemble is a smaller group of string musicians dedicated to playing at a high level. This group is perfect for experienced violin, viola, cello, or double bass players.",
         "categories": [
             "orchestra"
