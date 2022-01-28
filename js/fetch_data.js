@@ -1444,7 +1444,9 @@ var music = [
         "image": "assets/music_icons/in4.png",
         "connection_links": [],
         "music_id": "juniorguitar",
-        "description": "",
+        "connection_links": ["clasroom"],
+        "classroom" : "classroom.google.com/c/MzQ2NTYyMzc1ODU0?cjc=jjqe6vz",
+        "description": "This ensemble is for any guitarists new to guitar and/or ensemble playing while reading music/tab.",
         "categories": [
             "guitar"
         ],
@@ -1455,7 +1457,7 @@ var music = [
         "image": "assets/music_icons/in4.png",
         "connection_links": [],
         "music_id": "seniorguitar",
-        "description": "",
+        "description": "This ensemble is for any guitarists new to guitar and/or ensemble playing while reading music/tab.",
         "categories": [
             "guitar"
         ]
