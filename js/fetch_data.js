@@ -1503,7 +1503,7 @@ var music = [
         "music_id": "seniororchestra",
         "experience": "previous experience is required",
         "status":"Takes Place Online",
-        "teacher": "Teacher Name",
+        "teacher": "Mr. Piche",
         "video": [
             {"source" : '<iframe width="700px" height="400px" src="https://www.youtube.com/embed/0OO2jzo7RzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
             {"source" : '<iframe width="1520" height="577" src="https://www.youtube.com/embed/U5j3tlGclb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'},
