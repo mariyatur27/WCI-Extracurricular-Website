@@ -51,7 +51,7 @@
         "student_leaders": "Kyri Friedman",
         "classroom": "https://classroom.google.com/c/NDA3OTEyMjM1Njg1?cjc=vcoiex4",
         "image": "assets/club_images/bakingclub.png",
-        "description": "Come bake with us.  We meet online every Monday at 3:15 for 1 hour. All baking is completed at home and no experience is needed",
+        "description": "Come bake with us.  We meet online every Monday at 3:15 for 1 hour. All baking is completed at home and no experience is needed.",
         "categories": [
             "recreational_category",
             "low",
@@ -93,7 +93,7 @@
         "connection_links":[],
         "student_leaders": "Vlad C, Markos G, Joshua D",
         "image": "assets/club_images/chessclub.png",
-        "description": "For any and all chess players, Chess club is a casual space where students can compete with each other, learn new tactics, and participate year-round in a variety of tournaments.", 
+        "description": "For any and all chess players, Chess Club is a casual space where students can compete with each other, learn new tactics, and participate year-round in a variety of tournaments.", 
         "categories": [
             "recreational_category",
             "academics_category",
@@ -138,7 +138,7 @@
         "connection_links":[],
         "image": "assets/club_images/clublatinx.png",
         "student_leaders": "Sofía Aranguren, Marlon Fresneda",
-        "description": "We want student who want to help the Spanish speaking community, who have just arrived into KW, as they adapt to this new culture. Also, supporting each other in our WCI community... sharing and teaching our culture- music, dance, food, ...", 
+        "description": "We want students who want to help the Spanish-speaking community, who have just arrived into KW, as they adapt to this new culture. Also, supporting each other in our WCI community, sharing and teaching our culture: music, dance, food, ...", 
         "categories": [
             "social_justice_category",
             "academics_category",
@@ -172,7 +172,7 @@
         "website": "https://sites.google.com/wrdsb.ca/wci-debate-club/home",
         "student_leaders": "Prem M-S (Co-President), Daniel P. (Co-President), Mariya T. (VP of Administration) , Scott H. (VP of Events), Sissi Wei (VP of Communications and Media)",
         "image": "assets/club_images/debateclub.png",
-        "description": "The Debate Club provides students with a fun way to further develop their speaking and presentation skills. In addition, the debate club provides an opportunity for the students to become more informed about political and global affairs. Through a virtual platform, students will train for debate competitions with local schools.",
+        "description": "The Debate Club provides students with a fun way to further develop their speaking and presentation skills. In addition, the Debate Club provides an opportunity for students to become more informed about political and global affairs. Through a virtual platform, students will train for debate competitions with local schools.",
         "categories": [
             "business_category",
             "high",
@@ -474,7 +474,7 @@
         "connection_links":["classroom"],
         "classroom": "https://classroom.google.com/c/MzIwNTQ4NzcxODg5?cjc=7mraab7",
         "image": "assets/club_images/technovationwistem.png",
-        "description": "Technovation is an international girls coding competition that aims to get girls into tech. In the competition, teams build mobile apps that help solve a problem in society and pitch it to judges. We will also be running other research projects should female identifying students wish to persue or have support in diving into their ideas with science!",
+        "description": "Technovation is an international girls' coding competition that aims to get girls into tech. In the competition, teams build mobile apps that help solve a problem in society and pitch it to judges. We will also be running other research projects should female identifying students wish to persue or have support in diving into their ideas with science!",
         "categories": [
             "stem_category",
             "academics_category",
