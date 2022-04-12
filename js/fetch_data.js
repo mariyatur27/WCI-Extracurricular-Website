@@ -710,6 +710,19 @@ var clubs = [
             "medium",
             "present"
         ]
+    },
+    {
+        "name": "Crochet Club",
+        "id": "crochet club",
+        "meeting_time": "Mondays, lunch period (10:50 AM - 11:25 AM)",
+        "connection_links": ["classroom"],
+        "classroom": "https://classroom.google.com/u/0/c/NDcwOTA4MTQ2MzU2?cjc=2dbwliz",
+        "email": "snown0638@wrdsb.ca",
+        "student_leaders": "Noah S, Allison R",
+        "image": "",
+        "description": "...",
+        "categories": [
+        ]
     }
 ];
 var connection_links = {
