@@ -188,7 +188,7 @@ var clubs = [
         "name": "Astronomy Club",
         "id": "astronomy",
         "meeting_time": "Wednesdays, 2:30 PM - 3:30 PM",
-        "student_leaders": "Nuha A, Charis H",
+        "student_leaders": "Nuha A, Charis H, Veronika M",
         "connection_links":["classroom", "instagram"],
         "classroom": "https://classroom.google.com/u/0/c/MzI1MzU1NjcxMjU4?cjc=pmcg2fk",
         "instagram" : "https://www.instagram.com/wci.astro.club/",
@@ -206,7 +206,7 @@ var clubs = [
         "id": "bakingclub",
         "meeting_time": "Mondays, 3:15 PM - 4:15 PM",
         "connection_links":["classroom"],
-        "student_leaders": "Kyri Friedman",
+        "student_leaders": "Kyri F",
         "classroom": "https://classroom.google.com/c/NDA3OTEyMjM1Njg1?cjc=vcoiex4",
         "image": "assets/club_images/bakingclub.png",
         "description": "Come bake with us.  We meet online every Monday at 3:15 for 1 hour. All baking is completed at home and no experience is needed",
@@ -280,7 +280,7 @@ var clubs = [
         "website": "https://sites.google.com/wrdsb.ca/wci-classics/home",
         "email":"marion_hensel@wrdsb.ca",
         "image": "assets/club_images/classicsclub.png",
-        "student_leaders": "Emma Leuty and Zoe Florizone ",
+        "student_leaders": "Emma L and Zoe F ",
         "description": "A group of students who are passionate about about all things related to the ancient world. We discuss topics like history, mythology, architecture, fashion, archaeology, linguistics, travel and so much more!", 
         "categories": [
             "recreational_category",
@@ -295,7 +295,7 @@ var clubs = [
         "meeting_time": "Wednesdays, 2:15 PM - 3:15 PM (week of courses C/D)",
         "connection_links":[],
         "image": "assets/club_images/clublatinx.png",
-        "student_leaders": "Sofía Aranguren, Marlon Fresneda",
+        "student_leaders": "Sofía A, Marlon F",
         "description": "We want student who want to help the Spanish speaking community, who have just arrived into KW, as they adapt to this new culture. Also, supporting each other in our WCI community... sharing and teaching our culture- music, dance, food, ...", 
         "categories": [
             "social_justice_category",
@@ -312,7 +312,7 @@ var clubs = [
         "instagram" : "https://https://www.instagram.com/wci_computer_science/",
         "classroom": "https://classroom.google.com/c/MTY1NzAzMDQzNjJa?cjc=c2prjk3 ",
         "image": "assets/club_images/computerscienceclub.png",
-        "student_leaders": "Scott H, Allon W Claire C, Jeffrey Q, Markos G, Tristan O",
+        "student_leaders": "Scott H, Allon W, Claire C, Jeffrey Q, Markos G, Tristan O",
         "description": "This club is for everyone interested in CS. Beginner to advanced, contest groups and a group that likes to develop games, internet and database usually at the end of the year after the contests are over.",
         "categories": [
             "stem_category",
@@ -514,7 +514,7 @@ var clubs = [
         "website": "https://sites.google.com/wrdsb.ca/wcimuslimstudentassociation/home",
         "instagram": "https://www.instagram.com/wci_msa_club",
         "image": "assets/club_images/muslimstudentassociation.png",
-        "student_leaders": "Umar Muhammad, Yazan B, Mobina F, Issa B",
+        "student_leaders": "Umar M, Yazan B, Mobina F, Issa B",
         "description": "The Muslim Student Association (MSA) is a safe space for Muslim Students to get together, learn and appreciate their identity, create a welcoming community, and of course, have fun!",
         "categories": [
             "social_justice_category",
@@ -542,7 +542,7 @@ var clubs = [
         "id": "roboticsclub",
         "meeting_time": "Restarting Semester 2!",
         "connection_links":["classroom"],
-        "student_leaders": "Tristan O, Mariya T, Charis Ho",
+        "student_leaders": "Tristan O, Mariya T, Charis H",
         "classroom": "https://classroom.google.com/c/MTY1OTk0MDcyNzNa?cjc=icus6dl",
         "image": "assets/club_images/roboticsclub.png",
         "description": "We at the Viking robotics club are a bunch of students who have one common interest: robotics! Here at the club, we cover everything from working with hardware and software, programming electronics and even computer work. As we do so, we are more people involved in STEM, exercising their problem solving skills and make new friends!",
@@ -575,7 +575,7 @@ var clubs = [
         "id": "socialjusticeclub",
         "meeting_time": "Wednesday, 3:00 PM - 4:00 PM",
         "connection_links":["instagram"],
-        "student_leaders": "Aethar Marhon, Sophie Pollard",
+        "student_leaders": "Aethar M, Sophie P",
         "instagram" : "https://www.instagram.com/wcisocialjustice/",
         "image": "assets/club_images/socialjusticeclubwci.png",
         "categories": [
@@ -650,7 +650,7 @@ var clubs = [
         "image": "assets/club_images/wcitutors.png",
         "email" : "wcitutors@wrdsb.ca",
         "description": "Provides virtual, peer to peer tutoring 3 times a week.",
-        "student_leaders" : "Jane He, Paris Cai, Laura Weiler and MyChau Tight",
+        "student_leaders" : "Jane H, Paris C, Laura W and MyChau T",
         "categories": [
             "stem_category",
             "academics_category",
@@ -683,7 +683,7 @@ var clubs = [
         "instagram" : "https://www.instagram.com/wciteded/",
         "email": "wcitededclub@gmail.com",
         "image": "assets/club_images/wcitededclub.png",
-        "student_leaders": "Jessica Diao, Grace Qiu, Morouje Sherif, Alina Armbruster, Emily Cheng and Victoria ZhangLiu",
+        "student_leaders": "Jessica D, Grace Q, Morouje S, Alina A, Emily C and Victoria Z",
         "description": "WCI TEDEd Club is a space for all students to consider a myriad of topics and deep dive into something they are interested in. Our club will support you as you discover, explore and present your big ideas in the form of short, TED talks. We strive to empower and celebrate student voices, as part of the global TED community!",
         "categories": [
             "academics_category",
@@ -702,7 +702,7 @@ var clubs = [
         "email": "turem4748@wrdsb.ca",
         "join_form": "https://forms.gle/3jH5k2CqeyjtEYwf8",
         "website": "https://www.wciweb-dev.ca/",
-        "student_leaders": "Mariya Turetska, Nuha Akhand and Charis Ho",
+        "student_leaders": "Mariya T, Nuha A and Charis H",
         "image": "assets/club_images/wciwebdev.png",
         "description": "WCI Web-Dev is a web-development club where you will get to develop real projects for real people. This club welcomes students from all grades, backgrounds and interests. Everybody is encouraged to join the club and no coding experience is required. You will be taught everything about the design and programming of web platforms and websites. This club will be a mini stimulation of the web development and programming industry. We will all collaborate and work together on creating and developing cool web products.",
         "categories": [
@@ -714,14 +714,17 @@ var clubs = [
     {
         "name": "Crochet Club",
         "id": "crochet club",
-        "meeting_time": "Mondays, lunch period (10:50 AM - 11:25 AM)",
+        "meeting_time": "Mondays at lunch (10:50 AM - 11:25 AM)",
         "connection_links": ["classroom"],
         "classroom": "https://classroom.google.com/u/0/c/NDcwOTA4MTQ2MzU2?cjc=2dbwliz",
         "email": "snown0638@wrdsb.ca",
-        "student_leaders": "Noah S, Allison R",
-        "image": "",
-        "description": "...",
+        "student_leaders": "Noah S, Allison R, Ms. Erdman (Supervisor)",
+        "image": "assets/club_images/crochetclub.png",
+        "description": "Come learn how to Crochet or Knit every week in room 238! No experience required.",
         "categories": [
+            "recreational_category",
+            "low",
+            "none"
         ]
     }
 ];
