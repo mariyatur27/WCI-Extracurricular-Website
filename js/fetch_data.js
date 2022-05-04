@@ -247,7 +247,7 @@ var clubs = [
     {
         "name": "Chess Club",
         "id": "chessclub",
-        "meeting_time": "Tuesdays,  from 2:45 PM - 3:45 PM",
+        "meeting_time": "Mondays, at lunch, Room 400",
         "connection_links":[],
         "student_leaders": "Vlad C, Markos G, Joshua D",
         "image": "assets/club_images/chessclub.png",
