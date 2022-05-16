@@ -256,8 +256,8 @@ async function createCalendar(daysAhead) {
         }
     }
     if (Object.keys(eventDates).length == 0) {
-        let calendarDiv = document.getElementById("weekly_calendar");
-        calendarDiv.classList.add("hidden");
+        let calendarSection = document.getElementById("weekly_calendar");
+        calendarSection.classList.add("hidden");
         return;
     }
     
