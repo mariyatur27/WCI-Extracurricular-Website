@@ -22,5 +22,9 @@
         "label": "More Information",
         "link_prefix": "sport_info.html?sport=",
         "postfix_id": true
+    },
+    "join_form": {
+        "type": "icon",
+        "icon": "assets/icons/join_form.png"
     }
 }

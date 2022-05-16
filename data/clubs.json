@@ -48,7 +48,7 @@
         "id": "bakingclub",
         "meeting_time": "Mondays, 3:15 PM - 4:15 PM",
         "connection_links":["classroom"],
-        "student_leaders": "Kyri Friedman",
+        "student_leaders": "Kyri F",
         "classroom": "https://classroom.google.com/c/NDA3OTEyMjM1Njg1?cjc=vcoiex4",
         "image": "assets/club_images/bakingclub.png",
         "description": "Come bake with us.  We meet online every Monday at 3:15 for 1 hour. All baking is completed at home and no experience is needed.",
@@ -89,7 +89,7 @@
     {
         "name": "Chess Club",
         "id": "chessclub",
-        "meeting_time": "Tuesdays,  from 2:45 PM - 3:45 PM",
+        "meeting_time": "Mondays, at lunch, Room 400",
         "connection_links":[],
         "student_leaders": "Vlad C, Markos G, Joshua D",
         "image": "assets/club_images/chessclub.png",
@@ -122,7 +122,7 @@
         "website": "https://sites.google.com/wrdsb.ca/wci-classics/home",
         "email":"marion_hensel@wrdsb.ca",
         "image": "assets/club_images/classicsclub.png",
-        "student_leaders": "Emma Leuty and Zoe Florizone ",
+        "student_leaders": "Emma L and Zoe F",
         "description": "A group of students who are passionate about about all things related to the ancient world. We discuss topics like history, mythology, architecture, fashion, archaeology, linguistics, travel and so much more!", 
         "categories": [
             "recreational_category",
@@ -137,8 +137,8 @@
         "meeting_time": "Wednesdays, 2:15 PM - 3:15 PM (week of courses C/D)",
         "connection_links":[],
         "image": "assets/club_images/clublatinx.png",
-        "student_leaders": "Sofía Aranguren, Marlon Fresneda",
-        "description": "We want students who want to help the Spanish-speaking community, who have just arrived into KW, as they adapt to this new culture. Also, supporting each other in our WCI community, sharing and teaching our culture: music, dance, food, ...", 
+        "student_leaders": "Sofía A, Marlon F",
+        "description": "We want student who want to help the Spanish speaking community, who have just arrived into KW, as they adapt to this new culture. Also, supporting each other in our WCI community... sharing and teaching our culture- music, dance, food, ...", 
         "categories": [
             "social_justice_category",
             "academics_category",
@@ -154,7 +154,7 @@
         "instagram" : "https://https://www.instagram.com/wci_computer_science/",
         "classroom": "https://classroom.google.com/c/MTY1NzAzMDQzNjJa?cjc=c2prjk3 ",
         "image": "assets/club_images/computerscienceclub.png",
-        "student_leaders": "Scott H, Allon W Claire C, Jeffrey Q, Markos G, Tristan O",
+        "student_leaders": "Scott H, Allon W, Claire C, Jeffrey Q, Markos G, Tristan O",
         "description": "This club is for everyone interested in CS. Beginner to advanced, contest groups and a group that likes to develop games, internet and database usually at the end of the year after the contests are over.",
         "categories": [
             "stem_category",
@@ -356,7 +356,7 @@
         "website": "https://sites.google.com/wrdsb.ca/wcimuslimstudentassociation/home",
         "instagram": "https://www.instagram.com/wci_msa_club",
         "image": "assets/club_images/muslimstudentassociation.png",
-        "student_leaders": "Umar Muhammad, Yazan B, Mobina F, Issa B",
+        "student_leaders": "Umar M, Yazan B, Mobina F, Issa B",
         "description": "The Muslim Student Association (MSA) is a safe space for Muslim Students to get together, learn and appreciate their identity, create a welcoming community, and of course, have fun!",
         "categories": [
             "social_justice_category",
@@ -384,7 +384,7 @@
         "id": "roboticsclub",
         "meeting_time": "Restarting Semester 2!",
         "connection_links":["classroom"],
-        "student_leaders": "Tristan O, Mariya T, Charis Ho",
+        "student_leaders": "Tristan O, Mariya T, Charis H",
         "classroom": "https://classroom.google.com/c/MTY1OTk0MDcyNzNa?cjc=icus6dl",
         "image": "assets/club_images/roboticsclub.png",
         "description": "We at the Viking robotics club are a bunch of students who have one common interest: robotics! Here at the club, we cover everything from working with hardware and software, programming electronics and even computer work. As we do so, we are more people involved in STEM, exercising their problem solving skills and make new friends!",
@@ -417,7 +417,7 @@
         "id": "socialjusticeclub",
         "meeting_time": "Wednesday, 3:00 PM - 4:00 PM",
         "connection_links":["instagram"],
-        "student_leaders": "Aethar Marhon, Sophie Pollard",
+        "student_leaders": "Aethar M, Sophie P",
         "instagram" : "https://www.instagram.com/wcisocialjustice/",
         "image": "assets/club_images/socialjusticeclubwci.png",
         "categories": [
@@ -492,7 +492,7 @@
         "image": "assets/club_images/wcitutors.png",
         "email" : "wcitutors@wrdsb.ca",
         "description": "Provides virtual, peer to peer tutoring 3 times a week.",
-        "student_leaders" : "Jane He, Paris Cai, Laura Weiler and MyChau Tight",
+        "student_leaders" : "Jane H, Paris C, Laura W and MyChau T",
         "categories": [
             "stem_category",
             "academics_category",
@@ -538,19 +538,36 @@
         "name": "Web-Dev Club",
         "id": "wciwebdev",
         "meeting_time": "Tuesdays, 3:00 PM - 4:00 PM",
-        "connection_links": ["classroom", "instagram", "email", "website"],
+        "connection_links": ["classroom", "instagram", "email", "join_form", "website"],
         "instagram" : "https://www.instagram.com/wci_web_dev",
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=k2uhtee",
         "email": "turem4748@wrdsb.ca",
         "join_form": "https://forms.gle/3jH5k2CqeyjtEYwf8",
         "website": "https://www.wciweb-dev.ca/",
-        "student_leaders": "Mariya Turetska, Nuha Akhand and Charis Ho",
+        "student_leaders": "Mariya T, Nuha A and Charis H",
         "image": "assets/club_images/wciwebdev.png",
         "description": "WCI Web-Dev is a web-development club where you will get to develop real projects for real people. This club welcomes students from all grades, backgrounds and interests. Everybody is encouraged to join the club and no coding experience is required. You will be taught everything about the design and programming of web platforms and websites. This club will be a mini stimulation of the web development and programming industry. We will all collaborate and work together on creating and developing cool web products.",
         "categories": [
             "stem_category",
             "medium",
             "present"
+        ]
+    },
+    {
+        "name": "WCI Crew",
+        "id": "WCI crew",
+        "connection_links": ["classroom", "join_form", "email"],
+        "join_form": "https://forms.gle/R1BQaNugUFtVQbiB8",
+        "classroom": "https://classroom.google.com/c/MjgyNTIzOTY0NFpa?cjc=rippjrt",
+        "email": "snown0638@wrdsb.ca,olent133@wrdsb.ca",
+        "student_leaders": "Noah S, Tristan O",
+        "image": "assets/club_images/wcicrew.png",
+        "description": "WCI Crew manages sound and lighting for all of WCI's events throughout the year. Members of WCI Crew get experience working with ligthing and sound in a real auditorium, while helping the school out. Members can also gain experience with backstage environments, helping with set design and moving props on stage.",
+        "categories": [
+            "stem_category",
+            "leadership_category",
+            "high",
+            "none"
         ]
     }
 ]
