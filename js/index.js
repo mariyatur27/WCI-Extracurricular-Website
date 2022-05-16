@@ -255,7 +255,12 @@ async function createCalendar(daysAhead) {
             }
         }
     }
-
+    if (Object.keys(eventDates).length == 0) {
+        let calendarDiv = document.getElementById("weekly_calendar");
+        calendarDiv.classList.add("hidden");
+        return;
+    }
+    
     let table = document.getElementById("calendar");
     table.innerHTML = "";
     let date = new Date();
