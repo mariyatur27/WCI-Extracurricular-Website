@@ -538,7 +538,7 @@
         "name": "Web-Dev Club",
         "id": "wciwebdev",
         "meeting_time": "Tuesdays, 3:00 PM - 4:00 PM",
-        "connection_links": ["classroom", "instagram", "email", "website"],
+        "connection_links": ["classroom", "instagram", "email", "join_form", "website"],
         "instagram" : "https://www.instagram.com/wci_web_dev",
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=k2uhtee",
         "email": "turem4748@wrdsb.ca",
