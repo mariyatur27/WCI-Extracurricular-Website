@@ -188,7 +188,7 @@ var clubs = [
         "name": "Astronomy Club",
         "id": "astronomy",
         "meeting_time": "Wednesdays, 2:30 PM - 3:30 PM",
-        "student_leaders": "Nuha A, Charis H, Veronika M",
+        "student_leaders": "Nuha A, Charis H",
         "connection_links":["classroom", "instagram"],
         "classroom": "https://classroom.google.com/u/0/c/MzI1MzU1NjcxMjU4?cjc=pmcg2fk",
         "instagram" : "https://www.instagram.com/wci.astro.club/",
@@ -209,7 +209,7 @@ var clubs = [
         "student_leaders": "Kyri F",
         "classroom": "https://classroom.google.com/c/NDA3OTEyMjM1Njg1?cjc=vcoiex4",
         "image": "assets/club_images/bakingclub.png",
-        "description": "Come bake with us.  We meet online every Monday at 3:15 for 1 hour. All baking is completed at home and no experience is needed",
+        "description": "Come bake with us.  We meet online every Monday at 3:15 for 1 hour. All baking is completed at home and no experience is needed.",
         "categories": [
             "recreational_category",
             "low",
@@ -247,11 +247,11 @@ var clubs = [
     {
         "name": "Chess Club",
         "id": "chessclub",
-        "meeting_time": "Tuesdays,  from 2:45 PM - 3:45 PM",
+        "meeting_time": "Mondays, at lunch, Room 400",
         "connection_links":[],
         "student_leaders": "Vlad C, Markos G, Joshua D",
         "image": "assets/club_images/chessclub.png",
-        "description": "For any and all chess players, Chess club is a casual space where students can compete with each other, learn new tactics, and participate year-round in a variety of tournaments.", 
+        "description": "For any and all chess players, Chess Club is a casual space where students can compete with each other, learn new tactics, and participate year-round in a variety of tournaments.", 
         "categories": [
             "recreational_category",
             "academics_category",
@@ -280,7 +280,7 @@ var clubs = [
         "website": "https://sites.google.com/wrdsb.ca/wci-classics/home",
         "email":"marion_hensel@wrdsb.ca",
         "image": "assets/club_images/classicsclub.png",
-        "student_leaders": "Emma L and Zoe F ",
+        "student_leaders": "Emma L and Zoe F",
         "description": "A group of students who are passionate about about all things related to the ancient world. We discuss topics like history, mythology, architecture, fashion, archaeology, linguistics, travel and so much more!", 
         "categories": [
             "recreational_category",
@@ -632,7 +632,7 @@ var clubs = [
         "connection_links":["classroom"],
         "classroom": "https://classroom.google.com/c/MzIwNTQ4NzcxODg5?cjc=7mraab7",
         "image": "assets/club_images/technovationwistem.png",
-        "description": "Technovation is an international girls coding competition that aims to get girls into tech. In the competition, teams build mobile apps that help solve a problem in society and pitch it to judges. We will also be running other research projects should female identifying students wish to persue or have support in diving into their ideas with science!",
+        "description": "Technovation is an international girls' coding competition that aims to get girls into tech. In the competition, teams build mobile apps that help solve a problem in society and pitch it to judges. We will also be running other research projects should female identifying students wish to persue or have support in diving into their ideas with science!",
         "categories": [
             "stem_category",
             "academics_category",
@@ -695,8 +695,8 @@ var clubs = [
     {
         "name": "Web-Dev Club",
         "id": "wciwebdev",
-        "meeting_time": "Tuesdays, 2:30 PM - 3:30 PM",
-        "connection_links": ["classroom", "instagram", "email", "website"],
+        "meeting_time": "Tuesdays, 3:00 PM - 4:00 PM",
+        "connection_links": ["classroom", "instagram", "email", "join_form", "website"],
         "instagram" : "https://www.instagram.com/wci_web_dev",
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=k2uhtee",
         "email": "turem4748@wrdsb.ca",
@@ -712,18 +712,19 @@ var clubs = [
         ]
     },
     {
-        "name": "Crochet Club",
-        "id": "crochet club",
-        "meeting_time": "Mondays at lunch (10:50 AM - 11:25 AM)",
-        "connection_links": ["classroom"],
-        "classroom": "https://classroom.google.com/u/0/c/NDcwOTA4MTQ2MzU2?cjc=2dbwliz",
-        "email": "snown0638@wrdsb.ca",
-        "student_leaders": "Noah S, Allison R, Ms. Erdman (Supervisor)",
-        "image": "assets/club_images/crochetclub.png",
-        "description": "Come learn how to Crochet or Knit every week in room 238! No experience required.",
+        "name": "WCI Crew",
+        "id": "WCI crew",
+        "connection_links": ["classroom", "join_form", "email"],
+        "join_form": "https://forms.gle/R1BQaNugUFtVQbiB8",
+        "classroom": "https://classroom.google.com/c/MjgyNTIzOTY0NFpa?cjc=rippjrt",
+        "email": "snown0638@wrdsb.ca,olent133@wrdsb.ca",
+        "student_leaders": "Noah S, Tristan O",
+        "image": "assets/club_images/wcicrew.png",
+        "description": "WCI Crew manages sound and lighting for all of WCI's events throughout the year. Members of WCI Crew get experience working with ligthing and sound in a real auditorium, while helping the school out. Members can also gain experience with backstage environments, helping with set design and moving props on stage.",
         "categories": [
-            "recreational_category",
-            "low",
+            "stem_category",
+            "leadership_category",
+            "high",
             "none"
         ]
     }
@@ -752,6 +753,10 @@ var connection_links = {
         "label": "More Information",
         "link_prefix": "sport_info.html?sport=",
         "postfix_id": true
+    },
+    "join_form": {
+        "type": "icon",
+        "icon": "assets/icons/join_form.png"
     }
 };
 var athletics = [
