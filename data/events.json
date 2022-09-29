@@ -7,17 +7,17 @@
         "id": "Instructional_Support_Day"
     },
     {
-        "start_time": 1643788800,
-        "end_time": 1643835600,
-        "title": "Instructional Support Day",
-        "description": "Instructional Support Day for course A & B.",
-        "id": "testevent2"
-    },
-    {
         "start_time": 1643875200,
         "end_time": 1643922000,
         "title": "Instructional Support Day",
         "description": "Instructional Support Day for course A & B.",
         "id": "testevent3"
+    },
+    {
+        "start_time": 1643788800,
+        "end_time": 1643835600,
+        "title": "Instructional Support Day",
+        "description": "Instructional Support Day for course A & B.",
+        "id": "testevent2"
     }
 ]
