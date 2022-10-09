@@ -601,20 +601,5 @@
             "none"
         ],
         "classroom_code": "5xb2wyj"
-    },
-    {
-        "name": "WCI Tutors",
-        "id": "wcitutors",
-        "image": "assets/club_images/wcitutors.png",
-        "student_leaders": "Paris Cao, Jane He, My Chau Tight, Laura Weiler",
-        "description": "Boost your involvement at WCI and earn volunteer hours for tutors! WCI Tutoring provides a calm space to complete homework, receive academic help, meet your peers and more.",
-        "categories": [
-            "academics_category",
-            "recreational_category",
-            "medium",
-            "none"
-        ],
-        "classroom_code": "bjko5tg",
-        "meeting_time": "Tuesdays at lunch in the cafeteria ",
     }
 ]
