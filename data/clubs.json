@@ -2,22 +2,25 @@
     {
         "name": "Ambassadors Christian Fellowship",
         "id": "ambassadorschristianfellowship",
-        "meeting_time": "Wednesdays, 2:45 PM - 3:45 PM",
+        "meeting_time": "Thursdays at lunch Bi-weekly",
         "connection_links":[],
         "image": "assets/club_images/ambassadorschristianfellowship.png",
-        "description": "A place for anyone to ask questions about and explore a life with Jesus. The goal is to serve the WCI community while providing a safe place for fellowship.",
+        "description": "A place for anyone to ask questions about and explore a life with Jesus. If you are a christian or are just interested in faith, this club is a great fit! There will be discussions, games and food! Ultimately the goal is to serve the WCI community while providing a safe place for fellowship.",
         "categories": [
             "social_justice_category",
             "medium", 
             "none"
-        ]
+        ],
+        "student_leaders": "Jordan Bauman",
+        "classroom_code": "tegmr4nf"
     },
     {
         "name": "Anime Club",
         "id": "animeclub",
         "meeting_time": "Tuesdays and Fridays, at lunch",
         "student_leaders": "Yasemin G",
-        "connection_links":[],
+        "connection_links":["classroom"],
+        "classroom": "https://classroom.google.com/c/Mzk2NTk1ODgxNjAx?cjc=jcdkgfs",
         "image": "assets/club_images/animeclub.png",
         "description": "come to enjoy chatting and making friends with people who share your interests! we have a chill atmosphere and there's no pressure to come, maybe if your friends aren't here that day, you can chill with us! we welcome all!",
         "categories": [
@@ -29,13 +32,13 @@
     {
         "name": "Astronomy Club",
         "id": "astronomy",
-        "meeting_time": "Wednesdays, 2:30 PM - 3:30 PM",
-        "student_leaders": "Nuha A, Charis H",
+        "meeting_time": "Tuesdays at lunch in room 400",
+        "student_leaders": "Nuha A, Charis H, Veronika M",
         "connection_links":["classroom", "instagram"],
         "classroom": "https://classroom.google.com/u/0/c/MzI1MzU1NjcxMjU4?cjc=pmcg2fk",
         "instagram" : "https://www.instagram.com/wci.astro.club/",
         "image": "assets/club_images/astronomy.png",
-        "description": "A club for anyone interested in learning more about astronomy with like-minded students. We will explore the science of astronomy, in weekly club meetings. We also organize amature astronomy events, citizen science projects, and telescope build projects. Come and explore the sky with us! For more info follow: wci.astro.club on Instagram. ",
+        "description": "A club for anyone interested in learning more about astronomy with like-minded students. We will explore the science of astronomy, in weekly club meetings. We also organize amature astronomy events, citizen science projects, and telescope build projects. Come and explore the sky with us! For more info follow: wci.astro.club on Instagram.",
         "categories": [
             "recreational_category",
             "stem_category",
@@ -61,15 +64,17 @@
     {
         "name": "Black Student Association",
         "id": "blackstudentassociation",
-        "meeting_time": "First Thursday of the month after school",
+        "meeting_time": "Thursdays at lunch in room 323",
         "connection_links":[],
         "image": "assets/club_images/blackstudentassociation.png",
-        "description": "This club is a space for students to get together, unwind, connect, and discuss important issues, topics and more!",
+        "description": "Space for ACBi students to get together, unwind, connect, discuss important issues and topics, and more! We hope to be involved with the planning of the Black History Month Assembly in February. We will also have opportunities to meet other BSAs and to have guest speakers. This is a space for safety and joy!",
         "categories": [
             "social_justice_category",
             "low",
             "none"
-        ]
+        ],
+        "classroom_code": "sak6zmd",
+        "student_leaders": "Suha Elmugamar, Bitania Alazare "
     },
     {
         "name": "Book Club",
@@ -89,30 +94,32 @@
     {
         "name": "Chess Club",
         "id": "chessclub",
-        "meeting_time": "Mondays, at lunch, Room 400",
+        "meeting_time": "Mondays at lunch in room 400",
         "connection_links":[],
-        "student_leaders": "Vlad C, Markos G, Joshua D",
+        "student_leaders": "Tahmeed T, Jacob B, Joshua D",
         "image": "assets/club_images/chessclub.png",
-        "description": "For any and all chess players, Chess Club is a casual space where students can compete with each other, learn new tactics, and participate year-round in a variety of tournaments.", 
+        "description": "A club for all levels of players, from never played to a grand chess master! Join us at lunch to learn, play and maybe play in a tournament or two too if you want.", 
         "categories": [
             "recreational_category",
             "academics_category",
             "medium",
             "present"
-        ]
+        ],
+        "classroom_code": "v5etuaw"
     },
     {
         "name": "Chinese Student Association",
         "id": "chinesestudentassociation",
         "connection_links":[],
-        "student_leaders": "Pheobe G, Camille L, Mary Y, Claire C, Mandy L",
+        "student_leaders": "Victoria K",
         "image": "assets/club_images/chinesestudentassociation.png",
         "description": "This club creates a relaxing and safe space for Chinese descendants and newcomers to post/comment (in Chinese and English), and share the language, food images, Chinese arts and crafts, festivals, and more, related to the Chinese culture and student life experiences in Canada.", 
         "categories": [
             "social_justice_category",
             "low",
             "none"
-        ]
+        ],
+        "classroom_code": "bx5qpfp"
     },
     {
         "name": "Classics Club",
@@ -122,19 +129,21 @@
         "website": "https://sites.google.com/wrdsb.ca/wci-classics/home",
         "email":"marion_hensel@wrdsb.ca",
         "image": "assets/club_images/classicsclub.png",
-        "student_leaders": "Emma L and Zoe F",
-        "description": "A group of students who are passionate about about all things related to the ancient world. We discuss topics like history, mythology, architecture, fashion, archaeology, linguistics, travel and so much more!", 
+        "student_leaders": "TBD",
+        "meeting_time": "Every Tuesday at lunch in Portable 6",
+        "description": "Students interested in Latin, Classical Studies, Archaeology and the Ancient World can meet, learn about, discuss, and compete in online contests such as: Latin Vocabulary, Classical Etymology, Classical Mythology, Roman Civilization and more!", 
         "categories": [
             "recreational_category",
             "academics_category",
             "medium",
             "present"
-        ]
+        ],
+        "classroom_code": "2mbpj6p"
     },
     {
         "name": "Club Latinx",
         "id": "clublatinx",
-        "meeting_time": "Wednesdays, 2:15 PM - 3:15 PM (week of courses C/D)",
+        "meeting_time": "Bi-monthly 2:15pm - 3:30pm in Rm 306 (Starting November - After cross country)",
         "connection_links":[],
         "image": "assets/club_images/clublatinx.png",
         "student_leaders": "Sofía A, Marlon F",
@@ -144,40 +153,43 @@
             "academics_category",
             "medium",
             "none"
-        ]
+        ],
+        "classroom_code": "bmljchb"
     },
     {
         "name": "Computer Science Club",
         "id": "computerscienceclub",
-        "meeting_time": "Wednesdays, 3:00 PM - 4:30 PM",
+        "meeting_time": "Wednesday's after school 3:00 - 4:30 (218, 216, 212)",
         "connection_links":["instagram", "classroom"],
         "instagram" : "https://https://www.instagram.com/wci_computer_science/",
         "classroom": "https://classroom.google.com/c/MTY1NzAzMDQzNjJa?cjc=c2prjk3 ",
         "image": "assets/club_images/computerscienceclub.png",
-        "student_leaders": "Scott H, Allon W, Claire C, Jeffrey Q, Markos G, Tristan O",
+        "student_leaders": "Scott H(communication), Claire C, Jeffrey Q, Ching Lam, Tristan O",
         "description": "This club is for everyone interested in CS. Beginner to advanced, contest groups and a group that likes to develop games, internet and database usually at the end of the year after the contests are over.",
         "categories": [
             "stem_category",
             "medium",
             "present"
-        ]
+        ],
+        "classroom_code": "c2prjk3"
     },
     {
         "name": "Debate Club",
         "id": "debateclub",
-        "meeting_time": "Thursdays, 2:30 PM - 3:30 PM",
+        "meeting_time": "Mondays from 2:45 pm - 3:45 pm in Room 221",
         "connection_links":["instagram", "email", "website"],
         "instagram" : "https://www.instagram.com/wci_debate",
         "email": "wci.viking.debate@gmail.com",
         "website": "https://sites.google.com/wrdsb.ca/wci-debate-club/home",
         "student_leaders": "Scott H, Mariya T, Sammi W, Paris C, Grace Q",
         "image": "assets/club_images/debateclub.png",
-        "description": "The Debate Club provides students with a fun way to further develop their speaking and presentation skills. In addition, the Debate Club provides an opportunity for students to become more informed about political and global affairs. Through a virtual platform, students will train for debate competitions with local schools.",
+        "description": "The Debate Club provides students with a fun way to further develop their speaking and presentation skills. In addition, the debate club provides an opportunity for the students to become more informed about political and global affairs. Through a virtual platform, students will train for debate competitions with local schools.",
         "categories": [
             "business_category",
             "high",
             "present"
-        ]
+        ],
+        "classroom_code": "jptbyda"
     },
     {
         "name": "Eco Club",
@@ -187,13 +199,15 @@
         "classroom": "https://classroom.google.com/c/MjQ5OTc5MjQ0NTNa?cjc=7h4m3em",
         "instagram" : "https://www.instagram.com/wci_ecoclub/",
         "image": "assets/club_images/ecoclub.png",
-        "student_leaders": "Ella W and Nur I",
-        "description": "This club helps join like-minded peers to discuss ways to care for our environment,  foster sustainability and fight climate change in our school community and beyond in order to build a better future for all.",
+        "meeting_time": "Room 305 next to the Geography office on Fridays",
+        "student_leaders": "Nur I., K. Wong, P. Martin Argueta",
+        "description": "This club helps join like-minded peers to discuss ways to care for our environment, foster sustainability and fight climate change in our school community and beyond in order to build a better future for all.",
         "categories": [
             "recreational_category",
             "medium",
             "none"
-        ]
+        ],
+        "classroom_code": "7h4m3em"
     },
     {
         "name": "Female Empowerment Movement",
@@ -223,37 +237,37 @@
     {
         "name": "French Club",
         "id": "frenchclub",
-        "meeting_time": "Every other Friday, 2:45 PM - 3:30 PM",
+        "meeting_time": "Bi-weekly Mondays at lunch in room 321",
         "connection_links":["classroom"],
-        "student_leaders": "Charis H, Sina B. N, Rihanna A, Nur I, Michelle M, Edwin C, Cadence K",
+        "student_leaders": "TBD",
         "classroom": "https://classroom.google.com/c/MTYxNTE2Nzc4NjE2?cjc=w6aqn5j",
         "image": "assets/club_images/frenchclub.png",
-        "description": "If you are interested in French culture, music, art, language, history, and talking about food, join our French Club!  This is a great way to meet new people and learn about all the places in the world where they speak French!",
+        "description": "French Club is a space where everyone is welcome to come and talk about all things French, from food and language to culture and history.  We play games, watch movies, sing Karaoke, and have fun learning about French speaking places all around the world!",
         "categories": [
             "academics_category",
             "medium",
             "none"
-        ]
+        ],
+        "classroom_code": "rzm6upj"
     },
     {
         "name": "Gender and Sexuality Awareness Club",
         "id": "GSAclub",
-        "meeting_time": "Every Wednesday, 2:30 PM - 3:30 PM",
-        "connection_links":[],
-        "student_leaders": "Hannah G",
+        "meeting_time": "Every wednesday at lunch in room 325",
+        "student_leaders": "TBD",
         "image": "assets/club_images/genderandsexualityawarenessclubgsa.png",
-        "description": "To promote acceptance and inclusion throughout the school community and to provide a safe, non-judgmental space as a support network for Gay, Lesbian, Bisexual, Transgender, Questioning, and Straight youth who share a common vision of social equality. For the safety and comfort of our members, we ask that you email a club leader if you wish to join our classroom.",
+        "description": "To promote acceptance and inclusion throughout the school community and to provide a safe, non-judgmental space as a support network for Gay, Lesbian, Bisexual, Transgender, Questioning, and Straight youth who share a common vision of social equality. ",
         "categories": [
             "social_justice_category",
             "medium",
             "none"
-        ]
+        ],
+        "classroom_code": "6hs4q6o"
     },
     {
         "name": "Grad Club",
         "id": "gradclub",
-        "student_leaders": "Chanel T, Isabella M, Laila I",
-        "connection_links":[],
+        "student_leaders": "TBD",
         "image": "assets/club_images/gradclub.png",
         "description": "Help us plan out your final year with some exciting Grad Events, design grad wear, plan candy grams and so much more.",
         "categories": [
@@ -261,16 +275,17 @@
             "recreational_category",
             "medium",
             "none"
-        ]
+        ],
+        "classroom_code": "x4r2gtz"
     },
     {
-        "name": "HOSA",
+        "name": "Health Occupations Students of America (HOSA)",
         "id": "healthoccupationsstudentsofamericahosa",
         "meeting_time": "Mondays, 3:00 PM - 4:00 PM",
         "connection_links": ["instagram", "email", "website"],
         "website" : "https://sites.google.com/wrdsb.ca/wci-hosa/home",
         "instagram" : "https://www.instagram.com/wcihosa",
-        "student_leaders": "Amrit M. (Co-President) Daniel P. (Co-President) David G. (President), Laura W. (Co-President), Leya O. (Co-President), Nischal G. (Co-President), Prem M-S (Co-President)",
+        "student_leaders": "Amrit Mann & Leya Ooman",
         "email": "wci.hosa@gmail.com ",
         "image": "assets/club_images/healthoccupationsstudentsofamericahosa.png",
         "description": "The mission of HOSA Canada is to enable secondary and post secondary students to become leaders in the healthcare industry by providing future health professionals with knowledge, technical training and leadership development.",
@@ -278,12 +293,12 @@
             "stem_category",
             "high",
             "present"
-        ]
+        ],
+        "classroom_code": "Igqzrch"
     },
     {
         "name": "Indigenous Student Association",
         "id": "indigenousstudentassociation",
-        "connection_links": [],
         "image": "assets/club_images/indigenousstudentassociation.png",
         "description": "The Indigenous students club is a safe and inclusive space in which students of Indigenous heritage can form new friendships and celebrate the important contributions of First Nations, Métis, and Inuit people . Together, we will discuss approaches to contemporary Canadian Indigenous issues and challenges.",
         "categories": [
@@ -295,7 +310,6 @@
     {
         "name": "Key Club",
         "id": "keyclub",
-        "connection_links": [],
         "student_leaders": " Mingyi L, Sophia M, Steven L",
         "image": "assets/club_images/keyclub.png",
         "description": "Key Club International is an international branch of Kiwanis that is run by students for students, enabling them to engage, contribute and help out in the community through volunteering. Students can gain volunteer hours through involvement of service projects, community work, as well as newly curated virtual volunteer opportunities.",
@@ -308,16 +322,16 @@
     {
         "name": "Jr. Leadership",
         "id": "jrleadership",
-        "meeting_time": "Mondays at Lunch",
-        "student_leaders" : "Ally M, Michael M",
-        "connection_links": [],
+        "meeting_time": "Bi-weekly Monday at Lunch in Rm 212",
+        "student_leaders" : "Jude M, Jackie D",
         "image": "assets/club_images/jrleadership.png",
-        "description": "Junior Leadership is a  Club for Gr 9s who want to lead and play a key role inside the school. This club helps prepare students who are interested in joining the Student Council, want to meet other grade 9s, have fun and learn about leadership opportunities at WCI.",
+        "description": "This club is for any grade 9s that would like to get involved in student leadership.",
         "categories": [
             "leadership_category",
             "high",
             "none"
-        ]
+        ],
+        "classroom_code": "2uopw4b"
     },
     {
         "name": "Math Club",
@@ -338,7 +352,6 @@
     {
         "name": "Model United Nations Club",
         "id": "modelunitednationsclub",
-        "connection_links":[],
         "student_leaders": "Sophie L",
         "image": "assets/club_images/wcimodelunitednationsclub.png",
         "description": "Model United Nations is an academic simulation of the United Nations where students represent different countries and discuss solutions to real world issues. In this club, students will not only improve crucial competencies such as leadership and communication, but also develop comprehensive international perspectives.",
@@ -356,13 +369,14 @@
         "website": "https://sites.google.com/wrdsb.ca/wcimuslimstudentassociation/home",
         "instagram": "https://www.instagram.com/wci_msa_club",
         "image": "assets/club_images/muslimstudentassociation.png",
-        "student_leaders": "Umar M, Yazan B, Mobina F, Issa B",
-        "description": "The Muslim Student Association (MSA) is a safe space for Muslim Students to get together, learn and appreciate their identity, create a welcoming community, and of course, have fun!",
+        "student_leaders": "Umar M",
+        "description": "The Muslim Student Association (MSA) is a safe space for Muslim Students to get together, learn and appreciate their identity, create a welcoming community, and of course, have fun! ",
         "categories": [
             "social_justice_category",
             "low",
             "none"
-        ]
+        ],
+        "classroom_code": "mhwgvxo"
     },
     {
         "name": "Origami Club",
@@ -382,35 +396,37 @@
     {
         "name": "Robotics Club",
         "id": "roboticsclub",
-        "meeting_time": "Restarting Semester 2!",
+        "meeting_time": "Portable 2 on Thursdays after school",
         "connection_links":["classroom"],
-        "student_leaders": "Tristan O, Mariya T, Charis H",
+        "student_leaders": "Tristan O, Shaurya S, Charis Ho, Mariya T",
         "classroom": "https://classroom.google.com/c/MTY1OTk0MDcyNzNa?cjc=icus6dl",
         "image": "assets/club_images/roboticsclub.png",
-        "description": "We at the Viking robotics club are a bunch of students who have one common interest: robotics! Here at the club, we cover everything from working with hardware and software, programming electronics and even computer work. As we do so, we are more people involved in STEM, exercising their problem solving skills and make new friends!",
+        "description": "Students work on programming skills related to hardware and robotics and participate in various Robotics competitions - fees and travel involved.",
         "categories": [
             "stem_category",
             "high",
             "present"
-        ]
+        ],
+        "classroom_code": "icus6dl"
     },
     {
         "name": "Science Club",
         "id": "wciscienceclub",
-        "meeting_time": "Thursdays, 3:15 PM - 4:15 PM",
+        "meeting_time": "Thursdays at Lunch Rm. 201",
         "connection_links":["classroom", "instagram", "email"],
         "classroom": "https://classroom.google.com/c/Nzc0NTg1MTAwNlpa?cjc=f4z7dvy",
         "instagram" : "https://www.instagram.com/wci_science",
         "email": "jocelyn_ridgway@wrdsb.ca",
         "image": "assets/club_images/wciscienceclub.png",
-        "student_leaders": "Nuha A, Daniel C, Hugh C, Charis H, Athena X",
-        "description": "Science club is a space for students of all grades to meet and discuss concepts and discoveries not covered in school science classes. The club also provides information for any students looking to participate in enrichment science activities, such as competitions and events at local universities and in the community.",
+        "student_leaders": "Charis Ho, Nuha Akhand, Arho na Bhadra, Michael Wang, Kathryn Infanti, Liz Di Mira",
+        "description": "Science club is a space for students of all grades to meet and discuss concepts and discoveries not covered in school science classes. The club also provides information for any students looking to participate in enrichment science activities, such as competitions and events at local universities and in the community. ",
         "categories": [
             "stem_category",
             "academics_category",
             "medium",
             "present"
-        ]
+        ],
+        "classroom_code": "f4z7dvy "
     },
     {
         "name": "Social Justice Club",
@@ -444,43 +460,29 @@
         "id": "spiritclub",
         "connection_links":[],
         "image": "assets/club_images/spiritclub.png",
-        "student_leaders": "Laila  I",
+        "student_leaders": "TBD",
         "description": "This club is for vikings looking to be loud and outgoing. As a Spirit Director your job is to make the school as spirited as possible by hyping up groups of people and encouraging others to get involved. You may have to get up in front of the school and do the school cheers or send a video of you doing a dance but no matter the task you need to be able to do it with as much spirit as possible. This club requires auditions.",
         "categories": [
             "recreational_category",
             "leadership_category",
             "low",
             "none"
-        ]
+        ],
+        "classroom_code": "pxr2oem"
     },
     {
         "name": "Sticker Club",
         "id": "stickerclub",
-        "connection_links":[],
-        "student_leaders": "Sydney M, Olivia K, Olivia P",
+        "student_leaders": "Olivia P, Sonia Singh",
         "image": "assets/club_images/stickerclub.png",
         "description": "Calling all sticker lovers! Members of the sticker club will be coming together to design and craft our very own personalized stickers with WCI's brand new sticker machine. We'll also be making customized clothing and spirit wear. You won't want to miss out on this creative club!",
         "categories": [
             "recreational_category",
             "low",
             "none"
-        ]
-    },
-    {
-        "name": "Technovation(WiSTEM)",
-        "id": "technovation",
-        "meeting_time": "Wednesday, 10:50 AM - 11:20 AM",
-        "student_leaders": "Leya O and Sammi W",
-        "connection_links":["classroom"],
-        "classroom": "https://classroom.google.com/c/MzIwNTQ4NzcxODg5?cjc=7mraab7",
-        "image": "assets/club_images/technovationwistem.png",
-        "description": "Technovation is an international girls' coding competition that aims to get girls into tech. In the competition, teams build mobile apps that help solve a problem in society and pitch it to judges. We will also be running other research projects should female identifying students wish to persue or have support in diving into their ideas with science!",
-        "categories": [
-            "stem_category",
-            "academics_category",
-            "medium",
-            "present"
-        ]
+        ],
+        "meeting_time": "Bi-weekly Wednesdays",
+        "classroom_code": "jake4ln"
     },
     {
         "name": "Tutoring Club",
@@ -501,20 +503,21 @@
         ]
     },
     {
-        "name": "Viking Venture",
-        "id": "vikingventure",
-        "meeting_time": "Wednesday, 3:30 PM - 4:30 PM",
+        "name": "DECA",
+        "id": "deca",
+        "meeting_time": "Wednesdays at lunch in rooms 424,422,418,416",
         "connection_links":["instagram", "email"],
-        "instagram" : "https://www.instagram.com/vikingventure",
+        "instagram" : "https://www.instagram.com/wci.deca",
         "email": "decavikings@gmail.com",
-        "image": "assets/club_images/vikingventure.png",
-        "student_leaders":"Jessica D. (Co-President), Prem M-S (Co-President) Sissi W. (Media Coordinator), Jiwon K. (Communications Officer), David G. (Workshop Officer), Laura W. (Workshop Officer), Dana S. (Workshop Officer), Markos G. (Workshop Officer), Sammi W. (Workshop Officer)",
-        "description": "Viking Venture is a WCI business competition offering students a chance to strengthen their interpersonal and professional skills. Students will delve into real-life business environments, hone their leadership skills, and develop problem-solving skills through case studies and presentations.",
+        "image": "assets/club_images/wcideca.jpg",
+        "student_leaders":"Sammi Wang, Christina Yang, Mandy Li, Emily Cheng, Grace Qiu, Victoria Zhangliu, Jamie Zhang, Kasumi Yajima",
+        "description": "DECA is a high school business competition offering students a chance to strengthen their interpersonal and professional skills. Students will immerse themselves into real-life business environments, enhance their leadership skills, and learn to problem solve through case studies and presentations.",
         "categories": [
             "business_category",
             "high",
             "present"
-        ]
+        ],
+        "classroom_code": "e3h6nvo"
     },
     {
         "name": "WCI TEDEd Club",
@@ -537,8 +540,8 @@
     {
         "name": "Web-Dev Club",
         "id": "wciwebdev",
-        "meeting_time": "Tuesdays, 2:30 PM - 3:30 PM",
-        "connection_links": ["classroom", "instagram", "email", "website"],
+        "meeting_time": "Tuesdays, 3:00 PM - 4:00 PM",
+        "connection_links": ["classroom", "instagram", "email", "join_form", "website"],
         "instagram" : "https://www.instagram.com/wci_web_dev",
         "classroom": "https://classroom.google.com/c/MzE3ODQxMTY3NDU3?cjc=k2uhtee",
         "email": "turem4748@wrdsb.ca",
@@ -551,7 +554,8 @@
             "stem_category",
             "medium",
             "present"
-        ]
+        ],
+        "classroom_code": "k2uhtee"
     },
     {
         "name": "WCI Crew",
@@ -569,5 +573,48 @@
             "high",
             "none"
         ]
+    },
+    {
+        "name": "Girls Fitness",
+        "id": "girlsfitness",
+        "image": "assets/club_images/girlsfitness.png",
+        "student_leaders": "Kristina Gladovic, Nil Aksu, Marissa Coe, Inci Arslanargin, and Erica Im",
+        "description": "The absence of a workout is the only terrible workout. Come work out with us, make new friends, and join the WCI Girls Fitness Club because pushing yourself every day is one of the most exciting things you can do in life. You will also leave every session feeling strong, proud, and accomplished.",
+        "categories": [
+            "leadership_category",
+            "medium",
+            "none"
+        ],
+        "meeting_time": "Every Wednesday after school in the annex",
+        "classroom_code": "2a3jacr"
+    },
+    {
+        "name": "Trivia Club",
+        "id": "triviaclub",
+        "student_leaders": "TBD",
+        "image": "assets/club_images/triviaclub.png",
+        "description": "We will be running different kinds of trivia quizzes and participating in some Trivia tournaments with other schools.",
+        "categories": [
+            "academics_category",
+            "recreational_category",
+            "low",
+            "none"
+        ],
+        "classroom_code": "5xb2wyj"
+    },
+    {
+        "name": "WCI Tutors",
+        "id": "wcitutors",
+        "image": "assets/club_images/wcitutors.png",
+        "student_leaders": "Paris Cao, Jane He, My Chau Tight, Laura Weiler",
+        "description": "Boost your involvement at WCI and earn volunteer hours for tutors! WCI Tutoring provides a calm space to complete homework, receive academic help, meet your peers and more.",
+        "categories": [
+            "academics_category",
+            "recreational_category",
+            "medium",
+            "none"
+        ],
+        "classroom_code": "bjko5tg",
+        "meeting_time": "Tuesdays at lunch in the cafeteria ",
     }
 ]

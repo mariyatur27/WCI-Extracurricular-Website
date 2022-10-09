@@ -136,6 +136,12 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null, filters=
                                 together2.appendChild(time);
                             expand_box_core_content.appendChild(together2);
                         }
+                        if ("classroom_code" in boxData) {
+                            let together3 = document.createElement("div");
+                                let title3 = document.createElement("h6"); title3.innerText="Google Classroom Code: ".concat(boxData.classroom_code); title3.classList.add("inline_header");
+                                together3.appendChild(title3);
+                            expand_box_core_content.appendChild(together3);
+                        }
                         // let meeting_time_text = document.createElement("h6"); 
                         // let tryouts = document.createElement("h6");  tryouts.innerText = boxData.meeting_time_title; 
                         // console.log(tryouts);
@@ -229,6 +235,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null, filters=
                         v_link.appendChild(explr);
                         expand_box.appendChild(v_link);
                     }
+                    if (boxData.connection_links) {
                     let box_links = document.createElement("div"); box_links.classList.add("together", "club-links");
                     for (link of boxData.connection_links) {
                         if (link in connection_links) {
@@ -264,6 +271,7 @@ async function setupBoxes(boxesSource, divID, countPerRow, urlBox=null, filters=
                         }
                     }
                     expand_box.appendChild(box_links);
+                }
     
                 box.appendChild(expand_box);
             row.appendChild(box);
